@@ -1,0 +1,100 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-01-28T17:45:07.645Z",
+    "end": "2021-01-28T17:45:07.713Z",
+    "duration": 68,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "6b916945-d3f6-4779-9853-51c1b4b6115a",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9eb89571-e251-4efe-b9ef-383c8a9bbbe5",
+          "title": "Testing API",
+          "fullFile": "C:\\Users\\arodr\\Documents\\AngularProjects\\tfm\\server\\test\\user.js",
+          "file": "\\test\\user.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should return an array",
+              "fullTitle": "Testing API should return an array",
+              "timedOut": false,
+              "duration": 57,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "chai.request(url)\n    .get('/users')\n    .end(function (err, res){\n        expect(res).to.have.status(200);\n        expect(res.body).to.be.an('array');\n        expect(res.body).to.have.lengthOf(2);\n        done();\n    });",
+              "err": {},
+              "uuid": "3d0c914b-d80c-4b06-a95f-add6daac1bdc",
+              "parentUUID": "9eb89571-e251-4efe-b9ef-383c8a9bbbe5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "3d0c914b-d80c-4b06-a95f-add6daac1bdc"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 57,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "8.2.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": null,
+      "version": "5.1.0"
+    }
+  }
+}
