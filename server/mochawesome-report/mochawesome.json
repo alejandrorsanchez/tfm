@@ -2,14 +2,14 @@
   "stats": {
     "suites": 1,
     "tests": 1,
-    "passes": 1,
+    "passes": 0,
     "pending": 0,
-    "failures": 0,
-    "start": "2021-01-28T17:45:07.645Z",
-    "end": "2021-01-28T17:45:07.713Z",
-    "duration": 68,
+    "failures": 1,
+    "start": "2021-02-01T17:43:29.815Z",
+    "end": "2021-02-01T17:43:29.849Z",
+    "duration": 34,
     "testsRegistered": 1,
-    "passPercent": 100,
+    "passPercent": 0,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "6b916945-d3f6-4779-9853-51c1b4b6115a",
+      "uuid": "824c3c0f-254b-4a51-aa10-f0082528742a",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "9eb89571-e251-4efe-b9ef-383c8a9bbbe5",
+          "uuid": "6a9c2812-cc58-429f-bd62-61935ca4fa65",
           "title": "Testing API",
           "fullFile": "C:\\Users\\arodr\\Documents\\AngularProjects\\tfm\\server\\test\\user.js",
           "file": "\\test\\user.js",
@@ -38,29 +38,33 @@
               "title": "should return an array",
               "fullTitle": "Testing API should return an array",
               "timedOut": false,
-              "duration": 57,
-              "state": "passed",
-              "speed": "medium",
-              "pass": true,
-              "fail": false,
+              "duration": 24,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
               "pending": false,
               "context": null,
               "code": "chai.request(url)\n    .get('/users')\n    .end(function (err, res){\n        expect(res).to.have.status(200);\n        expect(res.body).to.be.an('array');\n        expect(res.body).to.have.lengthOf(2);\n        done();\n    });",
-              "err": {},
-              "uuid": "3d0c914b-d80c-4b06-a95f-add6daac1bdc",
-              "parentUUID": "9eb89571-e251-4efe-b9ef-383c8a9bbbe5",
+              "err": {
+                "message": "TypeError: Cannot use 'in' operator to search for 'status' in undefined",
+                "estack": "TypeError: Cannot use 'in' operator to search for 'status' in undefined\n    at Proxy.<anonymous> (node_modules\\chai-http\\lib\\http.js:80:38)\n    at Proxy.methodWrapper (node_modules\\chai\\lib\\chai\\utils\\addMethod.js:57:25)\n    at C:\\Users\\arodr\\Documents\\AngularProjects\\tfm\\server\\test\\user.js:12:37\n    at Test.Request.callback (node_modules\\superagent\\lib\\node\\index.js:728:3)\n    at ClientRequest.<anonymous> (node_modules\\superagent\\lib\\node\\index.js:647:10)\n    at Socket.socketErrorListener (_http_client.js:469:9)\n    at emitErrorNT (internal/streams/destroy.js:106:8)\n    at emitErrorCloseNT (internal/streams/destroy.js:74:3)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)",
+                "diff": null
+              },
+              "uuid": "8a45e686-5ae7-4488-a7aa-63df4b84da66",
+              "parentUUID": "6a9c2812-cc58-429f-bd62-61935ca4fa65",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [
-            "3d0c914b-d80c-4b06-a95f-add6daac1bdc"
+          "passes": [],
+          "failures": [
+            "8a45e686-5ae7-4488-a7aa-63df4b84da66"
           ],
-          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 57,
+          "duration": 24,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
