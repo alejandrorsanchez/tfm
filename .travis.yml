@@ -6,4 +6,5 @@ branches:
     - "/^release-[0-999].[0-999]$/"
     - master
 script:
-  - "cd server && npm test"
+  - cd server && npm test
+  - sonar-scanner -Dsonar.login=$SONAR_TOKEN -Dsonar.organization=alejandrorsanchez
