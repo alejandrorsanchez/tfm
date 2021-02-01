@@ -6,4 +6,4 @@ branches:
     - "/^release-[0-999].[0-999]$/"
     - master
 script:
-  - "cd server && npm run dev && npm test"
+  - "cd server && npm test"
