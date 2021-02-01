@@ -10,7 +10,7 @@ addons:
   chrome: stable
   sonarcloud: true
 before_install:
-  - mysql -u projectmaster
+  - mysql -u root
 install:
   - npm install
   - npm ci
