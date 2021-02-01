@@ -9,6 +9,8 @@ branches:
 addons:
   chrome: stable
   sonarcloud: true
+before_install:
+  - mysql -u projectmaster --password="projectmaster"
 install:
   - npm install
   - npm ci
