@@ -1,5 +1,6 @@
 language: node_js
 node_js: 14.15.0
+services: mysql
 branches:
   only:
     - develop
@@ -13,4 +14,4 @@ install:
   - npm ci
 script:
   - nohup npm run dev & sleep 2 & npm run test
-  - sonar-scanner -Dsonar.login=$SONAR_TOKEN -Dsonar.organization=alejandrorsanchez -Dsonar.projectKey=tfm -Dsonar.sources='./tfm' -X
+  - sonar-scanner -Dsonar.login=$SONAR_TOKEN -Dsonar.organization=alejandrorsanchez -Dsonar.projectKey=tfm -X
