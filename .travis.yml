@@ -12,5 +12,5 @@ install:
   - npm install
   - npm ci
 script:
-  - nohup npm run dev & sleep 2 & npm run test
+  - cd server & nohup npm run dev & sleep 2 & npm run test
   - sonar-scanner -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=$SONAR_TOKEN -Dsonar.organization=alejandrorsanchez
