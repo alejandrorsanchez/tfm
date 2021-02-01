@@ -1,0 +1,7 @@
+language: node_js
+node_js: 14.15.0
+branches:
+  only:
+    - develop
+    - "/^release-[0-999].[0-999]$/"
+    - master
