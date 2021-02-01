@@ -8,6 +8,9 @@ branches:
 addons:
   chrome: stable
   sonarcloud: true
+install:
+  - npm install
+  - npm ci
 script:
-  - cd server & nohup npm run dev & sleep 2 & npm run test
+  - nohup npm run dev & sleep 2 & npm run test
   - sonar-scanner -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=$SONAR_TOKEN -Dsonar.organization=alejandrorsanchez
