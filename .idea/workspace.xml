@@ -19,7 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="" />
+    <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/server/.travis.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,8 +45,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm" />
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\server" />
+      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -60,7 +63,7 @@
       <workItem from="1611931985762" duration="4806000" />
       <workItem from="1611936824764" duration="494000" />
       <workItem from="1612178635646" duration="838000" />
-      <workItem from="1612198715009" duration="4913000" />
+      <workItem from="1612198715009" duration="6471000" />
     </task>
     <task id="LOCAL-00001" summary=".travis.yml">
       <created>1612200288919</created>
@@ -104,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612204548220</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary=".travis.yml">
+      <created>1612205205424</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1612205205424</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
