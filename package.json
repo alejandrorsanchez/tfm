@@ -4,8 +4,8 @@
   "description": "",
   "main": "server/index.js",
   "scripts": {
-    "dev": "node_modules/.bin/nodemon index.js",
-    "test": "node_modules/.bin/mocha --recursive server/test --reporter mochawesome"
+    "dev": "nodemon index.js",
+    "test": "mocha --recursive server/test --reporter mochawesome"
   },
   "keywords": [],
   "author": "",

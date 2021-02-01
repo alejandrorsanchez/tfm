@@ -13,4 +13,4 @@ install:
   - npm ci
 script:
   - nohup npm run dev & sleep 2 & npm run test
-  - sonar-scanner -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=$SONAR_TOKEN -Dsonar.organization=alejandrorsanchez
+  - sonar-scanner -Dsonar.login=$SONAR_TOKEN -Dsonar.organization=alejandrorsanchez -Dsonar.projectKey=tfm -Dsonar.sources='./tfm' -X
