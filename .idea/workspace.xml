@@ -20,7 +20,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +62,7 @@
       <workItem from="1611931985762" duration="4806000" />
       <workItem from="1611936824764" duration="494000" />
       <workItem from="1612178635646" duration="838000" />
-      <workItem from="1612198715009" duration="3191000" />
+      <workItem from="1612198715009" duration="3377000" />
     </task>
     <task id="LOCAL-00001" summary=".travis.yml">
       <created>1612200288919</created>
@@ -79,7 +78,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612201447008</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary=".travis.yml">
+      <created>1612203334744</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1612203334744</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
