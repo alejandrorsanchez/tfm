@@ -1,1 +1,4 @@
-component_depth: 9
+component_depth: 5
+languages:
+  - javascript
+  - typescript
