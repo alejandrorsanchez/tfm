@@ -21,6 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.bettercodehub.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.bettercodehub.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +64,7 @@
       <workItem from="1611936824764" duration="494000" />
       <workItem from="1612178635646" duration="838000" />
       <workItem from="1612198715009" duration="10807000" />
-      <workItem from="1612285003179" duration="3785000" />
+      <workItem from="1612285003179" duration="3955000" />
     </task>
     <task id="LOCAL-00001" summary=".travis.yml">
       <created>1612200288919</created>
@@ -219,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612288624287</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Bettercodehub">
+      <created>1612288817107</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1612288817107</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
