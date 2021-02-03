@@ -20,7 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.bettercodehub.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.bettercodehub.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/workflows/sonar.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,7 +65,8 @@
       <workItem from="1612178635646" duration="838000" />
       <workItem from="1612198715009" duration="10807000" />
       <workItem from="1612285003179" duration="4104000" />
-      <workItem from="1612290880464" duration="68000" />
+      <workItem from="1612290880464" duration="802000" />
+      <workItem from="1612379433419" duration="704000" />
     </task>
     <task id="LOCAL-00001" summary=".travis.yml">
       <created>1612200288919</created>
@@ -235,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612288986455</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="bettercodehub">
+      <created>1612290967004</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1612290967004</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,7 +265,8 @@
     <MESSAGE value=".travis.yml" />
     <MESSAGE value="refactoring package.json" />
     <MESSAGE value="Bettercodehub" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bettercodehub" />
+    <MESSAGE value="bettercodehub" />
+    <option name="LAST_COMMIT_MESSAGE" value="bettercodehub" />
   </component>
   <component name="WindowStateProjectService">
     <state x="48" y="189" key="run.anything.popup" timestamp="1611684064675">
