@@ -20,7 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/sonar.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sonar-project.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.bettercodehub.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +41,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="ts.external.directory.path" value="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -66,7 +68,7 @@
       <workItem from="1612198715009" duration="10807000" />
       <workItem from="1612285003179" duration="4104000" />
       <workItem from="1612290880464" duration="802000" />
-      <workItem from="1612379433419" duration="704000" />
+      <workItem from="1612379433419" duration="1218000" />
     </task>
     <task id="LOCAL-00001" summary=".travis.yml">
       <created>1612200288919</created>
@@ -243,7 +245,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612290967004</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="sonarcloud">
+      <created>1612380177950</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1612380177950</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -266,9 +275,14 @@
     <MESSAGE value="refactoring package.json" />
     <MESSAGE value="Bettercodehub" />
     <MESSAGE value="bettercodehub" />
-    <option name="LAST_COMMIT_MESSAGE" value="bettercodehub" />
+    <MESSAGE value="sonarcloud" />
+    <option name="LAST_COMMIT_MESSAGE" value="sonarcloud" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="516" y="267" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1612380414374">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="516" y="267" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1612380414374" />
     <state x="48" y="189" key="run.anything.popup" timestamp="1611684064675">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
