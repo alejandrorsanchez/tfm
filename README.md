@@ -1,2 +1,2 @@
 ### Estado del codigo
-[![BCH compliance](https://bettercodehub.com/edge/badge/alejandrorsanchez/tfm?branch=master)](https://bettercodehub.com/)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=tfm&metric=alert_status)](https://sonarcloud.io/dashboard?id=tfm)
