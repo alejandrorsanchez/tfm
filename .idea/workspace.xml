@@ -20,8 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/logoweb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/splash.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,13 +45,18 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/frontend/src/app" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="ts.external.directory.path" value="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\assets" />
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm" />
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\server" />
     </key>
@@ -67,7 +78,14 @@
       <workItem from="1612198715009" duration="10807000" />
       <workItem from="1612285003179" duration="4104000" />
       <workItem from="1612290880464" duration="802000" />
-      <workItem from="1612379433419" duration="1731000" />
+      <workItem from="1612379433419" duration="2111000" />
+      <workItem from="1612381655065" duration="417000" />
+      <workItem from="1613132087223" duration="9923000" />
+      <workItem from="1613155437508" duration="2621000" />
+      <workItem from="1613324904692" duration="4904000" />
+      <workItem from="1613378612070" duration="6000" />
+      <workItem from="1613388373669" duration="71000" />
+      <workItem from="1613413973183" duration="103000" />
     </task>
     <task id="LOCAL-00001" summary=".travis.yml">
       <created>1612200288919</created>
@@ -258,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612380676323</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="sonar badge">
+      <created>1612381191489</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1612381191489</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,13 +311,22 @@
     <MESSAGE value="bettercodehub" />
     <MESSAGE value="sonarcloud" />
     <MESSAGE value="sonar-project.properties" />
-    <option name="LAST_COMMIT_MESSAGE" value="sonar-project.properties" />
+    <MESSAGE value="sonar badge" />
+    <option name="LAST_COMMIT_MESSAGE" value="sonar badge" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1613157885334">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1613157885334" />
     <state x="516" y="267" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1612380414374">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="516" y="267" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1612380414374" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1613141678869">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1613141678869" />
     <state x="48" y="189" key="run.anything.popup" timestamp="1611684064675">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
