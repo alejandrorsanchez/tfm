@@ -21,7 +21,11 @@
   <component name="ChangeListManager">
     <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/tsconfig.app.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +85,12 @@
       <workItem from="1613388373669" duration="71000" />
       <workItem from="1613413973183" duration="2234000" />
       <workItem from="1613466778640" duration="91000" />
-      <workItem from="1613490196214" duration="2262000" />
+      <workItem from="1613490196214" duration="5969000" />
+      <workItem from="1613550822730" duration="75000" />
+      <workItem from="1613562217371" duration="3358000" />
+      <workItem from="1613584607720" duration="5286000" />
+      <workItem from="1613986454637" duration="9000" />
+      <workItem from="1618213670692" duration="3093000" />
     </task>
     <task id="LOCAL-00001" summary=".travis.yml">
       <created>1612200288919</created>
@@ -314,7 +323,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613416126296</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Fin Diseño ventana de registro #5">
+      <created>1613492616925</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1613492616925</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -348,9 +364,14 @@
     <MESSAGE value="NavBar de portada" />
     <MESSAGE value="Ventana modal de login" />
     <MESSAGE value="Fin diseño ventana de login #4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fin diseño ventana de login #4" />
+    <MESSAGE value="Fin Diseño ventana de registro #5" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fin Diseño ventana de registro #5" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1613494473936">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1613494473936" />
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1613157885334">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
