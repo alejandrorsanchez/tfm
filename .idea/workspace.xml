@@ -20,11 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/frontend/src/custom-theme.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/services/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/services/user.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/user.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/user.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/user.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/user.routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +97,7 @@
       <workItem from="1613584607720" duration="5286000" />
       <workItem from="1613986454637" duration="9000" />
       <workItem from="1618213670692" duration="14056000" />
-      <workItem from="1618298733422" duration="3563000" />
+      <workItem from="1618298733422" duration="4184000" />
     </task>
     <task id="LOCAL-00001" summary=".travis.yml">
       <created>1612200288919</created>
@@ -355,7 +358,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618229088164</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="verifyUser implementado para POST User">
+      <created>1618302448387</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1618302448387</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -394,7 +404,8 @@
     <MESSAGE value="inicio POST user" />
     <MESSAGE value="postUser endpoint implementado" />
     <MESSAGE value="saveUser en componente implementado" />
-    <option name="LAST_COMMIT_MESSAGE" value="saveUser en componente implementado" />
+    <MESSAGE value="verifyUser implementado para POST User" />
+    <option name="LAST_COMMIT_MESSAGE" value="verifyUser implementado para POST User" />
   </component>
   <component name="WindowStateProjectService">
     <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1613494473936">
