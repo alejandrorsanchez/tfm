@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {UserService} from "./services/user.service";
 import {User} from "./models/user";
 
@@ -19,7 +19,16 @@ export class AppComponent{
   constructor(private userService: UserService) {}
 
   verifyUserName() {
-    //TODO
+    this.userService.findUser(this.newUser.username).subscribe(
+      response => {
+          if(response[0]){
+            this.errorMessage = true;
+            this.message = 'Ese usuario ya existe';
+          }else{
+            this.errorMessage = false;
+          }
+      }
+    );
   }
 
   checkFields() {
@@ -40,9 +49,9 @@ export class AppComponent{
     this.checkFields();
     if (!this.errorMessage){
       this.userService.save(this.newUser).subscribe(
-        res => {
+        response => {
           this.registerSuccess = true;
-          this.successMessage = 'Registration succesful';
+          this.successMessage = response['message'];
         }
       );
     }

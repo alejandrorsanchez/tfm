@@ -19,13 +19,21 @@ userController.postUser = (req, res) => {
             const query = 'INSERT INTO users SET ?';
             db.query(query, user, function (err, rows, fields) {
                 if (err) throw err;
-                res.send('User created');
+                res.json({ message: 'Usuario creado correctamente!' });
             })
         })
         .catch(function(error){
            console.log('Error saving user');
            next();
         });
+}
+
+userController.getUser = (req, res) => {
+    const username = req.params.username;
+    db.query('SELECT * FROM users WHERE username = ?', [username], function (err, row, fields) {
+        if (err) throw err;
+        res.json(row);
+    })
 }
 
 module.exports = userController;
