@@ -14,8 +14,8 @@ export class AppComponent{
 
   openSingUpDialog() {
     this.dialog.open(SingUpDialogComponent, {
-      height: '600px',
-      width: '800px',
+      height: '500px',
+      width: '600px',
     });
   }
 

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {User} from "./user";
 import {UserService} from "./user.service";
 import {MatDialogRef} from "@angular/material/dialog";
+import {MatSnackBar} from "@angular/material/snack-bar";
 
 @Component({
   selector: 'app-sing-up-dialog',
@@ -10,61 +11,66 @@ import {MatDialogRef} from "@angular/material/dialog";
 })
 export class SingUpDialogComponent{
 
+  title: string;
   newUser = new User();
   repeatPassword = '';
-  errorMessage = false;
   message = '';
-  registerSuccess = false;
-  successMessage = '';
 
-  constructor(public dialogRef: MatDialogRef<SingUpDialogComponent>, private userService: UserService) {}
+  constructor(public dialogRef: MatDialogRef<SingUpDialogComponent>, private userService: UserService
+              , private snackBar: MatSnackBar) {
+    this.title = 'Registro';
+  }
 
   verifyUserName() {
     this.userService.findUser(this.newUser.username).subscribe(
       response => {
         if(response[0]){
-          this.errorMessage = true;
           this.message = 'Ese usuario ya existe';
-        }else{
-          this.errorMessage = false;
+          this.openSnackBar(this.message);
         }
       }
     );
   }
 
-  checkFields() {
-    this.errorMessage = false;
+  fieldsAreCorrect(): boolean {
     if (this.newUser.password !== this.repeatPassword){
-      this.errorMessage = true;
-      this.message = 'Passwords do not match';
-    }else if (this.newUser.username === '' || this.newUser.password === '' || this.repeatPassword === '' || this.newUser.description === ''){
-      this.errorMessage = true;
-      this.message = 'Empty fields';
+      this.message = 'Las contraseñas no coinciden';
+      this.openSnackBar(this.message);
+      return false;
     }else if (this.newUser.username.length > 8 ){
-      this.errorMessage = true;
-      this.message = 'The username must be no longer than 8 characters';
+      this.message = 'El nombre de usuario debe tener una longitud no superior a 8 caracteres';
+      this.openSnackBar(this.message);
+      return false;
     }
+    return true;
   }
 
   saveUser(){
-    this.checkFields();
-    if (!this.errorMessage){
+    if (this.fieldsAreCorrect()){
       this.userService.save(this.newUser).subscribe(
         response => {
-          this.registerSuccess = true;
-          this.successMessage = response['message'];
+          this.message = response['message'];
+          this.openSnackBar(this.message);
           setTimeout(() => {
             this.dialogRef.close();
           }, 2000);
         }
       );
     }
-    this.emptyForm();
   }
 
-  emptyForm() {
-    this.newUser = new User();
-    this.repeatPassword = '';
+  invalid(): boolean {
+    return this.check(this.newUser.username) || this.check(this.newUser.password)
+      || this.check(this.repeatPassword) || this.check(this.newUser.description);
   }
 
+  check(attr: string): boolean {
+    return attr === undefined || null || attr === '';
+  }
+
+  private openSnackBar(message: string) {
+    this.snackBar.open(message, 'Cerrar', {
+      duration: 2000,
+    });
+  }
 }
