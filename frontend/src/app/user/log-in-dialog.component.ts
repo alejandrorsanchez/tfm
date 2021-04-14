@@ -24,7 +24,7 @@ export class LogInDialogComponent implements OnInit{
   }
 
   logIn(): void {
-    //TODO
+
   }
 
   invalid(): boolean {
