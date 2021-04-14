@@ -1,8 +1,8 @@
 import {Component, OnInit} from '@angular/core';
-import {User} from "./user";
 import {MatDialogRef} from "@angular/material/dialog";
 import {UserService} from "./user.service";
 import {MatSnackBar} from "@angular/material/snack-bar";
+import {User} from "./user";
 
 @Component({
   selector: 'app-log-in-dialog',
@@ -24,7 +24,11 @@ export class LogInDialogComponent implements OnInit{
   }
 
   logIn(): void {
-
+    this.userService.getUser(this.user).subscribe(
+      response => {
+          console.log(response);
+      }
+    );
   }
 
   invalid(): boolean {

@@ -27,7 +27,7 @@ export class SingUpDialogComponent implements OnInit{
 
   verifyUserName() {
     if(this.newUser.username != ''){
-      this.userService.findUser(this.newUser.username).subscribe(
+      this.userService.findByUsername(this.newUser.username).subscribe(
         response => {
           if(response[0]){
             this.message = 'Ese usuario ya existe';
@@ -59,7 +59,7 @@ export class SingUpDialogComponent implements OnInit{
           this.openSnackBar(this.message);
           setTimeout(() => {
             this.dialogRef.close();
-          }, 2000);
+          }, 1000);
         }
       );
     }

@@ -15,7 +15,11 @@ export class UserService {
     return this.http.post(this.url, user);
   }
 
-  findUser(username: string) {
+  findByUsername(username: string) {
     return this.http.get(this.url + '/' + username);
+  }
+
+  getUser(user: User) {
+    return this.http.post(this.url + '/login', user, {observe: 'response'});
   }
 }
