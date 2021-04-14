@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {User} from "./user";
 import {UserService} from "./user.service";
 import {MatDialogRef} from "@angular/material/dialog";
@@ -9,10 +9,10 @@ import {MatSnackBar} from "@angular/material/snack-bar";
   templateUrl: './sing-up-dialog.component.html',
   styleUrls: ['./sing-up-dialog.component.css']
 })
-export class SingUpDialogComponent{
+export class SingUpDialogComponent implements OnInit{
 
   title: string;
-  newUser = new User();
+  newUser: User;
   repeatPassword = '';
   message = '';
 
@@ -21,15 +21,21 @@ export class SingUpDialogComponent{
     this.title = 'Registro';
   }
 
+  ngOnInit(): void {
+    this.newUser = new User();
+  }
+
   verifyUserName() {
-    this.userService.findUser(this.newUser.username).subscribe(
-      response => {
-        if(response[0]){
-          this.message = 'Ese usuario ya existe';
-          this.openSnackBar(this.message);
+    if(this.newUser.username != ''){
+      this.userService.findUser(this.newUser.username).subscribe(
+        response => {
+          if(response[0]){
+            this.message = 'Ese usuario ya existe';
+            this.openSnackBar(this.message);
+          }
         }
-      }
-    );
+      );
+    }
   }
 
   fieldsAreCorrect(): boolean {
@@ -73,4 +79,5 @@ export class SingUpDialogComponent{
       duration: 2000,
     });
   }
+
 }

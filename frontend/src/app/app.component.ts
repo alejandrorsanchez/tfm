@@ -21,8 +21,8 @@ export class AppComponent{
 
   openLogInDialog() {
     this.dialog.open(LogInDialogComponent, {
-      height: '400px',
-      width: '600px',
+      height: '300px',
+      width: '400px',
     });
   }
 }
