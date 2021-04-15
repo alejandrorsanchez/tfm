@@ -19,12 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/user/sing-up-dialog.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/user/sing-up-dialog.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/user/sing-up-dialog.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/user/sing-up-dialog.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -99,7 +94,7 @@
       <workItem from="1618313090008" duration="19000" />
       <workItem from="1618385748596" duration="9145000" />
       <workItem from="1618395829530" duration="6442000" />
-      <workItem from="1618472222606" duration="4979000" />
+      <workItem from="1618472222606" duration="5763000" />
     </task>
     <task id="LOCAL-00001" summary=".travis.yml">
       <created>1612200288919</created>
@@ -423,7 +418,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618474238682</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="Autocomplete function">
+      <created>1618477395376</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1618477395376</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -446,7 +448,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value=".travis.yml" />
     <MESSAGE value="refactoring package.json" />
     <MESSAGE value="Bettercodehub" />
     <MESSAGE value="bettercodehub" />
@@ -471,7 +472,8 @@
     <MESSAGE value="initial commit for GET User" />
     <MESSAGE value="endpoint implemented without token returned" />
     <MESSAGE value="login implemented with token storing" />
-    <option name="LAST_COMMIT_MESSAGE" value="login implemented with token storing" />
+    <MESSAGE value="Autocomplete function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Autocomplete function" />
   </component>
   <component name="WindowStateProjectService">
     <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1618386549019">
@@ -506,10 +508,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1515" height="157" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1618304444407" />
-    <state x="632" y="298" width="348" height="298" key="org.angular.cli.generate" timestamp="1618473386852">
+    <state x="632" y="298" width="348" height="298" key="org.angular.cli.generate" timestamp="1618478695535">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="632" y="298" width="348" height="298" key="org.angular.cli.generate/0.0.1536.824@0.0.1536.824" timestamp="1618473386852" />
+    <state x="632" y="298" width="348" height="298" key="org.angular.cli.generate/0.0.1536.824@0.0.1536.824" timestamp="1618478695535" />
     <state x="48" y="189" key="run.anything.popup" timestamp="1611684064675">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
