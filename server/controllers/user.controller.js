@@ -2,7 +2,7 @@ const userController = {};
 const db = require('../database');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
-const SECRET_KEY = 'secretkey';
+const config = require('../shared/config');
 
 userController.getUsers = (req, res) => {
     db.query('SELECT * FROM users', function (err, rows, fields) {
@@ -49,7 +49,7 @@ userController.getUser = (req, res) => {
                 if(err) throw err;
                 if(result) {
                     let validTime = 60 * 15;
-                    let myToken = jwt.sign({"username":username, "password":password}, SECRET_KEY, {expiresIn: validTime});
+                    let myToken = jwt.sign({"username":username, "password":password}, config.SECRET_KEY, {expiresIn: validTime});
                     res.json({token: myToken});
                 }
             });

@@ -1,8 +1,9 @@
 const express = require('express');
 const router = express.Router();
 const userController = require('../controllers/user.controller');
+const {ensureAuthenticated} = require("../shared/authMiddelware");
 
-router.get('/', userController.getUsers);
+router.get('/', ensureAuthenticated, userController.getUsers);
 router.get('/:username', userController.findByUsername);
 router.post('/', userController.save);
 router.post('/login', userController.getUser);
