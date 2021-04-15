@@ -66,8 +66,8 @@ export class SingUpDialogComponent implements OnInit{
   }
 
   invalid(): boolean {
-    return this.check(this.newUser.username) || this.check(this.newUser.password)
-      || this.check(this.repeatPassword) || this.check(this.newUser.description);
+    return this.check(this.newUser.username) || this.check(this.newUser.password) || this.check(this.repeatPassword)
+          || this.check(this.newUser.address) || this.check(this.newUser.description);
   }
 
   check(attr: string): boolean {
@@ -80,4 +80,9 @@ export class SingUpDialogComponent implements OnInit{
     });
   }
 
+  autocompleteFocus() {
+    const addressInput = document.getElementById("address") as HTMLInputElement;
+    const addressAutocomplete = new google.maps.places.Autocomplete(addressInput);
+    addressAutocomplete.setFields(["place_id"]);
+  }
 }
