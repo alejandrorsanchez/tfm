@@ -45,15 +45,16 @@ userController.getUser = (req, res) => {
         if (err) throw err;
         if(row[0]){
             const user = row[0];
-            bcrypt.compare(password, user.password, function(err, res){
+            bcrypt.compare(password, user.password, function(err, result){
                 if(err) throw err;
-                console.log(res);
-                if(res) {
+                if(result) {
                     let validTime = 60 * 15;
                     let myToken = jwt.sign({"username":username, "password":password}, SECRET_KEY, {expiresIn: validTime});
-                    res.json(myToken);
+                    res.json({token: myToken});
                 }
             });
+        }else{
+            res.status(404).send();
         }
     })
 }
