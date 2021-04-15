@@ -19,7 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="" />
+    <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/shared/interceptor.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/shared/interceptor.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/user/log-in-dialog.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/user/log-in-dialog.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/user/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/user/user.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/user.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/user.controller.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -94,7 +101,7 @@
       <workItem from="1618313090008" duration="19000" />
       <workItem from="1618385748596" duration="9145000" />
       <workItem from="1618395829530" duration="6442000" />
-      <workItem from="1618472222606" duration="5763000" />
+      <workItem from="1618472222606" duration="7880000" />
     </task>
     <task id="LOCAL-00001" summary=".travis.yml">
       <created>1612200288919</created>
@@ -425,7 +432,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618477395376</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="initial commit Interceptor">
+      <created>1618478914323</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1618478914323</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -448,7 +462,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="refactoring package.json" />
     <MESSAGE value="Bettercodehub" />
     <MESSAGE value="bettercodehub" />
     <MESSAGE value="sonarcloud" />
@@ -473,13 +486,14 @@
     <MESSAGE value="endpoint implemented without token returned" />
     <MESSAGE value="login implemented with token storing" />
     <MESSAGE value="Autocomplete function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Autocomplete function" />
+    <MESSAGE value="initial commit Interceptor" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit Interceptor" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1618386549019">
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1618478768820">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1618386549019" />
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1618478768820" />
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1613157885334">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

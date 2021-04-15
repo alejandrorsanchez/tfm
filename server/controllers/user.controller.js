@@ -5,7 +5,7 @@ const jwt = require('jsonwebtoken');
 const SECRET_KEY = 'secretkey';
 
 userController.getUsers = (req, res) => {
-    db.query('SELECT * FROM test', function (err, rows, fields) {
+    db.query('SELECT * FROM users', function (err, rows, fields) {
         if (err) throw err;
         res.json(rows);
     })
