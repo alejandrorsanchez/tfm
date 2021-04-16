@@ -1,1 +1,16 @@
-<p>home works!</p>
+<mat-toolbar>
+  <mat-toolbar-row>
+    <a mat-button [routerLink]="'/home'"><img src="./assets/logo.png" width="50" height="50" alt="logo-icon"></a>
+    <span class="spacer"></span>
+    <a mat-button [routerLink]="'/create-contact'"> Mis Anuncios </a>
+    <a mat-button [routerLink]="'/activities'"> Mi Perfil </a>
+    <span class="spacer"></span>
+    <button (click)="logout()" mat-button>
+      <span>{{username}}</span>
+      <mat-icon>person</mat-icon>
+      <span>Logout</span>
+    </button>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<router-outlet></router-outlet>

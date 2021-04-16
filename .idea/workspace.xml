@@ -20,13 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/cover/cover.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/cover/cover.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/cover/cover.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/cover/cover.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/cover/cover.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/cover/cover.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/home/home.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/home/home.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/home/home.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/home/home.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/logoweb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,16 +57,16 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\user" />
+      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\server\shared" />
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\user" />
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\assets" />
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm" />
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\server" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\user" />
-      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -104,14 +106,8 @@
       <workItem from="1618385748596" duration="9145000" />
       <workItem from="1618395829530" duration="6442000" />
       <workItem from="1618472222606" duration="11339000" />
-      <workItem from="1618558451998" duration="2740000" />
-    </task>
-    <task id="LOCAL-00004" summary=".travis.yml">
-      <created>1612203516831</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1612203516831</updated>
+      <workItem from="1618558451998" duration="4511000" />
+      <workItem from="1618564023823" duration="4662000" />
     </task>
     <task id="LOCAL-00005" summary=".travis.yml">
       <created>1612203666027</created>
@@ -449,7 +445,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618560885134</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="new CoverComponent and HomeComponent linked">
+      <created>1618561479782</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1618561479782</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -472,7 +475,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="sonar badge" />
     <MESSAGE value="Primer commit" />
     <MESSAGE value="Inicio Portada Web" />
     <MESSAGE value="NavBar de portada" />
@@ -497,7 +499,8 @@
     <MESSAGE value="ensuredAuth for private operations" />
     <MESSAGE value="initial commit home page" />
     <MESSAGE value="AuthGuard for routes and new HomeComponent" />
-    <option name="LAST_COMMIT_MESSAGE" value="AuthGuard for routes and new HomeComponent" />
+    <MESSAGE value="new CoverComponent and HomeComponent linked" />
+    <option name="LAST_COMMIT_MESSAGE" value="new CoverComponent and HomeComponent linked" />
   </component>
   <component name="WindowStateProjectService">
     <state x="509" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1618482014966">

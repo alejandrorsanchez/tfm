@@ -19,6 +19,7 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {InterceptorService} from "./shared/interceptor.service";
 import { HomeComponent } from './home/home.component';
 import { CoverComponent } from './cover/cover.component';
+import {MatToolbarModule} from "@angular/material/toolbar";
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { CoverComponent } from './cover/cover.component';
     MatIconModule,
     MatButtonModule,
     MatDividerModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatToolbarModule
   ],
   exports: [ MatFormFieldModule, MatInputModule ],
   providers: [
