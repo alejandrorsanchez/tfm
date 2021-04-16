@@ -20,6 +20,8 @@ import {InterceptorService} from "./shared/interceptor.service";
 import { HomeComponent } from './home/home.component';
 import { CoverComponent } from './cover/cover.component';
 import {MatToolbarModule} from "@angular/material/toolbar";
+import { OperationsComponent } from './operations/operations.component';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,8 @@ import {MatToolbarModule} from "@angular/material/toolbar";
     SingUpDialogComponent,
     LogInDialogComponent,
     HomeComponent,
-    CoverComponent
+    CoverComponent,
+    OperationsComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +45,8 @@ import {MatToolbarModule} from "@angular/material/toolbar";
     MatButtonModule,
     MatDividerModule,
     MatSnackBarModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatGridListModule
   ],
   exports: [ MatFormFieldModule, MatInputModule ],
   providers: [

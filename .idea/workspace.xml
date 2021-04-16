@@ -20,14 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/operations/operations.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/operations/operations.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/operations/operations.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/operations/operations.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app-routing.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/cover/cover.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/cover/cover.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/home/home.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/home/home.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/home/home.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/home/home.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/assets/logoweb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/cover/cover.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/cover/cover.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -107,14 +108,7 @@
       <workItem from="1618395829530" duration="6442000" />
       <workItem from="1618472222606" duration="11339000" />
       <workItem from="1618558451998" duration="4511000" />
-      <workItem from="1618564023823" duration="4662000" />
-    </task>
-    <task id="LOCAL-00005" summary=".travis.yml">
-      <created>1612203666027</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1612203666027</updated>
+      <workItem from="1618564023823" duration="11520000" />
     </task>
     <task id="LOCAL-00006" summary=".travis.yml">
       <created>1612204548220</created>
@@ -452,7 +446,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618561479782</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="toolbar with options">
+      <created>1618568953726</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1618568953726</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -475,7 +476,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Primer commit" />
     <MESSAGE value="Inicio Portada Web" />
     <MESSAGE value="NavBar de portada" />
     <MESSAGE value="Ventana modal de login" />
@@ -500,7 +500,8 @@
     <MESSAGE value="initial commit home page" />
     <MESSAGE value="AuthGuard for routes and new HomeComponent" />
     <MESSAGE value="new CoverComponent and HomeComponent linked" />
-    <option name="LAST_COMMIT_MESSAGE" value="new CoverComponent and HomeComponent linked" />
+    <MESSAGE value="toolbar with options" />
+    <option name="LAST_COMMIT_MESSAGE" value="toolbar with options" />
   </component>
   <component name="WindowStateProjectService">
     <state x="509" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1618482014966">
@@ -539,10 +540,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1515" height="157" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1618304444407" />
-    <state x="632" y="298" width="348" height="298" key="org.angular.cli.generate" timestamp="1618560927172">
+    <state x="632" y="298" width="348" height="298" key="org.angular.cli.generate" timestamp="1618569370962">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="632" y="298" width="348" height="298" key="org.angular.cli.generate/0.0.1536.824@0.0.1536.824" timestamp="1618560927172" />
+    <state x="632" y="298" width="348" height="298" key="org.angular.cli.generate/0.0.1536.824@0.0.1536.824" timestamp="1618569370962" />
     <state x="48" y="189" key="run.anything.popup" timestamp="1611684064675">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

@@ -1,0 +1,10 @@
+.uk-navbar-nav>li>a{
+  font-size: 20px;
+  -webkit-transition: font-size .5s ease;
+  -moz-transition: font-size .5s ease;
+  -o-transition: font-size .5s ease;
+  transition: font-size .5s ease;
+}
+.uk-navbar-nav>li>a:hover {
+  font-size: 1.6em;
+}
