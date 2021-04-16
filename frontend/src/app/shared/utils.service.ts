@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
+import {MatSnackBar} from "@angular/material/snack-bar";
 
 @Injectable({
   providedIn: 'root'
 })
 export class UtilsService {
 
-  constructor() { }
+  constructor(private snackBar: MatSnackBar) { }
 
   saveToken(token: string): void {
     localStorage.setItem('token', token);
@@ -23,4 +24,9 @@ export class UtilsService {
     localStorage.removeItem('token');
   }
 
+  showNotification(message: string) {
+    this.snackBar.open(message, 'Cerrar', {
+      duration: 2000,
+    });
+  }
 }

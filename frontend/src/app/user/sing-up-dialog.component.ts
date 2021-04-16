@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {User} from "./user";
 import {UserService} from "./user.service";
 import {MatDialogRef} from "@angular/material/dialog";
-import {MatSnackBar} from "@angular/material/snack-bar";
+import {UtilsService} from "../shared/utils.service";
 
 @Component({
   selector: 'app-sing-up-dialog',
@@ -17,7 +17,7 @@ export class SingUpDialogComponent implements OnInit{
   message = '';
 
   constructor(public dialogRef: MatDialogRef<SingUpDialogComponent>, private userService: UserService
-              , private snackBar: MatSnackBar) {
+              , private utilsService: UtilsService) {
     this.title = 'Registro';
   }
 
@@ -30,8 +30,7 @@ export class SingUpDialogComponent implements OnInit{
       this.userService.findByUsername(this.newUser.username).subscribe(
         response => {
           if(response[0]){
-            this.message = 'Ese usuario ya existe';
-            this.openSnackBar(this.message);
+            this.utilsService.showNotification('Ese usuario ya existe');
           }
         }
       );
@@ -40,12 +39,10 @@ export class SingUpDialogComponent implements OnInit{
 
   fieldsAreCorrect(): boolean {
     if (this.newUser.password !== this.repeatPassword){
-      this.message = 'Las contraseñas no coinciden';
-      this.openSnackBar(this.message);
+      this.utilsService.showNotification('Las contraseñas no coinciden');
       return false;
     }else if (this.newUser.username.length > 8 ){
-      this.message = 'El nombre de usuario debe tener una longitud no superior a 8 caracteres';
-      this.openSnackBar(this.message);
+      this.utilsService.showNotification('El nombre de usuario debe tener una longitud no superior a 8 caracteres');
       return false;
     }
     return true;
@@ -55,8 +52,7 @@ export class SingUpDialogComponent implements OnInit{
     if (this.fieldsAreCorrect()){
       this.userService.save(this.newUser).subscribe(
         response => {
-          this.message = response['message'];
-          this.openSnackBar(this.message);
+          this.utilsService.showNotification(response['message']);
           setTimeout(() => {
             this.dialogRef.close();
           }, 1000);
@@ -72,12 +68,6 @@ export class SingUpDialogComponent implements OnInit{
 
   check(attr: string): boolean {
     return attr === undefined || null || attr === '';
-  }
-
-  private openSnackBar(message: string) {
-    this.snackBar.open(message, 'Cerrar', {
-      duration: 2000,
-    });
   }
 
   autocompleteFocus() {

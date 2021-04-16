@@ -1,9 +1,9 @@
 import {Component, OnInit} from '@angular/core';
 import {MatDialogRef} from "@angular/material/dialog";
 import {UserService} from "./user.service";
-import {MatSnackBar} from "@angular/material/snack-bar";
 import {User} from "./user";
 import {UtilsService} from "../shared/utils.service";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-log-in-dialog',
@@ -17,7 +17,7 @@ export class LogInDialogComponent implements OnInit{
   message = '';
 
   constructor(public dialogRef: MatDialogRef<LogInDialogComponent>, private userService: UserService
-              , private snackBar: MatSnackBar, private utilsService: UtilsService) {
+             , private utilsService: UtilsService, public router: Router) {
     this.title = 'Inicio de Sesión';
   }
 
@@ -30,10 +30,10 @@ export class LogInDialogComponent implements OnInit{
       response => {
           this.utilsService.saveToken(response.body['token']);
           this.dialogRef.close();
+          this.router.navigateByUrl('/home');
       },
       error => {
-        this.message = 'Ese usuario no existe';
-        this.openSnackBar(this.message);
+        this.utilsService.showNotification('Ese usuario no exixte');
       }
     );
   }
@@ -46,9 +46,4 @@ export class LogInDialogComponent implements OnInit{
     return attr === undefined || null || attr === '';
   }
 
-  private openSnackBar(message: string) {
-    this.snackBar.open(message, 'Cerrar', {
-      duration: 2000,
-    });
-  }
 }
