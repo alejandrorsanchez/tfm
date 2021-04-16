@@ -18,13 +18,15 @@ import {MatDividerModule} from '@angular/material/divider';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {InterceptorService} from "./shared/interceptor.service";
 import { HomeComponent } from './home/home.component';
+import { CoverComponent } from './cover/cover.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SingUpDialogComponent,
     LogInDialogComponent,
-    HomeComponent
+    HomeComponent,
+    CoverComponent
   ],
   imports: [
     BrowserModule,

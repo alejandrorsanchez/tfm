@@ -20,13 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/shared/auth-guard.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/home/home.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/shared/utils.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/shared/utils.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/user/log-in-dialog.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/user/log-in-dialog.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/user/sing-up-dialog.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/user/sing-up-dialog.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/cover/cover.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/cover/cover.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/cover/cover.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/cover/cover.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.module.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,14 +104,7 @@
       <workItem from="1618385748596" duration="9145000" />
       <workItem from="1618395829530" duration="6442000" />
       <workItem from="1618472222606" duration="11339000" />
-      <workItem from="1618558451998" duration="2161000" />
-    </task>
-    <task id="LOCAL-00003" summary=".travis.yml">
-      <created>1612203334744</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1612203334744</updated>
+      <workItem from="1618558451998" duration="2740000" />
     </task>
     <task id="LOCAL-00004" summary=".travis.yml">
       <created>1612203516831</created>
@@ -449,7 +442,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618558668797</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="AuthGuard for routes and new HomeComponent">
+      <created>1618560885134</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1618560885134</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -472,7 +472,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="sonar-project.properties" />
     <MESSAGE value="sonar badge" />
     <MESSAGE value="Primer commit" />
     <MESSAGE value="Inicio Portada Web" />
@@ -497,7 +496,8 @@
     <MESSAGE value="Interceptor included in all request" />
     <MESSAGE value="ensuredAuth for private operations" />
     <MESSAGE value="initial commit home page" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit home page" />
+    <MESSAGE value="AuthGuard for routes and new HomeComponent" />
+    <option name="LAST_COMMIT_MESSAGE" value="AuthGuard for routes and new HomeComponent" />
   </component>
   <component name="WindowStateProjectService">
     <state x="509" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1618482014966">
@@ -536,10 +536,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1515" height="157" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1618304444407" />
-    <state x="632" y="298" width="348" height="298" key="org.angular.cli.generate" timestamp="1618558896577">
+    <state x="632" y="298" width="348" height="298" key="org.angular.cli.generate" timestamp="1618560927172">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="632" y="298" width="348" height="298" key="org.angular.cli.generate/0.0.1536.824@0.0.1536.824" timestamp="1618558896577" />
+    <state x="632" y="298" width="348" height="298" key="org.angular.cli.generate/0.0.1536.824@0.0.1536.824" timestamp="1618560927172" />
     <state x="48" y="189" key="run.anything.popup" timestamp="1611684064675">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
