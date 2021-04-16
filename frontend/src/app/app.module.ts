@@ -17,12 +17,14 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {InterceptorService} from "./shared/interceptor.service";
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SingUpDialogComponent,
-    LogInDialogComponent
+    LogInDialogComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
