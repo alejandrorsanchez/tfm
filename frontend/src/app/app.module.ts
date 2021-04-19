@@ -22,6 +22,7 @@ import { CoverComponent } from './cover/cover.component';
 import {MatToolbarModule} from "@angular/material/toolbar";
 import { OperationsComponent } from './operations/operations.component';
 import {MatGridListModule} from '@angular/material/grid-list';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
     LogInDialogComponent,
     HomeComponent,
     CoverComponent,
-    OperationsComponent
+    OperationsComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
