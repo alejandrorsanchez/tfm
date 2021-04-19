@@ -15,8 +15,7 @@ export class ProfileComponent implements OnInit {
 
   id: string;
   user: User;
-  hasPets = true;
-  myPets: string[] = ['Boots', 'Clogs', 'Loafers', 'Moccasins', 'Sneakers'];
+  myPets: string[] = ['Simba', 'Chloe'];
 
   constructor(public dialog: MatDialog, private activatedRoute: ActivatedRoute, private userService: UserService
             , private utilsService: UtilsService) {
@@ -56,6 +55,14 @@ export class ProfileComponent implements OnInit {
   }
 
   updatePet(pet: string) {
-    console.log(pet);
+
+  }
+
+  deletePet(pet: string) {
+
+  }
+
+  hasNoPets() {
+    return this.myPets.length == 0;
   }
 }
