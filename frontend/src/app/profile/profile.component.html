@@ -1,6 +1,9 @@
+<button class="uk-align-right" (click)="deleteUser()" color="warn" mat-raised-button>Borrar Cuenta</button>
 <div id="profileContainer">
   <div class="uk-child-width-expand@s uk-text-center" uk-grid>
     <div>
+      <h1>Datos personales</h1>
+      <mat-divider></mat-divider>
       <mat-form-field class="full-width">
         <mat-label>Usuario</mat-label>
         <mat-icon matSuffix>perm_identity</mat-icon>
@@ -24,10 +27,19 @@
       <button (click)="updateUser()" [disabled]=invalid() color="primary" mat-raised-button>Guardar</button>
     </div>
     <div>
-      <p>hola</p>
+      <h1>Mis mascotas</h1>
+      <mat-divider></mat-divider>
+      <div class="NoPetsInfo" *ngIf="!this.hasPets">
+        <h1>Parece que aún no has añadido mascotas a tu perfil!</h1>
+      </div>
+      <div *ngIf="this.hasPets">
+        <mat-selection-list #pets [multiple]="false">
+          <mat-list-option *ngFor="let pet of myPets" [value]="pet" (click)="updatePet(pet)">
+            {{pet}}
+          </mat-list-option>
+        </mat-selection-list>
+      </div>
     </div>
   </div>
 </div>
-
-
 

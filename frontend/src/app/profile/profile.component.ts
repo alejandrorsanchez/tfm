@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileComponent implements OnInit {
 
+  hasPets = true;
+  myPets: string[] = ['Boots', 'Clogs', 'Loafers', 'Moccasins', 'Sneakers'];
+
   constructor() { }
 
   ngOnInit(): void {
@@ -20,11 +23,19 @@ export class ProfileComponent implements OnInit {
 
   }
 
-  invalid() {
-
+  invalid(): boolean {
+    return false;
   }
 
   cancelUpdate() {
 
+  }
+
+  deleteUser() {
+
+  }
+
+  updatePet(pet: string) {
+    console.log(pet);
   }
 }

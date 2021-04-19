@@ -23,6 +23,7 @@ import {MatToolbarModule} from "@angular/material/toolbar";
 import { OperationsComponent } from './operations/operations.component';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { ProfileComponent } from './profile/profile.component';
+import {MatListModule} from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { ProfileComponent } from './profile/profile.component';
     MatDividerModule,
     MatSnackBarModule,
     MatToolbarModule,
-    MatGridListModule
+    MatGridListModule,
+    MatListModule
   ],
   exports: [ MatFormFieldModule, MatInputModule ],
   providers: [
