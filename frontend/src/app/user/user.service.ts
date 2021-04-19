@@ -15,11 +15,19 @@ export class UserService {
     return this.http.post(this.url, user);
   }
 
+  findById(id: number) {
+    return this.http.get(this.url + '/' + id);
+  }
+
   findByUsername(username: string) {
     return this.http.get(this.url + '/' + username);
   }
 
   getUser(user: User) {
     return this.http.post(this.url + '/login', user, {observe: 'response'});
+  }
+
+  delete(id: string) {
+    return this.http.delete(this.url + '/' + id);
   }
 }

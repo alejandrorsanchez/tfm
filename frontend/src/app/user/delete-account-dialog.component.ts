@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import {MatDialogRef} from "@angular/material/dialog";
+import {UserService} from "./user.service";
+import {UtilsService} from "../shared/utils.service";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-delete-account-dialog',
@@ -8,13 +11,20 @@ import {MatDialogRef} from "@angular/material/dialog";
 })
 export class DeleteAccountDialogComponent{
 
-  constructor(public dialogRef: MatDialogRef<DeleteAccountDialogComponent>) { }
+  constructor(public dialogRef: MatDialogRef<DeleteAccountDialogComponent>, private userService: UserService,
+              private utilsService: UtilsService, public router: Router) { }
 
   onNoClick() {
     this.dialogRef.close();
   }
 
-  deleteUser() {
-    //TODO
+  deleteUser() {/*
+    this.userService.delete().subscribe(
+      response => {
+        this.utilsService.destroySession();
+        this.dialogRef.close();
+        this.router.navigateByUrl('/');
+      }
+    );*/
   }
 }

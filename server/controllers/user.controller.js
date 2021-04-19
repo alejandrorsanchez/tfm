@@ -29,6 +29,13 @@ userController.save = (req, res) => {
            next();
         });
 }
+userController.findById = (req, res) => {
+    const id = req.params.id;
+    db.query('SELECT * FROM users WHERE id = ?', [id], function (err, row, fields) {
+        if (err) throw err;
+        res.json(row);
+    })
+}
 
 userController.findByUsername = (req, res) => {
     const username = req.params.username;
@@ -50,7 +57,7 @@ userController.getUser = (req, res) => {
                 if(result) {
                     let validTime = 60 * 15;
                     let myToken = jwt.sign({"username":username, "password":password}, config.SECRET_KEY, {expiresIn: validTime});
-                    res.json({token: myToken});
+                    res.json({token: myToken, id: user.id});
                 }
             });
         }else{

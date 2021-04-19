@@ -30,10 +30,10 @@ export class LogInDialogComponent implements OnInit{
       response => {
           this.utilsService.saveToken(response.body['token']);
           this.dialogRef.close();
-          this.router.navigateByUrl('/home');
+          this.router.navigateByUrl('/home/' + response.body['id']);
       },
       error => {
-        this.utilsService.showNotification('Ese usuario no exixte');
+        this.utilsService.showNotification('Ese usuario no existe');
       }
     );
   }
