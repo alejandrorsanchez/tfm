@@ -1,0 +1,14 @@
+#profileContainer{
+  width: 80%;
+  height: 500px;
+  margin: 60px auto;
+  padding-top: 50px;
+  border: 1px solid black;
+}
+.full-width {
+  width: 70%;
+}
+button{
+  width: 30%;
+  margin-right: 20px;
+}

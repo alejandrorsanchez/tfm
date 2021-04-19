@@ -12,4 +12,19 @@ export class ProfileComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  autocompleteFocus() {
+
+  }
+
+  updateUser() {
+
+  }
+
+  invalid() {
+
+  }
+
+  cancelUpdate() {
+
+  }
 }
