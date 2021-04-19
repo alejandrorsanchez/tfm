@@ -15,7 +15,7 @@ export class UserService {
     return this.http.post(this.url, user);
   }
 
-  findById(id: number) {
+  findById(id: string) {
     return this.http.get(this.url + '/' + id);
   }
 
@@ -27,7 +27,7 @@ export class UserService {
     return this.http.post(this.url + '/login', user, {observe: 'response'});
   }
 
-  delete(id: string) {
+  delete(id: number) {
     return this.http.delete(this.url + '/' + id);
   }
 }

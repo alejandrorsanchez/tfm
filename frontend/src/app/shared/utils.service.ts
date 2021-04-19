@@ -8,6 +8,11 @@ export class UtilsService {
 
   constructor(private snackBar: MatSnackBar) { }
 
+  saveCredentials(body: Object): void{
+    this.saveToken(body['token']);
+    this.saveId(body['id']);
+  }
+
   saveToken(token: string): void {
     localStorage.setItem('token', token);
   }
@@ -16,12 +21,21 @@ export class UtilsService {
     return localStorage.getItem('token');
   }
 
+  saveId(id: string) {
+    localStorage.setItem('id', id);
+  }
+
+  getId(): string {
+    return localStorage.getItem('id');
+  }
+
   isUserLogged(): boolean {
     return this.getToken() != null;
   }
 
   destroySession(): void{
     localStorage.removeItem('token');
+    localStorage.removeItem('id');
   }
 
   showNotification(message: string) {
@@ -29,4 +43,5 @@ export class UtilsService {
       duration: 2000,
     });
   }
+
 }

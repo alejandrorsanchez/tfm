@@ -28,9 +28,9 @@ export class LogInDialogComponent implements OnInit{
   logIn(): void {
     this.userService.getUser(this.user).subscribe(
       response => {
-          this.utilsService.saveToken(response.body['token']);
+          this.utilsService.saveCredentials(response.body);
           this.dialogRef.close();
-          this.router.navigateByUrl('/home/' + response.body['id']);
+          this.router.navigateByUrl('/home');
       },
       error => {
         this.utilsService.showNotification('Ese usuario no existe');

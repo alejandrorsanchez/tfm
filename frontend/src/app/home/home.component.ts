@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import {UtilsService} from "../shared/utils.service";
 import {ActivatedRoute, Router} from "@angular/router";
 import {UserService} from "../user/user.service";
-import {User} from "../user/user";
 
 @Component({
   selector: 'app-home',
@@ -11,19 +10,18 @@ import {User} from "../user/user";
 })
 export class HomeComponent implements OnInit {
 
-  user: User;
-  id: number;
+  id: string;
   username: string;
 
-  constructor(private utilService: UtilsService, public router: Router, private activatedRoute: ActivatedRoute, private userService: UserService) {
-    this.id = activatedRoute.snapshot.params['id'];
+  constructor(private utilService: UtilsService, public router: Router, private activatedRoute: ActivatedRoute, private userService: UserService
+              , private utilsService: UtilsService) {
+    this.id = this.utilsService.getId();
   }
 
   ngOnInit(): void {
     this.userService.findById(this.id).subscribe(
       response => {
-        this.user = response[0];
-        this.username = this.user.username;
+        this.username = response[0].username;
       }
     );
   }

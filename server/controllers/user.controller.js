@@ -66,4 +66,12 @@ userController.getUser = (req, res) => {
     })
 }
 
+userController.delete = (req, res) => {
+    const id = req.params.id;
+    db.query('DELETE FROM users WHERE id = ?', [id], function (err, row, fields) {
+        if (err) throw err;
+        res.status(200).send();
+    })
+}
+
 module.exports = userController;
