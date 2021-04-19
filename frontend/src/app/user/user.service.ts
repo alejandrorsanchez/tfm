@@ -20,7 +20,7 @@ export class UserService {
   }
 
   findByUsername(username: string) {
-    return this.http.get(this.url + '/' + username);
+    return this.http.get(this.url + '/search/' + username);
   }
 
   getUser(user: User) {
