@@ -24,6 +24,7 @@ import { OperationsComponent } from './operations/operations.component';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { ProfileComponent } from './profile/profile.component';
 import {MatListModule} from '@angular/material/list';
+import { DeleteAccountDialogComponent } from './user/delete-account-dialog.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import {MatListModule} from '@angular/material/list';
     HomeComponent,
     CoverComponent,
     OperationsComponent,
-    ProfileComponent
+    ProfileComponent,
+    DeleteAccountDialogComponent
   ],
   imports: [
     BrowserModule,
