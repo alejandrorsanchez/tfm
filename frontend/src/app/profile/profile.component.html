@@ -7,21 +7,21 @@
       <mat-form-field class="full-width">
         <mat-label>Usuario</mat-label>
         <mat-icon matSuffix>perm_identity</mat-icon>
-        <input name="username" matInput type="text" disabled/>
+        <input [(ngModel)]="this.user.username" name="username" matInput type="text" disabled/>
       </mat-form-field><br>
       <mat-form-field class="full-width">
         <mat-label>Contraseña</mat-label>
         <mat-icon matSuffix>enhanced_encryption</mat-icon>
-        <input name="password" matInput type="password" disabled/>
+        <input [(ngModel)]="this.user.password" name="password" matInput type="password" disabled/>
       </mat-form-field><br>
       <mat-form-field class="full-width">
         <mat-label>Dirección</mat-label>
         <mat-icon matSuffix>add_location</mat-icon>
-        <input id="address" matInput type="text" (focus)="autocompleteFocus()"/>
+        <input [(ngModel)]="this.user.address" id="address" matInput type="text" (focus)="autocompleteFocus()"/>
       </mat-form-field><br>
       <mat-form-field class="full-width">
         <mat-label>Descripción</mat-label>
-        <textarea id="description" matInput type="text"></textarea>
+        <textarea [(ngModel)]="this.user.description" id="description" matInput type="text"></textarea>
       </mat-form-field><br><br><br>
       <button (click)="cancelUpdate()" mat-dialog-close mat-raised-button>Cancelar</button>
       <button (click)="updateUser()" [disabled]=invalid() color="primary" mat-raised-button>Guardar</button>

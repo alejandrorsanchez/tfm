@@ -14,15 +14,15 @@ import {UtilsService} from "../shared/utils.service";
 export class ProfileComponent implements OnInit {
 
   id: string;
-  user: User;
+  user = new User();
   myPets: string[] = ['Simba', 'Chloe'];
 
   constructor(public dialog: MatDialog, private activatedRoute: ActivatedRoute, private userService: UserService
             , private utilsService: UtilsService) {
-    this.id = this.utilsService.getId();
   }
 
   ngOnInit(): void {
+    this.id = this.utilsService.getId();
     this.userService.findById(this.id).subscribe(
       response => {
         this.user = response[0];
