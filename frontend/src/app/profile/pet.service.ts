@@ -13,4 +13,8 @@ export class PetService {
   findByUserId(userId: string) {
     return this.http.get(this.url + '/search/' + userId);
   }
+
+  delete(id: number) {
+    return this.http.delete(this.url + '/' + id);
+  }
 }

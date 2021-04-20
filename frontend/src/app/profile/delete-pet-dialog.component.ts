@@ -1,10 +1,7 @@
 import {Component, Inject} from '@angular/core';
 import {MAT_DIALOG_DATA, MatDialogRef} from "@angular/material/dialog";
-import {User} from "../shared/user";
-import {UserService} from "../user/user.service";
-import {UtilsService} from "../shared/utils.service";
-import {Router} from "@angular/router";
 import {Pet} from "../shared/pet";
+import {PetService} from "./pet.service";
 
 @Component({
   selector: 'app-delete-pet-dialog',
@@ -15,7 +12,7 @@ export class DeletePetDialogComponent{
 
   pet: Pet;
 
-  constructor(@Inject(MAT_DIALOG_DATA) data: Pet, public dialogRef: MatDialogRef<DeletePetDialogComponent>, private userService: UserService) {
+  constructor(@Inject(MAT_DIALOG_DATA) data: Pet, public dialogRef: MatDialogRef<DeletePetDialogComponent>, private petService: PetService) {
     this.pet = data ? data : undefined;
   }
 
@@ -23,7 +20,9 @@ export class DeletePetDialogComponent{
     this.dialogRef.close();
   }
 
-  deletePet() {
-
+  delete() {
+    this.petService.delete(this.pet.id).subscribe(
+      response => this.dialogRef.close()
+    );
   }
 }

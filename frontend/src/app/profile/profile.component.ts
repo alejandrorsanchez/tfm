@@ -41,6 +41,7 @@ export class ProfileComponent implements OnInit {
   getUserPets(id: string) {
     this.petService.findByUserId(id).subscribe(
       response => {
+        this.myPets = [];
         for (const key in response) {
           let pet = new Pet();
           pet.copyProperties(response[key]);
@@ -50,10 +51,22 @@ export class ProfileComponent implements OnInit {
     );
   }
 
+  openDeleteUserDialog() {
+    this.dialog.open(DeleteAccountDialogComponent, {
+      data: this.user,
+      height: '220px',
+      width: '400px',
+    });
+  }
+
   autocompleteFocus() {
     const addressInput = document.getElementById("address") as HTMLInputElement;
     const addressAutocomplete = new google.maps.places.Autocomplete(addressInput);
     addressAutocomplete.setFields(["place_id"]);
+  }
+
+  cancelUpdate() {
+    location.reload();
   }
 
   updateUser() {
@@ -66,31 +79,27 @@ export class ProfileComponent implements OnInit {
   }
 
   invalid(): boolean {
-    return false;
+    return this.check(this.user.address) || this.check(this.user.description);
   }
 
-  cancelUpdate() {
-    location.reload();
+  check(attr: string): boolean {
+    return attr === undefined || null || attr === '';
   }
 
-  openDeleteUserDialog() {
-    this.dialog.open(DeleteAccountDialogComponent, {
-      data: this.user,
-      height: '220px',
-      width: '400px',
-    });
-  }
-
-  updatePet(pet: Pet) {
+  openUpdatePetDialog(pet: Pet) {
 
   }
 
-  deletePet(pet: Pet) {
+  openDeletePetDialog(pet: Pet) {
     this.dialog.open(DeletePetDialogComponent, {
       data: pet,
       height: '250px',
       width: '400px',
-    });
+    }).afterClosed().subscribe(
+      response => {
+        this.getUserPets(this.id);
+      }
+    );
   }
 
   hasNoPets() {

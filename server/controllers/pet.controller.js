@@ -9,4 +9,12 @@ petController.findByUserId = (req, res) => {
     })
 }
 
+petController.delete = (req, res) => {
+    const id = req.params.id;
+    db.query('DELETE FROM pets WHERE id = ?', [id], function (err, row, fields) {
+        if (err) throw err;
+        res.status(200).send();
+    })
+}
+
 module.exports = petController;
