@@ -8,6 +8,8 @@ import {FormsModule} from "@angular/forms";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SingUpDialogComponent } from './user/sing-up-dialog.component';
 import { LogInDialogComponent } from './user/log-in-dialog.component';
+import { DeleteAccountDialogComponent } from './user/delete-account-dialog.component';
+import { DeletePetDialogComponent } from './profile/delete-pet-dialog.component';
 import {MatDialogModule} from "@angular/material/dialog";
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import {MatFormFieldModule} from "@angular/material/form-field";
@@ -24,7 +26,6 @@ import { OperationsComponent } from './operations/operations.component';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { ProfileComponent } from './profile/profile.component';
 import {MatListModule} from '@angular/material/list';
-import { DeleteAccountDialogComponent } from './user/delete-account-dialog.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { DeleteAccountDialogComponent } from './user/delete-account-dialog.compo
     CoverComponent,
     OperationsComponent,
     ProfileComponent,
-    DeleteAccountDialogComponent
+    DeleteAccountDialogComponent,
+    DeletePetDialogComponent
   ],
   imports: [
     BrowserModule,

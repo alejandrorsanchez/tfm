@@ -3,7 +3,7 @@ import {MAT_DIALOG_DATA, MatDialogRef} from "@angular/material/dialog";
 import {UserService} from "./user.service";
 import {UtilsService} from "../shared/utils.service";
 import {Router} from "@angular/router";
-import {User} from "./user";
+import {User} from "../shared/user";
 
 @Component({
   selector: 'app-delete-account-dialog',

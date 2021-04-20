@@ -9,6 +9,6 @@ router.get('/:id', ensureAuthenticated,  userController.findById);
 router.post('/', userController.save);
 router.post('/login', userController.getUser);
 router.put('/:id', ensureAuthenticated,  userController.update);
-router.delete('/:id', ensureAuthenticated, userController.delete)
+router.delete('/:id', ensureAuthenticated, userController.delete);
 
 module.exports = router;

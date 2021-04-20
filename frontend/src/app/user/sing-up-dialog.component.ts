@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {User} from "./user";
+import {User} from "../shared/user";
 import {UserService} from "./user.service";
 import {MatDialogRef} from "@angular/material/dialog";
 import {UtilsService} from "../shared/utils.service";
@@ -71,8 +71,10 @@ export class SingUpDialogComponent implements OnInit{
   }
 
   autocompleteFocus() {
-    const addressInput = document.getElementById("address") as HTMLInputElement;
-    const addressAutocomplete = new google.maps.places.Autocomplete(addressInput);
-    addressAutocomplete.setFields(["place_id"]);
+    const addressField = document.getElementById("address") as HTMLInputElement;
+    const autocomplete = new google.maps.places.Autocomplete(addressField, {
+      fields: ["address_components", "geometry"],
+      types: ["address"]
+    });
   }
 }

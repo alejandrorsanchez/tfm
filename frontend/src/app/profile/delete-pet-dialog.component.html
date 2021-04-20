@@ -1,0 +1,11 @@
+<h1 mat-dialog-title>Advertencia</h1>
+<mat-divider></mat-divider>
+<br>
+<mat-dialog-content>
+  <span class="full-width">Se eliminará toda la información asociada a esta mascota</span>
+</mat-dialog-content>
+<br>
+<mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancelar</button>
+  <button mat-button (click)="deletePet()" cdkFocusInitial>Ok</button>
+</mat-dialog-actions>
