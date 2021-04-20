@@ -22,6 +22,10 @@ export class ProfileComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.getUser();
+  }
+
+  getUser(){
     this.id = this.utilsService.getId();
     this.userService.findById(this.id).subscribe(
       response => {
@@ -31,11 +35,18 @@ export class ProfileComponent implements OnInit {
   }
 
   autocompleteFocus() {
-
+    const addressInput = document.getElementById("address") as HTMLInputElement;
+    const addressAutocomplete = new google.maps.places.Autocomplete(addressInput);
+    addressAutocomplete.setFields(["place_id"]);
   }
 
   updateUser() {
-
+    this.userService.update(this.user).subscribe(
+      response => {
+        this.getUser();
+        this.utilsService.showNotification('Usuario actualizado');
+      }
+    );
   }
 
   invalid(): boolean {
@@ -43,7 +54,7 @@ export class ProfileComponent implements OnInit {
   }
 
   cancelUpdate() {
-
+    location.reload();
   }
 
   openDeleteUserDialog() {

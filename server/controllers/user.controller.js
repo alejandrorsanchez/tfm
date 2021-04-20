@@ -66,6 +66,15 @@ userController.getUser = (req, res) => {
     })
 }
 
+userController.update = (req, res) => {
+    const id = req.params.id;
+    let data = [req.body.address, req.body.description, id];
+    db.query('UPDATE users SET address = ?, description = ? WHERE id = ?', data, function (err, row, fields) {
+        if (err) throw err;
+        res.status(200).send();
+    })
+}
+
 userController.delete = (req, res) => {
     const id = req.params.id;
     db.query('DELETE FROM users WHERE id = ?', [id], function (err, row, fields) {

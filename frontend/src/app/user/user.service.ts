@@ -27,6 +27,10 @@ export class UserService {
     return this.http.post(this.url + '/login', user, {observe: 'response'});
   }
 
+  update(user: User) {
+    return this.http.put(this.url + '/' + user.id, user);
+  }
+
   delete(id: number) {
     return this.http.delete(this.url + '/' + id);
   }
