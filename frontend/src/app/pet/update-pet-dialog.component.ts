@@ -2,6 +2,7 @@ import {Component, Inject, OnInit} from '@angular/core';
 import {MAT_DIALOG_DATA, MatDialogRef} from "@angular/material/dialog";
 import {Pet} from "../shared/pet";
 import {PetService} from "./pet.service";
+import {UtilsService} from "../shared/utils.service";
 
 @Component({
   selector: 'app-update-pet-dialog',
@@ -20,11 +21,25 @@ export class UpdatePetDialogComponent implements OnInit{
   }
 
   ngOnInit(): void {
-        this.imageSelected = this.pet.picture != null;
-    }
+    this.imageSelected = this.pet.picture != null;
+  }
+
+  onFileChanged(event) {
+    this.image = event.target.files[0];
+    this.pet.picture = this.image.name;
+    this.imageSelected = true;
+  }
 
   update() {
-    //TODO
+    const formData = new FormData();
+    formData.append('image', this.image);
+    this.petService.update(this.pet).subscribe(
+      response => {
+        this.petService.uploadPhoto(formData).subscribe(
+          res => this.dialogRef.close()
+        );
+      }
+    );
   }
 
   invalid(): boolean {
@@ -34,10 +49,5 @@ export class UpdatePetDialogComponent implements OnInit{
 
   check(attr: any): boolean {
     return attr === undefined || null || attr === '';
-  }
-
-  onFileChanged(event) {
-    this.image = event.target.files[0];
-    this.imageSelected = true;
   }
 }

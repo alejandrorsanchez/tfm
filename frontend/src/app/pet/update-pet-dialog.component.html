@@ -26,8 +26,10 @@
   <br><br>
   <div class="uk-text-center" uk-grid>
     <div class="uk-width-1-2">
-      <input #fileInput style="display: none" type="file" accept="image" (change)="onFileChanged($event)">
-      <button (click)="fileInput.click()">Selecciona una foto</button>
+      <form>
+        <input #fileInput style="display: none" type="file" name="image" (change)="onFileChanged($event)">
+        <button (click)="fileInput.click()">Selecciona una foto</button><br><br>
+      </form>
     </div>
     <div *ngIf="imageSelected" class="uk-width-1-2">
       <img src="favicon.ico" alt="" width="40" height="40">

@@ -43,5 +43,4 @@ export class UtilsService {
       duration: 2000,
     });
   }
-
 }
