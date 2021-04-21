@@ -31,15 +31,13 @@ export class UpdatePetDialogComponent implements OnInit{
   }
 
   update() {
-    const formData = new FormData();
-    formData.append('image', this.image);
-    this.petService.update(this.pet).subscribe(
+    /*this.petService.update(this.pet).subscribe(
       response => {
         this.petService.uploadPhoto(formData).subscribe(
           res => this.dialogRef.close()
         );
       }
-    );
+    );*/
   }
 
   invalid(): boolean {
@@ -49,5 +47,13 @@ export class UpdatePetDialogComponent implements OnInit{
 
   check(attr: any): boolean {
     return attr === undefined || null || attr === '';
+  }
+
+  uploadPhoto() {
+    const formData = new FormData();
+    formData.append('image', this.image);
+    this.petService.uploadPhoto(formData).subscribe(
+
+    );
   }
 }

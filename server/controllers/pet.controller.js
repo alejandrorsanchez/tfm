@@ -17,4 +17,9 @@ petController.delete = (req, res) => {
     })
 }
 
+petController.uploadPhoto = (req, res) => {
+    console.log(req.file);
+    res.send('Archivo subido');
+}
+
 module.exports = petController;

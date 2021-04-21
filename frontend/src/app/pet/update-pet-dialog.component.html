@@ -26,7 +26,7 @@
   <br><br>
   <div class="uk-text-center" uk-grid>
     <div class="uk-width-1-2">
-      <form>
+      <form method="post" enctype="multipart/form-data" (ngSubmit)="uploadPhoto()">
         <input #fileInput style="display: none" type="file" name="image" (change)="onFileChanged($event)">
         <button (click)="fileInput.click()">Selecciona una foto</button><br><br>
       </form>
@@ -35,7 +35,6 @@
       <img src="favicon.ico" alt="" width="40" height="40">
     </div>
   </div>
-  <br>
 </mat-dialog-content>
 <mat-dialog-actions>
   <button mat-dialog-close mat-raised-button>Close</button>
