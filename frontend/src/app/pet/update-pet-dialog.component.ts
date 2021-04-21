@@ -1,4 +1,4 @@
-import {Component, Inject} from '@angular/core';
+import {Component, Inject, OnInit} from '@angular/core';
 import {MAT_DIALOG_DATA, MatDialogRef} from "@angular/material/dialog";
 import {Pet} from "../shared/pet";
 import {PetService} from "./pet.service";
@@ -8,13 +8,20 @@ import {PetService} from "./pet.service";
   templateUrl: './update-pet-dialog.component.html',
   styleUrls: ['./update-pet-dialog.component.css']
 })
-export class UpdatePetDialogComponent{
+export class UpdatePetDialogComponent implements OnInit{
 
   pet: Pet;
+  image: File;
+  imageSelected: boolean;
 
   constructor(@Inject(MAT_DIALOG_DATA) data: Pet, public dialogRef: MatDialogRef<UpdatePetDialogComponent>, private petService: PetService) {
     this.pet = data ? data : undefined;
+
   }
+
+  ngOnInit(): void {
+        this.imageSelected = this.pet.picture != null;
+    }
 
   update() {
     //TODO
@@ -29,4 +36,8 @@ export class UpdatePetDialogComponent{
     return attr === undefined || null || attr === '';
   }
 
+  onFileChanged(event) {
+    this.image = event.target.files[0];
+    this.imageSelected = true;
+  }
 }

@@ -1,6 +1,6 @@
 .full-width {
   width: 100%;
 }
-button{
+mat-dialog-actions button{
   width: 45%;
 }

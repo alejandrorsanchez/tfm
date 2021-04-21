@@ -20,17 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/pet/update-pet-dialog.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/pet/update-pet-dialog.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/pet/update-pet-dialog.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/profile/delete-pet-dialog.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pet/delete-pet-dialog.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/profile/delete-pet-dialog.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pet/delete-pet-dialog.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/profile/delete-pet-dialog.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pet/delete-pet-dialog.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/profile/pet.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pet/pet.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/pet/update-pet-dialog.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pet/update-pet-dialog.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/pet/update-pet-dialog.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pet/update-pet-dialog.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/pet/update-pet-dialog.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pet/update-pet-dialog.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/profile/profile.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/profile/profile.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/shared/pet.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/shared/pet.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,21 +116,7 @@
       <workItem from="1618992073222" duration="11000" />
       <workItem from="1618992087198" duration="276000" />
       <workItem from="1618992756331" duration="339000" />
-      <workItem from="1618993111360" duration="3028000" />
-    </task>
-    <task id="LOCAL-00019" summary="Bettercodehub">
-      <created>1612286813072</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1612286813072</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Bettercodehub">
-      <created>1612287482837</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1612287482837</updated>
+      <workItem from="1618993111360" duration="8151000" />
     </task>
     <task id="LOCAL-00021" summary="Bettercodehub">
       <created>1612288473789</created>
@@ -467,7 +447,21 @@
       <option name="project" value="LOCAL" />
       <updated>1618920548578</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="Update pet dialog without photo field">
+      <created>1618996389478</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1618996389478</updated>
+    </task>
+    <task id="LOCAL-00069" summary="Update pet dialog without photo field">
+      <created>1618996417925</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1618996417925</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -490,7 +484,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Dialog for GET User implemented" />
     <MESSAGE value="initial commit for GET User" />
     <MESSAGE value="endpoint implemented without token returned" />
     <MESSAGE value="login implemented with token storing" />
@@ -515,7 +508,8 @@
     <MESSAGE value="PUT User for address and description" />
     <MESSAGE value="GET Pets" />
     <MESSAGE value="DELETE Pet" />
-    <option name="LAST_COMMIT_MESSAGE" value="DELETE Pet" />
+    <MESSAGE value="Update pet dialog without photo field" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update pet dialog without photo field" />
   </component>
   <component name="WindowStateProjectService">
     <state x="509" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1618917260867">

@@ -90,7 +90,7 @@ export class ProfileComponent implements OnInit {
   openUpdatePetDialog(pet: Pet) {
     this.dialog.open(UpdatePetDialogComponent, {
       data: pet,
-      height: '500px',
+      height: '550px',
       width: '400px',
     });
   }
