@@ -3,7 +3,7 @@ export class Pet {
   name: string;
   breed: string;
   weight?: number;
-  age?: number;
+  age: number;
   description: string;
   user_id: number;
   picture?: string;

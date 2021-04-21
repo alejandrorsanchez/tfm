@@ -1,0 +1,31 @@
+<h1 mat-dialog-title>{{pet.name}}</h1>
+<mat-divider></mat-divider>
+<br>
+<mat-dialog-content>
+  <mat-form-field class="full-width">
+    <mat-label>Nombre</mat-label>
+    <mat-icon matSuffix>pets</mat-icon>
+    <input [(ngModel)]="pet.name" name="name" matInput required type="text"/>
+  </mat-form-field>
+  <mat-form-field class="full-width">
+    <mat-label>Raza</mat-label>
+    <input [(ngModel)]="pet.breed" name="breed" matInput required type="text"/>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Peso</mat-label>
+    <input [(ngModel)]="pet.weight" name="weight" matInput type="number"/>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Edad</mat-label>
+    <input [(ngModel)]="pet.age" name="age" matInput required type="number"/>
+  </mat-form-field>
+  <mat-form-field class="full-width">
+    <mat-label>Descripción</mat-label>
+    <textarea [(ngModel)]="pet.description" id="description" matInput required type="text"></textarea>
+  </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-dialog-close mat-raised-button>Close</button>
+  <button (click)="update()" [disabled]=invalid() color="primary" mat-raised-button>OK
+  </button>
+</mat-dialog-actions>

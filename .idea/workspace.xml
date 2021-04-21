@@ -20,15 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/pet/update-pet-dialog.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/pet/update-pet-dialog.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/pet/update-pet-dialog.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/home/home.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/profile/delete-pet-dialog.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/profile/delete-pet-dialog.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/profile/delete-pet-dialog.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/profile/delete-pet-dialog.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/profile/pet.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/profile/pet.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/profile/profile.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/profile/profile.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/profile/delete-pet-dialog.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pet/delete-pet-dialog.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/profile/delete-pet-dialog.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pet/delete-pet-dialog.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/profile/delete-pet-dialog.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pet/delete-pet-dialog.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/profile/pet.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pet/pet.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/profile/profile.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/profile/profile.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/pet.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/pet.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/pet.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/pet.routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/shared/pet.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/shared/pet.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,19 +59,19 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\pet" />
+      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\shared" />
+      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\profile" />
+      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\user" />
+      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\server\shared" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\server\controllers" />
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\server\routes" />
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\shared" />
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\user" />
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\shared" />
-      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\profile" />
-      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\user" />
-      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\server\shared" />
-      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\assets" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -113,14 +115,14 @@
       <workItem from="1618564023823" duration="11827000" />
       <workItem from="1618815853599" duration="17427000" />
       <workItem from="1618851942875" duration="4263000" />
-      <workItem from="1618903359636" duration="16830000" />
-    </task>
-    <task id="LOCAL-00018" summary="Bettercodehub">
-      <created>1612286097340</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1612286097340</updated>
+      <workItem from="1618903359636" duration="16902000" />
+      <workItem from="1618991127168" duration="464000" />
+      <workItem from="1618991609866" duration="82000" />
+      <workItem from="1618991766292" duration="288000" />
+      <workItem from="1618992073222" duration="11000" />
+      <workItem from="1618992087198" duration="276000" />
+      <workItem from="1618992756331" duration="339000" />
+      <workItem from="1618993111360" duration="3028000" />
     </task>
     <task id="LOCAL-00019" summary="Bettercodehub">
       <created>1612286813072</created>
@@ -458,7 +460,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618918874986</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="DELETE Pet">
+      <created>1618920548578</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1618920548578</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -481,7 +490,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="initial commit" />
     <MESSAGE value="Dialog for GET User implemented" />
     <MESSAGE value="initial commit for GET User" />
     <MESSAGE value="endpoint implemented without token returned" />
@@ -506,7 +514,8 @@
     <MESSAGE value="User data binded in profile form" />
     <MESSAGE value="PUT User for address and description" />
     <MESSAGE value="GET Pets" />
-    <option name="LAST_COMMIT_MESSAGE" value="GET Pets" />
+    <MESSAGE value="DELETE Pet" />
+    <option name="LAST_COMMIT_MESSAGE" value="DELETE Pet" />
   </component>
   <component name="WindowStateProjectService">
     <state x="509" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1618917260867">
@@ -545,10 +554,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1515" height="157" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1618304444407" />
-    <state x="632" y="298" width="348" height="298" key="org.angular.cli.generate" timestamp="1618915344924">
+    <state x="632" y="298" width="348" height="298" key="org.angular.cli.generate" timestamp="1618994492982">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="632" y="298" width="348" height="298" key="org.angular.cli.generate/0.0.1536.824@0.0.1536.824" timestamp="1618915344924" />
+    <state x="632" y="298" width="348" height="298" key="org.angular.cli.generate/0.0.1536.824@0.0.1536.824" timestamp="1618994492982" />
     <state x="48" y="189" key="run.anything.popup" timestamp="1618912277747">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

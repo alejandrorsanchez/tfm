@@ -5,9 +5,10 @@ import {User} from "../shared/user";
 import {ActivatedRoute} from "@angular/router";
 import {UserService} from "../user/user.service";
 import {UtilsService} from "../shared/utils.service";
-import {DeletePetDialogComponent} from "./delete-pet-dialog.component";
+import {DeletePetDialogComponent} from "../pet/delete-pet-dialog.component";
 import {Pet} from "../shared/pet";
-import {PetService} from "./pet.service";
+import {PetService} from "../pet/pet.service";
+import {UpdatePetDialogComponent} from "../pet/update-pet-dialog.component";
 
 @Component({
   selector: 'app-profile',
@@ -87,7 +88,11 @@ export class ProfileComponent implements OnInit {
   }
 
   openUpdatePetDialog(pet: Pet) {
-
+    this.dialog.open(UpdatePetDialogComponent, {
+      data: pet,
+      height: '500px',
+      width: '400px',
+    });
   }
 
   openDeletePetDialog(pet: Pet) {
