@@ -10,6 +10,7 @@ import { SingUpDialogComponent } from './user/sing-up-dialog.component';
 import { LogInDialogComponent } from './user/log-in-dialog.component';
 import { DeleteAccountDialogComponent } from './user/delete-account-dialog.component';
 import { DeletePetDialogComponent } from './pet/delete-pet-dialog.component';
+import { AddUpdatePetDialogComponent } from './pet/add-update-pet-dialog.component';
 import {MatDialogModule} from "@angular/material/dialog";
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import {MatFormFieldModule} from "@angular/material/form-field";
@@ -26,7 +27,6 @@ import { OperationsComponent } from './operations/operations.component';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { ProfileComponent } from './profile/profile.component';
 import {MatListModule} from '@angular/material/list';
-import { UpdatePetDialogComponent } from './pet/update-pet-dialog.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +39,7 @@ import { UpdatePetDialogComponent } from './pet/update-pet-dialog.component';
     ProfileComponent,
     DeleteAccountDialogComponent,
     DeletePetDialogComponent,
-    UpdatePetDialogComponent
+    AddUpdatePetDialogComponent
   ],
   imports: [
     BrowserModule,

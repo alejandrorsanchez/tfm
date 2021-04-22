@@ -31,8 +31,6 @@
 </mat-dialog-content>
 <mat-dialog-actions>
   <button mat-dialog-close mat-raised-button>Close</button>
-  <button (click)="save()" *ngIf="isCreate()" [disabled]=invalid() color="primary" mat-raised-button>Create
-  </button>
-  <button (click)="update()" *ngIf="!isCreate()" [disabled]=invalid() color="primary" mat-raised-button>OK
-  </button>
+  <button (click)="save()" *ngIf="isCreate()" [disabled]=invalid() color="primary" mat-raised-button>Guardar</button>
+  <button (click)="update()" *ngIf="!isCreate()" [disabled]=invalid() color="primary" mat-raised-button>OK</button>
 </mat-dialog-actions>

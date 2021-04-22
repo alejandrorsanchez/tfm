@@ -8,7 +8,7 @@ import {UtilsService} from "../shared/utils.service";
 import {DeletePetDialogComponent} from "../pet/delete-pet-dialog.component";
 import {Pet} from "../shared/pet";
 import {PetService} from "../pet/pet.service";
-import {UpdatePetDialogComponent} from "../pet/update-pet-dialog.component";
+import {AddUpdatePetDialogComponent} from "../pet/add-update-pet-dialog.component";
 
 @Component({
   selector: 'app-profile',
@@ -88,7 +88,7 @@ export class ProfileComponent implements OnInit {
   }
 
   openAddPetDialog() {
-    this.dialog.open(UpdatePetDialogComponent, {
+    this.dialog.open(AddUpdatePetDialogComponent, {
       height: '550px',
       width: '400px',
     }).afterClosed().subscribe(
@@ -99,7 +99,7 @@ export class ProfileComponent implements OnInit {
   }
 
   openUpdatePetDialog(pet: Pet) {
-    this.dialog.open(UpdatePetDialogComponent, {
+    this.dialog.open(AddUpdatePetDialogComponent, {
       data: pet,
       height: '550px',
       width: '400px',

@@ -6,16 +6,16 @@ import {UtilsService} from "../shared/utils.service";
 
 @Component({
   selector: 'app-update-pet-dialog',
-  templateUrl: './update-pet-dialog.component.html',
-  styleUrls: ['./update-pet-dialog.component.css']
+  templateUrl: './add-update-pet-dialog.component.html',
+  styleUrls: ['./add-update-pet-dialog.component.css']
 })
-export class UpdatePetDialogComponent{
+export class AddUpdatePetDialogComponent{
 
   pet: Pet;
   image: File;
   title: string;
 
-  constructor(@Inject(MAT_DIALOG_DATA) data: Pet, public dialogRef: MatDialogRef<UpdatePetDialogComponent>
+  constructor(@Inject(MAT_DIALOG_DATA) data: Pet, public dialogRef: MatDialogRef<AddUpdatePetDialogComponent>
               , private petService: PetService, private utilsService: UtilsService) {
     this.pet = data ? data : new Pet();
     this.title = data ? this.pet.name : 'Nueva mascota';
@@ -30,25 +30,23 @@ export class UpdatePetDialogComponent{
     const formData = new FormData();
     formData.append('image', this.image);
     this.petService.uploadPhoto(formData).subscribe(
-      response => this.utilsService.showNotification('Imagen actualizada')
+      response => this.utilsService.showNotification(response['message'])
     );
   }
 
   update() {
-    console.log('update');
     this.petService.update(this.pet).subscribe(
       response => {
-        this.utilsService.showNotification('Mascota actualizada');
+        this.utilsService.showNotification(response['message']);
         this.dialogRef.close();
       }
     );
   }
 
   save() {
-    console.log('save');
     this.petService.save(this.pet).subscribe(
       response => {
-        this.utilsService.showNotification('Nueva mascota creada');
+        this.utilsService.showNotification(response['message']);
         this.dialogRef.close();
       }
     );
@@ -64,6 +62,6 @@ export class UpdatePetDialogComponent{
   }
 
   isCreate(): boolean {
-    return this.pet.name === '';
+    return this.title !== this.pet.name;
   }
 }
