@@ -36,7 +36,7 @@
         <div *ngFor="let pet of this.myPets">
           <div class="uk-child-width-expand@s uk-text-center listItem" uk-grid>
             <div class="itemName">
-              <img src="assets/favicon.ico" height="60" width="60">
+              <img *ngIf="pet.picture" src="http://localhost:3000/{{pet.picture}}" height="60" width="60">
               {{pet.name}}
             </div>
             <div>
@@ -46,6 +46,7 @@
           </div>
           <mat-divider></mat-divider>
       </div>
+      <br><a (click)="openAddPetDialog()" uk-icon="icon: plus; ratio: 3.5"></a>
+    </div>
   </div>
 </div>
-

@@ -62,6 +62,6 @@ export class AddUpdatePetDialogComponent{
   }
 
   isCreate(): boolean {
-    return this.title !== this.pet.name;
+    return this.pet.id === undefined;
   }
 }

@@ -7,6 +7,7 @@ const port = 3000
 app.use(morgan('dev'));
 app.use(express.json());
 app.use(cors({origin:'http://localhost:4200'}));
+app.use(express.static('server/uploads'))
 
 app.use('/users', require('./routes/user.routes'));
 app.use('/pets', require('./routes/pet.routes'));
