@@ -23,18 +23,11 @@
     <mat-label>Descripción</mat-label>
     <textarea [(ngModel)]="pet.description" id="description" matInput required type="text"></textarea>
   </mat-form-field>
-  <br><br>
-  <div class="uk-text-center" uk-grid>
-    <div class="uk-width-1-2">
-      <form method="post" enctype="multipart/form-data" (ngSubmit)="uploadPhoto()">
-        <input #fileInput style="display: none" type="file" name="image" (change)="onFileChanged($event)">
-        <button (click)="fileInput.click()">Selecciona una foto</button><br><br>
-      </form>
-    </div>
-    <div *ngIf="imageSelected" class="uk-width-1-2">
-      <img src="favicon.ico" alt="" width="40" height="40">
-    </div>
-  </div>
+  <br>
+    <form>
+      <input type="file" name="image" (change)="onFileChanged($event)"><br><br>
+      <button type="submit" (click)="uploadPhoto()" [disabled]="!this.image" color="primary" mat-raised-button>Guardar Foto</button><br>
+    </form>
 </mat-dialog-content>
 <mat-dialog-actions>
   <button mat-dialog-close mat-raised-button>Close</button>

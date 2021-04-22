@@ -102,7 +102,7 @@ export class ProfileComponent implements OnInit {
       width: '400px',
     }).afterClosed().subscribe(
       response => {
-        this.getUserPets(this.id);
+        this.ngOnInit();
       }
     );
   }

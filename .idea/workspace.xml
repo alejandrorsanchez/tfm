@@ -21,14 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/pet/update-pet-dialog.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pet/update-pet-dialog.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/pet/update-pet-dialog.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pet/update-pet-dialog.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/60376227dcec37ba62c138f74a962aac" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/8040c7d0977ff46fbf95fc10500be233" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/d88d4197d8bc0d1aa73b97baacee12f3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/image" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/profile/profile.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/profile/profile.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/profile/profile.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/profile/profile.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/profile/profile.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/profile/profile.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,21 +117,8 @@
       <workItem from="1618992087198" duration="276000" />
       <workItem from="1618992756331" duration="339000" />
       <workItem from="1618993111360" duration="14981000" />
-      <workItem from="1619028188209" duration="2324000" />
-    </task>
-    <task id="LOCAL-00024" summary="Bettercodehub">
-      <created>1612288986455</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1612288986455</updated>
-    </task>
-    <task id="LOCAL-00025" summary="bettercodehub">
-      <created>1612290967004</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1612290967004</updated>
+      <workItem from="1619028188209" duration="2466000" />
+      <workItem from="1619075903710" duration="3164000" />
     </task>
     <task id="LOCAL-00026" summary="sonarcloud">
       <created>1612380177950</created>
@@ -466,7 +449,21 @@
       <option name="project" value="LOCAL" />
       <updated>1619009068269</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="...">
+      <created>1619030665493</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1619030665493</updated>
+    </task>
+    <task id="LOCAL-00074" summary="New form for uploading images working">
+      <created>1619078210769</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1619078210769</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -489,7 +486,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Autocomplete function" />
     <MESSAGE value="initial commit Interceptor" />
     <MESSAGE value="Interceptor included in all request" />
     <MESSAGE value="ensuredAuth for private operations" />
@@ -514,7 +510,8 @@
     <MESSAGE value="Update pet dialog completed" />
     <MESSAGE value="PhotoUpload and Put User request" />
     <MESSAGE value="..." />
-    <option name="LAST_COMMIT_MESSAGE" value="..." />
+    <MESSAGE value="New form for uploading images working" />
+    <option name="LAST_COMMIT_MESSAGE" value="New form for uploading images working" />
   </component>
   <component name="WindowStateProjectService">
     <state x="509" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619029708212">

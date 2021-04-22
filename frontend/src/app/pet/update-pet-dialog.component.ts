@@ -15,9 +15,9 @@ export class UpdatePetDialogComponent implements OnInit{
   image: File;
   imageSelected: boolean;
 
-  constructor(@Inject(MAT_DIALOG_DATA) data: Pet, public dialogRef: MatDialogRef<UpdatePetDialogComponent>, private petService: PetService) {
+  constructor(@Inject(MAT_DIALOG_DATA) data: Pet, public dialogRef: MatDialogRef<UpdatePetDialogComponent>
+              , private petService: PetService, private utilsService: UtilsService) {
     this.pet = data ? data : undefined;
-
   }
 
   ngOnInit(): void {
@@ -28,6 +28,14 @@ export class UpdatePetDialogComponent implements OnInit{
     this.image = event.target.files[0];
     this.pet.picture = this.image.name;
     this.imageSelected = true;
+  }
+
+  uploadPhoto() {
+    const formData = new FormData();
+    formData.append('image', this.image);
+    this.petService.uploadPhoto(formData).subscribe(
+      response => this.utilsService.showNotification('Imagen actualizada')
+    );
   }
 
   update() {
@@ -47,13 +55,5 @@ export class UpdatePetDialogComponent implements OnInit{
 
   check(attr: any): boolean {
     return attr === undefined || null || attr === '';
-  }
-
-  uploadPhoto() {
-    const formData = new FormData();
-    formData.append('image', this.image);
-    this.petService.uploadPhoto(formData).subscribe(
-
-    );
   }
 }
