@@ -21,9 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/pet/update-pet-dialog.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pet/update-pet-dialog.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/profile/profile.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/profile/profile.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/profile/profile.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/profile/profile.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/profile/profile.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/profile/profile.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -118,14 +115,7 @@
       <workItem from="1618992756331" duration="339000" />
       <workItem from="1618993111360" duration="14981000" />
       <workItem from="1619028188209" duration="2466000" />
-      <workItem from="1619075903710" duration="3164000" />
-    </task>
-    <task id="LOCAL-00026" summary="sonarcloud">
-      <created>1612380177950</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1612380177950</updated>
+      <workItem from="1619075903710" duration="3837000" />
     </task>
     <task id="LOCAL-00027" summary="sonar-project.properties">
       <created>1612380676323</created>
@@ -463,7 +453,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619078210769</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="New form for uploading images working">
+      <created>1619079155654</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1619079155654</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

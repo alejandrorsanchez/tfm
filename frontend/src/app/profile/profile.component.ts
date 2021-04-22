@@ -92,7 +92,11 @@ export class ProfileComponent implements OnInit {
       data: pet,
       height: '550px',
       width: '400px',
-    });
+    }).afterClosed().subscribe(
+      response => {
+        this.getUserPets(this.id);
+      }
+    );
   }
 
   openDeletePetDialog(pet: Pet) {
@@ -102,7 +106,7 @@ export class ProfileComponent implements OnInit {
       width: '400px',
     }).afterClosed().subscribe(
       response => {
-        this.ngOnInit();
+        this.getUserPets(this.id);
       }
     );
   }
