@@ -53,9 +53,7 @@ export class SingUpDialogComponent implements OnInit{
       this.userService.save(this.newUser).subscribe(
         response => {
           this.utilsService.showNotification(response['message']);
-          setTimeout(() => {
-            this.dialogRef.close();
-          }, 1000);
+          this.dialogRef.close();
         }
       );
     }

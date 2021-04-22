@@ -31,6 +31,7 @@
       <mat-divider></mat-divider>
       <div *ngIf="hasNoPets()" class="NoPetsInfo">
         <h1>Parece que aún no has añadido mascotas a tu perfil!</h1>
+        <a (click)="openAddPetDialog()" uk-icon="icon: plus; ratio: 3.5"></a>
       </div>
         <div *ngFor="let pet of this.myPets">
           <div class="uk-child-width-expand@s uk-text-center listItem" uk-grid>

@@ -15,6 +15,10 @@ export class PetService {
     return this.http.get(this.url + '/search/' + userId);
   }
 
+  save(pet: Pet) {
+    return this.http.post(this.url, pet);
+  }
+
   update(pet: Pet) {
     return this.http.put(this.url + '/' + pet.id, pet);
   }

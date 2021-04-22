@@ -87,6 +87,17 @@ export class ProfileComponent implements OnInit {
     return attr === undefined || null || attr === '';
   }
 
+  openAddPetDialog() {
+    this.dialog.open(UpdatePetDialogComponent, {
+      height: '550px',
+      width: '400px',
+    }).afterClosed().subscribe(
+      response => {
+        this.getUserPets(this.id);
+      }
+    );
+  }
+
   openUpdatePetDialog(pet: Pet) {
     this.dialog.open(UpdatePetDialogComponent, {
       data: pet,
