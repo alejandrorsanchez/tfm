@@ -9,6 +9,15 @@ petController.findByUserId = (req, res) => {
     })
 }
 
+petController.update = (req, res) => {
+    const id = req.params.id;
+    let data = [req.body.name, req.body.breed, req.body.weight, req.body.age, req.body.description, req.body.picture, id];
+    db.query('UPDATE pets SET name = ?, breed = ?, weight = ?, age = ?, description = ?, picture = ? WHERE id = ?', data, function (err, row, fields) {
+        if (err) throw err;
+        res.status(200).send();
+    })
+}
+
 petController.delete = (req, res) => {
     const id = req.params.id;
     db.query('DELETE FROM pets WHERE id = ?', [id], function (err, row, fields) {

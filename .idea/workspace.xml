@@ -21,7 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/profile/profile.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/profile/profile.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/pet/update-pet-dialog.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pet/update-pet-dialog.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/pet.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/pet.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/pet.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/pet.routes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,14 +117,7 @@
       <workItem from="1618992756331" duration="339000" />
       <workItem from="1618993111360" duration="14981000" />
       <workItem from="1619028188209" duration="2466000" />
-      <workItem from="1619075903710" duration="3837000" />
-    </task>
-    <task id="LOCAL-00027" summary="sonar-project.properties">
-      <created>1612380676323</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1612380676323</updated>
+      <workItem from="1619075903710" duration="4766000" />
     </task>
     <task id="LOCAL-00028" summary="sonar badge">
       <created>1612381191489</created>
@@ -460,7 +455,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619079155654</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="initial commit for PUT Pet">
+      <created>1619079852480</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1619079852480</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -483,7 +485,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="initial commit Interceptor" />
     <MESSAGE value="Interceptor included in all request" />
     <MESSAGE value="ensuredAuth for private operations" />
     <MESSAGE value="initial commit home page" />
@@ -508,7 +509,8 @@
     <MESSAGE value="PhotoUpload and Put User request" />
     <MESSAGE value="..." />
     <MESSAGE value="New form for uploading images working" />
-    <option name="LAST_COMMIT_MESSAGE" value="New form for uploading images working" />
+    <MESSAGE value="initial commit for PUT Pet" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit for PUT Pet" />
   </component>
   <component name="WindowStateProjectService">
     <state x="509" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619029708212">

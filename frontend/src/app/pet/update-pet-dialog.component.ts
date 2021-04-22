@@ -39,18 +39,17 @@ export class UpdatePetDialogComponent implements OnInit{
   }
 
   update() {
-    /*this.petService.update(this.pet).subscribe(
+    this.petService.update(this.pet).subscribe(
       response => {
-        this.petService.uploadPhoto(formData).subscribe(
-          res => this.dialogRef.close()
-        );
+        this.utilsService.showNotification('Mascota actualizada');
+        this.dialogRef.close();
       }
-    );*/
+    );
   }
 
   invalid(): boolean {
-    return this.check(this.pet.name) || this.check(this.pet.breed) || this.check(this.pet.age)
-            || this.check(this.pet.description);
+    return this.check(this.pet.name) || this.check(this.pet.breed)
+              || this.check(this.pet.age) || this.check(this.pet.description);
   }
 
   check(attr: any): boolean {
