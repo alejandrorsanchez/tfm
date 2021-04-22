@@ -5,7 +5,7 @@ export class Pet {
   weight?: number;
   age: number;
   description: string;
-  user_id: number;
+  user_id: string;
   picture?: string;
 
   constructor() {

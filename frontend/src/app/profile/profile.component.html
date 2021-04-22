@@ -35,10 +35,7 @@
       </div>
         <div *ngFor="let pet of this.myPets">
           <div class="uk-child-width-expand@s uk-text-center listItem" uk-grid>
-            <div class="itemName">
-              <img *ngIf="pet.picture" src="http://localhost:3000/{{pet.picture}}" height="60" width="60">
-              {{pet.name}}
-            </div>
+            <div class="itemName">{{pet.name}}</div>
             <div>
               <button (click)="openUpdatePetDialog(pet)" mat-icon-button><mat-icon>edit_calendar</mat-icon></button>
               <button (click)="openDeletePetDialog(pet)" mat-icon-button><mat-icon>delete</mat-icon></button>

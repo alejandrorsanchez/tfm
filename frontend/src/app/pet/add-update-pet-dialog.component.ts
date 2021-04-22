@@ -1,4 +1,4 @@
-import {Component, Inject} from '@angular/core';
+import {Component, Inject, OnInit} from '@angular/core';
 import {MAT_DIALOG_DATA, MatDialogRef} from "@angular/material/dialog";
 import {Pet} from "../shared/pet";
 import {PetService} from "./pet.service";
@@ -9,7 +9,7 @@ import {UtilsService} from "../shared/utils.service";
   templateUrl: './add-update-pet-dialog.component.html',
   styleUrls: ['./add-update-pet-dialog.component.css']
 })
-export class AddUpdatePetDialogComponent{
+export class AddUpdatePetDialogComponent implements OnInit{
 
   pet: Pet;
   image: File;
@@ -21,6 +21,10 @@ export class AddUpdatePetDialogComponent{
     this.title = data ? this.pet.name : 'Nueva mascota';
   }
 
+  ngOnInit(): void {
+    this.pet.user_id = this.utilsService.getId();
+  }
+
   onFileChanged(event) {
     this.image = event.target.files[0];
     this.pet.picture = this.image.name;
@@ -29,6 +33,8 @@ export class AddUpdatePetDialogComponent{
   uploadPhoto() {
     const formData = new FormData();
     formData.append('image', this.image);
+    formData.append('userId', this.pet.user_id);
+    formData.append('name', this.image.name);
     this.petService.uploadPhoto(formData).subscribe(
       response => this.utilsService.showNotification(response['message'])
     );
