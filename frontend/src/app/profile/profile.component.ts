@@ -89,7 +89,7 @@ export class ProfileComponent implements OnInit {
 
   openAddPetDialog() {
     this.dialog.open(AddUpdatePetDialogComponent, {
-      height: '550px',
+      height: '500px',
       width: '400px',
     }).afterClosed().subscribe(
       response => {
@@ -101,7 +101,7 @@ export class ProfileComponent implements OnInit {
   openUpdatePetDialog(pet: Pet) {
     this.dialog.open(AddUpdatePetDialogComponent, {
       data: pet,
-      height: '550px',
+      height: '500px',
       width: '400px',
     }).afterClosed().subscribe(
       response => {

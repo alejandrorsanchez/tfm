@@ -3,6 +3,7 @@ const db = require('../database');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const config = require('../shared/config');
+const rimraf = require("rimraf");
 
 userController.getUsers = (req, res) => {
     db.query('SELECT * FROM users', function (err, rows, fields) {
@@ -79,9 +80,15 @@ userController.delete = (req, res) => {
     const id = req.params.id;
     db.query('DELETE FROM users WHERE id = ?', [id], function (err, row, fields) {
         if (err) throw err;
-        db.query('DELETE FROM pets WHERE user_id = ?', [id], function (err, row, fields) {
+        db.query('SELECT id FROM pets WHERE user_id = ?', [id], function (err, rows, fields) {
             if (err) throw err;
-            res.status(200).send();
+            for (const row of rows) {
+                rimraf.sync("./server/uploads/" + row['id']);
+            }
+            db.query('DELETE FROM pets WHERE user_id = ?', [id], function (err, rows, fields) {
+                if (err) throw err;
+                res.status(200).send();
+            })
         })
     })
 }

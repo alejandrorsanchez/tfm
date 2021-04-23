@@ -30,21 +30,11 @@ export class AddUpdatePetDialogComponent implements OnInit{
     this.pet.picture = this.image.name;
   }
 
-  uploadPhoto() {
-    const formData = new FormData();
-    formData.append('image', this.image);
-    formData.append('userId', this.pet.user_id);
-    formData.append('name', this.image.name);
-    this.petService.uploadPhoto(formData).subscribe(
-      response => this.utilsService.showNotification(response['message'])
-    );
-  }
-
   update() {
     this.petService.update(this.pet).subscribe(
       response => {
+        this.createFormDataForFile();
         this.utilsService.showNotification(response['message']);
-        this.dialogRef.close();
       }
     );
   }
@@ -52,15 +42,27 @@ export class AddUpdatePetDialogComponent implements OnInit{
   save() {
     this.petService.save(this.pet).subscribe(
       response => {
+        this.pet.id = response['id'];
+        this.createFormDataForFile();
         this.utilsService.showNotification(response['message']);
-        this.dialogRef.close();
       }
+    );
+  }
+
+  createFormDataForFile() {
+    const formData = new FormData();
+    formData.append('image', this.image);
+    formData.append('id', this.pet.id.toString());
+    formData.append('name', this.image.name);
+    this.petService.uploadPhoto(formData).subscribe(
+      response => this.dialogRef.close()
     );
   }
 
   invalid(): boolean {
     return this.check(this.pet.name) || this.check(this.pet.breed)
-              || this.check(this.pet.age) || this.check(this.pet.description);
+        || this.check(this.pet.age) || this.check(this.pet.description)
+        || this.check(this.image);
   }
 
   check(attr: any): boolean {

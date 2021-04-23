@@ -1,6 +1,8 @@
 const petController = {};
 const db = require('../database');
 const fs = require('fs');
+const path = require('path');
+const rimraf = require("rimraf");
 
 petController.findByUserId = (req, res) => {
     const userId = req.params.userId;
@@ -15,7 +17,7 @@ petController.save = (req, res) => {
     const query = 'INSERT INTO pets SET ?';
     db.query(query, pet, function (err, rows, fields) {
         if (err) throw err;
-        res.json({ message: 'Mascota creada correctamente!' });
+        res.json({ message: 'Mascota creada correctamente!', id: rows['insertId']});
     })
 }
 
@@ -33,39 +35,49 @@ petController.delete = (req, res) => {
     db.query('DELETE FROM pets WHERE id = ?', [id], function (err, row, fields) {
         if (err) throw err;
         res.status(200).send();
+        rimraf.sync("./server/uploads/" + id);
+        //eliminarDirectorio('./server/uploads/' + id);
     })
 }
 
 petController.uploadPhoto = (req, res) => {
-    const userId = req.body.userId;
+    const id = req.body.id;
     const name = req.body.name;
-    if(!fs.existsSync("./server/uploads/" + userId)){
-        fs.mkdir("./server/uploads/" + userId,function(err){
+    if(!fs.existsSync("./server/uploads/" + id)){
+        fs.mkdir("./server/uploads/" + id,function(err){
             if (err) return console.error(err);
             console.log("Directory created successfully!");
         });
     }
-    copiar("./server/uploads","./server/uploads/" + userId, name);
+    copiar("./server/uploads","./server/uploads/" + id, name);
     res.json({ message: 'Imagen guardada' });
 }
 
 function copiar(ruta, rutaNueva, nombre){
     fs.copyFile(ruta+ "/"+nombre,rutaNueva+"/"+nombre,(error) => {
-        if(error){
-            console.log(error);
-        }else{
-            eliminar(ruta,nombre);
-        }
+        if(error) console.log(error);
+        else eliminar(ruta,nombre);
     })
 }
 function eliminar(ruta,nombre){
     fs.unlink(ruta+"/"+nombre,(error)=> {
-        if(error){
-            console.log("error al eliminar");
-        }else{
-            console.log("OK");
-        }
+        if(error) console.log("error al eliminar");
+        else console.log("OK");
     })
+}
+
+function eliminarDirectorio(directory) {
+    fs.readdir(directory, (err, files) => {
+        if (err) throw err;
+        for (const file of files) {
+            fs.unlink(path.join(directory, file), err => {
+                if (err) throw err;
+            });
+        }
+        fs.rmdir(directory, function(err) {
+            if (err) throw err
+        })
+    });
 }
 
 module.exports = petController;

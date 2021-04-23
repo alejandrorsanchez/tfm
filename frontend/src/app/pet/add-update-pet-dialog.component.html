@@ -25,8 +25,7 @@
   </mat-form-field>
   <br>
     <form>
-      <input type="file" name="image" (change)="onFileChanged($event)"><br><br>
-      <button type="submit" (click)="uploadPhoto()" [disabled]="!this.image" color="primary" mat-raised-button>Guardar Foto</button><br>
+      <input type="file" name="image" (change)="onFileChanged($event)"><br>
     </form>
 </mat-dialog-content>
 <mat-dialog-actions>
