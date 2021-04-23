@@ -20,17 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/server/uploads/42/splash.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/pet/add-update-pet-dialog.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pet/add-update-pet-dialog.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/pet/add-update-pet-dialog.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pet/add-update-pet-dialog.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/profile/profile.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/profile/profile.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/pet.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/pet.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/user.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/user.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/uploads/1/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/uploads/2/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/uploads/2/splash.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,14 +123,7 @@
       <workItem from="1619028188209" duration="2466000" />
       <workItem from="1619075903710" duration="18678000" />
       <workItem from="1619094754068" duration="6000" />
-      <workItem from="1619163143500" duration="4668000" />
-    </task>
-    <task id="LOCAL-00034" summary="Fin Diseño ventana de registro #5">
-      <created>1613492616925</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1613492616925</updated>
+      <workItem from="1619163143500" duration="7668000" />
     </task>
     <task id="LOCAL-00035" summary="inicio POST user">
       <created>1618218106499</created>
@@ -478,7 +461,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619094648718</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="images managed for deleting user">
+      <created>1619167881753</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1619167881753</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -501,7 +491,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="First OperationsComponent" />
     <MESSAGE value="new ProfileComponent linked" />
     <MESSAGE value="form for update user data" />
     <MESSAGE value="List of user pets for updating" />
@@ -526,7 +515,8 @@
     <MESSAGE value="Images showing up in pets list" />
     <MESSAGE value="Remove images showing up in list" />
     <MESSAGE value="delete pets when deleting its user" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete pets when deleting its user" />
+    <MESSAGE value="images managed for deleting user" />
+    <option name="LAST_COMMIT_MESSAGE" value="images managed for deleting user" />
   </component>
   <component name="WindowStateProjectService">
     <state x="509" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619029708212">

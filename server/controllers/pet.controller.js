@@ -49,6 +49,7 @@ petController.uploadPhoto = (req, res) => {
             console.log("Directory created successfully!");
         });
     }
+    eliminarFicheros('./server/uploads/' + id);
     copiar("./server/uploads","./server/uploads/" + id, name);
     res.json({ message: 'Imagen guardada' });
 }
@@ -66,7 +67,7 @@ function eliminar(ruta,nombre){
     })
 }
 
-function eliminarDirectorio(directory) {
+function eliminarFicheros(directory) {
     fs.readdir(directory, (err, files) => {
         if (err) throw err;
         for (const file of files) {
@@ -74,9 +75,9 @@ function eliminarDirectorio(directory) {
                 if (err) throw err;
             });
         }
-        fs.rmdir(directory, function(err) {
+        /*fs.rmdir(directory, function(err) {
             if (err) throw err
-        })
+        })*/
     });
 }
 
