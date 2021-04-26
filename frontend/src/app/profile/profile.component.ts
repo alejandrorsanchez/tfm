@@ -74,7 +74,7 @@ export class ProfileComponent implements OnInit {
     this.userService.update(this.user).subscribe(
       response => {
         this.getUser();
-        this.utilsService.showNotification('Usuario actualizado');
+        this.utilsService.showNotification(response['message']);
       }
     );
   }

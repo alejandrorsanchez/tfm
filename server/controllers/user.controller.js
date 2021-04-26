@@ -15,7 +15,7 @@ userController.save = (req, res) => {
             const query = 'INSERT INTO users SET ?';
             db.query(query, user, function (err, rows, fields) {
                 if (err) res.status(422).send();
-                res.json({ message: 'Usuario creado correctamente!' });
+                res.json({ message: 'Usuario creado correctamente!', id: rows['insertId']});
             })
         })
         .catch(function(error){
@@ -65,7 +65,7 @@ userController.update = (req, res) => {
     let data = [req.body.address, req.body.description, id];
     db.query('UPDATE users SET address = ?, description = ? WHERE id = ?', data, function (err, row, fields) {
         if (err) throw err;
-        res.status(200).send();
+        res.json({ message: 'Usuario actualizado' });
     })
 }
 
