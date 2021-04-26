@@ -23,6 +23,10 @@
     <mat-label>Descripción</mat-label>
     <textarea [(ngModel)]="pet.description" id="description" matInput required type="text"></textarea>
   </mat-form-field>
+  <mat-form-field class="full-width">
+    <mat-label>Foto</mat-label>
+    <input [(ngModel)]="pet.picture" id="picture" matInput disabled type="text"/>
+  </mat-form-field>
   <br>
     <form>
       <input type="file" name="image" (change)="onFileChanged($event)"><br>

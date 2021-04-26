@@ -33,7 +33,10 @@ export class AddUpdatePetDialogComponent implements OnInit{
   update() {
     this.petService.update(this.pet).subscribe(
       response => {
-        this.createFormDataForFile();
+        if(this.image){
+          this.createFormDataForFile();
+        }
+        this.dialogRef.close();
         this.utilsService.showNotification(response['message']);
       }
     );
@@ -62,7 +65,7 @@ export class AddUpdatePetDialogComponent implements OnInit{
   invalid(): boolean {
     return this.check(this.pet.name) || this.check(this.pet.breed)
         || this.check(this.pet.age) || this.check(this.pet.description)
-        || this.check(this.image);
+        || this.check(this.pet.picture);
   }
 
   check(attr: any): boolean {
