@@ -5,13 +5,6 @@ const jwt = require('jsonwebtoken');
 const config = require('../shared/config');
 const rimraf = require("rimraf");
 
-userController.getUsers = (req, res) => {
-    db.query('SELECT * FROM users', function (err, rows, fields) {
-        if (err) throw err;
-        res.json(rows);
-    })
-}
-
 userController.save = (req, res) => {
     const BCRYPT_SALT_ROUNDS = 12;
     const password = req.body.password;
@@ -21,7 +14,7 @@ userController.save = (req, res) => {
             user.password = hash;
             const query = 'INSERT INTO users SET ?';
             db.query(query, user, function (err, rows, fields) {
-                if (err) throw err;
+                if (err) res.status(422).send();
                 res.json({ message: 'Usuario creado correctamente!' });
             })
         })
