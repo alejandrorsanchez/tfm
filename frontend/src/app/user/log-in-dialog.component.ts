@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {MatDialogRef} from "@angular/material/dialog";
-import {UserService} from "./user.service";
+import {UserService} from "../shared/user.service";
 import {User} from "../shared/user";
 import {UtilsService} from "../shared/utils.service";
 import {Router} from "@angular/router";

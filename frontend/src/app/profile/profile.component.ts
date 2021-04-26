@@ -3,11 +3,11 @@ import {MatDialog} from "@angular/material/dialog";
 import {DeleteAccountDialogComponent} from "../user/delete-account-dialog.component";
 import {User} from "../shared/user";
 import {ActivatedRoute} from "@angular/router";
-import {UserService} from "../user/user.service";
+import {UserService} from "../shared/user.service";
 import {UtilsService} from "../shared/utils.service";
 import {DeletePetDialogComponent} from "../pet/delete-pet-dialog.component";
 import {Pet} from "../shared/pet";
-import {PetService} from "../pet/pet.service";
+import {PetService} from "../shared/pet.service";
 import {AddUpdatePetDialogComponent} from "../pet/add-update-pet-dialog.component";
 
 @Component({

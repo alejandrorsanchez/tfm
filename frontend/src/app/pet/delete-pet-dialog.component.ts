@@ -1,7 +1,7 @@
 import {Component, Inject} from '@angular/core';
 import {MAT_DIALOG_DATA, MatDialogRef} from "@angular/material/dialog";
 import {Pet} from "../shared/pet";
-import {PetService} from "./pet.service";
+import {PetService} from "../shared/pet.service";
 
 @Component({
   selector: 'app-delete-pet-dialog',
