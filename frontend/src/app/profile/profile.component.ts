@@ -1,14 +1,14 @@
 import {Component, OnInit} from '@angular/core';
 import {MatDialog} from "@angular/material/dialog";
-import {DeleteAccountDialogComponent} from "../user/delete-account-dialog.component";
+import {DeleteAccountDialogComponent} from "./delete-account-dialog.component";
 import {User} from "../shared/user";
 import {ActivatedRoute} from "@angular/router";
 import {UserService} from "../shared/user.service";
 import {UtilsService} from "../shared/utils.service";
-import {DeletePetDialogComponent} from "../pet/delete-pet-dialog.component";
+import {DeletePetDialogComponent} from "./delete-pet-dialog.component";
 import {Pet} from "../shared/pet";
 import {PetService} from "../shared/pet.service";
-import {AddUpdatePetDialogComponent} from "../pet/add-update-pet-dialog.component";
+import {AddUpdatePetDialogComponent} from "./add-update-pet-dialog.component";
 
 @Component({
   selector: 'app-profile',

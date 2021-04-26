@@ -5,8 +5,7 @@ import {PetService} from "../shared/pet.service";
 
 @Component({
   selector: 'app-delete-pet-dialog',
-  templateUrl: './delete-pet-dialog.component.html',
-  styleUrls: ['./delete-pet-dialog.component.css']
+  templateUrl: './delete-pet-dialog.component.html'
 })
 export class DeletePetDialogComponent{
 

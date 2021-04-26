@@ -20,7 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/server/uploads/61/pexels-lumn-406014.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/pet/add-update-pet-dialog.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/profile/add-update-pet-dialog.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/pet/add-update-pet-dialog.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/profile/add-update-pet-dialog.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/pet/add-update-pet-dialog.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/profile/add-update-pet-dialog.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/pet/delete-pet-dialog.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/pet/delete-pet-dialog.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/profile/delete-pet-dialog.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/pet/delete-pet-dialog.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/profile/delete-pet-dialog.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/profile/profile.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/profile/profile.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/user/delete-account-dialog.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/user/delete-account-dialog.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/profile/delete-account-dialog.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/user/delete-account-dialog.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/profile/delete-account-dialog.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,19 +70,19 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\profile" />
+      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\shared" />
+      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\server" />
+      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\server\public" />
+      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\pet" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\server\controllers" />
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\server\routes" />
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\shared" />
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\user" />
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\server" />
-      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\server\public" />
-      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\pet" />
-      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\shared" />
-      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\profile" />
     </key>
   </component>
   <component name="RunManager" selected="Mocha.Testing Pet API">
@@ -215,14 +228,7 @@
       <workItem from="1619094754068" duration="6000" />
       <workItem from="1619163143500" duration="12534000" />
       <workItem from="1619342592146" duration="763000" />
-      <workItem from="1619421754020" duration="13779000" />
-    </task>
-    <task id="LOCAL-00042" summary="initial commit">
-      <created>1618385855671</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1618385855671</updated>
+      <workItem from="1619421754020" duration="14703000" />
     </task>
     <task id="LOCAL-00043" summary="Dialog for GET User implemented">
       <created>1618387175848</created>
@@ -560,7 +566,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619435444008</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="Services to /shared">
+      <created>1619436594735</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1619436594735</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -583,7 +596,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="User logged sent to homeComponent" />
     <MESSAGE value="DELETE User implemented" />
     <MESSAGE value="User routes modified" />
     <MESSAGE value="new Pets List" />
@@ -608,7 +620,8 @@
     <MESSAGE value="UI operations fixed" />
     <MESSAGE value="User Tests" />
     <MESSAGE value="Pet Tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pet Tests" />
+    <MESSAGE value="Services to /shared" />
+    <option name="LAST_COMMIT_MESSAGE" value="Services to /shared" />
   </component>
   <component name="WindowStateProjectService">
     <state x="509" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619029708212">
@@ -619,10 +632,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1618558927131" />
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1619082337147">
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1619436817842">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1619082337147" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1619436817842" />
     <state x="516" y="267" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1612380414374">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

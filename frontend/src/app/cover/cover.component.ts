@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import {SingUpDialogComponent} from "../user/sing-up-dialog.component";
-import {LogInDialogComponent} from "../user/log-in-dialog.component";
+import {SingUpDialogComponent} from "./sing-up-dialog.component";
+import {LogInDialogComponent} from "./log-in-dialog.component";
 import {MatDialog} from "@angular/material/dialog";
 
 @Component({
