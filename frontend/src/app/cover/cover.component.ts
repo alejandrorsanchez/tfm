@@ -14,14 +14,12 @@ export class CoverComponent{
 
   openSingUpDialog() {
     this.dialog.open(SingUpDialogComponent, {
-      height: '500px',
       width: '600px',
     });
   }
 
   openLogInDialog() {
     this.dialog.open(LogInDialogComponent, {
-      height: '300px',
       width: '400px',
     });
   }
