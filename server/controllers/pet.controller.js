@@ -47,15 +47,18 @@ petController.delete = (req, res) => {
 petController.uploadPhoto = (req, res) => {
     const id = req.body.id;
     const name = req.body.name;
-    if(!fs.existsSync(env.FILES_LOCATION + id)){
-        fs.mkdir(env.FILES_LOCATION + id,function(err){
-            if (err) return console.error(err);
-            console.log("Directory created successfully!");
-        });
+    const resolvedPath = path.resolve(env.FILES_LOCATION + id);
+    if (resolvedPath.startsWith('C:')) {
+        if(!fs.existsSync(resolvedPath)){
+            fs.mkdir(resolvedPath,function(err){
+                if (err) return console.error(err);
+                console.log("Directory created successfully!");
+            });
+        }
+        deleteFilesFromDirectory(resolvedPath);
+        copyFileAndDeleteFromOrigin("./server/uploads",resolvedPath, name);
+        res.json({ message: 'Imagen guardada' });
     }
-    deleteFilesFromDirectory(env.FILES_LOCATION + id);
-    copyFileAndDeleteFromOrigin("./server/uploads",env.FILES_LOCATION + id, name);
-    res.json({ message: 'Imagen guardada' });
 }
 
 function copyFileAndDeleteFromOrigin(origin, destination, name){
