@@ -2,10 +2,10 @@
   "name": "server",
   "version": "1.0.0",
   "description": "",
-  "main": "server/index.js",
+  "main": "index.js",
   "scripts": {
     "dev": "nodemon index.js",
-    "test": "mocha --recursive server/test --reporter mochawesome"
+    "test": "mocha --recursive test --reporter mochawesome"
   },
   "keywords": [],
   "author": "",
