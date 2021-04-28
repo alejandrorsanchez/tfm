@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon index.js",
-    "test": "mocha --recursive test --reporter mochawesome"
+    "test": "mocha --recursive test --reporter mochawesome",
+    "coverage": "nyc npm run test"
   },
   "keywords": [],
   "author": "",
@@ -26,6 +27,25 @@
     "chai-http": "^4.3.0",
     "mocha": "^8.2.1",
     "mochawesome": "^6.2.1",
-    "nodemon": "^2.0.7"
+    "nodemon": "^2.0.7",
+    "nyc": "^15.1.0"
+  },
+  "nyc": {
+    "all": true,
+    "check-coverage": true,
+    "include": [
+      "controllers",
+      "routes"
+    ],
+    "branches": 60,
+    "lines": 60,
+    "functions": 60,
+    "statements": 60,
+    "reporter": [
+      "lcov",
+      "text",
+      "text-summary"
+    ],
+    "report-dir": "coverage"
   }
 }
