@@ -48,8 +48,8 @@ userController.getUser = (req, res) => {
         if (err) throw err;
         if(row[0]){
             const user = row[0];
-            bcrypt.compare(password, user.password, function(err, result){
-                if(err) throw err;
+            bcrypt.compare(password, user.password, function(error, result){
+                if(error) throw error;
                 if(result) {
                     const validTime = 60 * 15;
                     const myToken = jwt.sign({"username":username, "password":password}, env.SECRET_KEY, {expiresIn: validTime});
@@ -78,11 +78,11 @@ userController.delete = (req, res) => {
     db.query(queryDeleteUser, [id], function (err, row, fields) {
         if (err) throw err;
         const queryFindUserPets = 'SELECT id FROM pets WHERE user_id = ?';
-        db.query(queryFindUserPets, [id], function (err, rows, fields) {
+        db.query(queryFindUserPets, [id], function (err, rows) {
             if (err) throw err;
             deletePetsImages(rows);
             const queryDeletePets = 'DELETE FROM pets WHERE user_id = ?';
-            db.query(queryDeletePets, [id], function (err, rows, fields) {
+            db.query(queryDeletePets, [id], function (err, rows) {
                 if (err) throw err;
                 res.status(200).send();
             })

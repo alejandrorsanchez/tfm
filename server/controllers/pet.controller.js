@@ -40,7 +40,6 @@ petController.delete = (req, res) => {
         if (err) throw err;
         res.status(200).send();
         rimraf.sync(env.FILES_LOCATION + id);
-        //eliminarDirectorio('./server/uploads/' + id);
     })
 }
 
@@ -78,8 +77,8 @@ function deleteFilesFromDirectory(directory) {
     fs.readdir(directory, (err, files) => {
         if (err) throw err;
         for (const file of files) {
-            fs.unlink(path.join(directory, file), err => {
-                if (err) throw err;
+            fs.unlink(path.join(directory, file), error => {
+                if (error) throw error;
             });
         }
         /*fs.rmdir(directory, function(err) {

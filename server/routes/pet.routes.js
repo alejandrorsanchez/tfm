@@ -4,7 +4,7 @@ const multer  = require('multer');
 const petController = require('../controllers/pet.controller');
 const {ensureAuthenticated} = require("../middleware/authMiddelware");
 
-storage = multer.diskStorage({
+const storage = multer.diskStorage({
     destination: function (req, file, cb) {
         cb(null, './server/uploads/')
     },

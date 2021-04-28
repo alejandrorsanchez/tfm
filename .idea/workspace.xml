@@ -20,7 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/pet.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/pet.controller.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,13 +220,6 @@
       <workItem from="1619532964099" duration="9000" />
       <workItem from="1619535790039" duration="3711000" />
       <workItem from="1619594240017" duration="5206000" />
-    </task>
-    <task id="LOCAL-00049" summary="Interceptor included in all request">
-      <created>1618481245448</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1618481245448</updated>
     </task>
     <task id="LOCAL-00050" summary="ensuredAuth for private operations">
       <created>1618483701103</created>
@@ -564,7 +557,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619604330363</updated>
     </task>
-    <option name="localTasksCounter" value="98" />
+    <task id="LOCAL-00098" summary="resolvedPath">
+      <created>1619605722752</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1619605722752</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -587,7 +587,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="DELETE Pet" />
     <MESSAGE value="Update pet dialog without photo field" />
     <MESSAGE value="Update pet dialog completed" />
     <MESSAGE value="PhotoUpload and Put User request" />
@@ -612,7 +611,8 @@
     <MESSAGE value="Refactor enviroment.js" />
     <MESSAGE value="new commit develop" />
     <MESSAGE value="sonar.yml" />
-    <option name="LAST_COMMIT_MESSAGE" value="sonar.yml" />
+    <MESSAGE value="resolvedPath" />
+    <option name="LAST_COMMIT_MESSAGE" value="resolvedPath" />
   </component>
   <component name="WindowStateProjectService">
     <state x="509" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619029708212">
