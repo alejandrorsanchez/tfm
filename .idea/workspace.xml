@@ -20,7 +20,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,7 +30,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="issue" />
+        <entry key="$PROJECT_DIR$" value="develop" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -154,11 +153,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Mocha.Testing Pet API" />
         <item itemvalue="Mocha.Testing User API" />
         <item itemvalue="Mocha.Testing Pet API.should update pet for its ID" />
         <item itemvalue="Mocha.Testing Pet API.should not update pet without token" />
         <item itemvalue="Mocha.Testing Pet API.should not find pet without token" />
+        <item itemvalue="Mocha.Testing Pet API" />
       </list>
     </recent_temporary>
   </component>
@@ -221,13 +220,6 @@
       <workItem from="1619532964099" duration="9000" />
       <workItem from="1619535790039" duration="3711000" />
       <workItem from="1619594240017" duration="5206000" />
-    </task>
-    <task id="LOCAL-00047" summary="Autocomplete function">
-      <created>1618477395376</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1618477395376</updated>
     </task>
     <task id="LOCAL-00048" summary="initial commit Interceptor">
       <created>1618478914323</created>
@@ -565,7 +557,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619597236603</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="new commit develop">
+      <created>1619603853610</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1619603853610</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -588,7 +587,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="PUT User for address and description" />
     <MESSAGE value="GET Pets" />
     <MESSAGE value="DELETE Pet" />
     <MESSAGE value="Update pet dialog without photo field" />
@@ -613,7 +611,8 @@
     <MESSAGE value="Image validation in Save/Edit pet" />
     <MESSAGE value="Refactor removing height from dialogs" />
     <MESSAGE value="Refactor enviroment.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor enviroment.js" />
+    <MESSAGE value="new commit develop" />
+    <option name="LAST_COMMIT_MESSAGE" value="new commit develop" />
   </component>
   <component name="WindowStateProjectService">
     <state x="509" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619029708212">
