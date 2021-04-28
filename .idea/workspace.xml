@@ -20,10 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/pet.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/pet.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/user.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/user.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/enviroment.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/enviroment.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,19 +58,19 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\server\controllers" />
-      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\server\routes" />
-      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\shared" />
-      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\user" />
-      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\server" />
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\cover" />
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\profile" />
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\shared" />
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\server\public" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\server\controllers" />
+      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\server\routes" />
+      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\shared" />
+      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\user" />
+      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app" />
     </key>
   </component>
   <component name="RunManager" selected="Mocha.Testing Pet API">
