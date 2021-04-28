@@ -14,7 +14,6 @@ export class LogInDialogComponent implements OnInit{
 
   title: string;
   user: User;
-  message = '';
 
   constructor(public dialogRef: MatDialogRef<LogInDialogComponent>, private userService: UserService
              , private utilsService: UtilsService, public router: Router) {

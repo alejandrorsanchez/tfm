@@ -34,7 +34,7 @@ export class AddUpdatePetDialogComponent implements OnInit{
     this.petService.update(this.pet).subscribe(
       response => {
         if(this.image){
-          this.createFormDataForFile();
+          this.createFormDataAndPostFile();
         }
         this.dialogRef.close();
         this.utilsService.showNotification(response['message']);
@@ -46,13 +46,13 @@ export class AddUpdatePetDialogComponent implements OnInit{
     this.petService.save(this.pet).subscribe(
       response => {
         this.pet.id = response['id'];
-        this.createFormDataForFile();
+        this.createFormDataAndPostFile();
         this.utilsService.showNotification(response['message']);
       }
     );
   }
 
-  createFormDataForFile() {
+  createFormDataAndPostFile() {
     const formData = new FormData();
     formData.append('image', this.image);
     formData.append('id', this.pet.id.toString());
@@ -62,17 +62,17 @@ export class AddUpdatePetDialogComponent implements OnInit{
     );
   }
 
+  isCreate(): boolean {
+    return this.pet.id === undefined;
+  }
+
   invalid(): boolean {
     return this.check(this.pet.name) || this.check(this.pet.breed)
-        || this.check(this.pet.age) || this.check(this.pet.description)
-        || this.check(this.pet.picture);
+      || this.check(this.pet.age) || this.check(this.pet.description)
+      || this.check(this.pet.picture);
   }
 
   check(attr: any): boolean {
     return attr === undefined || null || attr === '';
-  }
-
-  isCreate(): boolean {
-    return this.pet.id === undefined;
   }
 }

@@ -2,12 +2,13 @@ const express = require('express');
 const morgan = require('morgan');
 const cors = require('cors');
 const app = express();
-const port = 3000
+const port = 3000;
+const env = require('./enviroment');
 
 app.use(morgan('dev'));
 app.use(express.json());
-app.use(cors({origin:'http://localhost:4200'}));
-app.use(express.static('server/uploads'))
+app.use(cors({origin: env.URL_CORS}));
+app.use(express.static(env.STATIC))
 
 app.use('/users', require('./routes/user.routes'));
 app.use('/pets', require('./routes/pet.routes'));

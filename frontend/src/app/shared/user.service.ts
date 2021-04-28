@@ -7,31 +7,33 @@ import {User} from "./user";
 })
 export class UserService {
 
-  url = 'http://localhost:3000/users';
+  URL = 'http://localhost:3000/users';
+  SEARCH = '/search/';
+  LOGIN = '/login';
 
   constructor(private http: HttpClient) { }
 
   save(user: User){
-    return this.http.post(this.url, user);
+    return this.http.post(this.URL, user);
   }
 
   findById(id: string) {
-    return this.http.get(this.url + '/' + id);
+    return this.http.get(this.URL + '/' + id);
   }
 
   findByUsername(username: string) {
-    return this.http.get(this.url + '/search/' + username);
+    return this.http.get(this.URL + this.SEARCH + username);
   }
 
   getUser(user: User) {
-    return this.http.post(this.url + '/login', user, {observe: 'response'});
+    return this.http.post(this.URL + this.LOGIN, user, {observe: 'response'});
   }
 
   update(user: User) {
-    return this.http.put(this.url + '/' + user.id, user);
+    return this.http.put(this.URL + '/' + user.id, user);
   }
 
   delete(id: number) {
-    return this.http.delete(this.url + '/' + id);
+    return this.http.delete(this.URL + '/' + id);
   }
 }

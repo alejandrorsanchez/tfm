@@ -14,7 +14,6 @@ export class SingUpDialogComponent implements OnInit{
   title: string;
   newUser: User;
   repeatPassword = '';
-  message = '';
 
   constructor(public dialogRef: MatDialogRef<SingUpDialogComponent>, private userService: UserService
               , private utilsService: UtilsService) {
@@ -59,6 +58,14 @@ export class SingUpDialogComponent implements OnInit{
     }
   }
 
+  autocompleteFocus() {
+    const addressField = document.getElementById("address") as HTMLInputElement;
+    const autocomplete = new google.maps.places.Autocomplete(addressField, {
+      fields: ["address_components", "geometry"],
+      types: ["address"]
+    });
+  }
+
   invalid(): boolean {
     return this.check(this.newUser.username) || this.check(this.newUser.password) || this.check(this.repeatPassword)
           || this.check(this.newUser.address) || this.check(this.newUser.description);
@@ -66,13 +73,5 @@ export class SingUpDialogComponent implements OnInit{
 
   check(attr: string): boolean {
     return attr === undefined || null || attr === '';
-  }
-
-  autocompleteFocus() {
-    const addressField = document.getElementById("address") as HTMLInputElement;
-    const autocomplete = new google.maps.places.Autocomplete(addressField, {
-      fields: ["address_components", "geometry"],
-      types: ["address"]
-    });
   }
 }

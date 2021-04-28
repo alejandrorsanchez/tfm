@@ -2,7 +2,7 @@ const userController = {};
 const db = require('../database');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
-const config = require('../shared/config');
+const env = require('../enviroment');
 const rimraf = require("rimraf");
 
 userController.save = (req, res) => {
@@ -50,7 +50,7 @@ userController.getUser = (req, res) => {
                 if(err) throw err;
                 if(result) {
                     let validTime = 60 * 15;
-                    let myToken = jwt.sign({"username":username, "password":password}, config.SECRET_KEY, {expiresIn: validTime});
+                    let myToken = jwt.sign({"username":username, "password":password}, env.SECRET_KEY, {expiresIn: validTime});
                     res.json({token: myToken, id: user.id});
                 }
             });

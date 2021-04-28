@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const userController = require('../controllers/user.controller');
-const {ensureAuthenticated} = require("../shared/authMiddelware");
+const {ensureAuthenticated} = require("../middleware/authMiddelware");
 
 router.get('/search/:username', userController.findByUsername);
 router.get('/:id', ensureAuthenticated, userController.findById);

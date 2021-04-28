@@ -1,9 +1,10 @@
+const env = require('./enviroment');
 const mysql = require('mysql');
 const connection = mysql.createConnection({
-    host     : 'localhost',
-    user     : 'project_master',
-    password : 'project_master',
-    database : 'project_master'
+    host     : env.HOST,
+    user     : env.USER,
+    password : env.PASSWORD,
+    database : env.DATABASE
 });
 
 connection.connect(function(err) {

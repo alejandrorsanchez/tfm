@@ -11,11 +11,11 @@ import {User} from "../shared/user";
 })
 export class DeleteAccountDialogComponent{
 
-  user: User;
+  id: number;
 
-  constructor(@Inject(MAT_DIALOG_DATA) data: User, public dialogRef: MatDialogRef<DeleteAccountDialogComponent>, private userService: UserService,
+  constructor(@Inject(MAT_DIALOG_DATA) data: number, public dialogRef: MatDialogRef<DeleteAccountDialogComponent>, private userService: UserService,
               private utilsService: UtilsService, public router: Router) {
-    this.user = data ? data : undefined;
+    this.id = data ? data : undefined;
   }
 
   onNoClick() {
@@ -23,7 +23,7 @@ export class DeleteAccountDialogComponent{
   }
 
   deleteUser() {
-    this.userService.delete(this.user.id).subscribe(
+    this.userService.delete(this.id).subscribe(
       response => {
         this.utilsService.destroySession();
         this.dialogRef.close();

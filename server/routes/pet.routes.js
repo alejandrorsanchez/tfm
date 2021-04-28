@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const multer  = require('multer');
 const petController = require('../controllers/pet.controller');
-const {ensureAuthenticated} = require("../shared/authMiddelware");
+const {ensureAuthenticated} = require("../middleware/authMiddelware");
 
 storage = multer.diskStorage({
     destination: function (req, file, cb) {
@@ -12,7 +12,6 @@ storage = multer.diskStorage({
         cb(null, file.originalname)
     }
 })
-
 const upload = multer({storage});
 
 router.get('/search/:userId', ensureAuthenticated, petController.findByUserId);

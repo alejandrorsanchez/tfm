@@ -9,10 +9,10 @@ import {PetService} from "../shared/pet.service";
 })
 export class DeletePetDialogComponent{
 
-  pet: Pet;
+  id: number;
 
-  constructor(@Inject(MAT_DIALOG_DATA) data: Pet, public dialogRef: MatDialogRef<DeletePetDialogComponent>, private petService: PetService) {
-    this.pet = data ? data : undefined;
+  constructor(@Inject(MAT_DIALOG_DATA) data: number, public dialogRef: MatDialogRef<DeletePetDialogComponent>, private petService: PetService) {
+    this.id = data ? data : undefined;
   }
 
   onNoClick() {
@@ -20,7 +20,7 @@ export class DeletePetDialogComponent{
   }
 
   delete() {
-    this.petService.delete(this.pet.id).subscribe(
+    this.petService.delete(this.id).subscribe(
       response => this.dialogRef.close()
     );
   }

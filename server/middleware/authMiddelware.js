@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken');
-const config = require('./config');
+const env = require('../enviroment');
 
 exports.ensureAuthenticated = function(req, res, next) {
   if(!req.headers.authorization) {
@@ -8,7 +8,7 @@ exports.ensureAuthenticated = function(req, res, next) {
       .send({message: "Tu petición no tiene cabecera de autorización"});
   }
   const token = req.headers.authorization.split(" ")[1];
-  const payload = jwt.decode(token, config.SECRET_KEY);
+  const payload = jwt.decode(token, env.SECRET_KEY);
   req.username = payload.username;
   next();
 }

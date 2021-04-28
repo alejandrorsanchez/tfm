@@ -7,27 +7,29 @@ import {Pet} from "./pet";
 })
 export class PetService {
 
-  url = 'http://localhost:3000/pets';
+  URL = 'http://localhost:3000/pets';
+  SEARCH = '/search/';
+  FILE = '/file';
 
   constructor(private http: HttpClient) { }
 
   findByUserId(userId: string) {
-    return this.http.get(this.url + '/search/' + userId);
+    return this.http.get(this.URL + this.SEARCH + userId);
   }
 
   save(pet: Pet) {
-    return this.http.post(this.url, pet);
+    return this.http.post(this.URL, pet);
   }
 
   update(pet: Pet) {
-    return this.http.put(this.url + '/' + pet.id, pet);
+    return this.http.put(this.URL + '/' + pet.id, pet);
   }
 
   uploadPhoto(formData: FormData) {
-    return this.http.post(this.url + '/file', formData);
+    return this.http.post(this.URL + this.FILE, formData);
   }
 
   delete(id: number) {
-    return this.http.delete(this.url + '/' + id);
+    return this.http.delete(this.URL + '/' + id);
   }
 }
