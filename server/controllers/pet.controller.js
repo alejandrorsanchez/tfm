@@ -2,11 +2,13 @@ const petController = {};
 const db = require('../database');
 const fs = require('fs');
 const path = require('path');
+const env = require('../enviroment');
 const rimraf = require("rimraf");
 
 petController.findByUserId = (req, res) => {
     const userId = req.params.userId;
-    db.query('SELECT * FROM pets WHERE user_id = ?', [userId], function (err, rows, fields) {
+    const query = 'SELECT * FROM pets WHERE user_id = ?';
+    db.query(query, [userId], function (err, rows, fields) {
         if (err) throw err;
         res.json(rows);
     })
@@ -24,7 +26,8 @@ petController.save = (req, res) => {
 petController.update = (req, res) => {
     const id = req.params.id;
     let data = [req.body.name, req.body.breed, req.body.weight, req.body.age, req.body.description, req.body.picture, id];
-    db.query('UPDATE pets SET name = ?, breed = ?, weight = ?, age = ?, description = ?, picture = ? WHERE id = ?', data, function (err, row, fields) {
+    const query = 'UPDATE pets SET name = ?, breed = ?, weight = ?, age = ?, description = ?, picture = ? WHERE id = ?';
+    db.query(query, data, function (err, row, fields) {
         if (err) throw err;
         res.json({ message: 'Mascota actualizada' });
     })
@@ -32,10 +35,11 @@ petController.update = (req, res) => {
 
 petController.delete = (req, res) => {
     const id = req.params.id;
-    db.query('DELETE FROM pets WHERE id = ?', [id], function (err, row, fields) {
+    const query = 'DELETE FROM pets WHERE id = ?';
+    db.query(query, [id], function (err, row, fields) {
         if (err) throw err;
         res.status(200).send();
-        rimraf.sync("./server/uploads/" + id);
+        rimraf.sync(env.FILES_LOCATION + id);
         //eliminarDirectorio('./server/uploads/' + id);
     })
 }
@@ -43,31 +47,31 @@ petController.delete = (req, res) => {
 petController.uploadPhoto = (req, res) => {
     const id = req.body.id;
     const name = req.body.name;
-    if(!fs.existsSync("./server/uploads/" + id)){
-        fs.mkdir("./server/uploads/" + id,function(err){
+    if(!fs.existsSync(env.FILES_LOCATION + id)){
+        fs.mkdir(env.FILES_LOCATION + id,function(err){
             if (err) return console.error(err);
             console.log("Directory created successfully!");
         });
     }
-    eliminarFicheros('./server/uploads/' + id);
-    copiar("./server/uploads","./server/uploads/" + id, name);
+    deleteFilesFromDirectory(env.FILES_LOCATION + id);
+    copyFileAndDeleteFromOrigin("./server/uploads",env.FILES_LOCATION + id, name);
     res.json({ message: 'Imagen guardada' });
 }
 
-function copiar(ruta, rutaNueva, nombre){
-    fs.copyFile(ruta+ "/"+nombre,rutaNueva+"/"+nombre,(error) => {
+function copyFileAndDeleteFromOrigin(origin, destination, name){
+    fs.copyFile(origin + "/" + name,destination+"/" + name,(error) => {
         if(error) console.log(error);
-        else eliminar(ruta,nombre);
+        else removeFile(origin, name);
     })
 }
-function eliminar(ruta,nombre){
-    fs.unlink(ruta+"/"+nombre,(error)=> {
+function removeFile(directory, name){
+    fs.unlink(directory + "/" + name,(error)=> {
         if(error) console.log("error al eliminar");
         else console.log("OK");
     })
 }
 
-function eliminarFicheros(directory) {
+function deleteFilesFromDirectory(directory) {
     fs.readdir(directory, (err, files) => {
         if (err) throw err;
         for (const file of files) {

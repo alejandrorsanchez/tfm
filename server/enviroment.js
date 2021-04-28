@@ -5,5 +5,6 @@ module.exports = {
   DATABASE: 'project_master',
   SECRET_KEY: 'secretkey',
   URL_CORS: 'http://localhost:4200',
-  STATIC: 'server/uploads'
+  STATIC: 'server/uploads',
+  FILES_LOCATION: './server/uploads/'
 };
