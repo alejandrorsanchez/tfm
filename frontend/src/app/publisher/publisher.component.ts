@@ -2,6 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import {PetService} from "../shared/pet.service";
 import {UtilsService} from "../shared/utils.service";
 import {Pet} from "../shared/pet";
+import {AddService} from "../shared/add.service";
+import {Add} from "../shared/add";
+import {Router} from "@angular/router";
+import {User} from "../shared/user";
+import {UserService} from "../shared/user.service";
 
 @Component({
   selector: 'app-publisher',
@@ -11,16 +16,27 @@ import {Pet} from "../shared/pet";
 export class PublisherComponent implements OnInit {
 
   id: string;
+  user = new User();
   myPets: Pet[] = [];
   postingPet: Pet;
   isAdoption: boolean;
   isVolunteer: boolean;
 
-  constructor(private utilsService: UtilsService, private petService: PetService) { }
+  constructor(private utilsService: UtilsService, private petService: PetService
+              , private addService: AddService, public router: Router, private userService: UserService) { }
 
   ngOnInit(): void {
-    this.id = this.utilsService.getId();
+    this.getUser();
 
+  }
+
+  getUser(){
+    this.id = this.utilsService.getId();
+    this.userService.findById(this.id).subscribe(
+      response => {
+        this.user = response[0];
+      }
+    );
   }
 
   showAdoptionForm() {
@@ -51,8 +67,32 @@ export class PublisherComponent implements OnInit {
     this.postingPet = pet;
   }
 
-  postAdd() {
-    //TODO
+  postAdoptionAdd() {
+    const add = new Add(this.id, this.postingPet.id);
+    this.addService.saveAdoptionAdd(add).subscribe(
+      response => {
+        this.utilsService.showNotification(response.body['message']);
+        this.router.navigateByUrl('/home');
+      },
+      error => {
+        this.utilsService.showNotification(error.error['message']);
+      }
+    );
+  }
+
+  postVolunteerAdd() {
+    const add = new Add(this.id);
+    this.addService.saveVolunteerAdd(add).subscribe(
+      response => {
+        this.utilsService.showNotification(response.body['message']);
+        this.userService.update(this.user).subscribe(
+          value => this.router.navigateByUrl('/home')
+        );
+      },
+      error => {
+        this.utilsService.showNotification(error.error['message']);
+      }
+    );
   }
 
   invalid(): boolean {

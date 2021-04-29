@@ -31,20 +31,20 @@
   </div>
   <div *ngIf="this.myPets.length > 0" class="footerAdd">
     <h3 *ngIf="this.postingPet">Mascota seleccionada: {{this.postingPet.name}}</h3>
-    <h2>Calle baleares 39, Mostoles, Madrid</h2>
-    <button class="uk-button uk-button-primary uk-button-large" [disabled]=invalid() (click)="postAdd()">Publicar</button>
+    <h2>{{this.user.address}}</h2>
+    <button class="uk-button uk-button-primary uk-button-large" [disabled]=invalid() (click)="postAdoptionAdd()">Publicar</button>
   </div>
 </div>
 <div *ngIf="this.isVolunteer">
   <div class="uk-text-center" uk-grid>
     <h2 class="uk-width-1-1">Modifica ahora tu descripción para contar al resto tus cualidades y experiencias:</h2>
-    <textarea class="uk-width-1-1" name="description" matInput required type="text"></textarea>
+    <textarea [(ngModel)]="this.user.description" class="uk-width-1-1" name="description" matInput required type="text"></textarea>
   </div>
   <br>
   <div class="footerAdd">
-    <h2>Calle baleares 39, Mostoles, Madrid</h2>
+    <h2>{{this.user.address}}</h2>
     <br>
-    <button class="uk-button uk-button-primary uk-button-large">Publicar</button>
+    <button class="uk-button uk-button-primary uk-button-large" (click)="postVolunteerAdd()">Publicar</button>
   </div>
 </div>
 

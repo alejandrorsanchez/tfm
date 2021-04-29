@@ -12,6 +12,7 @@ app.use(express.static('uploads'));
 
 app.use('/users', require('./routes/user.routes'));
 app.use('/pets', require('./routes/pet.routes'));
+app.use('/adds', require('./routes/add.routes'));
 
 app.listen(port, () => {
     console.log(`Server listening at http://localhost:${port}`)
