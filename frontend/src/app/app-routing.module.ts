@@ -5,6 +5,7 @@ import {AuthGuardService} from "./shared/auth-guard.service";
 import {CoverComponent} from "./cover/cover.component";
 import {OperationsComponent} from "./operations/operations.component";
 import {ProfileComponent} from "./profile/profile.component";
+import {PublisherComponent} from "./publisher/publisher.component";
 
 const routes: Routes = [
   {path: '', component: CoverComponent},
@@ -13,7 +14,8 @@ const routes: Routes = [
     canActivate: [AuthGuardService],
     children: [
       {path: '', component: OperationsComponent},
-      {path: 'profile', component: ProfileComponent}
+      {path: 'profile', component: ProfileComponent},
+      {path: 'publish', component: PublisherComponent}
     ]}
 ];
 
