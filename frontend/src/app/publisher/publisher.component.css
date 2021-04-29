@@ -1,0 +1,21 @@
+.uk-grid{
+  width: 80%;
+  margin: 40px auto;
+}
+.cardHeader{
+  background-color: rgba(0, 153, 255, 1);
+  color: white;
+  transition: transform .3s;
+}
+.uk-card:hover{
+  transform: scale(1.05);
+}
+.footerAdd{
+  text-align: center;
+}
+button{
+  width: 20%;
+}
+.headerBody{
+  margin-top: 150px;
+}

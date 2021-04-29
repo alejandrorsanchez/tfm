@@ -20,60 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/publisher/publisher.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/publisher/publisher.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/publisher/publisher.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/publisher/publisher.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/operations/operations.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/operations/operations.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/operations/operations.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/operations/operations.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/base.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/block-navigation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/pet.controller.js.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/user.controller.js.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/favicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/prettify.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/prettify.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/routes/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/routes/pet.routes.js.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/routes/user.routes.js.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/server/controllers/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/server/controllers/pet.controller.js.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/server/controllers/user.controller.js.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/server/database.js.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/server/enviroment.js.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/server/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/server/index.js.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/server/middleware/authMiddelware.js.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/server/middleware/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/server/mochawesome-report/assets/app.js.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/server/mochawesome-report/assets/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/server/routes/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/server/routes/pet.routes.js.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/server/routes/user.routes.js.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/sort-arrow-sprite.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/sorter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/mochawesome-report/assets/MaterialIcons-Regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/mochawesome-report/assets/MaterialIcons-Regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/mochawesome-report/assets/app.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/mochawesome-report/assets/app.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/mochawesome-report/assets/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/mochawesome-report/assets/app.js.LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/mochawesome-report/assets/app.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/mochawesome-report/assets/roboto-light-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/mochawesome-report/assets/roboto-light-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/mochawesome-report/assets/roboto-medium-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/mochawesome-report/assets/roboto-medium-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/mochawesome-report/assets/roboto-regular-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/mochawesome-report/assets/roboto-regular-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/mochawesome-report/mochawesome.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/mochawesome-report/mochawesome.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/uploads/96/pexels-lumn-406014.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/publisher/publisher.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/publisher/publisher.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/publisher/publisher.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/publisher/publisher.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/publisher/publisher.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/publisher/publisher.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -259,21 +209,7 @@
       <workItem from="1619615569350" duration="2016000" />
       <workItem from="1619619351721" duration="908000" />
       <workItem from="1619681202161" duration="24000" />
-      <workItem from="1619682927903" duration="1787000" />
-    </task>
-    <task id="LOCAL-00053" summary="new CoverComponent and HomeComponent linked">
-      <created>1618561479782</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1618561479782</updated>
-    </task>
-    <task id="LOCAL-00054" summary="toolbar with options">
-      <created>1618568953726</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1618568953726</updated>
+      <workItem from="1619682927903" duration="6999000" />
     </task>
     <task id="LOCAL-00055" summary="First OperationsComponent">
       <created>1618576087700</created>
@@ -604,7 +540,21 @@
       <option name="project" value="LOCAL" />
       <updated>1619682990011</updated>
     </task>
-    <option name="localTasksCounter" value="102" />
+    <task id="LOCAL-00102" summary="new publisher.component linked">
+      <created>1619684811971</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1619684811971</updated>
+    </task>
+    <task id="LOCAL-00103" summary="UI for posting new add">
+      <created>1619689456129</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1619689456129</updated>
+    </task>
+    <option name="localTasksCounter" value="104" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -627,8 +577,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="..." />
-    <MESSAGE value="New form for uploading images working" />
     <MESSAGE value="initial commit for PUT Pet" />
     <MESSAGE value="PUT Pet" />
     <MESSAGE value="UI POST Pet" />
@@ -652,7 +600,9 @@
     <MESSAGE value="package.json fixed for server" />
     <MESSAGE value="scripts" />
     <MESSAGE value="package.json" />
-    <option name="LAST_COMMIT_MESSAGE" value="package.json" />
+    <MESSAGE value="new publisher.component linked" />
+    <MESSAGE value="UI for posting new add" />
+    <option name="LAST_COMMIT_MESSAGE" value="UI for posting new add" />
   </component>
   <component name="WindowStateProjectService">
     <state x="509" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619029708212">
@@ -751,10 +701,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1619612256581" />
-    <state x="632" y="298" width="348" height="298" key="org.angular.cli.generate" timestamp="1619081517264">
+    <state x="632" y="298" width="348" height="298" key="org.angular.cli.generate" timestamp="1619684565826">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="632" y="298" width="348" height="298" key="org.angular.cli.generate/0.0.1536.824@0.0.1536.824" timestamp="1619081517264" />
+    <state x="632" y="298" width="348" height="298" key="org.angular.cli.generate/0.0.1536.824@0.0.1536.824" timestamp="1619684565826" />
     <state x="48" y="189" key="run.anything.popup" timestamp="1619611294759">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

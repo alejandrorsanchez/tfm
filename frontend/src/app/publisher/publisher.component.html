@@ -1,1 +1,51 @@
-<p>publisher works!</p>
+<div class="uk-child-width-expand@s uk-text-center" uk-grid>
+  <div>
+    <div class="uk-card uk-card-default uk-card-body cardHeader" (click)="showAdoptionForm()"><h1>Adopción</h1></div>
+  </div>
+  <div>
+    <div class="uk-card uk-card-default uk-card-body cardHeader" (click)="showVolunteerForm()"><h1>Voluntario</h1></div>
+  </div>
+</div>
+<div *ngIf="this.isAdoption">
+  <div *ngIf="this.myPets.length == 0">
+    <h1 class="headerBody">Parece que aún no tienes mascotas asociadas. Dirígite a tu perfil para añadir una.</h1>
+  </div>
+  <div class="uk-grid-small uk-child-width-expand@s uk-text-center" uk-grid>
+    <div *ngFor="let pet of this.myPets">
+      <div class="uk-card uk-card-default">
+        <div class="uk-card-header">
+          <div class="uk-grid-small uk-flex-middle" uk-grid>
+            <div class="uk-width-auto">
+              <img class="uk-border-circle" width="40" height="40" src="./assets/favicon.ico">
+            </div>
+            <div class="uk-width-expand">
+              <h3 class="uk-card-title uk-margin-remove-bottom">{{pet.name}}</h3>
+            </div>
+          </div>
+        </div>
+        <div class="uk-card-body">
+          <p class="uk-text-meta uk-margin-remove-top">{{pet.description}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div *ngIf="this.myPets.length > 0" class="footerAdd">
+    <h2>Calle baleares 39, Mostoles, Madrid</h2>
+    <br>
+    <button class="uk-button uk-button-primary uk-button-large">Publicar</button>
+  </div>
+</div>
+<div *ngIf="this.isVolunteer">
+  <div class="uk-text-center" uk-grid>
+    <h2 class="uk-width-1-1">Modifica ahora tu descripción para contar al resto tus cualidades y experiencias:</h2>
+    <textarea class="uk-width-1-1" name="description" matInput required type="text"></textarea>
+  </div>
+  <br>
+  <div class="footerAdd">
+    <h2>Calle baleares 39, Mostoles, Madrid</h2>
+    <br>
+    <button class="uk-button uk-button-primary uk-button-large">Publicar</button>
+  </div>
+</div>
+
