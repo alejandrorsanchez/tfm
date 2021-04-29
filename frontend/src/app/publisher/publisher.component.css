@@ -2,6 +2,9 @@
   width: 80%;
   margin: 20px auto;
 }
+.selected{
+  border: 2px solid black;
+}
 .cardHeader{
   background-color: rgba(0, 153, 255, 1);
   color: white;

@@ -1,9 +1,9 @@
 <div class="uk-child-width-expand@s uk-text-center" uk-grid>
   <div>
-    <div class="uk-card uk-card-default uk-card-body cardHeader" (click)="showAdoptionForm()"><h1>Adopción</h1></div>
+    <div [ngClass]="{'selected': this.isAdoption}" class="uk-card uk-card-default uk-card-body cardHeader" (click)="showAdoptionForm()"><h1>Adopción</h1></div>
   </div>
   <div>
-    <div class="uk-card uk-card-default uk-card-body cardHeader" (click)="showVolunteerForm()"><h1>Voluntario</h1></div>
+    <div [ngClass]="{'selected': this.isVolunteer}" class="uk-card uk-card-default uk-card-body cardHeader" (click)="showVolunteerForm()"><h1>Voluntario</h1></div>
   </div>
 </div>
 <div *ngIf="this.isAdoption">
@@ -12,7 +12,7 @@
   </div>
   <div class="uk-grid-small uk-child-width-expand@s uk-text-center" uk-grid>
     <div *ngFor="let pet of this.myPets">
-      <div class="uk-card uk-card-default">
+      <div class="uk-card uk-card-default" (click)="selectCard(pet)">
         <div class="uk-card-header">
           <div class="uk-grid-small uk-flex-middle" uk-grid>
             <div class="uk-width-3-4">
@@ -29,11 +29,10 @@
       </div>
     </div>
   </div>
-  <br>
   <div *ngIf="this.myPets.length > 0" class="footerAdd">
+    <h3 *ngIf="this.postingPet">Mascota seleccionada: {{this.postingPet.name}}</h3>
     <h2>Calle baleares 39, Mostoles, Madrid</h2>
-    <br>
-    <button class="uk-button uk-button-primary uk-button-large">Publicar</button>
+    <button class="uk-button uk-button-primary uk-button-large" [disabled]=invalid() (click)="postAdd()">Publicar</button>
   </div>
 </div>
 <div *ngIf="this.isVolunteer">

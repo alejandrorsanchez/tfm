@@ -12,6 +12,7 @@ export class PublisherComponent implements OnInit {
 
   id: string;
   myPets: Pet[] = [];
+  postingPet: Pet;
   isAdoption: boolean;
   isVolunteer: boolean;
 
@@ -19,7 +20,18 @@ export class PublisherComponent implements OnInit {
 
   ngOnInit(): void {
     this.id = this.utilsService.getId();
+
+  }
+
+  showAdoptionForm() {
+    this.isAdoption = true;
+    this.isVolunteer = false;
     this.getUserPets(this.id);
+  }
+
+  showVolunteerForm() {
+    this.isVolunteer = true;
+    this.isAdoption = false;
   }
 
   getUserPets(id: string) {
@@ -35,13 +47,15 @@ export class PublisherComponent implements OnInit {
     );
   }
 
-  showAdoptionForm() {
-    this.isAdoption = true;
-    this.isVolunteer = false;
+  selectCard(pet: Pet) {
+    this.postingPet = pet;
   }
 
-  showVolunteerForm() {
-    this.isVolunteer = true;
-    this.isAdoption = false;
+  postAdd() {
+    //TODO
+  }
+
+  invalid(): boolean {
+    return this.postingPet === undefined;
   }
 }

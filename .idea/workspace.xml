@@ -20,17 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/server/uploads/164/pexels-artem-beliaikin-1485637.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/uploads/165/splash.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/profile/profile.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/profile/profile.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/publisher/publisher.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/publisher/publisher.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/publisher/publisher.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/publisher/publisher.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/publisher/publisher.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/publisher/publisher.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/pet.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/pet.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/enviroment.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/enviroment.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/pet.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/pet.routes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,14 +209,7 @@
       <workItem from="1619615569350" duration="2016000" />
       <workItem from="1619619351721" duration="908000" />
       <workItem from="1619681202161" duration="24000" />
-      <workItem from="1619682927903" duration="10558000" />
-    </task>
-    <task id="LOCAL-00056" summary="new ProfileComponent linked">
-      <created>1618816364518</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1618816364518</updated>
+      <workItem from="1619682927903" duration="12559000" />
     </task>
     <task id="LOCAL-00057" summary="form for update user data">
       <created>1618818335012</created>
@@ -561,7 +547,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619690072818</updated>
     </task>
-    <option name="localTasksCounter" value="105" />
+    <task id="LOCAL-00105" summary="Retrieving user pets for the add">
+      <created>1619693600417</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1619693600417</updated>
+    </task>
+    <option name="localTasksCounter" value="106" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -584,7 +577,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="initial commit for PUT Pet" />
     <MESSAGE value="PUT Pet" />
     <MESSAGE value="UI POST Pet" />
     <MESSAGE value="POST Pet" />
@@ -609,7 +601,8 @@
     <MESSAGE value="package.json" />
     <MESSAGE value="new publisher.component linked" />
     <MESSAGE value="UI for posting new add" />
-    <option name="LAST_COMMIT_MESSAGE" value="UI for posting new add" />
+    <MESSAGE value="Retrieving user pets for the add" />
+    <option name="LAST_COMMIT_MESSAGE" value="Retrieving user pets for the add" />
   </component>
   <component name="WindowStateProjectService">
     <state x="509" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619029708212">
