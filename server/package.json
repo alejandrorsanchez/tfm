@@ -6,8 +6,7 @@
   "scripts": {
     "dev": "nodemon index.js",
     "test": "mocha test",
-    "report": "mocha --recursive test --reporter mochawesome",
-    "coverage": "nyc npm run test"
+    "report": "nyc mocha --recursive test --reporter mochawesome"
   },
   "keywords": [],
   "author": "",
@@ -35,8 +34,18 @@
     "all": true,
     "check-coverage": true,
     "include": [
-      "controllers",
-      "routes"
+      "routes/**",
+      "controllers/**"
+    ],
+    "exclude": [
+      "middelware/**",
+      "mochawesome-report/**",
+      "uploads/**",
+      "node_modules/**",
+      "database.js",
+      "index.js",
+      "enviroment.js",
+      "server/test"
     ],
     "branches": 60,
     "lines": 60,
