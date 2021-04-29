@@ -11,17 +11,28 @@ import {Pet} from "../shared/pet";
 export class PublisherComponent implements OnInit {
 
   id: string;
-  myPets: any[];
+  myPets: Pet[] = [];
   isAdoption: boolean;
   isVolunteer: boolean;
 
   constructor(private utilsService: UtilsService, private petService: PetService) { }
 
   ngOnInit(): void {
-    this.myPets = [{name: 'Simba', description: 'es un perro loco al que le encanta jugar a la pelota'}, {name:'Chloe', description: 'bbb'}, {name: 'Coco', description: 'ccc'}];
-    //this.myPets = [];
     this.id = this.utilsService.getId();
+    this.getUserPets(this.id);
+  }
 
+  getUserPets(id: string) {
+    this.petService.findByUserId(id).subscribe(
+      response => {
+        this.myPets = [];
+        for (const key in response) {
+          let pet = new Pet();
+          pet.copyProperties(response[key]);
+          this.myPets.push(pet);
+        }
+      }
+    );
   }
 
   showAdoptionForm() {

@@ -43,7 +43,7 @@
           </div>
           <mat-divider></mat-divider>
       </div>
-      <br><a (click)="openAddPetDialog()" uk-icon="icon: plus; ratio: 3.5"></a>
+      <br><a *ngIf="!hasNoPets()" (click)="openAddPetDialog()" uk-icon="icon: plus; ratio: 3.5"></a>
     </div>
   </div>
 </div>

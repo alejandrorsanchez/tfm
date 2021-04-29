@@ -8,7 +8,7 @@ const env = require('./enviroment');
 app.use(morgan('dev'));
 app.use(express.json());
 app.use(cors({origin: env.URL_CORS}));
-app.use(express.static(env.STATIC))
+app.use(express.static('uploads'));
 
 app.use('/users', require('./routes/user.routes'));
 app.use('/pets', require('./routes/pet.routes'));

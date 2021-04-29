@@ -39,25 +39,22 @@ petController.delete = (req, res) => {
     db.query(query, [id], function (err, row, fields) {
         if (err) throw err;
         res.status(200).send();
-        rimraf.sync(env.FILES_LOCATION + id);
+        rimraf.sync('./uploads/' + id);
     })
 }
 
 petController.uploadPhoto = (req, res) => {
     const id = req.body.id;
     const name = req.body.name;
-    const resolvedPath = path.resolve(env.FILES_LOCATION + id);
-    if (resolvedPath.startsWith('C:')) {
-        if(!fs.existsSync(resolvedPath)){
-            fs.mkdir(resolvedPath,function(err){
-                if (err) return console.error(err);
-                console.log("Directory created successfully!");
-            });
-        }
-        deleteFilesFromDirectory(resolvedPath);
-        copyFileAndDeleteFromOrigin("./server/uploads",resolvedPath, name);
-        res.json({ message: 'Imagen guardada' });
+    if(!fs.existsSync('./uploads/' + id)){
+        fs.mkdir('./uploads/' + id,function(err){
+            if (err) return console.error(err);
+            console.log("Directory created successfully!");
+        });
     }
+    deleteFilesFromDirectory('./uploads/' + id);
+    copyFileAndDeleteFromOrigin("./uploads",'./uploads/' + id, name);
+    res.json({ message: 'Imagen guardada' });
 }
 
 function copyFileAndDeleteFromOrigin(origin, destination, name){
