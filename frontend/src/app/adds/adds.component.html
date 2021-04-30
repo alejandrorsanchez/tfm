@@ -1,0 +1,39 @@
+<div class="addsContainer">
+  <h1>Anuncios encontrados cerca de ti</h1>
+  <br>
+  <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-3@s uk-text-center" uk-grid>
+    <div *ngFor="let add of this.adds">
+      <div *ngIf="isAdoption()" class="uk-card uk-card-default">
+        <div class="uk-card-header">
+          <div class="uk-grid-small uk-flex-middle" uk-grid>
+            <div class="uk-width-auto">
+              <img width="150" height="150" src="http://localhost:3000/165/splash.jpg">
+            </div>
+            <div class="uk-width-expand">
+              <p class="uk-card-title uk-margin-remove-bottom">{{add.pet}}</p>
+              <p class="uk-text-meta uk-margin-remove-top">boxer | 12Kg | 6 años</p>
+              <p class="uk-text-meta uk-margin-remove-top">Es un perro loco</p>
+            </div>
+          </div>
+        </div>
+        <div class="uk-card-body">
+          <h3 class="uk-card-title uk-margin-remove-bottom">{{add.username}}</h3>
+          <p class="uk-text-meta uk-margin-remove-top">{{add.address}}</p>
+        </div>
+      </div>
+      <div *ngIf="!isAdoption()" class="uk-card uk-card-default">
+        <div class="uk-card-header">
+          <div class="uk-grid-small uk-flex-middle" uk-grid>
+            <div class="uk-width-expand">
+              <p class="uk-card-title uk-margin-remove-bottom">{{add.username}}</p>
+            </div>
+          </div>
+        </div>
+        <div class="uk-card-body">
+          <h3 class="uk-card-title uk-margin-remove-bottom">{{add.description}}</h3>
+          <p class="uk-text-meta uk-margin-remove-top">{{add.address}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

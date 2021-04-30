@@ -21,7 +21,6 @@ export class OperationsComponent implements OnInit {
 
   openTypeAddDialog() {
     this.dialog.open(TypeAddDialogComponent, {
-      panelClass: 'app-full-bleed-dialog',
       width: '60%',
     });
   }

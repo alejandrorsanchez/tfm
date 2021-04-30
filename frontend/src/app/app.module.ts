@@ -29,6 +29,7 @@ import {MatToolbarModule} from "@angular/material/toolbar";
 import { OperationsComponent } from './operations/operations.component';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatListModule} from '@angular/material/list';
+import { AddsComponent } from './adds/adds.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import {MatListModule} from '@angular/material/list';
     DeletePetDialogComponent,
     AddUpdatePetDialogComponent,
     PublisherComponent,
-    TypeAddDialogComponent
+    TypeAddDialogComponent,
+    AddsComponent
   ],
   imports: [
     BrowserModule,

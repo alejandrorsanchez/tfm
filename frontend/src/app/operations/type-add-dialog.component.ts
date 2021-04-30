@@ -1,4 +1,6 @@
 import {Component, OnInit} from '@angular/core';
+import {Router} from "@angular/router";
+import {MatDialogRef} from "@angular/material/dialog";
 
 @Component({
   selector: 'app-type-operation-dialog',
@@ -7,16 +9,19 @@ import {Component, OnInit} from '@angular/core';
 })
 export class TypeAddDialogComponent implements OnInit {
 
-  constructor() { }
+  constructor(public router: Router, public dialogRef: MatDialogRef<TypeAddDialogComponent>) { }
 
   ngOnInit(): void {
   }
 
   getAdoptionAdds() {
+    this.dialogRef.close();
+    this.router.navigateByUrl('home/adds/1');
 
   }
 
   getVolunteerAdds() {
-
+    this.dialogRef.close();
+    this.router.navigateByUrl('home/adds/2');
   }
 }
