@@ -28,6 +28,7 @@ import { OperationsComponent } from './operations/operations.component';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatListModule} from '@angular/material/list';
 import { PublisherComponent } from './publisher/publisher.component';
+import { MyAddsComponent } from './my-adds/my-adds.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { PublisherComponent } from './publisher/publisher.component';
     DeleteAccountDialogComponent,
     DeletePetDialogComponent,
     AddUpdatePetDialogComponent,
-    PublisherComponent
+    PublisherComponent,
+    MyAddsComponent
   ],
   imports: [
     BrowserModule,

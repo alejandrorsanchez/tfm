@@ -19,15 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/publisher/publisher.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/publisher/publisher.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/publisher/publisher.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/publisher/publisher.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/shared/add.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/shared/add.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/shared/add.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/shared/add.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/add.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/add.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/add.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/add.routes.js" afterDir="false" />
-    </list>
+    <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -214,14 +206,7 @@
       <workItem from="1619681202161" duration="24000" />
       <workItem from="1619682927903" duration="16178000" />
       <workItem from="1619702707789" duration="2612000" />
-      <workItem from="1619765872651" duration="1462000" />
-    </task>
-    <task id="LOCAL-00060" summary="User logged sent to homeComponent">
-      <created>1618826945164</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1618826945164</updated>
+      <workItem from="1619765872651" duration="1799000" />
     </task>
     <task id="LOCAL-00061" summary="DELETE User implemented">
       <created>1618832363961</created>
@@ -559,7 +544,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619705212869</updated>
     </task>
-    <option name="localTasksCounter" value="109" />
+    <task id="LOCAL-00109" summary="POST Add">
+      <created>1619767679721</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1619767679721</updated>
+    </task>
+    <option name="localTasksCounter" value="110" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
