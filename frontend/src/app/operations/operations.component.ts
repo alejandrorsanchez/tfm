@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from "@angular/router";
+import {MatDialog} from "@angular/material/dialog";
+import {TypeAddDialogComponent} from "./type-add-dialog.component";
 
 @Component({
   selector: 'app-operations',
@@ -8,12 +10,19 @@ import {Router} from "@angular/router";
 })
 export class OperationsComponent implements OnInit {
 
-  constructor(public router: Router) { }
+  constructor(public router: Router, private dialog: MatDialog) { }
 
   ngOnInit(): void {
   }
 
   publishAdd() {
     this.router.navigateByUrl('home/publish');
+  }
+
+  openTypeAddDialog() {
+    this.dialog.open(TypeAddDialogComponent, {
+      panelClass: 'app-full-bleed-dialog',
+      width: '60%',
+    });
   }
 }

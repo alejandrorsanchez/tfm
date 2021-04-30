@@ -13,6 +13,8 @@ import { DeletePetDialogComponent } from './profile/delete-pet-dialog.component'
 import { AddUpdatePetDialogComponent } from './profile/add-update-pet-dialog.component';
 import { ProfileComponent } from './profile/profile.component';
 import { CoverComponent } from './cover/cover.component';
+import { PublisherComponent } from './publisher/publisher.component';
+import { TypeAddDialogComponent } from './operations/type-add-dialog.component';
 import {MatDialogModule} from "@angular/material/dialog";
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import {MatFormFieldModule} from "@angular/material/form-field";
@@ -27,8 +29,6 @@ import {MatToolbarModule} from "@angular/material/toolbar";
 import { OperationsComponent } from './operations/operations.component';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatListModule} from '@angular/material/list';
-import { PublisherComponent } from './publisher/publisher.component';
-import { MyAddsComponent } from './my-adds/my-adds.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +43,7 @@ import { MyAddsComponent } from './my-adds/my-adds.component';
     DeletePetDialogComponent,
     AddUpdatePetDialogComponent,
     PublisherComponent,
-    MyAddsComponent
+    TypeAddDialogComponent
   ],
   imports: [
     BrowserModule,

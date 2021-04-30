@@ -1,0 +1,8 @@
+.uk-card{
+  background-color: rgba(0, 153, 255, 1);
+  color: white;
+  transition: transform .3s;
+}
+.uk-card:hover{
+  transform: scale(1.1);
+}

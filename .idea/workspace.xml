@@ -19,7 +19,19 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="" />
+    <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/operations/type-add-dialog.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/operations/type-add-dialog.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/my-adds/my-adds.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/operations/type-add-dialog.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/my-adds/my-adds.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/my-adds/my-adds.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/my-adds/my-adds.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/operations/operations.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/operations/operations.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/operations/operations.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/operations/operations.component.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,19 +67,19 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\server" />
-      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\cover" />
-      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\profile" />
-      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\shared" />
-      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\server\public" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\server" />
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\server\controllers" />
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\server\routes" />
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\shared" />
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\user" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\operations" />
+      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\server" />
+      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\cover" />
+      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\profile" />
+      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\shared" />
     </key>
   </component>
   <component name="RunManager" selected="npm.coverage">
@@ -206,14 +218,7 @@
       <workItem from="1619681202161" duration="24000" />
       <workItem from="1619682927903" duration="16178000" />
       <workItem from="1619702707789" duration="2612000" />
-      <workItem from="1619765872651" duration="1799000" />
-    </task>
-    <task id="LOCAL-00061" summary="DELETE User implemented">
-      <created>1618832363961</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1618832363961</updated>
+      <workItem from="1619765872651" duration="3243000" />
     </task>
     <task id="LOCAL-00062" summary="User routes modified">
       <created>1618832965977</created>
@@ -551,7 +556,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619767679721</updated>
     </task>
-    <option name="localTasksCounter" value="110" />
+    <task id="LOCAL-00110" summary="my adds component linked">
+      <created>1619767822229</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1619767822229</updated>
+    </task>
+    <option name="localTasksCounter" value="111" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -574,7 +586,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="POST Pet" />
     <MESSAGE value="Images showing up in pets list" />
     <MESSAGE value="Remove images showing up in list" />
     <MESSAGE value="delete pets when deleting its user" />
@@ -599,7 +610,8 @@
     <MESSAGE value="Retrieving user pets for the add" />
     <MESSAGE value="Saving pet id and user id for the add post" />
     <MESSAGE value="POST Add" />
-    <option name="LAST_COMMIT_MESSAGE" value="POST Add" />
+    <MESSAGE value="my adds component linked" />
+    <option name="LAST_COMMIT_MESSAGE" value="my adds component linked" />
   </component>
   <component name="WindowStateProjectService">
     <state x="509" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619029708212">
@@ -698,10 +710,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1619612256581" />
-    <state x="632" y="298" width="348" height="298" key="org.angular.cli.generate" timestamp="1619695897453">
+    <state x="632" y="298" width="348" height="298" key="org.angular.cli.generate" timestamp="1619768392107">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="632" y="298" width="348" height="298" key="org.angular.cli.generate/0.0.1536.824@0.0.1536.824" timestamp="1619695897453" />
+    <state x="632" y="298" width="348" height="298" key="org.angular.cli.generate/0.0.1536.824@0.0.1536.824" timestamp="1619768392107" />
     <state x="48" y="189" key="run.anything.popup" timestamp="1619611294759">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
