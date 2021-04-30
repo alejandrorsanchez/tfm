@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
+import {AddListing} from "../shared/addListing";
 
 @Component({
   selector: 'app-adds',
@@ -9,16 +10,14 @@ import {ActivatedRoute} from "@angular/router";
 export class AddsComponent implements OnInit {
 
   type: number;
-  adds: any;
-  adds1 = [{username: "Alex", pet: "Simba", address: "address1"}, {username: "Celia", pet: "Coco", address: "address2"}];
-  adds2 = [{username: "Dani", description: "soy el mejor", address: "address1"}, {username: "Sara", description: "me gusta cuidar", address: "address2"}];
+  adds: AddListing[];
 
   constructor(private route: ActivatedRoute) {
+    this.type = this.route.snapshot.params.type;
   }
 
   ngOnInit(): void {
-    this.type = this.route.snapshot.params.type;
-    this.type == 1 ? this.adds = this.adds1 : this.adds = this.adds2;
+
   }
 
   contactUser() {

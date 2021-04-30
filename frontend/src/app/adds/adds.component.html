@@ -7,31 +7,31 @@
         <div class="uk-card-header">
           <div class="uk-grid-small uk-flex-middle" uk-grid>
             <div class="uk-width-auto">
-              <img width="150" height="150" src="http://localhost:3000/165/splash.jpg">
+              <img width="150" height="150" src="http://localhost:3000/{{add.pet.id}}/{{add.pet.picture}}">
             </div>
             <div class="uk-width-expand">
-              <p class="uk-card-title uk-margin-remove-bottom">{{add.pet}}</p>
-              <p class="uk-text-meta uk-margin-remove-top">boxer | 12Kg | 6 años</p>
-              <p class="uk-text-meta uk-margin-remove-top">Es un perro loco</p>
+              <p class="uk-card-title uk-margin-remove-bottom">{{add.pet.name}}</p>
+              <p class="uk-text-meta uk-margin-remove-top">{{add.pet.breed}} | {{add.pet.weight}} | {{add.pet.age}}</p>
+              <p class="uk-text-meta uk-margin-remove-top">{{add.pet.description}}</p>
             </div>
           </div>
         </div>
         <div class="uk-card-body">
-          <h3 class="uk-card-title uk-margin-remove-bottom">{{add.username}}</h3>
-          <p class="uk-text-meta uk-margin-remove-top">{{add.address}}</p>
+          <h3 class="uk-card-title uk-margin-remove-bottom">{{add.user.username}}</h3>
+          <p class="uk-text-meta uk-margin-remove-top">{{add.user.address}}</p>
         </div>
       </div>
       <div *ngIf="!isAdoption()" class="uk-card uk-card-default">
         <div class="uk-card-header">
           <div class="uk-grid-small uk-flex-middle" uk-grid>
             <div class="uk-width-expand">
-              <p class="uk-card-title uk-margin-remove-bottom">{{add.username}}</p>
+              <p class="uk-card-title uk-margin-remove-bottom">{{add.user.username}}</p>
             </div>
           </div>
         </div>
         <div class="uk-card-body">
-          <h3 class="uk-card-title uk-margin-remove-bottom">{{add.description}}</h3>
-          <p class="uk-text-meta uk-margin-remove-top">{{add.address}}</p>
+          <h3 class="uk-card-title uk-margin-remove-bottom">{{add.user.description}}</h3>
+          <p class="uk-text-meta uk-margin-remove-top">{{add.user.address}}</p>
         </div>
       </div>
     </div>

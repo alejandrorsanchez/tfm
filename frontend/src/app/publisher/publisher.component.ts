@@ -3,7 +3,7 @@ import {PetService} from "../shared/pet.service";
 import {UtilsService} from "../shared/utils.service";
 import {Pet} from "../shared/pet";
 import {AddService} from "../shared/add.service";
-import {Add} from "../shared/add";
+import {AddCreation} from "../shared/addCreation";
 import {Router} from "@angular/router";
 import {User} from "../shared/user";
 import {UserService} from "../shared/user.service";
@@ -68,7 +68,7 @@ export class PublisherComponent implements OnInit {
   }
 
   postAdoptionAdd() {
-    const add = new Add(this.id, this.postingPet.id);
+    const add = new AddCreation(this.id, this.postingPet.id);
     this.addService.saveAdoptionAdd(add).subscribe(
       response => {
         this.utilsService.showNotification(response.body['message']);
@@ -81,7 +81,7 @@ export class PublisherComponent implements OnInit {
   }
 
   postVolunteerAdd() {
-    const add = new Add(this.id);
+    const add = new AddCreation(this.id);
     this.addService.saveVolunteerAdd(add).subscribe(
       response => {
         this.utilsService.showNotification(response.body['message']);

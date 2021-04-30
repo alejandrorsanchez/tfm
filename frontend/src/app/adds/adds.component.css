@@ -2,6 +2,12 @@
   width: 80%;
   margin: 30px auto;
 }
+.uk-card{
+   transition: transform 250ms;
+ }
+.uk-card:hover{
+  transform: translateY(-10px);
+}
 .itemText{
   padding-top: 5px;
 }

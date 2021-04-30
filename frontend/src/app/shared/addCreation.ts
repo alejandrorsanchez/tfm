@@ -1,4 +1,4 @@
-export class Add {
+export class AddCreation {
   id: number;
   userId: string;
   petId?: number;

@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
-import {Add} from "./add";
+import {AddCreation} from "./addCreation";
 
 @Injectable({
   providedIn: 'root'
@@ -11,11 +11,11 @@ export class AddService {
 
   constructor(private http: HttpClient) { }
 
-  saveAdoptionAdd(add: Add) {
+  saveAdoptionAdd(add: AddCreation) {
     return this.http.post(this.URL + '/adoption', add, {observe: 'response'});
   }
 
-  saveVolunteerAdd(add: Add) {
+  saveVolunteerAdd(add: AddCreation) {
     return this.http.post(this.URL + '/volunteer', add, {observe: 'response'});
   }
 }
