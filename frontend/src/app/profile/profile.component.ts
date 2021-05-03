@@ -45,7 +45,7 @@ export class ProfileComponent implements OnInit {
         this.myPets = [];
         for (const key in response) {
           let pet = new Pet();
-          pet.copyProperties(response[key]);
+          pet = response[key];
           this.myPets.push(pet);
         }
       }

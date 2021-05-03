@@ -19,16 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/adds/adds.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/adds/adds.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/adds/adds.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/adds/adds.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/adds/adds.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/adds/adds.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/shared/pet.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/shared/pet.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/add.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/add.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/pet.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/pet.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/pet.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/pet.routes.js" afterDir="false" />
-    </list>
+    <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -216,21 +207,7 @@
       <workItem from="1619682927903" duration="16178000" />
       <workItem from="1619702707789" duration="2612000" />
       <workItem from="1619765872651" duration="10775000" />
-      <workItem from="1620033333661" duration="9031000" />
-    </task>
-    <task id="LOCAL-00067" summary="DELETE Pet">
-      <created>1618920548578</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1618920548578</updated>
-    </task>
-    <task id="LOCAL-00068" summary="Update pet dialog without photo field">
-      <created>1618996389478</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1618996389478</updated>
+      <workItem from="1620033333661" duration="10164000" />
     </task>
     <task id="LOCAL-00069" summary="Update pet dialog without photo field">
       <created>1618996417925</created>
@@ -561,7 +538,21 @@
       <option name="project" value="LOCAL" />
       <updated>1619776877200</updated>
     </task>
-    <option name="localTasksCounter" value="116" />
+    <task id="LOCAL-00116" summary="GET Adds by type">
+      <created>1620042884908</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1620042884908</updated>
+    </task>
+    <task id="LOCAL-00117" summary="copyProperties unused?">
+      <created>1620043343947</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1620043343947</updated>
+    </task>
+    <option name="localTasksCounter" value="118" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -584,8 +575,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="UI operations fixed" />
-    <MESSAGE value="User Tests" />
     <MESSAGE value="Pet Tests" />
     <MESSAGE value="Services to /shared" />
     <MESSAGE value="Redistribution of packages" />
@@ -609,7 +598,9 @@
     <MESSAGE value="new model addListing.ts" />
     <MESSAGE value="service called from fronted" />
     <MESSAGE value="first version endpoint" />
-    <option name="LAST_COMMIT_MESSAGE" value="first version endpoint" />
+    <MESSAGE value="GET Adds by type" />
+    <MESSAGE value="copyProperties unused?" />
+    <option name="LAST_COMMIT_MESSAGE" value="copyProperties unused?" />
   </component>
   <component name="WindowStateProjectService">
     <state x="509" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619029708212">
