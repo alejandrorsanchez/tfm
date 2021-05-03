@@ -13,6 +13,10 @@ export class PetService {
 
   constructor(private http: HttpClient) { }
 
+  findById(id: string) {
+    return this.http.get(this.URL + '/' + id);
+  }
+
   findByUserId(userId: string) {
     return this.http.get(this.URL + this.SEARCH + userId);
   }

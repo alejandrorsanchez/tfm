@@ -14,6 +14,7 @@ const storage = multer.diskStorage({
 })
 const upload = multer({storage});
 
+router.get('/:id', ensureAuthenticated, petController.findById);
 router.get('/search/:userId', ensureAuthenticated, petController.findByUserId);
 router.post('/', ensureAuthenticated, petController.save);
 router.post('/file', upload.single('image'), petController.uploadPhoto);

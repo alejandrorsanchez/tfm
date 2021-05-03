@@ -5,6 +5,15 @@ const path = require('path');
 const env = require('../enviroment');
 const rimraf = require("rimraf");
 
+petController.findById = (req, res) => {
+    const id = req.params.id;
+    const query = 'SELECT * FROM pets WHERE id = ?';
+    db.query(query, [id], function (err, row, fields) {
+        if (err) throw err;
+        res.json(row);
+    })
+}
+
 petController.findByUserId = (req, res) => {
     const userId = req.params.userId;
     const query = 'SELECT * FROM pets WHERE user_id = ?';
