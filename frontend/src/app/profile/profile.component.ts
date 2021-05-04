@@ -53,9 +53,11 @@ export class ProfileComponent implements OnInit {
   }
 
   autocompleteFocus() {
-    const addressInput = document.getElementById("address") as HTMLInputElement;
-    const addressAutocomplete = new google.maps.places.Autocomplete(addressInput);
-    addressAutocomplete.setFields(["place_id"]);
+    const addressField = document.getElementById("address") as HTMLInputElement;
+    const autocomplete = new google.maps.places.Autocomplete(addressField, {
+      fields: ["address_components", "geometry"],
+      types: ["address"]
+    });
   }
 
   openDeleteUserDialog() {
@@ -66,6 +68,8 @@ export class ProfileComponent implements OnInit {
   }
 
   updateUser() {
+    const addressInput = document.getElementById("address") as HTMLInputElement;
+    this.user.address = addressInput.value;
     this.userService.update(this.user).subscribe(
       response => {
         this.getUser();

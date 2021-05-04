@@ -48,6 +48,8 @@ export class SingUpDialogComponent implements OnInit{
   }
 
   saveUser(){
+    const addressInput = document.getElementById("address") as HTMLInputElement;
+    this.newUser.address = addressInput.value;
     if (this.fieldsAreCorrect()){
       this.userService.save(this.newUser).subscribe(
         response => {
