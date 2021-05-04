@@ -27,7 +27,7 @@ export class AddsComponent implements OnInit {
   ngOnInit(): void {
     this.id = this.utilsService.getId();
     this.getAdds();
-    console.log(this.adds);
+    //console.log(this.adds);
   }
 
   getAdds() {

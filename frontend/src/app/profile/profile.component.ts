@@ -41,13 +41,14 @@ export class ProfileComponent implements OnInit {
 
   getUserPets(id: string) {
     this.petService.findByUserId(id).subscribe(
-      response => {
-        this.myPets = [];
+      (response: Pet[]) => {
+          this.myPets = response;
+        /*this.myPets = [];
         for (const key in response) {
           let pet = new Pet();
           pet = response[key];
           this.myPets.push(pet);
-        }
+        }*/
       }
     );
   }
