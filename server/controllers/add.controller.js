@@ -1,6 +1,5 @@
 const addController = {};
 const db = require('../database');
-const userController = require("./user.controller");
 
 addController.saveAdoption = (req, res) => {
     const add = req.body;
@@ -34,6 +33,7 @@ addController.saveVolunteer = (req, res) => {
         }
     })
 }
+
 addController.findByType = (req, res) => {
     const type = req.query.type;
     const id = req.query.id;

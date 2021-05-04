@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute, Router} from "@angular/router";
 import {AddListing} from "../shared/addListing";
 import {AddService} from "../shared/add.service";
@@ -7,6 +7,8 @@ import {UserService} from "../shared/user.service";
 import {PetService} from "../shared/pet.service";
 import {Pet} from "../shared/pet";
 import {User} from "../shared/user";
+import {Coordinate} from "./coordinate";
+import TravelMode = google.maps.TravelMode;
 
 @Component({
   selector: 'app-adds',
@@ -16,6 +18,7 @@ import {User} from "../shared/user";
 export class AddsComponent implements OnInit {
 
   type: number;
+  user: User;
   adds: AddListing[] = [];
   id: string;
 
@@ -25,9 +28,18 @@ export class AddsComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.id = this.utilsService.getId();
+    this.getUser();
     this.getAdds();
-    //console.log(this.adds);
+    setTimeout(() => { this.orderAddsByProximity() }, 500);
+  }
+
+  getUser(){
+    this.id = this.utilsService.getId();
+    this.userService.findById(this.id).subscribe(
+      response => {
+        this.user = response[0];
+      }
+    );
   }
 
   getAdds() {
@@ -58,6 +70,43 @@ export class AddsComponent implements OnInit {
       });
   }
 
+  orderAddsByProximity() {
+    const myCoordinate: Coordinate = this.getCoordinate(this.user.address);
+    for (const add of this.adds) {
+      const coordinateOrigin = this.getCoordinate(add.user.address);
+      var origin1 = new google.maps.LatLng(coordinateOrigin.lat, coordinateOrigin.lng);
+      var origin2 = this.user.address;
+      var destinationA = add.user.address;
+      var destinationB = new google.maps.LatLng(coordinateOrigin.lat, coordinateOrigin.lng);
+      const service = new google.maps.DistanceMatrixService();
+      service.getDistanceMatrix(
+        {
+          origins: [origin1, origin2],
+          destinations: [destinationA, destinationB],
+          travelMode: TravelMode.DRIVING,
+          unitSystem: google.maps.UnitSystem.METRIC,
+          avoidHighways: false,
+          avoidTolls: true,
+        }, callback);
+
+      function callback(response, status) {
+        console.log(response);
+      }
+    }
+  }
+
+  getCoordinate(address: string): Coordinate {
+    let coordinate = new Coordinate();
+    const geocoder = new google.maps.Geocoder();
+    geocoder.geocode( { 'address': address}, function(results, status) {
+      if (status == google.maps.GeocoderStatus.OK) {
+        coordinate.lat = results[0].geometry.location.lat();
+        coordinate.lng = results[0].geometry.location.lng();
+      }
+    });
+    return coordinate;
+  }
+
   isAdoption() {
     return this.type == 1;
   }
@@ -69,4 +118,5 @@ export class AddsComponent implements OnInit {
   redirectToHome() {
     this.router.navigateByUrl('/home');
   }
+
 }

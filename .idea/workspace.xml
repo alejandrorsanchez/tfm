@@ -20,10 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/server/uploads/171/favicon.ico" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/adds/adds.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/adds/adds.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/profile/profile.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/profile/profile.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +50,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="14.15.0" />
     <property name="javascript.nodejs.core.library.typings.version" value="14.14.41" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/frontend/src/app/shared" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/server/controllers" />
     <property name="nodejs.mocha.mocha_node_package_dir" value="$PROJECT_DIR$/node_modules/mocha" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -60,19 +58,19 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\shared" />
-      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\server" />
-      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\server\controllers" />
-      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\server\routes" />
-      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\user" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\operations" />
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\server" />
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\cover" />
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\profile" />
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\shared" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\server\controllers" />
+      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\shared" />
+      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\server" />
+      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\server\routes" />
+      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\user" />
     </key>
   </component>
   <component name="RunManager" selected="npm.coverage">
@@ -214,21 +212,7 @@
       <workItem from="1619765872651" duration="10775000" />
       <workItem from="1620033333661" duration="10451000" />
       <workItem from="1620120514827" duration="8268000" />
-      <workItem from="1620135798099" duration="958000" />
-    </task>
-    <task id="LOCAL-00073" summary="...">
-      <created>1619030665493</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1619030665493</updated>
-    </task>
-    <task id="LOCAL-00074" summary="New form for uploading images working">
-      <created>1619078210769</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1619078210769</updated>
+      <workItem from="1620135798099" duration="12648000" />
     </task>
     <task id="LOCAL-00075" summary="New form for uploading images working">
       <created>1619079155654</created>
@@ -559,7 +543,21 @@
       <option name="project" value="LOCAL" />
       <updated>1620128840169</updated>
     </task>
-    <option name="localTasksCounter" value="122" />
+    <task id="LOCAL-00122" summary="Change the way of obtaining mypets in my profile">
+      <created>1620136949287</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1620136949288</updated>
+    </task>
+    <task id="LOCAL-00123" summary="getCoordinate()">
+      <created>1620146645759</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1620146645759</updated>
+    </task>
+    <option name="localTasksCounter" value="124" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -582,8 +580,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Image validation in Save/Edit pet" />
-    <MESSAGE value="Refactor removing height from dialogs" />
     <MESSAGE value="Refactor enviroment.js" />
     <MESSAGE value="new commit develop" />
     <MESSAGE value="sonar.yml" />
@@ -607,17 +603,19 @@
     <MESSAGE value="address input data saved correctly" />
     <MESSAGE value="password verification for login fixed" />
     <MESSAGE value="adds not indexing" />
-    <option name="LAST_COMMIT_MESSAGE" value="adds not indexing" />
+    <MESSAGE value="Change the way of obtaining mypets in my profile" />
+    <MESSAGE value="getCoordinate()" />
+    <option name="LAST_COMMIT_MESSAGE" value="getCoordinate()" />
   </component>
   <component name="WindowStateProjectService">
     <state x="509" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619029708212">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="509" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1619029708212" />
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1618558927131">
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1620139192253">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1618558927131" />
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1620139192253" />
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1619436817842">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -706,10 +704,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1619612256581" />
-    <state x="632" y="298" width="348" height="298" key="org.angular.cli.generate" timestamp="1619769451786">
+    <state x="632" y="298" width="348" height="298" key="org.angular.cli.generate" timestamp="1620145856106">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="632" y="298" width="348" height="298" key="org.angular.cli.generate/0.0.1536.824@0.0.1536.824" timestamp="1619769451786" />
+    <state x="632" y="298" width="348" height="298" key="org.angular.cli.generate/0.0.1536.824@0.0.1536.824" timestamp="1620145856106" />
     <state x="486" y="184" key="refactoring.ChangeSignatureDialog" timestamp="1620123502566">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
