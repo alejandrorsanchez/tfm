@@ -11,4 +11,12 @@ export class User {
     this.description = '';
     this.address = '';
   }
+
+  copyProperties(item){
+    this.id = item.id;
+    this.username = item.username;
+    this.password = item.password;
+    this.description = item.description;
+    this.address = item.address;
+  }
 }

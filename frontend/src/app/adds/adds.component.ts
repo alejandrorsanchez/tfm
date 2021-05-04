@@ -5,6 +5,8 @@ import {AddService} from "../shared/add.service";
 import {UtilsService} from "../shared/utils.service";
 import {UserService} from "../shared/user.service";
 import {PetService} from "../shared/pet.service";
+import {Pet} from "../shared/pet";
+import {User} from "../shared/user";
 
 @Component({
   selector: 'app-adds',
@@ -25,6 +27,7 @@ export class AddsComponent implements OnInit {
   ngOnInit(): void {
     this.id = this.utilsService.getId();
     this.getAdds();
+    console.log(this.adds);
   }
 
   getAdds() {
@@ -33,9 +36,6 @@ export class AddsComponent implements OnInit {
         for (const key in response) {
           this.createAddFromResponse(response[key].userId, response[key].petId);
         }
-      },
-      error => {
-        this.adds = [];
       }
     );
   }
@@ -44,12 +44,18 @@ export class AddsComponent implements OnInit {
     let add = new AddListing();
     this.userService.findById(userId).subscribe(
       userResponse => {
-        add.user = userResponse[0];
+        const user = new User();
+        user.copyProperties(userResponse[0]);
+        add.user = user;
         this.petService.findById(petId.toString()).subscribe(
-          petResponse => add.pet = petResponse[0]
+          petResponse =>{
+            const pet = new Pet();
+            pet.copyProperties(petResponse[0]);
+            add.pet = pet;
+            this.adds.push(add);
+          }
         );
       });
-    this.adds.push(add);
   }
 
   isAdoption() {
