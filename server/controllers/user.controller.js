@@ -54,10 +54,12 @@ userController.getUser = (req, res) => {
                     const validTime = 60 * 15;
                     const myToken = jwt.sign({"username":username, "password":password}, env.SECRET_KEY, {expiresIn: validTime});
                     res.json({token: myToken, id: user.id});
+                }else{
+                    res.status(404).json({message: 'La contraseña es incorrecta'});
                 }
             });
         }else{
-            res.status(404).send();
+            res.status(404).json({message: 'Ese usuario no existe'});
         }
     })
 }

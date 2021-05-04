@@ -21,7 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/cover/sing-up-dialog.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/cover/sing-up-dialog.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/cover/log-in-dialog.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/cover/log-in-dialog.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/user.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/user.controller.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,14 +212,7 @@
       <workItem from="1619702707789" duration="2612000" />
       <workItem from="1619765872651" duration="10775000" />
       <workItem from="1620033333661" duration="10451000" />
-      <workItem from="1620120514827" duration="1714000" />
-    </task>
-    <task id="LOCAL-00070" summary="Update pet dialog completed">
-      <created>1619002246893</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1619002246893</updated>
+      <workItem from="1620120514827" duration="2336000" />
     </task>
     <task id="LOCAL-00071" summary="PhotoUpload and Put User request">
       <created>1619006462947</created>
@@ -556,7 +550,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620043849602</updated>
     </task>
-    <option name="localTasksCounter" value="119" />
+    <task id="LOCAL-00119" summary="address input data saved correctly">
+      <created>1620122398414</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1620122398414</updated>
+    </task>
+    <option name="localTasksCounter" value="120" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -579,7 +580,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Pet Tests" />
     <MESSAGE value="Services to /shared" />
     <MESSAGE value="Redistribution of packages" />
     <MESSAGE value="Image validation in Save/Edit pet" />
@@ -604,7 +604,8 @@
     <MESSAGE value="first version endpoint" />
     <MESSAGE value="GET Adds by type" />
     <MESSAGE value="copyProperties unused?" />
-    <option name="LAST_COMMIT_MESSAGE" value="copyProperties unused?" />
+    <MESSAGE value="address input data saved correctly" />
+    <option name="LAST_COMMIT_MESSAGE" value="address input data saved correctly" />
   </component>
   <component name="WindowStateProjectService">
     <state x="509" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619029708212">

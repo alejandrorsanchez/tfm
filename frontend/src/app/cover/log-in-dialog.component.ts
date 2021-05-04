@@ -32,7 +32,7 @@ export class LogInDialogComponent implements OnInit{
           this.router.navigateByUrl('/home');
       },
       error => {
-        this.utilsService.showNotification('Ese usuario no existe');
+        this.utilsService.showNotification(error.error['message']);
       }
     );
   }
