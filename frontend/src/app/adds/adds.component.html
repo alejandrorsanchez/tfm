@@ -7,9 +7,9 @@
     <a (click)="redirectToHome()" uk-icon="icon:  arrow-left; ratio: 8.5"></a>
   </div>
   <br>
-  <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-3@s uk-text-center" uk-grid>
+  <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-3@s uk-text-center" uk-grid uk-height-match="target: > div > .uk-card">
     <div *ngFor="let add of this.adds">
-      <div *ngIf="isAdoption()" class="uk-card uk-card-default">
+      <div *ngIf="isAdoption()" class="uk-card uk-card-small uk-card-default">
         <div class="uk-card-header">
           <div class="uk-grid-small uk-flex-middle" uk-grid>
             <div class="uk-width-auto">
@@ -27,7 +27,7 @@
           <p class="uk-text-meta uk-margin-remove-top">{{add.user.address}}</p>
         </div>
       </div>
-      <div *ngIf="!isAdoption()" class="uk-card uk-card-default">
+      <div *ngIf="!isAdoption()" class="uk-card uk-card-small uk-card-default">
         <div class="uk-card-header">
           <div class="uk-grid-small uk-flex-middle" uk-grid>
             <div class="uk-width-expand">

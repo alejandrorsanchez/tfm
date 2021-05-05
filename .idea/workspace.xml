@@ -20,11 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/adds/adds.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/adds/adds.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/AddDto.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/PetDto.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/UserDto.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/adds/adds.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/adds/adds.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,14 +212,7 @@
       <workItem from="1620033333661" duration="10451000" />
       <workItem from="1620120514827" duration="8268000" />
       <workItem from="1620135798099" duration="12816000" />
-      <workItem from="1620207833855" duration="7491000" />
-    </task>
-    <task id="LOCAL-00078" summary="UI POST Pet">
-      <created>1619082940723</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1619082940723</updated>
+      <workItem from="1620207833855" duration="7819000" />
     </task>
     <task id="LOCAL-00079" summary="POST Pet">
       <created>1619083907540</created>
@@ -561,7 +550,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620214829405</updated>
     </task>
-    <option name="localTasksCounter" value="127" />
+    <task id="LOCAL-00127" summary="volunteer list fixed">
+      <created>1620215515858</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1620215515858</updated>
+    </task>
+    <option name="localTasksCounter" value="128" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -584,7 +580,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="sonar.yml" />
     <MESSAGE value="resolvedPath" />
     <MESSAGE value="package.json fixed for server" />
     <MESSAGE value="scripts" />
@@ -609,7 +604,8 @@
     <MESSAGE value="getCoordinate()" />
     <MESSAGE value="Sorting adds by proximity implemented but slow" />
     <MESSAGE value="material spinner for waiting" />
-    <option name="LAST_COMMIT_MESSAGE" value="material spinner for waiting" />
+    <MESSAGE value="volunteer list fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="volunteer list fixed" />
   </component>
   <component name="WindowStateProjectService">
     <state x="509" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619029708212">
