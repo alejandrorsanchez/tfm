@@ -1,4 +1,5 @@
-<div class="addsContainer">
+<mat-spinner *ngIf="!this.loaded" class="addsContainer"></mat-spinner>
+<div *ngIf="this.loaded" class="addsContainer">
   <h1>Anuncios encontrados cerca de ti</h1>
   <mat-divider></mat-divider>
   <div *ngIf="this.addsNotExist()" class="headerBody">

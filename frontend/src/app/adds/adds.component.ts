@@ -22,6 +22,7 @@ export class AddsComponent implements OnInit {
   adds: AddListing[] = [];
   id: string;
   myCoordinate: Coordinate;
+  loaded: boolean = false;
 
   constructor(private route: ActivatedRoute, private addService: AddService, private utilsService: UtilsService,
               private userService: UserService, private petService: PetService, private router: Router) {
@@ -32,6 +33,7 @@ export class AddsComponent implements OnInit {
     this.getUser();
     this.getAdds();
     setTimeout(() => { this.orderAddsByProximity() }, 300);
+    setTimeout(() => { this.loaded = true }, 800);
   }
 
   getUser(){

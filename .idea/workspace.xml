@@ -20,10 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/server/uploads/175/favicon.ico" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/adds/adds.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/adds/adds.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/adds/adds.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/adds/adds.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/shared/addListing.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/shared/addListing.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.module.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -215,14 +215,7 @@
       <workItem from="1620033333661" duration="10451000" />
       <workItem from="1620120514827" duration="8268000" />
       <workItem from="1620135798099" duration="12816000" />
-      <workItem from="1620207833855" duration="6188000" />
-    </task>
-    <task id="LOCAL-00076" summary="initial commit for PUT Pet">
-      <created>1619079852480</created>
-      <option name="number" value="00076" />
-      <option name="presentableId" value="LOCAL-00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1619079852480</updated>
+      <workItem from="1620207833855" duration="6842000" />
     </task>
     <task id="LOCAL-00077" summary="PUT Pet">
       <created>1619080843484</created>
@@ -560,7 +553,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620148720852</updated>
     </task>
-    <option name="localTasksCounter" value="125" />
+    <task id="LOCAL-00125" summary="Sorting adds by proximity implemented but slow">
+      <created>1620214162786</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1620214162786</updated>
+    </task>
+    <option name="localTasksCounter" value="126" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -583,7 +583,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Refactor enviroment.js" />
     <MESSAGE value="new commit develop" />
     <MESSAGE value="sonar.yml" />
     <MESSAGE value="resolvedPath" />
@@ -608,7 +607,8 @@
     <MESSAGE value="adds not indexing" />
     <MESSAGE value="Change the way of obtaining mypets in my profile" />
     <MESSAGE value="getCoordinate()" />
-    <option name="LAST_COMMIT_MESSAGE" value="getCoordinate()" />
+    <MESSAGE value="Sorting adds by proximity implemented but slow" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sorting adds by proximity implemented but slow" />
   </component>
   <component name="WindowStateProjectService">
     <state x="509" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619029708212">

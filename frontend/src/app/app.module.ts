@@ -30,6 +30,7 @@ import { OperationsComponent } from './operations/operations.component';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatListModule} from '@angular/material/list';
 import { AddsComponent } from './adds/adds.component';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 @NgModule({
   declarations: [
@@ -62,7 +63,8 @@ import { AddsComponent } from './adds/adds.component';
     MatSnackBarModule,
     MatToolbarModule,
     MatGridListModule,
-    MatListModule
+    MatListModule,
+    MatProgressSpinnerModule
   ],
   exports: [ MatFormFieldModule, MatInputModule ],
   providers: [
