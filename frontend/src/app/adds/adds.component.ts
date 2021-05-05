@@ -56,20 +56,22 @@ export class AddsComponent implements OnInit {
   }
 
   createAddFromResponse(userId: string, petId: number) {
-    let add = new AddListing();
     this.userService.findById(userId).subscribe(
       userResponse => {
+        let add = new AddListing();
         const user = new User();
         user.copyProperties(userResponse[0]);
         add.user = user;
-        this.petService.findById(petId.toString()).subscribe(
-          petResponse =>{
-            const pet = new Pet();
-            pet.copyProperties(petResponse[0]);
-            add.pet = pet;
-            this.adds.push(add);
-          }
-        );
+        if(petId){
+          this.petService.findById(petId.toString()).subscribe(
+            petResponse =>{
+              const pet = new Pet();
+              pet.copyProperties(petResponse[0]);
+              add.pet = pet;
+            }
+          );
+        }
+        this.adds.push(add);
       });
   }
 
