@@ -79,22 +79,26 @@ userController.delete = (req, res) => {
     const queryDeleteUser = 'DELETE FROM users WHERE id = ?';
     db.query(queryDeleteUser, [id], function (err, row, fields) {
         if (err) throw err;
-        const queryFindUserPets = 'SELECT id FROM pets WHERE user_id = ?';
-        db.query(queryFindUserPets, [id], function (err, rows) {
+    });
+    const queryFindUserPets = 'SELECT id FROM pets WHERE user_id = ?';
+    db.query(queryFindUserPets, [id], function (err, rows) {
+        if (err) throw err;
+        deletePetsImages(rows);
+        const queryDeletePets = 'DELETE FROM pets WHERE user_id = ?';
+        db.query(queryDeletePets, [id], function (err, rows) {
             if (err) throw err;
-            deletePetsImages(rows);
-            const queryDeletePets = 'DELETE FROM pets WHERE user_id = ?';
-            db.query(queryDeletePets, [id], function (err, rows) {
-                if (err) throw err;
-                res.status(200).send();
-            })
-        })
-    })
+        });
+    });
+    const queryDeleteUserAdds = 'DELETE FROM adds WHERE userId = ?';
+    db.query(queryDeleteUserAdds, [id], function (err, row, fields) {
+        if (err) throw err;
+    });
+    res.status(200).send();
 }
 
 function deletePetsImages(rows) {
     for (const row of rows) {
-        rimraf.sync(env.FILES_LOCATION + row['id']);
+        rimraf.sync('./uploads/' + row['id']);
     }
 }
 
