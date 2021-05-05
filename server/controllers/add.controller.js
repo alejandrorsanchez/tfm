@@ -50,4 +50,13 @@ addController.findByType = (req, res) => {
     })
 }
 
+addController.findByUserId = (req, res) => {
+    const userId = req.params.userId;
+    const query = 'SELECT * FROM adds WHERE userId = ?';
+    db.query(query, [userId], function (err, row, fields) {
+        if (err) throw err;
+        res.json(row);
+    });
+}
+
 module.exports = addController;
