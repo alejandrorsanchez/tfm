@@ -4,6 +4,7 @@ import {Pet} from "./pet";
 export class AddListing {
   user: User;
   pet?: Pet;
+  distance?: number;
 
   constructor() {
     this.user = new User();

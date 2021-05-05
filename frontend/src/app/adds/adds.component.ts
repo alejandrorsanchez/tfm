@@ -21,6 +21,7 @@ export class AddsComponent implements OnInit {
   user: User;
   adds: AddListing[] = [];
   id: string;
+  myCoordinate: Coordinate;
 
   constructor(private route: ActivatedRoute, private addService: AddService, private utilsService: UtilsService,
               private userService: UserService, private petService: PetService, private router: Router) {
@@ -30,7 +31,7 @@ export class AddsComponent implements OnInit {
   ngOnInit(): void {
     this.getUser();
     this.getAdds();
-    setTimeout(() => { this.orderAddsByProximity() }, 500);
+    setTimeout(() => { this.orderAddsByProximity() }, 300);
   }
 
   getUser(){
@@ -71,28 +72,33 @@ export class AddsComponent implements OnInit {
   }
 
   orderAddsByProximity() {
-    const myCoordinate: Coordinate = this.getCoordinate(this.user.address);
+    this.myCoordinate = this.getCoordinate(this.user.address);
+    this.getDistances();
+    setTimeout(() => {
+      this.adds.sort((add1, add2) => {
+        return add1.distance - add2.distance;
+      })
+    }, 500);
+  }
+
+  getDistances() {
     for (const add of this.adds) {
       const coordinateOrigin = this.getCoordinate(add.user.address);
-      var origin1 = new google.maps.LatLng(coordinateOrigin.lat, coordinateOrigin.lng);
-      var origin2 = this.user.address;
-      var destinationA = add.user.address;
-      var destinationB = new google.maps.LatLng(coordinateOrigin.lat, coordinateOrigin.lng);
-      const service = new google.maps.DistanceMatrixService();
-      service.getDistanceMatrix(
-        {
-          origins: [origin1, origin2],
-          destinations: [destinationA, destinationB],
-          travelMode: TravelMode.DRIVING,
-          unitSystem: google.maps.UnitSystem.METRIC,
-          avoidHighways: false,
-          avoidTolls: true,
-        }, callback);
-
-      function callback(response, status) {
-        console.log(response);
-      }
+      setTimeout(() => {
+        add.distance = this.getDistanceWith(coordinateOrigin);
+      }, 500);
     }
+  }
+
+  getDistanceWith(coordinateOrigin: Coordinate) {
+    const rad = function(x) {return x*Math.PI/180;}
+    const R = 6378.137;
+    const dLat = rad( coordinateOrigin.lat - this.myCoordinate.lat );
+    const dLong = rad( coordinateOrigin.lng - this.myCoordinate.lng );
+    const a = Math.sin(dLat/2) * Math.sin(dLat/2) + Math.cos(rad(this.myCoordinate.lat)) *
+      Math.cos(rad(coordinateOrigin.lat)) * Math.sin(dLong/2) * Math.sin(dLong/2);
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+    return Number((R * c).toFixed(2));
   }
 
   getCoordinate(address: string): Coordinate {
@@ -102,6 +108,7 @@ export class AddsComponent implements OnInit {
       if (status == google.maps.GeocoderStatus.OK) {
         coordinate.lat = results[0].geometry.location.lat();
         coordinate.lng = results[0].geometry.location.lng();
+        return coordinate;
       }
     });
     return coordinate;
@@ -118,5 +125,4 @@ export class AddsComponent implements OnInit {
   redirectToHome() {
     this.router.navigateByUrl('/home');
   }
-
 }
