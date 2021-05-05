@@ -98,4 +98,8 @@ export class PublisherComponent implements OnInit {
   invalid(): boolean {
     return this.postingPet === undefined;
   }
+
+  redirectToProfile() {
+    this.router.navigateByUrl('/home/profile');
+  }
 }

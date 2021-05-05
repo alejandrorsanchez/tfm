@@ -7,8 +7,9 @@
   </div>
 </div>
 <div *ngIf="this.isAdoption">
-  <div *ngIf="this.myPets.length == 0">
-    <h1 class="headerBody">Parece que aún no tienes mascotas asociadas. Dirígite a tu perfil para añadir una.</h1>
+  <div *ngIf="this.myPets.length == 0" class="headerBody">
+    <h1>Parece que aún no tienes mascotas asociadas. Dirígite a tu perfil para añadir una.</h1>
+    <a uk-icon="icon:  arrow-right; ratio: 8.5" (click)="redirectToProfile()"></a>
   </div>
   <div class="uk-grid-small uk-child-width-expand@s uk-text-center" uk-grid>
     <div *ngFor="let pet of this.myPets">
