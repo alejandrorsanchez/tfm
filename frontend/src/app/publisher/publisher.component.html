@@ -11,7 +11,7 @@
     <h1>Parece que aún no tienes mascotas asociadas. Dirígite a tu perfil para añadir una.</h1>
     <a uk-icon="icon:  arrow-right; ratio: 8.5" (click)="redirectToProfile()"></a>
   </div>
-  <div class="uk-grid-small uk-child-width-expand@s uk-text-center" uk-grid>
+  <div class="uk-grid-small uk-child-width-expand@s uk-text-center" uk-grid uk-height-match="target: > div > .uk-card">
     <div *ngFor="let pet of this.myPets">
       <div class="uk-card uk-card-default" (click)="selectCard(pet)">
         <div class="uk-card-header">

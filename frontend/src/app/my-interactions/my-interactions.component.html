@@ -1,1 +1,41 @@
-<p>my-interactions works!</p>
+<div *ngIf="false" class="headerBody">
+  <h1>Parece que aún no has publicado ningún auncio!</h1>
+  <a uk-icon="icon:  arrow-left; ratio: 8.5"></a>
+</div>
+<div *ngIf="true" class="myAddsContainer">
+  <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+    <h2 class="uk-width-1-2">Te has anunciado como voluntario!</h2>
+    <div>
+      <button class="uk-button uk-button-primary uk-button uk-width-1-2">Eliminar Anuncio</button>
+    </div>
+  </div>
+  <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+    <h2 class="uk-width-1-2">Has publicado un anuncio para buscarle hogar a Simba</h2>
+    <div>
+      <button class="uk-button uk-button-primary uk-button uk-width-1-2">Eliminar Anuncio</button>
+    </div>
+  </div>
+  <br>
+  <mat-divider></mat-divider>
+  <div *ngIf="false" class="headerBody">
+    <h1>Parece que aún no tenemos interacciones para ti</h1>
+    <a uk-icon="icon:  arrow-left; ratio: 8.5"></a>
+  </div>
+  <br>
+  <div *ngIf="true">
+    <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-3@s uk-text-center" uk-grid uk-height-match="target: > div > .uk-card">
+        <div class="uk-card uk-card-small uk-card-default">
+          <div class="uk-card-header">
+            <div class="uk-grid-small uk-flex-middle" uk-grid>
+              <div class="uk-width-expand">
+                <p class="uk-card-title uk-margin-remove-bottom">Nombre Usuario</p>
+              </div>
+            </div>
+          </div>
+          <div class="uk-card-body">
+            <h3 class="uk-card-title uk-margin-remove-bottom">Dirección Usuario</h3><br>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
