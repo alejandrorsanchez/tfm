@@ -7,6 +7,7 @@ import {OperationsComponent} from "./operations/operations.component";
 import {ProfileComponent} from "./profile/profile.component";
 import {PublisherComponent} from "./publisher/publisher.component";
 import {AddsComponent} from "./adds/adds.component";
+import {MyInteractionsComponent} from "./my-interactions/my-interactions.component";
 
 const routes: Routes = [
   {path: '', component: CoverComponent},
@@ -15,6 +16,7 @@ const routes: Routes = [
     canActivate: [AuthGuardService],
     children: [
       {path: '', component: OperationsComponent},
+      {path: 'interactions', component: MyInteractionsComponent},
       {path: 'adds/:type', component: AddsComponent},
       {path: 'profile', component: ProfileComponent},
       {path: 'publish', component: PublisherComponent}

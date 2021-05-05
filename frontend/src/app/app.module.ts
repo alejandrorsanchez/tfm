@@ -31,6 +31,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import {MatListModule} from '@angular/material/list';
 import { AddsComponent } from './adds/adds.component';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import { MyInteractionsComponent } from './my-interactions/my-interactions.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
     AddUpdatePetDialogComponent,
     PublisherComponent,
     TypeAddDialogComponent,
-    AddsComponent
+    AddsComponent,
+    MyInteractionsComponent
   ],
   imports: [
     BrowserModule,
