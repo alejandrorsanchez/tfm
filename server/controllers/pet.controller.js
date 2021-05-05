@@ -44,11 +44,15 @@ petController.update = (req, res) => {
 
 petController.delete = (req, res) => {
     const id = req.params.id;
-    const query = 'DELETE FROM pets WHERE id = ?';
-    db.query(query, [id], function (err, row, fields) {
+    const queryDeletePet = 'DELETE FROM pets WHERE id = ?';
+    db.query(queryDeletePet, [id], function (err, row, fields) {
         if (err) throw err;
-        res.status(200).send();
-        rimraf.sync('./uploads/' + id);
+        const queryDeleteAdds = 'DELETE FROM adds WHERE petId = ?';
+        db.query(queryDeleteAdds, [id], function (err, row, fields) {
+            if (err) throw err;
+            res.status(200).send();
+            rimraf.sync('./uploads/' + id);
+        })
     })
 }
 
