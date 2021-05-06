@@ -141,7 +141,7 @@ describe('Testing Pet API', function(){
                 done();
             });
     });
-    it('should not find deleted oet', function(done){
+    it('should not find deleted pet', function(done){
         chai.request(url)
             .get('/search/' + userId)
             .set('Authorization', 'Bearer '  + token)
