@@ -13,7 +13,7 @@ describe('Testing Pet API', function(){
     before('Get session token and user id', function(done){
         chai.request(urlUsers)
             .post('/login')
-            .send({username: 'Alex', password: 'alex'})
+            .send({username: 'Prueba', password: 'prueba'})
             .end(function (err, res){
                 expect(res).to.have.status(200);
                 expect(res.body).to.have.property('token').not.be.null;
