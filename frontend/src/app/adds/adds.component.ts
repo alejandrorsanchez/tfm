@@ -8,7 +8,6 @@ import {PetService} from "../shared/pet.service";
 import {Pet} from "../shared/pet";
 import {User} from "../shared/user";
 import {Coordinate} from "./coordinate";
-import TravelMode = google.maps.TravelMode;
 
 @Component({
   selector: 'app-adds',
@@ -122,7 +121,7 @@ export class AddsComponent implements OnInit {
     return this.type == 1;
   }
 
-  addsNotExist() {
+  addsEmpty() {
     return this.adds.length == 0;
   }
 

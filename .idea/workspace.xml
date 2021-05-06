@@ -20,16 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/my-interactions/delete-add-dialog.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/my-interactions/delete-add-dialog.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/my-interactions/delete-add-dialog.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/my-interactions/my-interactions.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/my-interactions/my-interactions.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/my-interactions/my-interactions.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/my-interactions/my-interactions.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/shared/add.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/shared/add.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/add.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/add.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/add.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/add.routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -224,14 +215,7 @@
       <workItem from="1620207833855" duration="8980000" />
       <workItem from="1620228229693" duration="4388000" />
       <workItem from="1620233894845" duration="3290000" />
-      <workItem from="1620295136737" duration="1730000" />
-    </task>
-    <task id="LOCAL-00086" summary="UI operations fixed">
-      <created>1619343351477</created>
-      <option name="number" value="00086" />
-      <option name="presentableId" value="LOCAL-00086" />
-      <option name="project" value="LOCAL" />
-      <updated>1619343351477</updated>
+      <workItem from="1620295136737" duration="2057000" />
     </task>
     <task id="LOCAL-00087" summary="User Tests">
       <created>1619430673640</created>
@@ -569,7 +553,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620237203810</updated>
     </task>
-    <option name="localTasksCounter" value="135" />
+    <task id="LOCAL-00135" summary="Delete Add By Id">
+      <created>1620296913579</created>
+      <option name="number" value="00135" />
+      <option name="presentableId" value="LOCAL-00135" />
+      <option name="project" value="LOCAL" />
+      <updated>1620296913579</updated>
+    </task>
+    <option name="localTasksCounter" value="136" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -592,7 +583,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Saving pet id and user id for the add post" />
     <MESSAGE value="POST Add" />
     <MESSAGE value="my adds component linked" />
     <MESSAGE value="small modal for choosing type of adds listing" />
@@ -617,7 +607,8 @@
     <MESSAGE value="new component myInteractions linked" />
     <MESSAGE value="UI for myInteractions" />
     <MESSAGE value="myAdds retrieved in ngOnInit, next step deleting button" />
-    <option name="LAST_COMMIT_MESSAGE" value="myAdds retrieved in ngOnInit, next step deleting button" />
+    <MESSAGE value="Delete Add By Id" />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete Add By Id" />
   </component>
   <component name="WindowStateProjectService">
     <state x="509" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619029708212">

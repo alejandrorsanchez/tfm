@@ -4,8 +4,7 @@ import {AddService} from "../shared/add.service";
 
 @Component({
   selector: 'app-delete-add-dialog',
-  templateUrl: './delete-add-dialog.component.html',
-  styleUrls: ['./delete-add-dialog.component.css']
+  templateUrl: './delete-add-dialog.component.html'
 })
 export class DeleteAddDialogComponent {
 
