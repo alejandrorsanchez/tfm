@@ -59,4 +59,13 @@ addController.findByUserId = (req, res) => {
     });
 }
 
+addController.delete = (req, res) => {
+    const id = req.params.id;
+    const query = 'DELETE FROM adds WHERE id = ?';
+    db.query(query, [id], function (err, row, fields) {
+        if (err) throw err;
+        res.status(200).send();
+    });
+}
+
 module.exports = addController;

@@ -32,6 +32,7 @@ import {MatListModule} from '@angular/material/list';
 import { AddsComponent } from './adds/adds.component';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { MyInteractionsComponent } from './my-interactions/my-interactions.component';
+import { DeleteAddDialogComponent } from './my-interactions/delete-add-dialog.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { MyInteractionsComponent } from './my-interactions/my-interactions.compo
     PublisherComponent,
     TypeAddDialogComponent,
     AddsComponent,
-    MyInteractionsComponent
+    MyInteractionsComponent,
+    DeleteAddDialogComponent
   ],
   imports: [
     BrowserModule,

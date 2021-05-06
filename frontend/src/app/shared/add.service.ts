@@ -32,4 +32,8 @@ export class AddService {
   findByUserId(userId: string) {
     return this.http.get(this.URL + '/' + userId);
   }
+
+  delete(id: number) {
+    return this.http.delete(this.URL + '/' + id);
+  }
 }

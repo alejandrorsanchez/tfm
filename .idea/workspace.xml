@@ -20,7 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/my-interactions/delete-add-dialog.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/my-interactions/delete-add-dialog.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/my-interactions/delete-add-dialog.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/my-interactions/my-interactions.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/my-interactions/my-interactions.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/my-interactions/my-interactions.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/my-interactions/my-interactions.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/shared/add.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/shared/add.service.ts" afterDir="false" />
@@ -62,19 +66,19 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\operations" />
-      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\server" />
-      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\cover" />
-      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\profile" />
-      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\shared" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\server\controllers" />
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\shared" />
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\server" />
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\server\routes" />
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\user" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\my-interactions" />
+      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\operations" />
+      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\server" />
+      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\cover" />
+      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\profile" />
     </key>
   </component>
   <component name="RunManager" selected="npm.coverage">
@@ -219,14 +223,8 @@
       <workItem from="1620135798099" duration="12816000" />
       <workItem from="1620207833855" duration="8980000" />
       <workItem from="1620228229693" duration="4388000" />
-      <workItem from="1620233894845" duration="3123000" />
-    </task>
-    <task id="LOCAL-00085" summary="UI operations fixed">
-      <created>1619176851988</created>
-      <option name="number" value="00085" />
-      <option name="presentableId" value="LOCAL-00085" />
-      <option name="project" value="LOCAL" />
-      <updated>1619176851988</updated>
+      <workItem from="1620233894845" duration="3290000" />
+      <workItem from="1620295136737" duration="1730000" />
     </task>
     <task id="LOCAL-00086" summary="UI operations fixed">
       <created>1619343351477</created>
@@ -564,7 +562,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620232565314</updated>
     </task>
-    <option name="localTasksCounter" value="134" />
+    <task id="LOCAL-00134" summary="myAdds retrieved in ngOnInit, next step deleting button">
+      <created>1620237203810</created>
+      <option name="number" value="00134" />
+      <option name="presentableId" value="LOCAL-00134" />
+      <option name="project" value="LOCAL" />
+      <updated>1620237203810</updated>
+    </task>
+    <option name="localTasksCounter" value="135" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -587,7 +592,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Retrieving user pets for the add" />
     <MESSAGE value="Saving pet id and user id for the add post" />
     <MESSAGE value="POST Add" />
     <MESSAGE value="my adds component linked" />
@@ -612,7 +616,8 @@
     <MESSAGE value="delete adds related to deleted user" />
     <MESSAGE value="new component myInteractions linked" />
     <MESSAGE value="UI for myInteractions" />
-    <option name="LAST_COMMIT_MESSAGE" value="UI for myInteractions" />
+    <MESSAGE value="myAdds retrieved in ngOnInit, next step deleting button" />
+    <option name="LAST_COMMIT_MESSAGE" value="myAdds retrieved in ngOnInit, next step deleting button" />
   </component>
   <component name="WindowStateProjectService">
     <state x="509" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619029708212">
@@ -715,10 +720,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="400" y="23" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1620234910797" />
-    <state x="632" y="298" width="348" height="298" key="org.angular.cli.generate" timestamp="1620230238507">
+    <state x="632" y="298" width="348" height="298" key="org.angular.cli.generate" timestamp="1620295661593">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="632" y="298" width="348" height="298" key="org.angular.cli.generate/0.0.1536.824@0.0.1536.824" timestamp="1620230238507" />
+    <state x="632" y="298" width="348" height="298" key="org.angular.cli.generate/0.0.1536.824@0.0.1536.824" timestamp="1620295661593" />
     <state x="486" y="184" key="refactoring.ChangeSignatureDialog" timestamp="1620123502566">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

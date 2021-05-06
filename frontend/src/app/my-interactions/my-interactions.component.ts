@@ -4,6 +4,9 @@ import {AddCreation} from "../shared/addCreation";
 import {UtilsService} from "../shared/utils.service";
 import {PetService} from "../shared/pet.service";
 import {Pet} from "../shared/pet";
+import {MatDialog} from "@angular/material/dialog";
+import {DeleteAddDialogComponent} from "./delete-add-dialog.component";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-my-interactions',
@@ -16,8 +19,11 @@ export class MyInteractionsComponent implements OnInit {
   id: string;
   petName: string = '';
   petId: number;
+  volunteerAddId: number;
+  petAddId: number;
 
-  constructor(private addService: AddService, private utilsService: UtilsService, private petService: PetService) { }
+  constructor(private addService: AddService, private utilsService: UtilsService, private petService: PetService
+              , public dialog: MatDialog, public router: Router) { }
 
   ngOnInit(): void {
     this.id = this.utilsService.getId();
@@ -45,7 +51,10 @@ export class MyInteractionsComponent implements OnInit {
 
   addIsVolunteer(): boolean {
     for (const add of this.myAdds) {
-      if(!add.petId) return true;
+      if(!add.petId){
+        this.volunteerAddId = add.id;
+        return true;
+      }
     }
     return false;
   }
@@ -53,6 +62,7 @@ export class MyInteractionsComponent implements OnInit {
   addIsPet(): boolean {
     for (const add of this.myAdds) {
       if(add.petId){
+        this.petAddId = add.id;
         this.petId = add.petId;
         return true;
       }
@@ -61,10 +71,24 @@ export class MyInteractionsComponent implements OnInit {
   }
 
   openDeleteVolunteerAddDialog() {
-
+    this.dialog.open(DeleteAddDialogComponent, {
+      data: this.volunteerAddId,
+      width: '400px',
+    }).afterClosed().subscribe(
+      response => this.getMyAdds()
+    );
   }
 
   openDeletePetAddDialog() {
+    this.dialog.open(DeleteAddDialogComponent, {
+      data: this.petAddId,
+      width: '400px',
+    }).afterClosed().subscribe(
+      response => this.getMyAdds()
+    );
+  }
 
+  redirectToHome() {
+    this.router.navigateByUrl('/home');
   }
 }
