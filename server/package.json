@@ -33,19 +33,16 @@
   "nyc": {
     "all": true,
     "check-coverage": true,
-    "include": [
-      "routes/**",
-      "controllers/**"
-    ],
     "exclude": [
-      "middelware/**",
+      "coverage/**",
       "mochawesome-report/**",
       "uploads/**",
       "node_modules/**",
       "database.js",
       "index.js",
       "enviroment.js",
-      "server/test"
+      "controllers/*.js",
+      "middleware/*.js"
     ],
     "branches": 60,
     "lines": 60,
