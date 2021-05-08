@@ -20,42 +20,64 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/server/.nyc_output/3649c88f-c7a0-4500-adb1-54adfa450f37.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.nyc_output/bbcfbd91-fd8a-4f5f-82c6-1485d1a47cd4.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.nyc_output/processinfo/3649c88f-c7a0-4500-adb1-54adfa450f37.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.nyc_output/processinfo/bbcfbd91-fd8a-4f5f-82c6-1485d1a47cd4.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/coverage/lcov-report/add.routes.js.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/coverage/lcov-report/coverage/lcov-report/block-navigation.js.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/coverage/lcov-report/coverage/lcov-report/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/coverage/lcov-report/coverage/lcov-report/prettify.js.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/coverage/lcov-report/coverage/lcov-report/sorter.js.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/coverage/lcov-report/middleware/authMiddelware.js.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/coverage/lcov-report/middleware/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/coverage/lcov-report/pet.routes.js.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/coverage/lcov-report/test/addTest.js.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/coverage/lcov-report/test/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/coverage/lcov-report/test/petTest.js.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/coverage/lcov-report/test/userTest.js.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/coverage/lcov-report/user.routes.js.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/.nyc_output/86855af2-a6ac-4ebb-bcbc-9b39fd758def.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/.nyc_output/b18298f0-498e-4cb0-8b3f-04223ae4485d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/.nyc_output/processinfo/86855af2-a6ac-4ebb-bcbc-9b39fd758def.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/.nyc_output/processinfo/b18298f0-498e-4cb0-8b3f-04223ae4485d.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.nyc_output/834a1da0-0bc1-4ccc-bb80-a0be0e0314bb.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.nyc_output/ba511488-e51f-4c2c-bb52-139453d7ad99.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.nyc_output/processinfo/834a1da0-0bc1-4ccc-bb80-a0be0e0314bb.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.nyc_output/processinfo/ba511488-e51f-4c2c-bb52-139453d7ad99.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.nyc_output/8dbbd968-8e03-4776-88db-80b3b905dab1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.nyc_output/8fc3cf88-d7f0-48c7-881c-30adffcad169.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.nyc_output/processinfo/8dbbd968-8e03-4776-88db-80b3b905dab1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.nyc_output/processinfo/8fc3cf88-d7f0-48c7-881c-30adffcad169.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/server/.nyc_output/processinfo/index.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/.nyc_output/processinfo/index.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/add.controller.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/add.controller.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/pet.controller.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/pet.controller.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/user.controller.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/user.controller.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/routes/add.routes.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/routes/add.routes.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/routes/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/routes/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/routes/pet.routes.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/routes/pet.routes.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/routes/user.routes.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/routes/user.routes.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov.info" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/mochawesome-report/mochawesome.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/mochawesome-report/mochawesome.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/mochawesome-report/mochawesome.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/mochawesome-report/mochawesome.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/add.routes.js.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/base.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/block-navigation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/add.controller.js.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/pet.controller.js.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/user.controller.js.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/coverage/lcov-report/block-navigation.js.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/coverage/lcov-report/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/coverage/lcov-report/prettify.js.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/coverage/lcov-report/sorter.js.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/middleware/authMiddelware.js.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/middleware/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/pet.routes.js.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/prettify.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/prettify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/routes/add.routes.js.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/routes/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/routes/pet.routes.js.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/routes/user.routes.js.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/sort-arrow-sprite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/sorter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/test/addTest.js.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/test/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/test/petTest.js.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/test/userTest.js.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/user.routes.js.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mochawesome-report/assets/MaterialIcons-Regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mochawesome-report/assets/MaterialIcons-Regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mochawesome-report/assets/app.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mochawesome-report/assets/app.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mochawesome-report/assets/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mochawesome-report/assets/app.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mochawesome-report/assets/app.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mochawesome-report/assets/roboto-light-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mochawesome-report/assets/roboto-light-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mochawesome-report/assets/roboto-medium-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mochawesome-report/assets/roboto-medium-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mochawesome-report/assets/roboto-regular-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mochawesome-report/assets/roboto-regular-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mochawesome-report/mochawesome.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/mochawesome-report/mochawesome.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/test/userTest.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/test/userTest.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,13 +114,6 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\server\controllers" />
-      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\shared" />
-      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\server" />
-      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\server\routes" />
-      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\user" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\my-interactions" />
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\operations" />
@@ -106,8 +121,25 @@
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\cover" />
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\profile" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\server\controllers" />
+      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\shared" />
+      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\server" />
+      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\server\routes" />
+      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\user" />
+    </key>
   </component>
-  <component name="RunManager" selected="npm.report">
+  <component name="RunManager" selected="npm.test">
+    <configuration name="coverage" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/server/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="coverage" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="report" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/server/package.json" />
       <command value="run" />
@@ -143,22 +175,6 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="Testing Add API.should not create the same volunteer add" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <mocha-package>$PROJECT_DIR$/server/node_modules/mocha</mocha-package>
-      <working-directory>$PROJECT_DIR$/server</working-directory>
-      <pass-parent-env>true</pass-parent-env>
-      <ui>bdd</ui>
-      <extra-mocha-options />
-      <test-kind>TEST</test-kind>
-      <test-file>$PROJECT_DIR$/server/test/addTest.js</test-file>
-      <test-names>
-        <name value="Testing Add API" />
-        <name value="should not create the same volunteer add" />
-      </test-names>
-      <method v="2" />
-    </configuration>
     <configuration name="Testing Add API.should not find created add without token" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -177,11 +193,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.report" />
         <item itemvalue="npm.test" />
+        <item itemvalue="npm.coverage" />
+        <item itemvalue="npm.report" />
         <item itemvalue="Mocha.Testing Add API" />
         <item itemvalue="Mocha.Testing Add API.should not find created add without token" />
-        <item itemvalue="Mocha.Testing Add API.should not create the same volunteer add" />
       </list>
     </recent_temporary>
   </component>
@@ -257,14 +273,8 @@
       <workItem from="1620228229693" duration="4388000" />
       <workItem from="1620233894845" duration="3290000" />
       <workItem from="1620295136737" duration="3260000" />
-      <workItem from="1620312793084" duration="5299000" />
-    </task>
-    <task id="LOCAL-00090" summary="Pet Tests">
-      <created>1619435444008</created>
-      <option name="number" value="00090" />
-      <option name="presentableId" value="LOCAL-00090" />
-      <option name="project" value="LOCAL" />
-      <updated>1619435444008</updated>
+      <workItem from="1620312793084" duration="5430000" />
+      <workItem from="1620465043540" duration="3541000" />
     </task>
     <task id="LOCAL-00091" summary="Services to /shared">
       <created>1619436594735</created>
@@ -602,7 +612,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620316053426</updated>
     </task>
-    <option name="localTasksCounter" value="139" />
+    <task id="LOCAL-00139" summary="nyc">
+      <created>1620318264020</created>
+      <option name="number" value="00139" />
+      <option name="presentableId" value="LOCAL-00139" />
+      <option name="project" value="LOCAL" />
+      <updated>1620318264020</updated>
+    </task>
+    <option name="localTasksCounter" value="140" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -625,7 +642,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add list filtered by type with mocks" />
     <MESSAGE value="new model addListing.ts" />
     <MESSAGE value="service called from fronted" />
     <MESSAGE value="first version endpoint" />
@@ -650,7 +666,8 @@
     <MESSAGE value="Refactoring" />
     <MESSAGE value="new addTest.js" />
     <MESSAGE value="addTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="addTest" />
+    <MESSAGE value="nyc" />
+    <option name="LAST_COMMIT_MESSAGE" value="nyc" />
   </component>
   <component name="WindowStateProjectService">
     <state x="509" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619029708212">
@@ -677,22 +694,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1618474868342" />
-    <state width="1515" height="277" key="GridCell.Tab.0.bottom" timestamp="1620318090083">
+    <state width="1515" height="251" key="GridCell.Tab.0.bottom" timestamp="1620468150393">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="277" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1620318090083" />
-    <state width="1515" height="277" key="GridCell.Tab.0.center" timestamp="1620318090083">
+    <state width="1515" height="251" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1620468150393" />
+    <state width="1515" height="251" key="GridCell.Tab.0.center" timestamp="1620468150393">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="277" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1620318090083" />
-    <state width="1515" height="277" key="GridCell.Tab.0.left" timestamp="1620318090083">
+    <state width="1515" height="251" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1620468150393" />
+    <state width="1515" height="251" key="GridCell.Tab.0.left" timestamp="1620468150392">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="277" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1620318090083" />
-    <state width="1515" height="277" key="GridCell.Tab.0.right" timestamp="1620318090083">
+    <state width="1515" height="251" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1620468150392" />
+    <state width="1515" height="251" key="GridCell.Tab.0.right" timestamp="1620468150393">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="277" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1620318090083" />
+    <state width="1515" height="251" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1620468150393" />
     <state width="1515" height="261" key="GridCell.Tab.1.bottom" timestamp="1619438632838">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
