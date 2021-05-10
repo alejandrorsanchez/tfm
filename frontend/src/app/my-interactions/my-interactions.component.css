@@ -6,3 +6,9 @@
   width: 80%;
   margin: 50px auto;
 }
+.uk-card{
+  transition: transform 250ms;
+}
+.uk-card:hover{
+  transform: translateY(-10px);
+}
