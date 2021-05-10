@@ -18,7 +18,7 @@ describe('Testing User API', function(){
                 done();
             });
     });
-    it('should find user for its name and therefore return 409 by app logic', function(done){
+    it('should find user by its name and therefore return 409 by app logic', function(done){
         chai.request(url)
             .get('/search/Celia')
             .end(function (err, res){
@@ -27,12 +27,11 @@ describe('Testing User API', function(){
                 done();
             });
     });
-    it('should not find user for non-existing user name', function(done){
+    it('should not find user by non-existing user name and therefore return 200 by app logic', function(done){
         chai.request(url)
             .get('/search/Ce')
             .end(function (err, res){
                 expect(res).to.have.status(200);
-                expect(res.body).to.have.lengthOf(0);
                 done();
             });
     });
@@ -56,15 +55,14 @@ describe('Testing User API', function(){
                 done();
             });
     });
-    it('should find user for its ID', function(done){
+    it('should find user by its ID', function(done){
         chai.request(url)
             .get('/' + id)
             .set('Authorization', 'Bearer '  + token)
             .end(function (err, res){
                 expect(res.header['authorization']).not.be.null;
                 expect(res).to.have.status(200);
-                expect(res.body).to.have.lengthOf(1);
-                expect(res.body[0]).to.have.property('id').to.be.equal(id);
+                expect(res.body).to.have.property('id').to.be.equal(id);
                 done();
             });
     });
@@ -77,32 +75,19 @@ describe('Testing User API', function(){
                 done();
             });
     });
-    it('should not update user for non-existing ID', function(done){
+    it('should not update user by non-existing ID', function(done){
         chai.request(url)
-            .put('/111')
+            .put('/00000')
             .set('Authorization', 'Bearer '  + token)
             .send({address: 'another address', description: 'another description'})
             .end(function (err, res){
                 expect(res.header['authorization']).not.be.null;
                 expect(res).to.have.status(200);
+                expect(res.body).to.have.property('affectedRows').to.be.equal(0);
                 done();
             });
     });
-    it('Created user should not have changed', function(done){
-        chai.request(url)
-            .get('/' + id)
-            .set('Authorization', 'Bearer '  + token)
-            .end(function (err, res){
-                expect(res.header['authorization']).not.be.null;
-                expect(res).to.have.status(200);
-                expect(res.body).to.have.lengthOf(1);
-                expect(res.body[0]).to.have.property('id').to.be.equal(id);
-                expect(res.body[0]).to.have.property('address').not.to.be.equal('another address');
-                expect(res.body[0]).to.have.property('description').not.to.be.equal('another description');
-                done();
-            });
-    });
-    it('should update user for its ID', function(done){
+    it('should update user by its ID', function(done){
         chai.request(url)
             .put('/' + id)
             .set('Authorization', 'Bearer '  + token)
@@ -110,6 +95,7 @@ describe('Testing User API', function(){
             .end(function (err, res){
                 expect(res.header['authorization']).not.be.null;
                 expect(res).to.have.status(200);
+                expect(res.body).to.have.property('affectedRows').to.be.equal(1);
                 done();
             });
     });
@@ -122,7 +108,7 @@ describe('Testing User API', function(){
                 done();
             });
     });
-    it('should delete user for its ID', function(done){
+    it('should delete user by its ID', function(done){
         chai.request(url)
             .delete('/' + id)
             .set('Authorization', 'Bearer '  + token)
@@ -138,8 +124,7 @@ describe('Testing User API', function(){
             .set('Authorization', 'Bearer '  + token)
             .end(function (err, res){
                 expect(res.header['authorization']).not.be.null;
-                expect(res).to.have.status(200);
-                expect(res.body).to.have.lengthOf(0);
+                expect(res).to.have.status(404);
                 done();
             });
     });
