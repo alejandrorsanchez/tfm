@@ -1,8 +1,8 @@
 import {Component, OnInit} from '@angular/core';
-import {User} from "../shared/user";
-import {UserService} from "../shared/user.service";
+import {User} from "../shared/models/user";
+import {UserService} from "../shared/services/user.service";
 import {MatDialogRef} from "@angular/material/dialog";
-import {UtilsService} from "../shared/utils.service";
+import {UtilsService} from "../shared/services/utils.service";
 
 @Component({
   selector: 'app-sing-up-dialog',
@@ -27,10 +27,9 @@ export class SingUpDialogComponent implements OnInit{
   verifyUserName() {
     if(this.newUser.username != ''){
       this.userService.findByUsername(this.newUser.username).subscribe(
-        response => {
-          if(response[0]){
-            this.utilsService.showNotification('Ese usuario ya existe');
-          }
+        response => {},
+        error => {
+          this.utilsService.showNotification(error.error['message']);
         }
       );
     }

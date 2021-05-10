@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import {UtilsService} from "../shared/utils.service";
+import {UtilsService} from "../shared/services/utils.service";
 import {ActivatedRoute, Router} from "@angular/router";
-import {UserService} from "../shared/user.service";
+import {UserService} from "../shared/services/user.service";
+import {User} from "../shared/models/user";
 
 @Component({
   selector: 'app-home',
@@ -20,8 +21,8 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.userService.findById(this.id).subscribe(
-      response => {
-        this.username = response[0].username;
+      (response: User) => {
+        this.username = response.username;
       }
     );
   }

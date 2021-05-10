@@ -14,7 +14,7 @@ userController.save = (req, res) => {
             const query = 'INSERT INTO users SET ?';
             db.query(query, user, function (err, rows, fields) {
                 if (err) res.status(422).send();
-                res.json({ message: 'Usuario creado correctamente!', id: rows['insertId']});
+                res.status(200).json({ message: 'Usuario creado correctamente!', id: rows['insertId']});
             })
         })
         .catch(function(error){
@@ -27,8 +27,8 @@ userController.findById = (req, res) => {
     const query = 'SELECT * FROM users WHERE id = ?';
     db.query(query, [id], function (err, row, fields) {
         if (err) throw err;
-        res.json(row);
-    })
+        (row[0]) ? res.status(200).json(row[0]) : res.status(404).json({message: 'Usuario no encontrado'});
+    });
 }
 
 userController.findByUsername = (req, res) => {
@@ -36,7 +36,7 @@ userController.findByUsername = (req, res) => {
     const query = 'SELECT * FROM users WHERE username = ?';
     db.query(query, [username], function (err, row, fields) {
         if (err) throw err;
-        res.json(row);
+        (row[0]) ? res.status(409).json({message: 'Ese usuario ya existe'}) : res.status(200).send();
     })
 }
 
@@ -53,9 +53,9 @@ userController.getUser = (req, res) => {
                 if(result) {
                     const validTime = 60 * 15;
                     const myToken = jwt.sign({"username":username, "password":password}, env.SECRET_KEY, {expiresIn: validTime});
-                    res.json({token: myToken, id: user.id});
+                    res.status(200).json({token: myToken, id: user.id});
                 }else{
-                    res.status(404).json({message: 'La contraseña es incorrecta'});
+                    res.status(400).json({message: 'La contraseña es incorrecta'});
                 }
             });
         }else{
@@ -70,7 +70,7 @@ userController.update = (req, res) => {
     const query = 'UPDATE users SET address = ?, description = ? WHERE id = ?';
     db.query(query, data, function (err, row, fields) {
         if (err) throw err;
-        res.json({ message: 'Usuario actualizado'});
+        res.status(200).json({ message: 'Usuario actualizado', affectedRows: row['affectedRows']});
     })
 }
 

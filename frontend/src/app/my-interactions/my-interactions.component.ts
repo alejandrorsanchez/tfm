@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import {AddService} from "../shared/add.service";
-import {AddCreation} from "../shared/addCreation";
-import {UtilsService} from "../shared/utils.service";
-import {PetService} from "../shared/pet.service";
-import {Pet} from "../shared/pet";
+import {AddService} from "../shared/services/add.service";
+import {AddCreation} from "../shared/models/addCreation";
+import {UtilsService} from "../shared/services/utils.service";
+import {PetService} from "../shared/services/pet.service";
+import {Pet} from "../shared/models/pet";
 import {MatDialog} from "@angular/material/dialog";
 import {DeleteAddDialogComponent} from "./delete-add-dialog.component";
 import {Router} from "@angular/router";

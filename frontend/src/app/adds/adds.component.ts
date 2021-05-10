@@ -1,12 +1,12 @@
 import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute, Router} from "@angular/router";
-import {AddListing} from "../shared/addListing";
-import {AddService} from "../shared/add.service";
-import {UtilsService} from "../shared/utils.service";
-import {UserService} from "../shared/user.service";
-import {PetService} from "../shared/pet.service";
-import {Pet} from "../shared/pet";
-import {User} from "../shared/user";
+import {AddListing} from "../shared/models/addListing";
+import {AddService} from "../shared/services/add.service";
+import {UtilsService} from "../shared/services/utils.service";
+import {UserService} from "../shared/services/user.service";
+import {PetService} from "../shared/services/pet.service";
+import {Pet} from "../shared/models/pet";
+import {User} from "../shared/models/user";
 import {Coordinate} from "./coordinate";
 
 @Component({
@@ -38,8 +38,8 @@ export class AddsComponent implements OnInit {
   getUser(){
     this.id = this.utilsService.getId();
     this.userService.findById(this.id).subscribe(
-      response => {
-        this.user = response[0];
+      (response: User) => {
+        this.user = response;
       }
     );
   }
@@ -56,10 +56,10 @@ export class AddsComponent implements OnInit {
 
   createAddFromResponse(userId: string, petId: number) {
     this.userService.findById(userId).subscribe(
-      userResponse => {
+      (userResponse: User) => {
         let add = new AddListing();
         const user = new User();
-        user.copyProperties(userResponse[0]);
+        user.copyProperties(userResponse);
         add.user = user;
         if(petId){
           this.petService.findById(petId.toString()).subscribe(

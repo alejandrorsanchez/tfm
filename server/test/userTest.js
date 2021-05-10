@@ -18,13 +18,12 @@ describe('Testing User API', function(){
                 done();
             });
     });
-    it('should find user for its name', function(done){
+    it('should find user for its name and therefore return 409 by app logic', function(done){
         chai.request(url)
             .get('/search/Celia')
             .end(function (err, res){
-                expect(res).to.have.status(200);
-                expect(res.body).to.have.lengthOf(1);
-                expect(res.body[0]).to.have.property('id').to.be.equal(id);
+                expect(res).to.have.status(409);
+                expect(res.body).to.have.property('message').to.be.equal('Ese usuario ya existe');
                 done();
             });
     });

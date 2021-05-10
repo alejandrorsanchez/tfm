@@ -1,9 +1,9 @@
 import {Component, Inject} from '@angular/core';
 import {MAT_DIALOG_DATA, MatDialogRef} from "@angular/material/dialog";
-import {UserService} from "../shared/user.service";
-import {UtilsService} from "../shared/utils.service";
+import {UserService} from "../shared/services/user.service";
+import {UtilsService} from "../shared/services/utils.service";
 import {Router} from "@angular/router";
-import {User} from "../shared/user";
+import {User} from "../shared/models/user";
 
 @Component({
   selector: 'app-delete-account-dialog',

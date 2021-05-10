@@ -1,13 +1,13 @@
 import {Component, OnInit} from '@angular/core';
 import {MatDialog} from "@angular/material/dialog";
 import {DeleteAccountDialogComponent} from "./delete-account-dialog.component";
-import {User} from "../shared/user";
+import {User} from "../shared/models/user";
 import {ActivatedRoute} from "@angular/router";
-import {UserService} from "../shared/user.service";
-import {UtilsService} from "../shared/utils.service";
+import {UserService} from "../shared/services/user.service";
+import {UtilsService} from "../shared/services/utils.service";
 import {DeletePetDialogComponent} from "./delete-pet-dialog.component";
-import {Pet} from "../shared/pet";
-import {PetService} from "../shared/pet.service";
+import {Pet} from "../shared/models/pet";
+import {PetService} from "../shared/services/pet.service";
 import {AddUpdatePetDialogComponent} from "./add-update-pet-dialog.component";
 
 @Component({
@@ -33,8 +33,8 @@ export class ProfileComponent implements OnInit {
   getUser(){
     this.id = this.utilsService.getId();
     this.userService.findById(this.id).subscribe(
-      response => {
-        this.user = response[0];
+      (response: User) => {
+        this.user = response;
       }
     );
   }
@@ -71,6 +71,7 @@ export class ProfileComponent implements OnInit {
   updateUser() {
     const addressInput = document.getElementById("address") as HTMLInputElement;
     this.user.address = addressInput.value;
+
     this.userService.update(this.user).subscribe(
       response => {
         this.getUser();

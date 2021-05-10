@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import {PetService} from "../shared/pet.service";
-import {UtilsService} from "../shared/utils.service";
-import {Pet} from "../shared/pet";
-import {AddService} from "../shared/add.service";
-import {AddCreation} from "../shared/addCreation";
+import {PetService} from "../shared/services/pet.service";
+import {UtilsService} from "../shared/services/utils.service";
+import {Pet} from "../shared/models/pet";
+import {AddService} from "../shared/services/add.service";
+import {AddCreation} from "../shared/models/addCreation";
 import {Router} from "@angular/router";
-import {User} from "../shared/user";
-import {UserService} from "../shared/user.service";
+import {User} from "../shared/models/user";
+import {UserService} from "../shared/services/user.service";
 
 @Component({
   selector: 'app-publisher',
@@ -33,8 +33,8 @@ export class PublisherComponent implements OnInit {
   getUser(){
     this.id = this.utilsService.getId();
     this.userService.findById(this.id).subscribe(
-      response => {
-        this.user = response[0];
+      (response: User) => {
+        this.user = response;
       }
     );
   }

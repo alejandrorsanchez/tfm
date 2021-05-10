@@ -23,7 +23,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
-import {InterceptorService} from "./shared/interceptor.service";
+import {InterceptorService} from "./shared/security/interceptor.service";
 import { HomeComponent } from './home/home.component';
 import {MatToolbarModule} from "@angular/material/toolbar";
 import { OperationsComponent } from './operations/operations.component';
