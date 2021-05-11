@@ -54,9 +54,30 @@ describe('Testing Pet API', function(){
                 done();
             });
     });
-    it('should not find pet for non-existing user id', function(done){
+    it('should not find pet by non-existing id', function(done){
         chai.request(url)
-            .get('/search/111')
+            .get('/' + id)
+            .set('Authorization', 'Bearer '  + token)
+            .end(function (err, res){
+                expect(res.header['authorization']).not.be.null;
+                expect(res).to.have.status(200);
+                expect(res.body).to.have.property('id').to.be.equal(id);
+                done();
+            });
+    });
+    it('should find pet by its id', function(done){
+        chai.request(url)
+            .get('/00000')
+            .set('Authorization', 'Bearer '  + token)
+            .end(function (err, res){
+                expect(res.header['authorization']).not.be.null;
+                expect(res).to.have.status(404);
+                done();
+            });
+    });
+    it('should not find pet by non-existing user id', function(done){
+        chai.request(url)
+            .get('/search/00000')
             .set('Authorization', 'Bearer '  + token)
             .end(function (err, res){
                 expect(res.header['authorization']).not.be.null;
@@ -65,7 +86,7 @@ describe('Testing Pet API', function(){
                 done();
             });
     });
-    it('should find pet for its user id', function(done){
+    it('should find pet by its user id', function(done){
         chai.request(url)
             .get('/search/' + userId)
             .set('Authorization', 'Bearer '  + token)
@@ -86,32 +107,19 @@ describe('Testing Pet API', function(){
                 done();
             });
     });
-    it('should not update pet for non-existing ID', function(done){
+    it('should not update pet by non-existing ID', function(done){
         chai.request(url)
-            .put('/111')
+            .put('/00000')
             .set('Authorization', 'Bearer '  + token)
             .send({name: 'another name', breed: 'another breed'})
             .end(function (err, res){
                 expect(res.header['authorization']).not.be.null;
                 expect(res).to.have.status(200);
+                expect(res.body).to.have.property('affectedRows').to.be.equal(0);
                 done();
             });
     });
-    it('Created pet should not have changed', function(done){
-        chai.request(url)
-            .get('/search/' + userId)
-            .set('Authorization', 'Bearer '  + token)
-            .end(function (err, res){
-                expect(res.header['authorization']).not.be.null;
-                expect(res).to.have.status(200);
-                expect(res.body).to.have.lengthOf(1);
-                expect(res.body[0]).to.have.property('id').to.be.equal(id);
-                expect(res.body[0]).to.have.property('name').not.to.be.equal('another name');
-                expect(res.body[0]).to.have.property('breed').not.to.be.equal('another breed');
-                done();
-            });
-    });
-    it('should update pet for its ID', function(done){
+    it('should update pet by its ID', function(done){
         chai.request(url)
             .put('/' + id)
             .set('Authorization', 'Bearer '  + token)
@@ -119,6 +127,7 @@ describe('Testing Pet API', function(){
             .end(function (err, res){
                 expect(res.header['authorization']).not.be.null;
                 expect(res).to.have.status(200);
+                expect(res.body).to.have.property('affectedRows').to.be.equal(1);
                 done();
             });
     });
@@ -131,7 +140,7 @@ describe('Testing Pet API', function(){
                 done();
             });
     });
-    it('should delete pet for its ID', function(done){
+    it('should delete pet by its ID', function(done){
         chai.request(url)
             .delete('/' + id)
             .set('Authorization', 'Bearer '  + token)
