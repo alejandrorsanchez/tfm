@@ -20,8 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/test/userTest.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/test/userTest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/pet.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/pet.controller.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -238,28 +237,8 @@
       <workItem from="1620312793084" duration="5430000" />
       <workItem from="1620465043540" duration="5133000" />
       <workItem from="1620654615873" duration="4698000" />
-      <workItem from="1620670885918" duration="1811000" />
-    </task>
-    <task id="LOCAL-00094" summary="Refactor removing height from dialogs">
-      <created>1619594491057</created>
-      <option name="number" value="00094" />
-      <option name="presentableId" value="LOCAL-00094" />
-      <option name="project" value="LOCAL" />
-      <updated>1619594491068</updated>
-    </task>
-    <task id="LOCAL-00095" summary="Refactor enviroment.js">
-      <created>1619597236603</created>
-      <option name="number" value="00095" />
-      <option name="presentableId" value="LOCAL-00095" />
-      <option name="project" value="LOCAL" />
-      <updated>1619597236603</updated>
-    </task>
-    <task id="LOCAL-00096" summary="new commit develop">
-      <created>1619603853610</created>
-      <option name="number" value="00096" />
-      <option name="presentableId" value="LOCAL-00096" />
-      <option name="project" value="LOCAL" />
-      <updated>1619603853610</updated>
+      <workItem from="1620670885918" duration="2036000" />
+      <workItem from="1620726093476" duration="365000" />
     </task>
     <task id="LOCAL-00097" summary="sonar.yml">
       <created>1619604330363</created>
@@ -583,7 +562,28 @@
       <option name="project" value="LOCAL" />
       <updated>1620659347077</updated>
     </task>
-    <option name="localTasksCounter" value="143" />
+    <task id="LOCAL-00143" summary="user test fixed">
+      <created>1620672797232</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1620672797232</updated>
+    </task>
+    <task id="LOCAL-00144" summary="user test fixed">
+      <created>1620672874517</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
+      <option name="project" value="LOCAL" />
+      <updated>1620672874517</updated>
+    </task>
+    <task id="LOCAL-00145" summary="refactoring pet controller status codes">
+      <created>1620726366567</created>
+      <option name="number" value="00145" />
+      <option name="presentableId" value="LOCAL-00145" />
+      <option name="project" value="LOCAL" />
+      <updated>1620726366567</updated>
+    </task>
+    <option name="localTasksCounter" value="146" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -606,8 +606,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="GET Adds by type" />
-    <MESSAGE value="copyProperties unused?" />
     <MESSAGE value="address input data saved correctly" />
     <MESSAGE value="password verification for login fixed" />
     <MESSAGE value="adds not indexing" />
@@ -631,7 +629,9 @@
     <MESSAGE value="." />
     <MESSAGE value="transition for cards hover" />
     <MESSAGE value="status code for user fixed, first test improved" />
-    <option name="LAST_COMMIT_MESSAGE" value="status code for user fixed, first test improved" />
+    <MESSAGE value="user test fixed" />
+    <MESSAGE value="refactoring pet controller status codes" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring pet controller status codes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="509" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619029708212">
@@ -658,22 +658,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1618474868342" />
-    <state width="1515" height="182" key="GridCell.Tab.0.bottom" timestamp="1620672624682">
+    <state width="1515" height="182" key="GridCell.Tab.0.bottom" timestamp="1620672938334">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="182" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1620672624682" />
-    <state width="1515" height="182" key="GridCell.Tab.0.center" timestamp="1620672624682">
+    <state width="1515" height="182" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1620672938334" />
+    <state width="1515" height="182" key="GridCell.Tab.0.center" timestamp="1620672938334">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="182" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1620672624682" />
-    <state width="1515" height="182" key="GridCell.Tab.0.left" timestamp="1620672624682">
+    <state width="1515" height="182" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1620672938334" />
+    <state width="1515" height="182" key="GridCell.Tab.0.left" timestamp="1620672938334">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="182" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1620672624682" />
-    <state width="1515" height="182" key="GridCell.Tab.0.right" timestamp="1620672624682">
+    <state width="1515" height="182" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1620672938334" />
+    <state width="1515" height="182" key="GridCell.Tab.0.right" timestamp="1620672938334">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="182" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1620672624682" />
+    <state width="1515" height="182" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1620672938334" />
     <state width="1515" height="261" key="GridCell.Tab.1.bottom" timestamp="1619438632838">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

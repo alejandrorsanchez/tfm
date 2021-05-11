@@ -10,7 +10,7 @@ petController.findById = (req, res) => {
     const query = 'SELECT * FROM pets WHERE id = ?';
     db.query(query, [id], function (err, row, fields) {
         if (err) throw err;
-        res.json(row);
+        (row[0]) ? res.status(200).json(row[0]) : res.status(404).json({message: 'Mascota no encontrada'});
     })
 }
 
@@ -19,7 +19,7 @@ petController.findByUserId = (req, res) => {
     const query = 'SELECT * FROM pets WHERE user_id = ?';
     db.query(query, [userId], function (err, rows, fields) {
         if (err) throw err;
-        res.json(rows);
+        res.status(200).json(rows);
     })
 }
 
@@ -28,7 +28,7 @@ petController.save = (req, res) => {
     const query = 'INSERT INTO pets SET ?';
     db.query(query, pet, function (err, rows, fields) {
         if (err) throw err;
-        res.json({ message: 'Mascota creada correctamente!', id: rows['insertId']});
+        res.status(200).json({ message: 'Mascota creada correctamente!', id: rows['insertId']});
     })
 }
 
@@ -38,7 +38,7 @@ petController.update = (req, res) => {
     const query = 'UPDATE pets SET name = ?, breed = ?, weight = ?, age = ?, description = ?, picture = ? WHERE id = ?';
     db.query(query, data, function (err, row, fields) {
         if (err) throw err;
-        res.json({ message: 'Mascota actualizada' });
+        res.status(200).json({ message: 'Mascota actualizada', affectedRows: row['affectedRows']});
     })
 }
 

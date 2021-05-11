@@ -37,7 +37,7 @@ export class MyInteractionsComponent implements OnInit {
         if(this.addIsPet()){
           this.petService.findById(this.petId.toString()).subscribe(
             (response: Pet) => {
-              this.petName = response[0].name;
+              this.petName = response.name;
             }
           );
         }

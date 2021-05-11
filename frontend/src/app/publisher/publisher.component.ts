@@ -52,13 +52,8 @@ export class PublisherComponent implements OnInit {
 
   getUserPets(id: string) {
     this.petService.findByUserId(id).subscribe(
-      response => {
-        this.myPets = [];
-        for (const key in response) {
-          let pet = new Pet();
-          pet = response[key];
-          this.myPets.push(pet);
-        }
+      (response: Pet[]) => {
+        this.myPets = response;
       }
     );
   }

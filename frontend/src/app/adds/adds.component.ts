@@ -65,7 +65,7 @@ export class AddsComponent implements OnInit {
           this.petService.findById(petId.toString()).subscribe(
             petResponse =>{
               const pet = new Pet();
-              pet.copyProperties(petResponse[0]);
+              pet.copyProperties(petResponse);
               add.pet = pet;
             }
           );
