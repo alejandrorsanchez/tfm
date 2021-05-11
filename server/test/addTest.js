@@ -38,9 +38,20 @@ describe('Testing Add API', function(){
                 done();
             });
     });
-    it('should not create a new add without token', function(done){
+    it('should not find any add by user id', function(done){
         chai.request(url)
-            .post('/adoption')
+            .get('/' + userId)
+            .set('Authorization', 'Bearer '  + token)
+            .end(function (err, res){
+                expect(res.header['authorization']).not.be.null;
+                expect(res).to.have.status(200);
+                expect(res.body).to.have.lengthOf(0);
+                done();
+            });
+    });
+    it('should not create a new volunteer add without token', function(done){
+        chai.request(url)
+            .post('/volunteer')
             .send({})
             .end(function (err, res){
                 expect(res.header['authorization']).to.be.undefined;
@@ -82,7 +93,7 @@ describe('Testing Add API', function(){
     });
     it('should not find add by non-existing user id', function(done){
         chai.request(url)
-            .get('/0')
+            .get('/0000')
             .set('Authorization', 'Bearer '  + token)
             .end(function (err, res){
                 expect(res.header['authorization']).not.be.null;
@@ -91,7 +102,7 @@ describe('Testing Add API', function(){
                 done();
             });
     });
-    it('should find volunteer add for its user id', function(done){
+    it('should find volunteer add by its user id', function(done){
         chai.request(url)
             .get('/' + userId)
             .set('Authorization', 'Bearer '  + token)
@@ -100,6 +111,16 @@ describe('Testing Add API', function(){
                 expect(res).to.have.status(200);
                 expect(res.body).to.have.lengthOf(1);
                 expect(res.body[0]).to.have.property('id').to.be.equal(volunteerId);
+                done();
+            });
+    });
+    it('should not create a new adoption add without token', function(done){
+        chai.request(url)
+            .post('/adoption')
+            .send({})
+            .end(function (err, res){
+                expect(res.header['authorization']).to.be.undefined;
+                expect(res).to.have.status(403);
                 done();
             });
     });
@@ -126,7 +147,7 @@ describe('Testing Add API', function(){
                 done();
             });
     });
-    it('should find adoption add for its user id', function(done){
+    it('should find adoption add by its user id', function(done){
         chai.request(url)
             .get('/' + userId)
             .set('Authorization', 'Bearer '  + token)
@@ -147,7 +168,7 @@ describe('Testing Add API', function(){
                 done();
             });
     });
-    it('should delete volunteer add for its ID', function(done){
+    it('should delete volunteer add by its ID', function(done){
         chai.request(url)
             .delete('/' + volunteerId)
             .set('Authorization', 'Bearer '  + token)
@@ -165,11 +186,11 @@ describe('Testing Add API', function(){
                 expect(res.header['authorization']).not.be.null;
                 expect(res).to.have.status(200);
                 expect(res.body).to.have.lengthOf(1);
-                expect(res.body[0]).to.have.property('petId').not.be.null;
+                expect(res.body[0]).to.have.property('id').not.be.equal(volunteerId);
                 done();
             });
     });
-    it('should delete adoption add for its ID', function(done){
+    it('should delete adoption add by its ID', function(done){
         chai.request(url)
             .delete('/' + adoptionId)
             .set('Authorization', 'Bearer '  + token)
@@ -190,22 +211,22 @@ describe('Testing Add API', function(){
                 done();
             });
     });
-    it('should not find any add by type 1 (Adoption) and user id', function(done){
+    it('should not find any add by type 1 (Adoption) for my user id when another user searches for it', function(done){
         chai.request(url)
             .get('/')
             .set('Authorization', 'Bearer '  + token)
-            .send({type: 1, userId: userId})
+            .send({type: 1, userId: 1})
             .end(function (err, res){
                 expect(res.header['authorization']).not.be.null;
                 expect(res).to.have.status(404);
                 done();
             });
     });
-    it('should not find any add by type 2 (Volunteer) and user id', function(done){
+    it('should not find any add by type 2 (Volunteer) for my user id when another user searches for it', function(done){
         chai.request(url)
             .get('/')
             .set('Authorization', 'Bearer '  + token)
-            .send({type: 2, userId: userId})
+            .send({type: 2, userId: 1})
             .end(function (err, res){
                 expect(res.header['authorization']).not.be.null;
                 expect(res).to.have.status(404);

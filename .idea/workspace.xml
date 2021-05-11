@@ -21,9 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/adds/adds.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/adds/adds.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/shared/services/add.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/shared/services/add.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/add.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/add.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/test/addTest.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/test/addTest.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +73,22 @@
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\operations" />
     </key>
   </component>
-  <component name="RunManager" selected="Mocha.Testing Pet API">
+  <component name="RunManager" selected="Mocha.Testing Add API">
+    <configuration name="Testing Add API" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/server/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$/server</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>SUITE</test-kind>
+      <test-file>$PROJECT_DIR$/server/test/addTest.js</test-file>
+      <test-names>
+        <name value="Testing Add API" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="Testing Pet API" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -138,29 +151,13 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="Testing User API.should save a new user" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <mocha-package>$PROJECT_DIR$/server/node_modules/mocha</mocha-package>
-      <working-directory>$PROJECT_DIR$/server</working-directory>
-      <pass-parent-env>true</pass-parent-env>
-      <ui>bdd</ui>
-      <extra-mocha-options />
-      <test-kind>TEST</test-kind>
-      <test-file>$PROJECT_DIR$/server/test/userTest.js</test-file>
-      <test-names>
-        <name value="Testing User API" />
-        <name value="should save a new user" />
-      </test-names>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Mocha.Testing Add API" />
         <item itemvalue="Mocha.Testing Pet API" />
         <item itemvalue="Mocha.Testing User API" />
         <item itemvalue="Mocha.Testing User API.should find user for its ID" />
         <item itemvalue="Mocha.Testing User API.should find user for its name and therefore return 409" />
-        <item itemvalue="Mocha.Testing User API.should save a new user" />
       </list>
     </recent_temporary>
   </component>
@@ -240,14 +237,7 @@
       <workItem from="1620465043540" duration="5133000" />
       <workItem from="1620654615873" duration="4698000" />
       <workItem from="1620670885918" duration="2036000" />
-      <workItem from="1620726093476" duration="2120000" />
-    </task>
-    <task id="LOCAL-00099" summary="package.json fixed for server">
-      <created>1619612241838</created>
-      <option name="number" value="00099" />
-      <option name="presentableId" value="LOCAL-00099" />
-      <option name="project" value="LOCAL" />
-      <updated>1619612241838</updated>
+      <workItem from="1620726093476" duration="3566000" />
     </task>
     <task id="LOCAL-00100" summary="scripts">
       <created>1619620262031</created>
@@ -585,7 +575,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620727553777</updated>
     </task>
-    <option name="localTasksCounter" value="148" />
+    <task id="LOCAL-00148" summary="refactoring add controller">
+      <created>1620728559568</created>
+      <option name="number" value="00148" />
+      <option name="presentableId" value="LOCAL-00148" />
+      <option name="project" value="LOCAL" />
+      <updated>1620728559568</updated>
+    </task>
+    <option name="localTasksCounter" value="149" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -608,7 +605,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="password verification for login fixed" />
     <MESSAGE value="adds not indexing" />
     <MESSAGE value="Change the way of obtaining mypets in my profile" />
     <MESSAGE value="getCoordinate()" />
@@ -633,7 +629,8 @@
     <MESSAGE value="user test fixed" />
     <MESSAGE value="refactoring pet controller status codes" />
     <MESSAGE value="end refactoring pet controller and pet test" />
-    <option name="LAST_COMMIT_MESSAGE" value="end refactoring pet controller and pet test" />
+    <MESSAGE value="refactoring add controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring add controller" />
   </component>
   <component name="WindowStateProjectService">
     <state x="509" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619029708212">
