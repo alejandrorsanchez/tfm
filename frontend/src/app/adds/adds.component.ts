@@ -8,6 +8,7 @@ import {PetService} from "../shared/services/pet.service";
 import {Pet} from "../shared/models/pet";
 import {User} from "../shared/models/user";
 import {Coordinate} from "./coordinate";
+import {AddCreation} from "../shared/models/addCreation";
 
 @Component({
   selector: 'app-adds',
@@ -46,15 +47,15 @@ export class AddsComponent implements OnInit {
 
   getAdds() {
     this.addService.findByType(this.type, this.id).subscribe(
-      response => {
+      (response: AddCreation[]) => {
         for (const key in response) {
-          this.createAddFromResponse(response[key].userId, response[key].petId);
+          this.createAddFromAddCreation(response[key].userId, response[key].petId);
         }
       }
     );
   }
 
-  createAddFromResponse(userId: string, petId: number) {
+  createAddFromAddCreation(userId: string, petId: number) {
     this.userService.findById(userId).subscribe(
       (userResponse: User) => {
         let add = new AddListing();

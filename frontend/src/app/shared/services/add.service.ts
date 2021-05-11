@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import {HttpClient, HttpParams} from "@angular/common/http";
 import {AddCreation} from "../models/addCreation";
-import {Observable} from "rxjs";
 
 @Injectable({
   providedIn: 'root'
@@ -22,10 +21,10 @@ export class AddService {
     return this.http.post(this.URL + this.VOLUNTEER, add, {observe: 'response'});
   }
 
-  findByType(type: number, id: string) {
+  findByType(type: number, userId: string) {
     let params = new HttpParams();
     params = params.append('type', type.toString());
-    params = params.append('id', id);
+    params = params.append('userId', userId);
     return this.http.get(this.URL, {params: params});
   }
 
