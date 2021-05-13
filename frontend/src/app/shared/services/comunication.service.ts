@@ -6,4 +6,9 @@ import { Injectable } from '@angular/core';
 export class ComunicationService {
 
   constructor() { }
+
+
+  getComunication(userId1: number, userId2: number) {
+
+  }
 }

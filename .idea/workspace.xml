@@ -20,8 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/shared/services/comunication.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -233,14 +235,8 @@
       <workItem from="1620670885918" duration="2036000" />
       <workItem from="1620726093476" duration="3728000" />
       <workItem from="1620831469438" duration="603000" />
-      <workItem from="1620900444679" duration="2224000" />
-    </task>
-    <task id="LOCAL-00103" summary="UI for posting new add">
-      <created>1619689456129</created>
-      <option name="number" value="00103" />
-      <option name="presentableId" value="LOCAL-00103" />
-      <option name="project" value="LOCAL" />
-      <updated>1619689456129</updated>
+      <workItem from="1620900444679" duration="2249000" />
+      <workItem from="1620912705856" duration="2541000" />
     </task>
     <task id="LOCAL-00104" summary="UI for posting new add">
       <created>1619690072818</created>
@@ -578,7 +574,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620903006217</updated>
     </task>
-    <option name="localTasksCounter" value="152" />
+    <task id="LOCAL-00152" summary="new comunication.service">
+      <created>1620903380925</created>
+      <option name="number" value="00152" />
+      <option name="presentableId" value="LOCAL-00152" />
+      <option name="project" value="LOCAL" />
+      <updated>1620903380925</updated>
+    </task>
+    <option name="localTasksCounter" value="153" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -601,7 +604,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Sorting adds by proximity implemented but slow" />
     <MESSAGE value="material spinner for waiting" />
     <MESSAGE value="volunteer list fixed" />
     <MESSAGE value="adds cards size modified" />
@@ -626,7 +628,8 @@
     <MESSAGE value="end refactoring add test" />
     <MESSAGE value="initial commit interactions" />
     <MESSAGE value="new comunications.component linked with id of two users to comunicate" />
-    <option name="LAST_COMMIT_MESSAGE" value="new comunications.component linked with id of two users to comunicate" />
+    <MESSAGE value="new comunication.service" />
+    <option name="LAST_COMMIT_MESSAGE" value="new comunication.service" />
   </component>
   <component name="WindowStateProjectService">
     <state x="509" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619029708212">
