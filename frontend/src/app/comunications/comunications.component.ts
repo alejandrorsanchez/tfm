@@ -31,4 +31,8 @@ export class ComunicationsComponent implements OnInit {
   createIterableFromString(messages: string) {
     this.messagesList = messages.split("||");
   }
+
+  sendMessage() {
+
+  }
 }

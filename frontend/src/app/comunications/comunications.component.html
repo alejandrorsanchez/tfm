@@ -4,7 +4,7 @@
       <p>{{message}}</p>
     </div>
   </div>
-  <input class="uk-input uk-form-large" type="text" placeholder="Escribe algo">
-  <button class="uk-button uk-button-primary uk-button-large uk-width-1-1">Enviar</button>
+  <input id="inputText" class="uk-input uk-form-large" type="text" placeholder="Escribe algo">
+  <button class="uk-button uk-button-primary uk-button-large uk-width-1-1" (click)="this.sendMessage()">Enviar</button>
 </div>
 
