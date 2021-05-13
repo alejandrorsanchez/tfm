@@ -21,7 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/test/addTest.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/test/addTest.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -237,14 +236,9 @@
       <workItem from="1620465043540" duration="5133000" />
       <workItem from="1620654615873" duration="4698000" />
       <workItem from="1620670885918" duration="2036000" />
-      <workItem from="1620726093476" duration="3566000" />
-    </task>
-    <task id="LOCAL-00100" summary="scripts">
-      <created>1619620262031</created>
-      <option name="number" value="00100" />
-      <option name="presentableId" value="LOCAL-00100" />
-      <option name="project" value="LOCAL" />
-      <updated>1619620262032</updated>
+      <workItem from="1620726093476" duration="3728000" />
+      <workItem from="1620831469438" duration="603000" />
+      <workItem from="1620900444679" duration="598000" />
     </task>
     <task id="LOCAL-00101" summary="package.json">
       <created>1619682990011</created>
@@ -582,7 +576,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620728559568</updated>
     </task>
-    <option name="localTasksCounter" value="149" />
+    <task id="LOCAL-00149" summary="end refactoring add test">
+      <created>1620729838906</created>
+      <option name="number" value="00149" />
+      <option name="presentableId" value="LOCAL-00149" />
+      <option name="project" value="LOCAL" />
+      <updated>1620729838906</updated>
+    </task>
+    <option name="localTasksCounter" value="150" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -605,7 +606,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="adds not indexing" />
     <MESSAGE value="Change the way of obtaining mypets in my profile" />
     <MESSAGE value="getCoordinate()" />
     <MESSAGE value="Sorting adds by proximity implemented but slow" />
@@ -630,7 +630,8 @@
     <MESSAGE value="refactoring pet controller status codes" />
     <MESSAGE value="end refactoring pet controller and pet test" />
     <MESSAGE value="refactoring add controller" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring add controller" />
+    <MESSAGE value="end refactoring add test" />
+    <option name="LAST_COMMIT_MESSAGE" value="end refactoring add test" />
   </component>
   <component name="WindowStateProjectService">
     <state x="509" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619029708212">
@@ -657,22 +658,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1618474868342" />
-    <state width="1515" height="182" key="GridCell.Tab.0.bottom" timestamp="1620727521094">
+    <state width="1515" height="182" key="GridCell.Tab.0.bottom" timestamp="1620729850384">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="182" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1620727521094" />
-    <state width="1515" height="182" key="GridCell.Tab.0.center" timestamp="1620727521094">
+    <state width="1515" height="182" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1620729850384" />
+    <state width="1515" height="182" key="GridCell.Tab.0.center" timestamp="1620729850384">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="182" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1620727521094" />
-    <state width="1515" height="182" key="GridCell.Tab.0.left" timestamp="1620727521094">
+    <state width="1515" height="182" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1620729850384" />
+    <state width="1515" height="182" key="GridCell.Tab.0.left" timestamp="1620729850384">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="182" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1620727521094" />
-    <state width="1515" height="182" key="GridCell.Tab.0.right" timestamp="1620727521094">
+    <state width="1515" height="182" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1620729850384" />
+    <state width="1515" height="182" key="GridCell.Tab.0.right" timestamp="1620729850384">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="182" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1620727521094" />
+    <state width="1515" height="182" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1620729850384" />
     <state width="1515" height="261" key="GridCell.Tab.1.bottom" timestamp="1619438632838">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
