@@ -4,5 +4,6 @@ const comunicationController = require('../controllers/comunication.controller')
 const {ensureAuthenticated} = require("../middleware/authMiddelware");
 
 router.get('/', ensureAuthenticated, comunicationController.findByBothUserId);
+router.post('/', ensureAuthenticated, comunicationController.save);
 
 module.exports = router;

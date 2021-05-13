@@ -21,8 +21,11 @@
   <component name="ChangeListManager">
     <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/shared/models/comunication.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/shared/models/comunication.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/shared/services/comunication.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/shared/services/comunication.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/comunication.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/comunication.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/comunication.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/comunication.routes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +54,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="14.15.0" />
     <property name="javascript.nodejs.core.library.typings.version" value="14.14.41" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/server/controllers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/frontend/src/app/shared/models" />
     <property name="nodejs.mocha.mocha_node_package_dir" value="$PROJECT_DIR$/server/node_modules/mocha" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -59,19 +62,19 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\server\controllers" />
-      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\shared" />
-      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\server" />
-      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\server\routes" />
-      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\user" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\shared\models" />
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\shared\services" />
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\shared\security" />
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\my-interactions" />
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\operations" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\shared\models" />
+      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\server\controllers" />
+      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\shared" />
+      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\server" />
+      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\server\routes" />
     </key>
   </component>
   <component name="RunManager" selected="npm.test">
@@ -235,21 +238,7 @@
       <workItem from="1620726093476" duration="3728000" />
       <workItem from="1620831469438" duration="603000" />
       <workItem from="1620900444679" duration="2249000" />
-      <workItem from="1620912705856" duration="5181000" />
-    </task>
-    <task id="LOCAL-00109" summary="POST Add">
-      <created>1619767679721</created>
-      <option name="number" value="00109" />
-      <option name="presentableId" value="LOCAL-00109" />
-      <option name="project" value="LOCAL" />
-      <updated>1619767679721</updated>
-    </task>
-    <task id="LOCAL-00110" summary="my adds component linked">
-      <created>1619767822229</created>
-      <option name="number" value="00110" />
-      <option name="presentableId" value="LOCAL-00110" />
-      <option name="project" value="LOCAL" />
-      <updated>1619767822229</updated>
+      <workItem from="1620912705856" duration="8429000" />
     </task>
     <task id="LOCAL-00111" summary="small modal for choosing type of adds listing">
       <created>1619769271187</created>
@@ -580,7 +569,21 @@
       <option name="project" value="LOCAL" />
       <updated>1620917317185</updated>
     </task>
-    <option name="localTasksCounter" value="158" />
+    <task id="LOCAL-00158" summary="sendMessage() without implementation">
+      <created>1620918013562</created>
+      <option name="number" value="00158" />
+      <option name="presentableId" value="LOCAL-00158" />
+      <option name="project" value="LOCAL" />
+      <updated>1620918013562</updated>
+    </task>
+    <task id="LOCAL-00159" summary="sendMessage() with call to service">
+      <created>1620920426813</created>
+      <option name="number" value="00159" />
+      <option name="presentableId" value="LOCAL-00159" />
+      <option name="project" value="LOCAL" />
+      <updated>1620920426813</updated>
+    </task>
+    <option name="localTasksCounter" value="160" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -603,8 +606,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="adds arrow icon for redirecting" />
-    <MESSAGE value="delete adds related to deleted pet" />
     <MESSAGE value="delete adds related to deleted user" />
     <MESSAGE value="new component myInteractions linked" />
     <MESSAGE value="UI for myInteractions" />
@@ -628,7 +629,9 @@
     <MESSAGE value="UI comunication between users" />
     <MESSAGE value="endpoint called from angular" />
     <MESSAGE value="endpoint implemented in controller" />
-    <option name="LAST_COMMIT_MESSAGE" value="endpoint implemented in controller" />
+    <MESSAGE value="sendMessage() without implementation" />
+    <MESSAGE value="sendMessage() with call to service" />
+    <option name="LAST_COMMIT_MESSAGE" value="sendMessage() with call to service" />
   </component>
   <component name="WindowStateProjectService">
     <state x="509" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619029708212">
