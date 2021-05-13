@@ -118,6 +118,10 @@ export class AddsComponent implements OnInit {
     return coordinate;
   }
 
+  createInteraction(id: number) {
+    this.router.navigateByUrl('/home/comunications/' + id);
+  }
+
   isAdoption() {
     return this.type == 1;
   }
@@ -129,4 +133,5 @@ export class AddsComponent implements OnInit {
   redirectToHome() {
     this.router.navigateByUrl('/home');
   }
+
 }

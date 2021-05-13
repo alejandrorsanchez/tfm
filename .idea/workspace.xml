@@ -20,7 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/adds/adds.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/adds/adds.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/adds/adds.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/adds/adds.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.module.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +79,17 @@
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\operations" />
     </key>
   </component>
-  <component name="RunManager" selected="Mocha.Testing Add API">
+  <component name="RunManager" selected="npm.test">
+    <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/server/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="Testing Add API" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -134,29 +151,13 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="Testing User API.should find user for its name and therefore return 409" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <mocha-package>$PROJECT_DIR$/server/node_modules/mocha</mocha-package>
-      <working-directory>$PROJECT_DIR$/server</working-directory>
-      <pass-parent-env>true</pass-parent-env>
-      <ui>bdd</ui>
-      <extra-mocha-options />
-      <test-kind>TEST</test-kind>
-      <test-file>$PROJECT_DIR$/server/test/userTest.js</test-file>
-      <test-names>
-        <name value="Testing User API" />
-        <name value="should find user for its name and therefore return 409" />
-      </test-names>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.test" />
         <item itemvalue="Mocha.Testing Add API" />
         <item itemvalue="Mocha.Testing Pet API" />
         <item itemvalue="Mocha.Testing User API" />
         <item itemvalue="Mocha.Testing User API.should find user for its ID" />
-        <item itemvalue="Mocha.Testing User API.should find user for its name and therefore return 409" />
       </list>
     </recent_temporary>
   </component>
@@ -238,14 +239,7 @@
       <workItem from="1620670885918" duration="2036000" />
       <workItem from="1620726093476" duration="3728000" />
       <workItem from="1620831469438" duration="603000" />
-      <workItem from="1620900444679" duration="598000" />
-    </task>
-    <task id="LOCAL-00101" summary="package.json">
-      <created>1619682990011</created>
-      <option name="number" value="00101" />
-      <option name="presentableId" value="LOCAL-00101" />
-      <option name="project" value="LOCAL" />
-      <updated>1619682990011</updated>
+      <workItem from="1620900444679" duration="1587000" />
     </task>
     <task id="LOCAL-00102" summary="new publisher.component linked">
       <created>1619684811971</created>
@@ -583,7 +577,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620729838906</updated>
     </task>
-    <option name="localTasksCounter" value="150" />
+    <task id="LOCAL-00150" summary="initial commit interactions">
+      <created>1620901881816</created>
+      <option name="number" value="00150" />
+      <option name="presentableId" value="LOCAL-00150" />
+      <option name="project" value="LOCAL" />
+      <updated>1620901881816</updated>
+    </task>
+    <option name="localTasksCounter" value="151" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -606,7 +607,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Change the way of obtaining mypets in my profile" />
     <MESSAGE value="getCoordinate()" />
     <MESSAGE value="Sorting adds by proximity implemented but slow" />
     <MESSAGE value="material spinner for waiting" />
@@ -631,7 +631,8 @@
     <MESSAGE value="end refactoring pet controller and pet test" />
     <MESSAGE value="refactoring add controller" />
     <MESSAGE value="end refactoring add test" />
-    <option name="LAST_COMMIT_MESSAGE" value="end refactoring add test" />
+    <MESSAGE value="initial commit interactions" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit interactions" />
   </component>
   <component name="WindowStateProjectService">
     <state x="509" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619029708212">
@@ -658,22 +659,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1618474868342" />
-    <state width="1515" height="182" key="GridCell.Tab.0.bottom" timestamp="1620729850384">
+    <state width="1515" height="218" key="GridCell.Tab.0.bottom" timestamp="1620902355101">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="182" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1620729850384" />
-    <state width="1515" height="182" key="GridCell.Tab.0.center" timestamp="1620729850384">
+    <state width="1515" height="218" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1620902355101" />
+    <state width="1515" height="218" key="GridCell.Tab.0.center" timestamp="1620902355101">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="182" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1620729850384" />
-    <state width="1515" height="182" key="GridCell.Tab.0.left" timestamp="1620729850384">
+    <state width="1515" height="218" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1620902355101" />
+    <state width="1515" height="218" key="GridCell.Tab.0.left" timestamp="1620902355101">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="182" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1620729850384" />
-    <state width="1515" height="182" key="GridCell.Tab.0.right" timestamp="1620729850384">
+    <state width="1515" height="218" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1620902355101" />
+    <state width="1515" height="218" key="GridCell.Tab.0.right" timestamp="1620902355101">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="182" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1620729850384" />
+    <state width="1515" height="218" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1620902355101" />
     <state width="1515" height="261" key="GridCell.Tab.1.bottom" timestamp="1619438632838">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -738,14 +739,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="400" y="23" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1620234910797" />
-    <state x="632" y="298" width="348" height="298" key="org.angular.cli.generate" timestamp="1620295661593">
+    <state x="632" y="298" width="348" height="298" key="org.angular.cli.generate" timestamp="1620902338278">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="632" y="298" width="348" height="298" key="org.angular.cli.generate/0.0.1536.824@0.0.1536.824" timestamp="1620295661593" />
-    <state x="486" y="184" key="refactoring.ChangeSignatureDialog" timestamp="1620123502566">
+    <state x="632" y="298" width="348" height="298" key="org.angular.cli.generate/0.0.1536.824@0.0.1536.824" timestamp="1620902338278" />
+    <state x="486" y="184" key="refactoring.ChangeSignatureDialog" timestamp="1620902236950">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="486" y="184" key="refactoring.ChangeSignatureDialog/0.0.1536.824@0.0.1536.824" timestamp="1620123502566" />
+    <state x="486" y="184" key="refactoring.ChangeSignatureDialog/0.0.1536.824@0.0.1536.824" timestamp="1620902236950" />
     <state x="48" y="189" key="run.anything.popup" timestamp="1619611294759">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
