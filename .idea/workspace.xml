@@ -20,7 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/shared/services/comunication.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/shared/services/comunication.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -233,28 +233,7 @@
       <workItem from="1620726093476" duration="3728000" />
       <workItem from="1620831469438" duration="603000" />
       <workItem from="1620900444679" duration="2249000" />
-      <workItem from="1620912705856" duration="2910000" />
-    </task>
-    <task id="LOCAL-00105" summary="Retrieving user pets for the add">
-      <created>1619693600417</created>
-      <option name="number" value="00105" />
-      <option name="presentableId" value="LOCAL-00105" />
-      <option name="project" value="LOCAL" />
-      <updated>1619693600417</updated>
-    </task>
-    <task id="LOCAL-00106" summary="Saving pet id and user id for the add post">
-      <created>1619695679133</created>
-      <option name="number" value="00106" />
-      <option name="presentableId" value="LOCAL-00106" />
-      <option name="project" value="LOCAL" />
-      <updated>1619695679133</updated>
-    </task>
-    <task id="LOCAL-00107" summary="POST Add">
-      <created>1619699216788</created>
-      <option name="number" value="00107" />
-      <option name="presentableId" value="LOCAL-00107" />
-      <option name="project" value="LOCAL" />
-      <updated>1619699216788</updated>
+      <workItem from="1620912705856" duration="4515000" />
     </task>
     <task id="LOCAL-00108" summary="POST Add">
       <created>1619705212869</created>
@@ -578,7 +557,28 @@
       <option name="project" value="LOCAL" />
       <updated>1620915531983</updated>
     </task>
-    <option name="localTasksCounter" value="154" />
+    <task id="LOCAL-00154" summary="endpoint called from angular">
+      <created>1620915739458</created>
+      <option name="number" value="00154" />
+      <option name="presentableId" value="LOCAL-00154" />
+      <option name="project" value="LOCAL" />
+      <updated>1620915739458</updated>
+    </task>
+    <task id="LOCAL-00155" summary="endpoint implemented in controller">
+      <created>1620916214937</created>
+      <option name="number" value="00155" />
+      <option name="presentableId" value="LOCAL-00155" />
+      <option name="project" value="LOCAL" />
+      <updated>1620916214937</updated>
+    </task>
+    <task id="LOCAL-00156" summary="endpoint implemented in controller">
+      <created>1620917189777</created>
+      <option name="number" value="00156" />
+      <option name="presentableId" value="LOCAL-00156" />
+      <option name="project" value="LOCAL" />
+      <updated>1620917189777</updated>
+    </task>
+    <option name="localTasksCounter" value="157" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -601,8 +601,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="volunteer list fixed" />
-    <MESSAGE value="adds cards size modified" />
     <MESSAGE value="adds arrow icon for redirecting" />
     <MESSAGE value="delete adds related to deleted pet" />
     <MESSAGE value="delete adds related to deleted user" />
@@ -626,7 +624,9 @@
     <MESSAGE value="new comunications.component linked with id of two users to comunicate" />
     <MESSAGE value="new comunication.service" />
     <MESSAGE value="UI comunication between users" />
-    <option name="LAST_COMMIT_MESSAGE" value="UI comunication between users" />
+    <MESSAGE value="endpoint called from angular" />
+    <MESSAGE value="endpoint implemented in controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="endpoint implemented in controller" />
   </component>
   <component name="WindowStateProjectService">
     <state x="509" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619029708212">

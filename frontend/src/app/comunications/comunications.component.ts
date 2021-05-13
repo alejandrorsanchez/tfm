@@ -12,7 +12,7 @@ export class ComunicationsComponent implements OnInit {
 
   myId: number;
   userId: number;
-  myMessages: string[] = [];
+  messagesList: string[] = [];
 
   constructor(private route: ActivatedRoute, private utilsService: UtilsService, private comunicationService: ComunicationService) {
     this.userId = this.route.snapshot.params.id;
@@ -20,11 +20,15 @@ export class ComunicationsComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.comunicationService.getComunication(this.myId, this.userId).subscribe(
-      (response: string[]) => {
-        this.myMessages = response;
+    this.comunicationService.findByBothUserId(this.myId, this.userId).subscribe(
+      (response: string) => {
+        let myMessages = response;
+        this.createIterableFromString(myMessages);
       }
     );
   }
 
+  createIterableFromString(messages: string) {
+    this.messagesList = messages.split("||");
+  }
 }

@@ -10,7 +10,7 @@ export class ComunicationService {
 
   constructor(private http: HttpClient) { }
 
-  getComunication(userId1: number, userId2: number) {
+  findByBothUserId(userId1: number, userId2: number) {
     let params = new HttpParams();
     params = params.append('userId1', userId1.toString());
     params = params.append('userId2', userId2.toString());
