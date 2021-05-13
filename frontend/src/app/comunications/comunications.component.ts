@@ -20,7 +20,11 @@ export class ComunicationsComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.comunicationService.getComunication(this.myId, this.userId);
+    this.comunicationService.getComunication(this.myId, this.userId).subscribe(
+      (response: string[]) => {
+        this.myMessages = response;
+      }
+    );
   }
 
 }
