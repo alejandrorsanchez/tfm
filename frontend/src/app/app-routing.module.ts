@@ -21,7 +21,7 @@ const routes: Routes = [
       {path: 'publish', component: PublisherComponent},
       {path: 'interactions', component: MyInteractionsComponent},
       {path: 'adds/:type', component: AddsComponent},
-      {path: 'comunications/:id', component: ComunicationsComponent}
+      {path: 'comunications/:id/:type', component: ComunicationsComponent}
     ]}
 ];
 

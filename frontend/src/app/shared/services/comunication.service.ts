@@ -11,10 +11,11 @@ export class ComunicationService {
 
   constructor(private http: HttpClient) { }
 
-  findByUserId1AndUserId2(userId1: number, userId2: number) {
+  findByUserId1AndUserId2AndType(userId1: number, userId2: number, type: number) {
     let params = new HttpParams();
     params = params.append('userId1', userId1.toString());
     params = params.append('userId2', userId2.toString());
+    params = params.append('type', type.toString());
     return this.http.get(this.URL, {params: params});
   }
 

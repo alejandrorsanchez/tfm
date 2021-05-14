@@ -119,7 +119,7 @@ export class AddsComponent implements OnInit {
   }
 
   createInteraction(id: number) {
-    this.router.navigateByUrl('/home/comunications/' + id);
+    this.router.navigate(['/home/comunications/', id, this.type]);
   }
 
   isAdoption() {

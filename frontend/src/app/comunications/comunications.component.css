@@ -4,10 +4,9 @@
   text-align: center;
 }
 .messagesContainer{
-  height: 400px;
+  height: 450px;
   overflow: auto;
-  border-right: 1px solid black;
-  border-left: 1px solid black;
+  border: 1px solid black;
 }
 .headerBody{
   padding-top: 150px;

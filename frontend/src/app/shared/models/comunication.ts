@@ -3,10 +3,12 @@ export class Comunication {
   userId1: number;
   userId2: number;
   messages: string;
+  type: number;
 
-  constructor(userId1: number, userId2: number) {
+  constructor(userId1: number, userId2: number, type: number) {
     this.userId1 = userId1;
     this.userId2 = userId2;
+    this.type = type;
     this.messages = '';
   }
 }
