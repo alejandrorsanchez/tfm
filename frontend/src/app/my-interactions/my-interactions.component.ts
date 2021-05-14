@@ -110,6 +110,10 @@ export class MyInteractionsComponent implements OnInit {
     );
   }
 
+  openComunication() {
+    //TODO
+  }
+
   redirectToHome() {
     this.router.navigateByUrl('/home');
   }

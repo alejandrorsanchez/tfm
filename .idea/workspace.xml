@@ -20,11 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/adds/adds.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/adds/adds.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/adds/adds.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/adds/adds.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/my-interactions/my-interactions.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/my-interactions/my-interactions.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/my-interactions/my-interactions.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/my-interactions/my-interactions.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/shared/models/comunication.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/shared/models/comunication.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -240,13 +239,6 @@
       <workItem from="1620900444679" duration="2249000" />
       <workItem from="1620912705856" duration="8455000" />
       <workItem from="1620979363652" duration="6491000" />
-    </task>
-    <task id="LOCAL-00121" summary="adds not indexing">
-      <created>1620128840169</created>
-      <option name="number" value="00121" />
-      <option name="presentableId" value="LOCAL-00121" />
-      <option name="project" value="LOCAL" />
-      <updated>1620128840169</updated>
     </task>
     <task id="LOCAL-00122" summary="Change the way of obtaining mypets in my profile">
       <created>1620136949287</created>
@@ -584,7 +576,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620986985091</updated>
     </task>
-    <option name="localTasksCounter" value="170" />
+    <task id="LOCAL-00170" summary="UI GET Comunications with lastMessage and chatMateName">
+      <created>1621019333340</created>
+      <option name="number" value="00170" />
+      <option name="presentableId" value="LOCAL-00170" />
+      <option name="project" value="LOCAL" />
+      <updated>1621019333340</updated>
+    </task>
+    <option name="localTasksCounter" value="171" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
