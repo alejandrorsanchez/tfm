@@ -17,7 +17,16 @@ comunicationController.save = (req, res) => {
     db.query(query, comunication, function (err, rows, fields) {
         if (err) throw err;
         res.status(200).json({id: rows['insertId']});
-    })
+    });
+}
+
+comunicationController.update = (req, res) => {
+    const data = [req.body.messages, req.params.id];
+    const query = 'UPDATE comunications SET messages = ? WHERE id = ?';
+    db.query(query, data, function (err, row, fields) {
+        if (err) throw err;
+        res.status(200).json({affectedRows: row['affectedRows']});
+    });
 }
 
 module.exports = comunicationController;

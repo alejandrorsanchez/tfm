@@ -65,12 +65,12 @@ export class ComunicationsComponent implements OnInit {
     }
   }
 
-  isFirstMessage() {
-    return this.messagesList.length === 1;
-  }
-
   updateMessageList(message: string) {
     this.messagesList.push(message);
     this.myComunication.messages += message + '||';
+  }
+
+  isFirstMessage(): boolean {
+    return this.messagesList.length === 1;
   }
 }
