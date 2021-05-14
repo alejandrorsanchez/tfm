@@ -21,7 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/my-interactions/my-interactions.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/my-interactions/my-interactions.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/my-interactions/my-interactions.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/my-interactions/my-interactions.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/shared/models/comunication.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/shared/models/comunication.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,10 +34,11 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="dfa9669c0b7a23b5b3e96f3597cdbde6167eb036" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="ProjectId" id="1ncJMiFaBUE6IWq9AehkVPVLY7A" />
   <component name="ProjectLevelVcsManager">
@@ -148,10 +152,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.test" />
-        <item itemvalue="Mocha.Testing Add API" />
-        <item itemvalue="Mocha.Testing Pet API" />
-        <item itemvalue="Mocha.Testing User API" />
         <item itemvalue="Mocha.Testing User API.should find user for its ID" />
+        <item itemvalue="Mocha.Testing User API" />
+        <item itemvalue="Mocha.Testing Pet API" />
+        <item itemvalue="Mocha.Testing Add API" />
       </list>
     </recent_temporary>
   </component>
@@ -603,7 +607,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="." />
     <MESSAGE value="transition for cards hover" />
     <MESSAGE value="status code for user fixed, first test improved" />
     <MESSAGE value="user test fixed" />
@@ -628,7 +631,8 @@
     <MESSAGE value="service called from client" />
     <MESSAGE value="endpoint implemented" />
     <MESSAGE value="my interactions received" />
-    <option name="LAST_COMMIT_MESSAGE" value="my interactions received" />
+    <MESSAGE value="UI GET Comunications with lastMessage and chatMateName" />
+    <option name="LAST_COMMIT_MESSAGE" value="UI GET Comunications with lastMessage and chatMateName" />
   </component>
   <component name="WindowStateProjectService">
     <state x="509" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619029708212">

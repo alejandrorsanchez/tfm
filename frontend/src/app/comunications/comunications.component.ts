@@ -15,10 +15,9 @@ export class ComunicationsComponent implements OnInit {
   myId: number;
   userId: number;
   messagesList: string[] = [];
-  myComunication: Comunication;
+  comunication: Comunication;
 
-  constructor(private route: ActivatedRoute, private utilsService: UtilsService,
-              private comunicationService: ComunicationService) {
+  constructor(private route: ActivatedRoute, private utilsService: UtilsService, private comunicationService: ComunicationService) {
     this.userId = this.route.snapshot.params.id;
     this.type = this.route.snapshot.params.type;
     this.myId = Number(this.utilsService.getId());
@@ -32,11 +31,11 @@ export class ComunicationsComponent implements OnInit {
     this.comunicationService.findByUserId1AndUserId2AndType(userId1, userId2, type).subscribe(
       (response: Comunication) => {
         if(response){
-          this.myComunication = response;
-          this.createIterableFromString(this.myComunication.messages);
+          this.comunication = response;
+          this.createIterableFromString(this.comunication.messages);
         }else{
-           this.myComunication = new Comunication(this.myId, this.userId, this.type);
-           this.messagesList = [];
+          this.comunication = new Comunication(this.myId, this.userId, this.type);
+          this.messagesList = [];
         }
       }
     );
@@ -52,11 +51,11 @@ export class ComunicationsComponent implements OnInit {
       this.updateMessageList(inputText.value);
       inputText.value = '';
       if(this.isFirstMessage()){
-        this.comunicationService.save(this.myComunication).subscribe(
-          response => this.myComunication.id = response['id']
+        this.comunicationService.save(this.comunication).subscribe(
+          response => this.comunication.id = response['id']
         );
       }else{
-        this.comunicationService.update(this.myComunication).subscribe(
+        this.comunicationService.update(this.comunication).subscribe(
           response => {
 
           }
@@ -69,7 +68,7 @@ export class ComunicationsComponent implements OnInit {
 
   updateMessageList(message: string) {
     this.messagesList.push(message);
-    this.myComunication.messages += message + '||';
+    this.comunication.messages += message + '||';
   }
 
   isFirstMessage(): boolean {

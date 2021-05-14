@@ -9,6 +9,8 @@ import {DeleteAddDialogComponent} from "./delete-add-dialog.component";
 import {Router} from "@angular/router";
 import {Comunication} from "../shared/models/comunication";
 import {ComunicationService} from "../shared/services/comunication.service";
+import {UserService} from "../shared/services/user.service";
+import {User} from "../shared/models/user";
 
 @Component({
   selector: 'app-my-interactions',
@@ -18,7 +20,7 @@ import {ComunicationService} from "../shared/services/comunication.service";
 export class MyInteractionsComponent implements OnInit {
 
   myAdds: AddCreation[] = [];
-  myInteractions: Comunication[] = [];
+  myComunications: Comunication[] = [];
   id: string;
   petName: string = '';
   petId: number;
@@ -26,12 +28,13 @@ export class MyInteractionsComponent implements OnInit {
   petAddId: number;
 
   constructor(private addService: AddService, private utilsService: UtilsService, private petService: PetService
-              , public dialog: MatDialog, public router: Router, private comunicationService: ComunicationService) { }
+    , public dialog: MatDialog, public router: Router, private comunicationService: ComunicationService,
+              private userService: UserService) { }
 
   ngOnInit(): void {
     this.id = this.utilsService.getId();
     this.getMyAdds();
-    this.getMyInteractions();
+    this.getMyComunications();
   }
 
   getMyAdds(){
@@ -40,19 +43,26 @@ export class MyInteractionsComponent implements OnInit {
         this.myAdds = response;
         if(this.addIsPet()){
           this.petService.findById(this.petId.toString()).subscribe(
-            (response: Pet) => {
-              this.petName = response.name;
-            }
+            (response: Pet) => this.petName = response.name
           );
         }
       }
     );
   }
 
-  getMyInteractions() {
+  getMyComunications() {
     this.comunicationService.findByUserId(this.id).subscribe(
       (response: Comunication[]) => {
-
+        this.myComunications = response;
+        for (const comunication of this.myComunications) {
+          const messagesList = comunication.messages.split("||");
+          comunication.lastMessage = messagesList[messagesList.length-2];
+          let chatMateId;
+          (comunication.userId1 === Number(this.id)) ? chatMateId = comunication.userId2 : chatMateId = comunication.userId1;
+          this.userService.findById(chatMateId).subscribe(
+            (user: User) => comunication.chatMateName = user.username
+          );
+        }
       }
     );
   }

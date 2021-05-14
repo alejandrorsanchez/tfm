@@ -22,20 +22,22 @@
     <a uk-icon="icon:  arrow-left; ratio: 8.5" (click)="this.redirectToHome()"></a>
   </div>
   <br>
-  <div *ngIf="true">
+  <div>
     <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-3@s uk-text-center" uk-grid uk-height-match="target: > div > .uk-card">
+      <div *ngFor="let comunication of this.myComunications">
         <div class="uk-card uk-card-small uk-card-default">
           <div class="uk-card-header">
             <div class="uk-grid-small uk-flex-middle" uk-grid>
               <div class="uk-width-expand">
-                <p class="uk-card-title uk-margin-remove-bottom">Nombre Usuario</p>
+                <p class="uk-card-title uk-margin-remove-bottom">{{comunication.chatMateName}}</p>
               </div>
             </div>
           </div>
           <div class="uk-card-body">
-            <h3 class="uk-card-title uk-margin-remove-bottom">Dirección Usuario</h3><br>
+            <h3 class="uk-card-title uk-margin-remove-bottom">{{comunication.lastMessage}}</h3><br>
           </div>
         </div>
+      </div>
     </div>
   </div>
 </div>
