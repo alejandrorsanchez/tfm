@@ -2,7 +2,7 @@ export class Comunication {
   id: number;
   userId1: number;
   userId2: number;
-  messages?: string;
+  messages: string;
 
   constructor(userId1: number, userId2: number) {
     this.userId1 = userId1;

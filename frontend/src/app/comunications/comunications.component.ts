@@ -47,14 +47,11 @@ export class ComunicationsComponent implements OnInit {
   sendMessage() {
     const inputText = document.getElementById('inputText') as HTMLInputElement;
     if(inputText.value){
-      if(this.isMessageListEmpty()){
-        console.log(this.myComunication.messages);
-        this.myComunication.messages += inputText.value;
-        console.log(this.myComunication.messages);
+      this.updateMessageList(inputText.value);
+      inputText.value = '';
+      if(this.isFirstMessage()){
         this.comunicationService.saveComunication(this.myComunication).subscribe(
-          response => {
-            console.log(response);
-          }
+          response => this.myComunication.id = response['id']
         );
       }else{
         //this.comunicationService.updateComunication(this.myComunication);
@@ -64,7 +61,12 @@ export class ComunicationsComponent implements OnInit {
     }
   }
 
-  isMessageListEmpty() {
-    return this.messagesList.length === 0;
+  isFirstMessage() {
+    return this.messagesList.length === 1;
+  }
+
+  updateMessageList(message: string) {
+    this.messagesList.push(message);
+    this.myComunication.messages += message + '||';
   }
 }
