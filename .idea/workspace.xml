@@ -19,11 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/shared/models/comunication.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/shared/models/comunication.ts" afterDir="false" />
-    </list>
+    <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -236,14 +232,7 @@
       <workItem from="1620831469438" duration="603000" />
       <workItem from="1620900444679" duration="2249000" />
       <workItem from="1620912705856" duration="8455000" />
-      <workItem from="1620979363652" duration="753000" />
-    </task>
-    <task id="LOCAL-00112" summary="add list filtered by type with mocks">
-      <created>1619773319835</created>
-      <option name="number" value="00112" />
-      <option name="presentableId" value="LOCAL-00112" />
-      <option name="project" value="LOCAL" />
-      <updated>1619773319835</updated>
+      <workItem from="1620979363652" duration="1089000" />
     </task>
     <task id="LOCAL-00113" summary="new model addListing.ts">
       <created>1619775147364</created>
@@ -581,7 +570,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620921224275</updated>
     </task>
-    <option name="localTasksCounter" value="161" />
+    <task id="LOCAL-00161" summary="POST Comunication">
+      <created>1620980454880</created>
+      <option name="number" value="00161" />
+      <option name="presentableId" value="LOCAL-00161" />
+      <option name="project" value="LOCAL" />
+      <updated>1620980454880</updated>
+    </task>
+    <option name="localTasksCounter" value="162" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -604,7 +600,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="new component myInteractions linked" />
     <MESSAGE value="UI for myInteractions" />
     <MESSAGE value="myAdds retrieved in ngOnInit, next step deleting button" />
     <MESSAGE value="Delete Add By Id" />
@@ -629,7 +624,8 @@
     <MESSAGE value="sendMessage() without implementation" />
     <MESSAGE value="sendMessage() with call to service" />
     <MESSAGE value="sendMessage() with call to service not working" />
-    <option name="LAST_COMMIT_MESSAGE" value="sendMessage() with call to service not working" />
+    <MESSAGE value="POST Comunication" />
+    <option name="LAST_COMMIT_MESSAGE" value="POST Comunication" />
   </component>
   <component name="WindowStateProjectService">
     <state x="509" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619029708212">

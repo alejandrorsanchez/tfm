@@ -27,7 +27,7 @@ export class ComunicationsComponent implements OnInit {
   }
 
   getComunicationFromUsers(userId1: number, userId2: number) {
-    this.comunicationService.findByBothUserId(userId1, userId2).subscribe(
+    this.comunicationService.findByUserId1AndUserId2(userId1, userId2).subscribe(
       (response: Comunication) => {
         if(response){
           this.myComunication = response;
@@ -50,11 +50,15 @@ export class ComunicationsComponent implements OnInit {
       this.updateMessageList(inputText.value);
       inputText.value = '';
       if(this.isFirstMessage()){
-        this.comunicationService.saveComunication(this.myComunication).subscribe(
+        this.comunicationService.save(this.myComunication).subscribe(
           response => this.myComunication.id = response['id']
         );
       }else{
-        //this.comunicationService.updateComunication(this.myComunication);
+        this.comunicationService.update(this.myComunication).subscribe(
+          response => {
+
+          }
+        );
       }
     }else{
       this.utilsService.showNotification('Escribe algo para poder ser enviado');

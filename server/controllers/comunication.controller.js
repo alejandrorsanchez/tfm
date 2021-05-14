@@ -1,7 +1,7 @@
 const comunicationController = {};
 const db = require('../database');
 
-comunicationController.findByBothUserId = (req, res) => {
+comunicationController.findByUserId1AndUserId2 = (req, res) => {
     const userId1 = req.query.userId1;
     const userId2 = req.query.userId2;
     const query = 'SELECT * FROM comunications WHERE userId1 = ? and userId2 = ?';

@@ -11,14 +11,18 @@ export class ComunicationService {
 
   constructor(private http: HttpClient) { }
 
-  findByBothUserId(userId1: number, userId2: number) {
+  findByUserId1AndUserId2(userId1: number, userId2: number) {
     let params = new HttpParams();
     params = params.append('userId1', userId1.toString());
     params = params.append('userId2', userId2.toString());
     return this.http.get(this.URL, {params: params});
   }
 
-  saveComunication(comunication: Comunication) {
+  save(comunication: Comunication) {
     return this.http.post(this.URL, comunication);
+  }
+
+  update(comunication: Comunication) {
+    return this.http.put(this.URL + '/' + comunication.id, comunication);
   }
 }
