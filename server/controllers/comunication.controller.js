@@ -12,6 +12,15 @@ comunicationController.findByUserId1AndUserId2 = (req, res) => {
     });
 }
 
+comunicationController.findByUserId = (req, res) => {
+    const userId = req.params.userId;
+    const query = 'SELECT * FROM comunications WHERE userId1 = ? or userId2 = ?';
+    db.query(query, [userId, userId], function (err, rows, fields) {
+        if (err) throw err;
+        res.status(200).json(rows);
+    });
+}
+
 comunicationController.save = (req, res) => {
     const comunication = req.body;
     const query = 'INSERT INTO comunications SET ?';

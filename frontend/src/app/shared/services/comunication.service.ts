@@ -19,15 +19,15 @@ export class ComunicationService {
     return this.http.get(this.URL, {params: params});
   }
 
+  findByUserId(userId: string) {
+    return this.http.get(this.URL + '/' + userId);
+  }
+
   save(comunication: Comunication) {
     return this.http.post(this.URL, comunication);
   }
 
   update(comunication: Comunication) {
     return this.http.put(this.URL + '/' + comunication.id, comunication);
-  }
-
-  findByUserId(id: string) {
-    return this.http.get(this.URL + '/' + id);
   }
 }
