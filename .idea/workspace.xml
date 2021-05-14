@@ -19,7 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="" />
+    <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/my-interactions/my-interactions.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/my-interactions/my-interactions.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/shared/services/comunication.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/shared/services/comunication.service.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -232,14 +236,7 @@
       <workItem from="1620831469438" duration="603000" />
       <workItem from="1620900444679" duration="2249000" />
       <workItem from="1620912705856" duration="8455000" />
-      <workItem from="1620979363652" duration="4708000" />
-    </task>
-    <task id="LOCAL-00117" summary="copyProperties unused?">
-      <created>1620043343947</created>
-      <option name="number" value="00117" />
-      <option name="presentableId" value="LOCAL-00117" />
-      <option name="project" value="LOCAL" />
-      <updated>1620043343947</updated>
+      <workItem from="1620979363652" duration="5468000" />
     </task>
     <task id="LOCAL-00118" summary="copyProperties unused?">
       <created>1620043849602</created>
@@ -577,7 +574,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620984020116</updated>
     </task>
-    <option name="localTasksCounter" value="166" />
+    <task id="LOCAL-00166" summary="initial commit for UI GET my comunication">
+      <created>1620984294631</created>
+      <option name="number" value="00166" />
+      <option name="presentableId" value="LOCAL-00166" />
+      <option name="project" value="LOCAL" />
+      <updated>1620984294631</updated>
+    </task>
+    <option name="localTasksCounter" value="167" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -600,7 +604,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Refactoring" />
     <MESSAGE value="new addTest.js" />
     <MESSAGE value="addTest" />
     <MESSAGE value="nyc" />
@@ -625,7 +628,8 @@
     <MESSAGE value="endpoint PUT Comunication called from client" />
     <MESSAGE value="PUT Comunication implemented" />
     <MESSAGE value="type Comunication added for differing between user-to-user comunication" />
-    <option name="LAST_COMMIT_MESSAGE" value="type Comunication added for differing between user-to-user comunication" />
+    <MESSAGE value="initial commit for UI GET my comunication" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit for UI GET my comunication" />
   </component>
   <component name="WindowStateProjectService">
     <state x="509" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619029708212">

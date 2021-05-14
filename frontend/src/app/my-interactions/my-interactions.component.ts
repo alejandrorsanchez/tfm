@@ -7,6 +7,8 @@ import {Pet} from "../shared/models/pet";
 import {MatDialog} from "@angular/material/dialog";
 import {DeleteAddDialogComponent} from "./delete-add-dialog.component";
 import {Router} from "@angular/router";
+import {Comunication} from "../shared/models/comunication";
+import {ComunicationService} from "../shared/services/comunication.service";
 
 @Component({
   selector: 'app-my-interactions',
@@ -16,6 +18,7 @@ import {Router} from "@angular/router";
 export class MyInteractionsComponent implements OnInit {
 
   myAdds: AddCreation[] = [];
+  myInteractions: Comunication[] = [];
   id: string;
   petName: string = '';
   petId: number;
@@ -23,11 +26,12 @@ export class MyInteractionsComponent implements OnInit {
   petAddId: number;
 
   constructor(private addService: AddService, private utilsService: UtilsService, private petService: PetService
-              , public dialog: MatDialog, public router: Router) { }
+              , public dialog: MatDialog, public router: Router, private comunicationService: ComunicationService) { }
 
   ngOnInit(): void {
     this.id = this.utilsService.getId();
     this.getMyAdds();
+    this.getMyInteractions();
   }
 
   getMyAdds(){
@@ -41,6 +45,14 @@ export class MyInteractionsComponent implements OnInit {
             }
           );
         }
+      }
+    );
+  }
+
+  getMyInteractions() {
+    this.comunicationService.findByUserId(this.id).subscribe(
+      response => {
+
       }
     );
   }
