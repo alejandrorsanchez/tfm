@@ -20,9 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/shared/services/comunication.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/shared/services/comunication.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/comunication.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/comunication.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/comunication.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/comunication.routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/my-interactions/my-interactions.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/my-interactions/my-interactions.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -236,21 +235,7 @@
       <workItem from="1620831469438" duration="603000" />
       <workItem from="1620900444679" duration="2249000" />
       <workItem from="1620912705856" duration="8455000" />
-      <workItem from="1620979363652" duration="5808000" />
-    </task>
-    <task id="LOCAL-00119" summary="address input data saved correctly">
-      <created>1620122398414</created>
-      <option name="number" value="00119" />
-      <option name="presentableId" value="LOCAL-00119" />
-      <option name="project" value="LOCAL" />
-      <updated>1620122398414</updated>
-    </task>
-    <task id="LOCAL-00120" summary="password verification for login fixed">
-      <created>1620123188195</created>
-      <option name="number" value="00120" />
-      <option name="presentableId" value="LOCAL-00120" />
-      <option name="project" value="LOCAL" />
-      <updated>1620123188195</updated>
+      <workItem from="1620979363652" duration="6491000" />
     </task>
     <task id="LOCAL-00121" summary="adds not indexing">
       <created>1620128840169</created>
@@ -581,7 +566,21 @@
       <option name="project" value="LOCAL" />
       <updated>1620986256864</updated>
     </task>
-    <option name="localTasksCounter" value="168" />
+    <task id="LOCAL-00168" summary="endpoint implemented">
+      <created>1620986679068</created>
+      <option name="number" value="00168" />
+      <option name="presentableId" value="LOCAL-00168" />
+      <option name="project" value="LOCAL" />
+      <updated>1620986679068</updated>
+    </task>
+    <task id="LOCAL-00169" summary="my interactions received">
+      <created>1620986985091</created>
+      <option name="number" value="00169" />
+      <option name="presentableId" value="LOCAL-00169" />
+      <option name="project" value="LOCAL" />
+      <updated>1620986985091</updated>
+    </task>
+    <option name="localTasksCounter" value="170" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -604,8 +603,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="addTest" />
-    <MESSAGE value="nyc" />
     <MESSAGE value="." />
     <MESSAGE value="transition for cards hover" />
     <MESSAGE value="status code for user fixed, first test improved" />
@@ -629,7 +626,9 @@
     <MESSAGE value="type Comunication added for differing between user-to-user comunication" />
     <MESSAGE value="initial commit for UI GET my comunication" />
     <MESSAGE value="service called from client" />
-    <option name="LAST_COMMIT_MESSAGE" value="service called from client" />
+    <MESSAGE value="endpoint implemented" />
+    <MESSAGE value="my interactions received" />
+    <option name="LAST_COMMIT_MESSAGE" value="my interactions received" />
   </component>
   <component name="WindowStateProjectService">
     <state x="509" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619029708212">

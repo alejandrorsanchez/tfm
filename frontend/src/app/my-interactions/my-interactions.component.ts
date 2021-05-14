@@ -51,7 +51,7 @@ export class MyInteractionsComponent implements OnInit {
 
   getMyInteractions() {
     this.comunicationService.findByUserId(this.id).subscribe(
-      response => {
+      (response: Comunication[]) => {
 
       }
     );
