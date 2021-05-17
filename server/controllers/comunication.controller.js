@@ -1,12 +1,12 @@
 const comunicationController = {};
 const db = require('../database');
 
-comunicationController.findByUserId1AndUserId2 = (req, res) => {
+comunicationController.findByUserId1AndUserId2AndType = (req, res) => {
     const userId1 = req.query.userId1;
     const userId2 = req.query.userId2;
     const type = req.query.type;
-    const query = 'SELECT * FROM comunications WHERE userId1 = ? and userId2 = ? and type = ?';
-    db.query(query, [userId1, userId2, type], function (err, row, fields) {
+    const query = 'SELECT * FROM comunications WHERE (userId1 = ? and userId2 = ?) or (userId2 = ? and userId1 = ?) and type = ?';
+    db.query(query, [userId1, userId2, userId1, userId2, type], function (err, row, fields) {
         if (err) throw err;
         res.status(200).json(row[0]);
     });

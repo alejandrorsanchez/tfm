@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {ActivatedRoute, Router} from "@angular/router";
+import {ActivatedRoute} from "@angular/router";
 import {UtilsService} from "../shared/services/utils.service";
 import {ComunicationService} from "../shared/services/comunication.service";
 import {Comunication} from "../shared/models/comunication";

@@ -27,8 +27,8 @@ export class MyInteractionsComponent implements OnInit {
   volunteerAddId: number;
   petAddId: number;
 
-  constructor(private addService: AddService, private utilsService: UtilsService, private petService: PetService
-    , public dialog: MatDialog, public router: Router, private comunicationService: ComunicationService,
+  constructor(private addService: AddService, private utilsService: UtilsService, private petService: PetService,
+              public dialog: MatDialog, public router: Router, private comunicationService: ComunicationService,
               private userService: UserService) { }
 
   ngOnInit(): void {
@@ -60,7 +60,7 @@ export class MyInteractionsComponent implements OnInit {
           let chatMateId;
           (comunication.userId1 === Number(this.id)) ? chatMateId = comunication.userId2 : chatMateId = comunication.userId1;
           this.userService.findById(chatMateId).subscribe(
-            (user: User) => comunication.chatMateName = user.username
+            (user: User) => comunication.chatMate = user
           );
         }
       }
@@ -110,8 +110,8 @@ export class MyInteractionsComponent implements OnInit {
     );
   }
 
-  openComunication() {
-    //TODO
+  openComunication(comunication: Comunication) {
+    this.router.navigate(['/home/comunications/', comunication.chatMate.id, comunication.type]);
   }
 
   redirectToHome() {

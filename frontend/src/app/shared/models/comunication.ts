@@ -1,10 +1,12 @@
+import {User} from "./user";
+
 export class Comunication {
   id: number;
   userId1: number;
   userId2: number;
   messages: string;
   type: number;
-  chatMateName?: string;
+  chatMate?: User;
   lastMessage?: string;
 
   constructor(userId1: number, userId2: number, type: number) {
