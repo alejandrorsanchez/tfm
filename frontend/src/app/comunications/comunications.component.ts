@@ -3,6 +3,8 @@ import {ActivatedRoute} from "@angular/router";
 import {UtilsService} from "../shared/services/utils.service";
 import {ComunicationService} from "../shared/services/comunication.service";
 import {Comunication} from "../shared/models/comunication";
+import {UserService} from "../shared/services/user.service";
+import {User} from "../shared/models/user";
 
 @Component({
   selector: 'app-comunications',
@@ -16,15 +18,24 @@ export class ComunicationsComponent implements OnInit {
   userId: number;
   messagesList: string[] = [];
   comunication: Comunication;
+  chatMate: User = new User();
 
-  constructor(private route: ActivatedRoute, private utilsService: UtilsService, private comunicationService: ComunicationService) {
+  constructor(private route: ActivatedRoute, private utilsService: UtilsService, private comunicationService: ComunicationService,
+              private userService: UserService) {
     this.userId = this.route.snapshot.params.id;
     this.type = this.route.snapshot.params.type;
     this.myId = Number(this.utilsService.getId());
   }
 
   ngOnInit(): void {
+    this.getChatMate(this.userId);
     this.getComunicationFromUsers(this.myId, this.userId, this.type);
+  }
+
+  getChatMate(id: number) {
+    this.userService.findById(id.toString()).subscribe(
+      (user: User) => this.chatMate = user
+    );
   }
 
   getComunicationFromUsers(userId1: number, userId2: number, type: number) {
@@ -57,7 +68,6 @@ export class ComunicationsComponent implements OnInit {
       }else{
         this.comunicationService.update(this.comunication).subscribe(
           response => {
-
           }
         );
       }

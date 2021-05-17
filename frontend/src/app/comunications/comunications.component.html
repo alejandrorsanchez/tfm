@@ -1,4 +1,6 @@
 <div id="comunicationContainer">
+  <h1 class="title">{{this.chatMate.username}}</h1>
+  <p class="subtitle">{{this.chatMate.address}}</p>
   <div class="messagesContainer">
     <div *ngFor="let message of this.messagesList">
       <p>{{message}}</p>

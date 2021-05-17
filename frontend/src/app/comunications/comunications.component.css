@@ -1,6 +1,6 @@
 #comunicationContainer{
   width: 60%;
-  margin: 50px auto;
+  margin: auto;
   text-align: center;
 }
 .messagesContainer{
@@ -10,4 +10,11 @@
 }
 .headerBody{
   padding-top: 150px;
+}
+.title{
+  padding-top: 10px;
+  text-align: left;
+}
+.subtitle{
+  text-align: left;
 }
