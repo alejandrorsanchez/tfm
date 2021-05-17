@@ -119,4 +119,8 @@ export class MyInteractionsComponent implements OnInit {
   redirectToHome() {
     this.router.navigateByUrl('/home');
   }
+
+  noComunications() {
+    return this.myComunications.length === 0;
+  }
 }

@@ -17,27 +17,26 @@
         <button class="uk-button uk-button-primary uk-button uk-width-1-2" (click)="openDeletePetAddDialog()">Eliminar Anuncio</button>
       </div>
     </div>
-    <br>
-    <mat-divider></mat-divider>
-    <div *ngIf="false" class="headerBody">
-      <h1>Parece que aún no tenemos interacciones para ti</h1>
-      <a uk-icon="icon:  arrow-left; ratio: 8.5" (click)="this.redirectToHome()"></a>
-    </div>
-    <br>
-    <div>
-      <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-3@s uk-text-center" uk-grid uk-height-match="target: > div > .uk-card">
-        <div *ngFor="let comunication of this.myComunications">
-          <div class="uk-card uk-card-small uk-card-default" (click)="this.openComunication(comunication)">
-            <div class="uk-card-header">
-              <div class="uk-grid-small uk-flex-middle" uk-grid>
-                <div class="uk-width-expand">
-                  <p class="uk-card-title uk-margin-remove-bottom">{{comunication.chatMate.username}}</p>
-                </div>
+  </div>
+  <mat-divider></mat-divider>
+  <div *ngIf="this.noComunications()" class="headerBody">
+    <h1>Parece que aún no tenemos interacciones para ti</h1>
+    <a uk-icon="icon:  arrow-left; ratio: 8.5" (click)="this.redirectToHome()"></a>
+  </div>
+  <br>
+  <div>
+    <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-3@s uk-text-center" uk-grid uk-height-match="target: > div > .uk-card">
+      <div *ngFor="let comunication of this.myComunications">
+        <div class="uk-card uk-card-small uk-card-default" (click)="this.openComunication(comunication)">
+          <div class="uk-card-header">
+            <div class="uk-grid-small uk-flex-middle" uk-grid>
+              <div class="uk-width-expand">
+                <p class="uk-card-title uk-margin-remove-bottom">{{comunication.chatMate.username}}</p>
               </div>
             </div>
-            <div class="uk-card-body">
-              <h3 class="uk-card-title uk-margin-remove-bottom">{{comunication.lastMessage}}</h3><br>
-            </div>
+          </div>
+          <div class="uk-card-body">
+            <h3 class="uk-card-title uk-margin-remove-bottom">{{comunication.lastMessage}}</h3>
           </div>
         </div>
       </div>
