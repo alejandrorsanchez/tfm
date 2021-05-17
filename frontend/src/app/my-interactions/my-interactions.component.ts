@@ -26,6 +26,7 @@ export class MyInteractionsComponent implements OnInit {
   petId: number;
   volunteerAddId: number;
   petAddId: number;
+  loaded: boolean = false;
 
   constructor(private addService: AddService, private utilsService: UtilsService, private petService: PetService,
               public dialog: MatDialog, public router: Router, private comunicationService: ComunicationService,
@@ -35,6 +36,7 @@ export class MyInteractionsComponent implements OnInit {
     this.id = this.utilsService.getId();
     this.getMyAdds();
     this.getMyComunications();
+    setTimeout(() => { this.loaded = true }, 500);
   }
 
   getMyAdds(){
