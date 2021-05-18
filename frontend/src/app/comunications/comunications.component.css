@@ -1,5 +1,5 @@
 #comunicationContainer{
-  width: 60%;
+  width: 90%;
   margin: auto;
   text-align: center;
 }
@@ -17,4 +17,10 @@
 }
 .subtitle{
   text-align: left;
+}
+.sectionBody{
+  margin-top: 100px;
+}
+.uk-button-danger{
+  margin-top: 100px;
 }
