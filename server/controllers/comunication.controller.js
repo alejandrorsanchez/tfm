@@ -31,8 +31,8 @@ comunicationController.save = (req, res) => {
 }
 
 comunicationController.update = (req, res) => {
-    const data = [req.body.messages, req.params.id];
-    const query = 'UPDATE comunications SET messages = ? WHERE id = ?';
+    const data = [req.body.messages, req.body.notification, req.params.id];
+    const query = 'UPDATE comunications SET messages = ?, notification = ? WHERE id = ?';
     db.query(query, data, function (err, row, fields) {
         if (err) throw err;
         res.status(200).json({affectedRows: row['affectedRows']});

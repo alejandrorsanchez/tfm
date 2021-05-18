@@ -53,6 +53,7 @@ export class ComunicationsComponent implements OnInit {
       (response: Comunication) => {
         if(response){
           this.comunication = response;
+          this.checkNotificationsForMyUser();
           this.createIterableFromMessagesAndBeauty(this.comunication.messages);
         }else{
           this.comunication = new Comunication(this.myId, this.userId, this.type);
@@ -60,6 +61,13 @@ export class ComunicationsComponent implements OnInit {
         }
       }
     );
+  }
+
+  checkNotificationsForMyUser() {
+    if(this.comunication.notification === this.myId){
+      this.comunication.notification = null
+      this.comunicationService.update(this.comunication).subscribe(response => {});
+    }
   }
 
   createIterableFromMessagesAndBeauty(messages: string) {
