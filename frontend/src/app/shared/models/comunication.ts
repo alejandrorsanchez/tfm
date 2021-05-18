@@ -8,6 +8,7 @@ export class Comunication {
   type: number;
   chatMate?: User;
   lastMessage?: string;
+  notification?: number;
 
   constructor(userId1: number, userId2: number, type: number) {
     this.userId1 = userId1;

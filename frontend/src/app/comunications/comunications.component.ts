@@ -72,6 +72,7 @@ export class ComunicationsComponent implements OnInit {
     if(inputText.value){
       this.updateMessageList(inputText.value);
       inputText.value = '';
+      this.comunication.notification = this.userId;
       if(this.isFirstMessage()){
         this.comunicationService.save(this.comunication).subscribe(
           response => this.comunication.id = response['id']);
