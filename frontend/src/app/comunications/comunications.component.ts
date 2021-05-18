@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {ActivatedRoute} from "@angular/router";
+import {ActivatedRoute, Router} from "@angular/router";
 import {UtilsService} from "../shared/services/utils.service";
 import {ComunicationService} from "../shared/services/comunication.service";
 import {Comunication} from "../shared/models/comunication";
@@ -21,7 +21,7 @@ export class ComunicationsComponent implements OnInit {
   chatMate: User = new User();
 
   constructor(private route: ActivatedRoute, private utilsService: UtilsService, private comunicationService: ComunicationService,
-              private userService: UserService) {
+              private userService: UserService, private router: Router) {
     this.userId = this.route.snapshot.params.id;
     this.type = this.route.snapshot.params.type;
     this.myId = Number(this.utilsService.getId());
@@ -83,5 +83,13 @@ export class ComunicationsComponent implements OnInit {
 
   isFirstMessage(): boolean {
     return this.messagesList.length === 1;
+  }
+
+  redirectToMyInteractions() {
+    this.router.navigateByUrl('/home/interactions');
+  }
+
+  openDeleteComunicationDialog() {
+
   }
 }
