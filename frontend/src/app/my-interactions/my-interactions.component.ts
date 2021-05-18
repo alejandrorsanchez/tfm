@@ -123,4 +123,8 @@ export class MyInteractionsComponent implements OnInit {
   noComunications() {
     return this.myComunications.length === 0;
   }
+
+  isNewMessage(comunication: Comunication) {
+    return comunication.notification === Number(this.id);
+  }
 }

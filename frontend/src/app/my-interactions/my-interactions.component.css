@@ -12,3 +12,6 @@
 .uk-card:hover{
   transform: translateY(-10px);
 }
+.newMessage{
+  font-weight: bold;
+}

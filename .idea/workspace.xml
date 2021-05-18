@@ -20,9 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/comunication.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/comunication.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/my-interactions/my-interactions.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/my-interactions/my-interactions.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/my-interactions/my-interactions.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/my-interactions/my-interactions.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/my-interactions/my-interactions.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/my-interactions/my-interactions.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -239,13 +239,6 @@
       <workItem from="1620912705856" duration="8455000" />
       <workItem from="1620979363652" duration="6491000" />
       <workItem from="1621236157221" duration="6484000" />
-    </task>
-    <task id="LOCAL-00135" summary="Delete Add By Id">
-      <created>1620296913579</created>
-      <option name="number" value="00135" />
-      <option name="presentableId" value="LOCAL-00135" />
-      <option name="project" value="LOCAL" />
-      <updated>1620296913579</updated>
     </task>
     <task id="LOCAL-00136" summary="Refactoring">
       <created>1620297785344</created>
@@ -583,7 +576,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621335300077</updated>
     </task>
-    <option name="localTasksCounter" value="184" />
+    <task id="LOCAL-00184" summary="notifications sent to DB with updates">
+      <created>1621336199184</created>
+      <option name="number" value="00184" />
+      <option name="presentableId" value="LOCAL-00184" />
+      <option name="project" value="LOCAL" />
+      <updated>1621336199184</updated>
+    </task>
+    <option name="localTasksCounter" value="185" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -606,7 +606,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="endpoint implemented in controller" />
     <MESSAGE value="sendMessage() without implementation" />
     <MESSAGE value="sendMessage() with call to service" />
     <MESSAGE value="sendMessage() with call to service not working" />
@@ -631,7 +630,8 @@
     <MESSAGE value="fixing" />
     <MESSAGE value="UI Chat finished" />
     <MESSAGE value="notification attr added to Comunication" />
-    <option name="LAST_COMMIT_MESSAGE" value="notification attr added to Comunication" />
+    <MESSAGE value="notifications sent to DB with updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="notifications sent to DB with updates" />
   </component>
   <component name="WindowStateProjectService">
     <state x="509" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619029708212">
