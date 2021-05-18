@@ -39,4 +39,13 @@ comunicationController.update = (req, res) => {
     });
 }
 
+comunicationController.delete = (req, res) => {
+    const id = req.params.id;
+    const query = 'DELETE FROM comunications WHERE id = ?';
+    db.query(query, [id], function (err, row, fields) {
+        if (err) throw err;
+        res.status(200).send();
+    });
+}
+
 module.exports = comunicationController;

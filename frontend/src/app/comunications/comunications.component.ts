@@ -69,8 +69,7 @@ export class ComunicationsComponent implements OnInit {
         );
       }else{
         this.comunicationService.update(this.comunication).subscribe(
-          response => {
-          }
+          response => {}
         );
       }
     }else{

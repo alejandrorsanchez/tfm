@@ -7,5 +7,6 @@ router.get('/', ensureAuthenticated, comunicationController.findByUserId1AndUser
 router.get('/:userId', ensureAuthenticated, comunicationController.findByUserId);
 router.post('/', ensureAuthenticated, comunicationController.save);
 router.put('/:id', ensureAuthenticated,  comunicationController.update);
+router.delete('/:id', ensureAuthenticated, comunicationController.delete);
 
 module.exports = router;
