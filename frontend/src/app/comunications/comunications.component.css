@@ -1,7 +1,6 @@
-#comunicationContainer{
+.comunicationContainer{
   width: 90%;
   margin: auto;
-  text-align: center;
 }
 .messagesContainer{
   height: 450px;
@@ -23,4 +22,16 @@
 }
 .uk-button-danger{
   margin-top: 100px;
+}
+.myMessage{
+  text-align: right;
+}
+.otherUserMessage{
+
+}
+.messageBlock{
+  width: 50%;
+  border: 2px solid rgba(0, 153, 255, 1);
+  border-radius: 7px;
+  background-color: rgba(153, 204, 255, 0.5);
 }

@@ -21,6 +21,8 @@ export class ComunicationsComponent implements OnInit {
   messagesList: string[] = [];
   comunication: Comunication;
   chatMate: User = new User();
+  myUser: User;
+  loaded: boolean = false;
 
   constructor(private route: ActivatedRoute, private utilsService: UtilsService, private comunicationService: ComunicationService,
               private userService: UserService, private router: Router, public dialog: MatDialog) {
@@ -30,13 +32,19 @@ export class ComunicationsComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.getChatMate(this.userId);
+    this.getUsersChat();
     this.getComunicationFromUsers(this.myId, this.userId, this.type);
+    setTimeout(() => { this.loaded = true }, 300);
   }
 
-  getChatMate(id: number) {
-    this.userService.findById(id.toString()).subscribe(
-      (user: User) => this.chatMate = user
+  getUsersChat(){
+    this.userService.findById(this.userId.toString()).subscribe(
+      (user: User) => {
+        this.chatMate = user;
+        this.userService.findById(this.myId.toString()).subscribe(
+          (user: User) => this.myUser = user
+        );
+      }
     );
   }
 
@@ -45,7 +53,7 @@ export class ComunicationsComponent implements OnInit {
       (response: Comunication) => {
         if(response){
           this.comunication = response;
-          this.createIterableFromString(this.comunication.messages);
+          this.createIterableFromMessagesAndBeauty(this.comunication.messages);
         }else{
           this.comunication = new Comunication(this.myId, this.userId, this.type);
           this.messagesList = [];
@@ -54,8 +62,9 @@ export class ComunicationsComponent implements OnInit {
     );
   }
 
-  createIterableFromString(messages: string) {
+  createIterableFromMessagesAndBeauty(messages: string) {
     this.messagesList = messages.split("||");
+    this.messagesList.pop();
   }
 
   sendMessage() {
@@ -65,12 +74,9 @@ export class ComunicationsComponent implements OnInit {
       inputText.value = '';
       if(this.isFirstMessage()){
         this.comunicationService.save(this.comunication).subscribe(
-          response => this.comunication.id = response['id']
-        );
+          response => this.comunication.id = response['id']);
       }else{
-        this.comunicationService.update(this.comunication).subscribe(
-          response => {}
-        );
+        this.comunicationService.update(this.comunication).subscribe(response => {});
       }
     }else{
       this.utilsService.showNotification('Escribe algo para poder ser enviado');
@@ -78,8 +84,8 @@ export class ComunicationsComponent implements OnInit {
   }
 
   updateMessageList(message: string) {
-    this.messagesList.push(message);
-    this.comunication.messages += message + '||';
+    this.messagesList.push(this.myUser.username + ': ' + message);
+    this.comunication.messages += this.myUser.username + ': ' + message + '||';
   }
 
   openDeleteComunicationDialog() {
@@ -99,5 +105,9 @@ export class ComunicationsComponent implements OnInit {
 
   isNewComunication() {
     return this.messagesList.length === 0
+  }
+
+  isMyMessage(message: string) {
+    return message.split(':')[0] === this.myUser.username;
   }
 }

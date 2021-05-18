@@ -1,19 +1,22 @@
-<div id="comunicationContainer">
-  <div class="uk-text-center" uk-grid>
-    <div class="uk-width-1-4 sectionBody">
-      <a uk-icon="icon:  arrow-left; ratio: 8.5" (click)="this.redirectToMyInteractions()"></a>
-      <button class="uk-button uk-button-danger uk-width-1-2" [disabled]="this.isNewComunication()" (click)="this.openDeleteComunicationDialog()">Eliminar chat</button>
-    </div>
-    <div class="uk-width-3-4">
-      <h1 class="title">{{this.chatMate.username}}</h1>
-      <p class="subtitle">{{this.chatMate.address}}</p>
-      <div class="messagesContainer">
-        <div *ngFor="let message of this.messagesList">
-          <p>{{message}}</p>
-        </div>
+<mat-spinner *ngIf="!this.loaded" class="comunicationContainer"></mat-spinner>
+<div *ngIf="this.loaded">
+  <div class="comunicationContainer">
+    <div class="uk-text-center" uk-grid>
+      <div class="uk-width-1-4 sectionBody">
+        <a uk-icon="icon:  arrow-left; ratio: 8.5" (click)="this.redirectToMyInteractions()"></a>
+        <button class="uk-button uk-button-danger uk-width-1-2" [disabled]="this.isNewComunication()" (click)="this.openDeleteComunicationDialog()">Eliminar chat</button>
       </div>
-      <input id="inputText" class="uk-input uk-form-large" type="text" placeholder="Escribe algo" autofocus>
-      <button class="uk-button uk-button-primary uk-button-large uk-width-1-1" (click)="this.sendMessage()">Enviar</button>
+      <div class="uk-width-3-4">
+        <h1 class="title">{{this.chatMate.username}}</h1>
+        <p class="subtitle">{{this.chatMate.address}}</p>
+        <div class="messagesContainer">
+          <div *ngFor="let message of this.messagesList" [ngClass]="{'myMessage': isMyMessage(message), 'otherUserMessage' : !isMyMessage(message)}">
+              <p class="messageBlock"><b>{{message.split(':')[0]}}</b><br>{{message.split(':')[1]}}</p>
+          </div>
+        </div>
+        <input id="inputText" class="uk-input uk-form-large" type="text" placeholder="Escribe algo" autofocus>
+        <button class="uk-button uk-button-primary uk-button-large uk-width-1-1" (click)="this.sendMessage()">Enviar</button>
+      </div>
     </div>
   </div>
 </div>

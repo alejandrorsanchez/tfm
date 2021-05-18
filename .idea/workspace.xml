@@ -20,13 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/comunications/delete-comunication-dialog.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/comunications/delete-comunication-dialog.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/shared/services/comunication.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/shared/services/comunication.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/home/home.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -243,27 +241,6 @@
       <workItem from="1620912705856" duration="8455000" />
       <workItem from="1620979363652" duration="6491000" />
       <workItem from="1621236157221" duration="6484000" />
-    </task>
-    <task id="LOCAL-00129" summary="adds arrow icon for redirecting">
-      <created>1620216877253</created>
-      <option name="number" value="00129" />
-      <option name="presentableId" value="LOCAL-00129" />
-      <option name="project" value="LOCAL" />
-      <updated>1620216877253</updated>
-    </task>
-    <task id="LOCAL-00130" summary="delete adds related to deleted pet">
-      <created>1620229000709</created>
-      <option name="number" value="00130" />
-      <option name="presentableId" value="LOCAL-00130" />
-      <option name="project" value="LOCAL" />
-      <updated>1620229000710</updated>
-    </task>
-    <task id="LOCAL-00131" summary="delete adds related to deleted user">
-      <created>1620229815627</created>
-      <option name="number" value="00131" />
-      <option name="presentableId" value="LOCAL-00131" />
-      <option name="project" value="LOCAL" />
-      <updated>1620229815627</updated>
     </task>
     <task id="LOCAL-00132" summary="new component myInteractions linked">
       <created>1620230353901</created>
@@ -587,7 +564,28 @@
       <option name="project" value="LOCAL" />
       <updated>1621324721739</updated>
     </task>
-    <option name="localTasksCounter" value="178" />
+    <task id="LOCAL-00178" summary="UI dialog delete comunication implemented">
+      <created>1621325747540</created>
+      <option name="number" value="00178" />
+      <option name="presentableId" value="LOCAL-00178" />
+      <option name="project" value="LOCAL" />
+      <updated>1621325747540</updated>
+    </task>
+    <task id="LOCAL-00179" summary="delete comunication implemented">
+      <created>1621325880563</created>
+      <option name="number" value="00179" />
+      <option name="presentableId" value="LOCAL-00179" />
+      <option name="project" value="LOCAL" />
+      <updated>1621325880563</updated>
+    </task>
+    <task id="LOCAL-00180" summary="delete comunication implemented">
+      <created>1621325938477</created>
+      <option name="number" value="00180" />
+      <option name="presentableId" value="LOCAL-00180" />
+      <option name="project" value="LOCAL" />
+      <updated>1621325938477</updated>
+    </task>
+    <option name="localTasksCounter" value="181" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -610,8 +608,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="initial commit interactions" />
-    <MESSAGE value="new comunications.component linked with id of two users to comunicate" />
     <MESSAGE value="new comunication.service" />
     <MESSAGE value="UI comunication between users" />
     <MESSAGE value="endpoint called from angular" />
@@ -635,7 +631,9 @@
     <MESSAGE value="initial commit fixing chat UI with new buttons" />
     <MESSAGE value="fixing chat grid with buttons" />
     <MESSAGE value="openDeleteDialog method empty" />
-    <option name="LAST_COMMIT_MESSAGE" value="openDeleteDialog method empty" />
+    <MESSAGE value="UI dialog delete comunication implemented" />
+    <MESSAGE value="delete comunication implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete comunication implemented" />
   </component>
   <component name="WindowStateProjectService">
     <state x="509" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619029708212">
