@@ -20,9 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/comunications/delete-comunication-dialog.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/comunications/delete-comunication-dialog.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/shared/services/comunication.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/shared/services/comunication.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,19 +64,19 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\shared\models" />
-      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\shared\services" />
-      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\shared\security" />
-      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\my-interactions" />
-      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\operations" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\shared\models" />
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\server\controllers" />
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\shared" />
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\server" />
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\server\routes" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\comunications" />
+      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\shared\models" />
+      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\shared\services" />
+      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\shared\security" />
+      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\my-interactions" />
     </key>
   </component>
   <component name="RunManager" selected="npm.test">
@@ -239,20 +243,6 @@
       <workItem from="1620912705856" duration="8455000" />
       <workItem from="1620979363652" duration="6491000" />
       <workItem from="1621236157221" duration="6484000" />
-    </task>
-    <task id="LOCAL-00127" summary="volunteer list fixed">
-      <created>1620215515858</created>
-      <option name="number" value="00127" />
-      <option name="presentableId" value="LOCAL-00127" />
-      <option name="project" value="LOCAL" />
-      <updated>1620215515858</updated>
-    </task>
-    <task id="LOCAL-00128" summary="adds cards size modified">
-      <created>1620215806155</created>
-      <option name="number" value="00128" />
-      <option name="presentableId" value="LOCAL-00128" />
-      <option name="project" value="LOCAL" />
-      <updated>1620215806155</updated>
     </task>
     <task id="LOCAL-00129" summary="adds arrow icon for redirecting">
       <created>1620216877253</created>
@@ -583,7 +573,21 @@
       <option name="project" value="LOCAL" />
       <updated>1621242577642</updated>
     </task>
-    <option name="localTasksCounter" value="176" />
+    <task id="LOCAL-00176" summary="fixing chat grid with buttons">
+      <created>1621324550369</created>
+      <option name="number" value="00176" />
+      <option name="presentableId" value="LOCAL-00176" />
+      <option name="project" value="LOCAL" />
+      <updated>1621324550369</updated>
+    </task>
+    <task id="LOCAL-00177" summary="openDeleteDialog method empty">
+      <created>1621324721739</created>
+      <option name="number" value="00177" />
+      <option name="presentableId" value="LOCAL-00177" />
+      <option name="project" value="LOCAL" />
+      <updated>1621324721739</updated>
+    </task>
+    <option name="localTasksCounter" value="178" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -606,8 +610,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="refactoring add controller" />
-    <MESSAGE value="end refactoring add test" />
     <MESSAGE value="initial commit interactions" />
     <MESSAGE value="new comunications.component linked with id of two users to comunicate" />
     <MESSAGE value="new comunication.service" />
@@ -631,7 +633,9 @@
     <MESSAGE value="spinner for loading my interactions" />
     <MESSAGE value="query for my interactions fixed" />
     <MESSAGE value="initial commit fixing chat UI with new buttons" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit fixing chat UI with new buttons" />
+    <MESSAGE value="fixing chat grid with buttons" />
+    <MESSAGE value="openDeleteDialog method empty" />
+    <option name="LAST_COMMIT_MESSAGE" value="openDeleteDialog method empty" />
   </component>
   <component name="WindowStateProjectService">
     <state x="509" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619029708212">
@@ -642,14 +646,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1620139192253" />
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1620297650705">
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1621325585838">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1620297650705" />
-    <state x="516" y="267" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1612380414374">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="516" y="267" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1612380414374" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1621325585838" />
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1619434609056">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -738,10 +738,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="400" y="23" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1620234910797" />
-    <state x="632" y="298" width="348" height="298" key="org.angular.cli.generate" timestamp="1620903108864">
+    <state x="632" y="298" width="348" height="298" key="org.angular.cli.generate" timestamp="1621324840859">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="632" y="298" width="348" height="298" key="org.angular.cli.generate/0.0.1536.824@0.0.1536.824" timestamp="1620903108864" />
+    <state x="632" y="298" width="348" height="298" key="org.angular.cli.generate/0.0.1536.824@0.0.1536.824" timestamp="1621324840859" />
     <state x="486" y="184" key="refactoring.ChangeSignatureDialog" timestamp="1620902236950">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

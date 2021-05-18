@@ -33,7 +33,9 @@ import { AddsComponent } from './adds/adds.component';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { MyInteractionsComponent } from './my-interactions/my-interactions.component';
 import { DeleteAddDialogComponent } from './my-interactions/delete-add-dialog.component';
+import { DeleteComunicationDialogComponent } from './comunications/delete-comunication-dialog.component';
 import { ComunicationsComponent } from './comunications/comunications.component';
+
 
 @NgModule({
   declarations: [
@@ -52,7 +54,8 @@ import { ComunicationsComponent } from './comunications/comunications.component'
     AddsComponent,
     MyInteractionsComponent,
     DeleteAddDialogComponent,
-    ComunicationsComponent
+    ComunicationsComponent,
+    DeleteComunicationDialogComponent
   ],
   imports: [
     BrowserModule,

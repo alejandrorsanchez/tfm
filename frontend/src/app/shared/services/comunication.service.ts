@@ -30,4 +30,8 @@ export class ComunicationService {
   update(comunication: Comunication) {
     return this.http.put(this.URL + '/' + comunication.id, comunication);
   }
+
+  delete(id: number) {
+    return this.http.delete(this.URL + '/' + id);
+  }
 }

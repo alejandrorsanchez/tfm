@@ -5,6 +5,8 @@ import {ComunicationService} from "../shared/services/comunication.service";
 import {Comunication} from "../shared/models/comunication";
 import {UserService} from "../shared/services/user.service";
 import {User} from "../shared/models/user";
+import {DeleteComunicationDialogComponent} from "./delete-comunication-dialog.component";
+import {MatDialog} from "@angular/material/dialog";
 
 @Component({
   selector: 'app-comunications',
@@ -21,7 +23,7 @@ export class ComunicationsComponent implements OnInit {
   chatMate: User = new User();
 
   constructor(private route: ActivatedRoute, private utilsService: UtilsService, private comunicationService: ComunicationService,
-              private userService: UserService, private router: Router) {
+              private userService: UserService, private router: Router, public dialog: MatDialog) {
     this.userId = this.route.snapshot.params.id;
     this.type = this.route.snapshot.params.type;
     this.myId = Number(this.utilsService.getId());
@@ -81,15 +83,22 @@ export class ComunicationsComponent implements OnInit {
     this.comunication.messages += message + '||';
   }
 
+  openDeleteComunicationDialog() {
+    this.dialog.open(DeleteComunicationDialogComponent, {
+      data: this.comunication.id,
+      width: '400px',
+    });
+  }
+
   isFirstMessage(): boolean {
     return this.messagesList.length === 1;
   }
 
   redirectToMyInteractions() {
-    this.router.navigateByUrl('/home/interactions');
+    this.router.navigateByUrl('/home');
   }
 
-  openDeleteComunicationDialog() {
-
+  isNewComunication() {
+    return this.messagesList.length === 0
   }
 }
