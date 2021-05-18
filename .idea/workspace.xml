@@ -19,12 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.ts" afterDir="false" />
-    </list>
+    <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -239,14 +234,7 @@
       <workItem from="1620900444679" duration="2249000" />
       <workItem from="1620912705856" duration="8455000" />
       <workItem from="1620979363652" duration="6491000" />
-      <workItem from="1621236157221" duration="6114000" />
-    </task>
-    <task id="LOCAL-00126" summary="material spinner for waiting">
-      <created>1620214829405</created>
-      <option name="number" value="00126" />
-      <option name="presentableId" value="LOCAL-00126" />
-      <option name="project" value="LOCAL" />
-      <updated>1620214829405</updated>
+      <workItem from="1621236157221" duration="6484000" />
     </task>
     <task id="LOCAL-00127" summary="volunteer list fixed">
       <created>1620215515858</created>
@@ -584,7 +572,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621240540084</updated>
     </task>
-    <option name="localTasksCounter" value="175" />
+    <task id="LOCAL-00175" summary="initial commit fixing chat UI with new buttons">
+      <created>1621242577642</created>
+      <option name="number" value="00175" />
+      <option name="presentableId" value="LOCAL-00175" />
+      <option name="project" value="LOCAL" />
+      <updated>1621242577642</updated>
+    </task>
+    <option name="localTasksCounter" value="176" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -607,7 +602,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="end refactoring pet controller and pet test" />
     <MESSAGE value="refactoring add controller" />
     <MESSAGE value="end refactoring add test" />
     <MESSAGE value="initial commit interactions" />
@@ -632,7 +626,8 @@
     <MESSAGE value="new attribute User for comunication model" />
     <MESSAGE value="spinner for loading my interactions" />
     <MESSAGE value="query for my interactions fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="query for my interactions fixed" />
+    <MESSAGE value="initial commit fixing chat UI with new buttons" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit fixing chat UI with new buttons" />
   </component>
   <component name="WindowStateProjectService">
     <state x="509" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619029708212">
