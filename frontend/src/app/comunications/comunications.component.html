@@ -2,13 +2,14 @@
 <div *ngIf="this.loaded">
   <div class="comunicationContainer">
     <div class="uk-text-center" uk-grid>
-      <div class="uk-width-1-4 sectionBody">
+      <div class="uk-width-1-5 sectionBody">
         <a uk-icon="icon:  arrow-left; ratio: 8.5" (click)="this.redirectToMyInteractions()"></a>
         <button class="uk-button uk-button-danger uk-width-1-2" [disabled]="this.isNewComunication()" (click)="this.openDeleteComunicationDialog()">Eliminar chat</button>
       </div>
-      <div class="uk-width-3-4">
+      <div class="uk-width-4-5 title">
         <h1 class="title">{{this.chatMate.username}}</h1>
-        <p class="subtitle">{{this.chatMate.address}}</p>
+        <p>{{this.chatMate.address}}</p>
+        <mat-divider></mat-divider>
         <div class="messagesContainer">
           <div *ngFor="let message of this.messagesList" [ngClass]="{'myMessage': isMyMessage(message), 'otherUserMessage' : !isMyMessage(message)}">
               <p class="messageBlock"><b>{{message.split(':')[0]}}</b><br>{{message.split(':')[1]}}</p>

@@ -20,11 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/chatBackground.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/home/home.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,11 +69,11 @@
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\server\routes" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\assets" />
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\comunications" />
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\shared\models" />
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\shared\services" />
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\shared\security" />
-      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\my-interactions" />
     </key>
   </component>
   <component name="RunManager" selected="npm.test">
@@ -241,13 +240,6 @@
       <workItem from="1620912705856" duration="8455000" />
       <workItem from="1620979363652" duration="6491000" />
       <workItem from="1621236157221" duration="6484000" />
-    </task>
-    <task id="LOCAL-00132" summary="new component myInteractions linked">
-      <created>1620230353901</created>
-      <option name="number" value="00132" />
-      <option name="presentableId" value="LOCAL-00132" />
-      <option name="project" value="LOCAL" />
-      <updated>1620230353902</updated>
     </task>
     <task id="LOCAL-00133" summary="UI for myInteractions">
       <created>1620232565314</created>
@@ -585,7 +577,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621325938477</updated>
     </task>
-    <option name="localTasksCounter" value="181" />
+    <task id="LOCAL-00181" summary="fixing">
+      <created>1621330655466</created>
+      <option name="number" value="00181" />
+      <option name="presentableId" value="LOCAL-00181" />
+      <option name="project" value="LOCAL" />
+      <updated>1621330655466</updated>
+    </task>
+    <option name="localTasksCounter" value="182" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -608,7 +607,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="new comunication.service" />
     <MESSAGE value="UI comunication between users" />
     <MESSAGE value="endpoint called from angular" />
     <MESSAGE value="endpoint implemented in controller" />
@@ -633,7 +631,8 @@
     <MESSAGE value="openDeleteDialog method empty" />
     <MESSAGE value="UI dialog delete comunication implemented" />
     <MESSAGE value="delete comunication implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete comunication implemented" />
+    <MESSAGE value="fixing" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing" />
   </component>
   <component name="WindowStateProjectService">
     <state x="509" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619029708212">

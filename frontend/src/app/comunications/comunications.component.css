@@ -1,37 +1,45 @@
 .comunicationContainer{
-  width: 90%;
+  width: 80%;
   margin: auto;
 }
 .messagesContainer{
   height: 450px;
   overflow: auto;
-  border: 1px solid black;
+  margin-top: 10px;
+  border-left: 1px solid rgba(0, 153, 255, 1);
+  border-right: 1px solid rgba(0, 153, 255, 1);
+  background-image: url("src/assets/chatBackground.jpg");;
 }
 .headerBody{
   padding-top: 150px;
 }
 .title{
-  padding-top: 10px;
-  text-align: left;
-}
-.subtitle{
   text-align: left;
 }
 .sectionBody{
   margin-top: 100px;
+  padding-left: 0px;
 }
 .uk-button-danger{
   margin-top: 100px;
 }
 .myMessage{
+  float: right;
+  clear: both;
   text-align: right;
 }
 .otherUserMessage{
-
+  float: left;
+  clear: both;
+  text-align: left;
 }
 .messageBlock{
-  width: 50%;
+  width: auto;
   border: 2px solid rgba(0, 153, 255, 1);
   border-radius: 7px;
   background-color: rgba(153, 204, 255, 0.5);
+  padding: 5px 15px 5px 15px;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: large;
 }
