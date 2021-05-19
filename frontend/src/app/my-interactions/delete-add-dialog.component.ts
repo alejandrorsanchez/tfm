@@ -20,7 +20,7 @@ export class DeleteAddDialogComponent {
 
   delete() {
     this.addService.delete(this.id).subscribe(
-      response => this.dialogRef.close()
+      () => this.dialogRef.close()
     );
   }
 }

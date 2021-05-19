@@ -21,11 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/cover/sing-up-dialog.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/cover/sing-up-dialog.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/shared/models/email.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/shared/models/email.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/email.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/email.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/email.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/email.routes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -242,21 +237,7 @@
       <workItem from="1620912705856" duration="8455000" />
       <workItem from="1620979363652" duration="6491000" />
       <workItem from="1621236157221" duration="6484000" />
-      <workItem from="1621410126143" duration="5952000" />
-    </task>
-    <task id="LOCAL-00145" summary="refactoring pet controller status codes">
-      <created>1620726366567</created>
-      <option name="number" value="00145" />
-      <option name="presentableId" value="LOCAL-00145" />
-      <option name="project" value="LOCAL" />
-      <updated>1620726366567</updated>
-    </task>
-    <task id="LOCAL-00146" summary="refactoring pet controller status codes">
-      <created>1620727005651</created>
-      <option name="number" value="00146" />
-      <option name="presentableId" value="LOCAL-00146" />
-      <option name="project" value="LOCAL" />
-      <updated>1620727005651</updated>
+      <workItem from="1621410126143" duration="7006000" />
     </task>
     <task id="LOCAL-00147" summary="end refactoring pet controller and pet test">
       <created>1620727553777</created>
@@ -587,7 +568,21 @@
       <option name="project" value="LOCAL" />
       <updated>1621414471339</updated>
     </task>
-    <option name="localTasksCounter" value="194" />
+    <task id="LOCAL-00194" summary="email attr added to PUT User">
+      <created>1621416329998</created>
+      <option name="number" value="00194" />
+      <option name="presentableId" value="LOCAL-00194" />
+      <option name="project" value="LOCAL" />
+      <updated>1621416329998</updated>
+    </task>
+    <task id="LOCAL-00195" summary="email attr added to PUT User">
+      <created>1621416539132</created>
+      <option name="number" value="00195" />
+      <option name="presentableId" value="LOCAL-00195" />
+      <option name="project" value="LOCAL" />
+      <updated>1621416539132</updated>
+    </task>
+    <option name="localTasksCounter" value="196" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
