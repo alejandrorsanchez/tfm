@@ -29,7 +29,7 @@ export class SingUpDialogComponent implements OnInit{
   verifyUserName() {
     if(this.newUser.username != ''){
       this.userService.findByUsername(this.newUser.username).subscribe(
-        response => {},
+        () => {},
         error => {
           this.utilsService.showNotification(error.error['message']);
         }

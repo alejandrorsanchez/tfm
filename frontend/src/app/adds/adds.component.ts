@@ -7,7 +7,7 @@ import {UserService} from "../shared/services/user.service";
 import {PetService} from "../shared/services/pet.service";
 import {Pet} from "../shared/models/pet";
 import {User} from "../shared/models/user";
-import {Coordinate} from "./coordinate";
+import {Coordinate} from "../shared/models/coordinate";
 import {AddCreation} from "../shared/models/addCreation";
 
 @Component({
@@ -18,7 +18,7 @@ import {AddCreation} from "../shared/models/addCreation";
 export class AddsComponent implements OnInit {
 
   type: number;
-  user: User;
+  user: User = new User();
   adds: AddListing[] = [];
   id: string;
   myCoordinate: Coordinate;
@@ -39,7 +39,7 @@ export class AddsComponent implements OnInit {
   getUser(): void {
     this.id = this.utilsService.getId();
     this.userService.findById(this.id).subscribe(
-      (response: User) => this.user = response);
+      (user: User) => this.user.copyProperties(user));
   }
 
   getAdds(): void {
@@ -59,7 +59,7 @@ export class AddsComponent implements OnInit {
     this.userService.findById(userId).subscribe(
       (user: User) => {
         let add = new AddListing();
-        add.user = user;
+        add.user.copyProperties(user);
         //user.copyProperties(userResponse);
         //add.user = user;
         if(petId){
@@ -76,14 +76,14 @@ export class AddsComponent implements OnInit {
   }
 
   orderAddsByProximity(): void {
-    this.myCoordinate = this.getCoordinate(this.user.address);
     this.getDistances();
     setTimeout(() => { this.sortAdds() }, 500);
   }
 
   getDistances(): void {
+    this.myCoordinate = this.user.getMyCoordinates();
     for (const add of this.adds) {
-      const coordinateAdd = this.getCoordinate(add.user.address);
+      const coordinateAdd = add.user.getMyCoordinates();
       setTimeout(() => {
         add.distance = this.myCoordinate.getDistanceWith(coordinateAdd);
       }, 500);
@@ -94,19 +94,6 @@ export class AddsComponent implements OnInit {
     this.adds.sort((add1, add2) => {
       return add1.distance - add2.distance;
     });
-  }
-
-  getCoordinate(address: string): Coordinate {
-    let coordinate = new Coordinate();
-    const geocoder = new google.maps.Geocoder();
-    geocoder.geocode( { 'address': address}, function(results, status) {
-      if (status == google.maps.GeocoderStatus.OK) {
-        coordinate.lat = results[0].geometry.location.lat();
-        coordinate.lng = results[0].geometry.location.lng();
-        return coordinate;
-      }
-    });
-    return coordinate;
   }
 
   isAdoption(): boolean {

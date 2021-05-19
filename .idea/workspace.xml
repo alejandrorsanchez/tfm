@@ -22,7 +22,9 @@
     <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/adds/adds.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/adds/adds.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/adds/coordinate.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/adds/coordinate.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/adds/coordinate.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/shared/models/coordinate.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/cover/sing-up-dialog.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/cover/sing-up-dialog.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/shared/models/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/shared/models/user.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,9 +63,9 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\shared\models" />
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\assets" />
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\comunications" />
-      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\shared\models" />
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\shared\services" />
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\shared\security" />
     </key>
@@ -239,14 +241,7 @@
       <workItem from="1620912705856" duration="8455000" />
       <workItem from="1620979363652" duration="6491000" />
       <workItem from="1621236157221" duration="6484000" />
-      <workItem from="1621410126143" duration="10680000" />
-    </task>
-    <task id="LOCAL-00150" summary="initial commit interactions">
-      <created>1620901881816</created>
-      <option name="number" value="00150" />
-      <option name="presentableId" value="LOCAL-00150" />
-      <option name="project" value="LOCAL" />
-      <updated>1620901881816</updated>
+      <workItem from="1621410126143" duration="12627000" />
     </task>
     <task id="LOCAL-00151" summary="new comunications.component linked with id of two users to comunicate">
       <created>1620903006217</created>
@@ -584,7 +579,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621423671943</updated>
     </task>
-    <option name="localTasksCounter" value="199" />
+    <task id="LOCAL-00199" summary="getDistanceWith(coordinate) moved to coordinate.ts">
+      <created>1621424149503</created>
+      <option name="number" value="00199" />
+      <option name="presentableId" value="LOCAL-00199" />
+      <option name="project" value="LOCAL" />
+      <updated>1621424149503</updated>
+    </task>
+    <option name="localTasksCounter" value="200" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -607,7 +609,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="endpoint implemented" />
     <MESSAGE value="my interactions received" />
     <MESSAGE value="UI GET Comunications with lastMessage and chatMateName" />
     <MESSAGE value="openComunication TODO" />
@@ -632,7 +633,8 @@
     <MESSAGE value="email attr added to PUT User" />
     <MESSAGE value="init refactor" />
     <MESSAGE value="adds.component responses improved" />
-    <option name="LAST_COMMIT_MESSAGE" value="adds.component responses improved" />
+    <MESSAGE value="getDistanceWith(coordinate) moved to coordinate.ts" />
+    <option name="LAST_COMMIT_MESSAGE" value="getDistanceWith(coordinate) moved to coordinate.ts" />
   </component>
   <component name="WindowStateProjectService">
     <state x="509" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619029708212">
