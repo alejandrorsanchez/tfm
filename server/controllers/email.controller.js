@@ -1,8 +1,9 @@
 const emailController = {};
 const nodemailer = require('nodemailer');
 
-emailController.sendEmail = (req, res) => {
+emailController.send = (req, res) => {
     const email = req.body;
+    if(email.body.includes('http')) email.body = 'Pincha en el siguiente enlace para confirmar tu identidad ' + email.body;
     const transporter = nodemailer.createTransport({
         service: 'Gmail',
         auth: {
@@ -16,7 +17,7 @@ emailController.sendEmail = (req, res) => {
         subject: 'MasMascotas: Nuevos mensajes',
         html: `
          <strong>MasMascotas</strong><br/>
-         ${email.senderName} te ha enviado un nuevo mensaje. 
+         ${email.body}. 
         `
     };
     transporter.sendMail(mailOptions, function (err, info) {

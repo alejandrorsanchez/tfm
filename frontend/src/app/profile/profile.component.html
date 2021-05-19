@@ -15,6 +15,11 @@
         <input [(ngModel)]="this.user.password" name="password" matInput type="password" disabled/>
       </mat-form-field><br>
       <mat-form-field class="full-width">
+        <mat-label>Correo (@gmail.com)</mat-label>
+        <mat-icon matSuffix>mark_as_unread</mat-icon>
+        <input [(ngModel)]="this.user.email" name="email" matInput type="email"/>
+      </mat-form-field><br>
+      <mat-form-field class="full-width">
         <mat-label>Dirección</mat-label>
         <mat-icon matSuffix>add_location</mat-icon>
         <input [(ngModel)]="this.user.address" id="address" matInput type="text" (focus)="autocompleteFocus()"/>

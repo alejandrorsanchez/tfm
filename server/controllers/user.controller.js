@@ -66,8 +66,8 @@ userController.getUser = (req, res) => {
 
 userController.update = (req, res) => {
     const id = req.params.id;
-    const data = [req.body.address, req.body.description, id];
-    const query = 'UPDATE users SET address = ?, description = ? WHERE id = ?';
+    const data = [req.body.address, req.body.description, req.body.email, id];
+    const query = 'UPDATE users SET address = ?, description = ?, email = ? WHERE id = ?';
     db.query(query, data, function (err, row, fields) {
         if (err) throw err;
         res.status(200).json({ message: 'Usuario actualizado', affectedRows: row['affectedRows']});

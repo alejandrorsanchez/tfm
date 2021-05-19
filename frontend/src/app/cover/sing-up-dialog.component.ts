@@ -3,6 +3,8 @@ import {User} from "../shared/models/user";
 import {UserService} from "../shared/services/user.service";
 import {MatDialogRef} from "@angular/material/dialog";
 import {UtilsService} from "../shared/services/utils.service";
+import {EmailService} from "../shared/services/email.service";
+import {Email} from "../shared/models/email";
 
 @Component({
   selector: 'app-sing-up-dialog',
@@ -16,7 +18,7 @@ export class SingUpDialogComponent implements OnInit{
   repeatPassword = '';
 
   constructor(public dialogRef: MatDialogRef<SingUpDialogComponent>, private userService: UserService
-              , private utilsService: UtilsService) {
+              , private utilsService: UtilsService, private emailService: EmailService) {
     this.title = 'Registro';
   }
 
@@ -57,8 +59,8 @@ export class SingUpDialogComponent implements OnInit{
         response => {
           this.utilsService.showNotification(response['message']);
           this.dialogRef.close();
-        }
-      );
+          }
+        );
     }
   }
 

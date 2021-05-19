@@ -101,7 +101,7 @@ export class ComunicationsComponent implements OnInit {
   }
 
   sendEmailNotification(sender: User, receiver: User) {
-    const email = new Email(sender.username, receiver.username, receiver.email);
+    const email = new Email(sender.username, receiver.username, receiver.email, sender.username + ' te ha enviado un nuevo mensaje.');
     this.emailService.sendMessage(email).subscribe(
       response => this.utilsService.showNotification(response['message'])
     );

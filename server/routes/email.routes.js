@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
 const emailController = require('../controllers/email.controller');
-const {ensureAuthenticated} = require("../middleware/authMiddelware");
 
-router.post('/', ensureAuthenticated, emailController.sendEmail);
+router.post('/', emailController.send);
+router.get('/verification', emailController.verify);
 
 module.exports = router;

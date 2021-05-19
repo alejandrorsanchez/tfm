@@ -71,7 +71,6 @@ export class ProfileComponent implements OnInit {
   updateUser() {
     const addressInput = document.getElementById("address") as HTMLInputElement;
     this.user.address = addressInput.value;
-
     this.userService.update(this.user).subscribe(
       response => {
         this.getUser();
@@ -121,7 +120,8 @@ export class ProfileComponent implements OnInit {
   }
 
   invalid(): boolean {
-    return this.check(this.user.address) || this.check(this.user.description);
+    return this.check(this.user.address) || this.check(this.user.description)
+      || this.check(this.user.email) || !this.user.email.includes('@gmail.com');
   }
 
   check(attr: string): boolean {
