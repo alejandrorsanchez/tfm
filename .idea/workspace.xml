@@ -21,11 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/adds/adds.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/adds/adds.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/adds/adds.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/adds/adds.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/my-interactions/my-interactions.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/my-interactions/my-interactions.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/my-interactions/my-interactions.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/my-interactions/my-interactions.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/adds/coordinate.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/adds/coordinate.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -242,21 +239,7 @@
       <workItem from="1620912705856" duration="8455000" />
       <workItem from="1620979363652" duration="6491000" />
       <workItem from="1621236157221" duration="6484000" />
-      <workItem from="1621410126143" duration="10073000" />
-    </task>
-    <task id="LOCAL-00148" summary="refactoring add controller">
-      <created>1620728559568</created>
-      <option name="number" value="00148" />
-      <option name="presentableId" value="LOCAL-00148" />
-      <option name="project" value="LOCAL" />
-      <updated>1620728559568</updated>
-    </task>
-    <task id="LOCAL-00149" summary="end refactoring add test">
-      <created>1620729838906</created>
-      <option name="number" value="00149" />
-      <option name="presentableId" value="LOCAL-00149" />
-      <option name="project" value="LOCAL" />
-      <updated>1620729838906</updated>
+      <workItem from="1621410126143" duration="10680000" />
     </task>
     <task id="LOCAL-00150" summary="initial commit interactions">
       <created>1620901881816</created>
@@ -587,7 +570,21 @@
       <option name="project" value="LOCAL" />
       <updated>1621420065364</updated>
     </task>
-    <option name="localTasksCounter" value="197" />
+    <task id="LOCAL-00197" summary="adds.component responses improved">
+      <created>1621423565681</created>
+      <option name="number" value="00197" />
+      <option name="presentableId" value="LOCAL-00197" />
+      <option name="project" value="LOCAL" />
+      <updated>1621423565681</updated>
+    </task>
+    <task id="LOCAL-00198" summary="adds.component responses improved">
+      <created>1621423671943</created>
+      <option name="number" value="00198" />
+      <option name="presentableId" value="LOCAL-00198" />
+      <option name="project" value="LOCAL" />
+      <updated>1621423671943</updated>
+    </task>
+    <option name="localTasksCounter" value="199" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -610,7 +607,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="service called from client" />
     <MESSAGE value="endpoint implemented" />
     <MESSAGE value="my interactions received" />
     <MESSAGE value="UI GET Comunications with lastMessage and chatMateName" />
@@ -635,7 +631,8 @@
     <MESSAGE value="email controller implemented and working" />
     <MESSAGE value="email attr added to PUT User" />
     <MESSAGE value="init refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="init refactor" />
+    <MESSAGE value="adds.component responses improved" />
+    <option name="LAST_COMMIT_MESSAGE" value="adds.component responses improved" />
   </component>
   <component name="WindowStateProjectService">
     <state x="509" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619029708212">

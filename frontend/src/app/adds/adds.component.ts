@@ -78,31 +78,22 @@ export class AddsComponent implements OnInit {
   orderAddsByProximity(): void {
     this.myCoordinate = this.getCoordinate(this.user.address);
     this.getDistances();
-    setTimeout(() => {
-      this.adds.sort((add1, add2) => {
-        return add1.distance - add2.distance;
-      })
-    }, 500);
+    setTimeout(() => { this.sortAdds() }, 500);
   }
 
   getDistances(): void {
     for (const add of this.adds) {
-      const coordinateOrigin = this.getCoordinate(add.user.address);
+      const coordinateAdd = this.getCoordinate(add.user.address);
       setTimeout(() => {
-        add.distance = this.getDistanceWith(coordinateOrigin);
+        add.distance = this.myCoordinate.getDistanceWith(coordinateAdd);
       }, 500);
     }
   }
 
-  getDistanceWith(coordinateOrigin: Coordinate): number {
-    const rad = function(x) {return x*Math.PI/180;}
-    const R = 6378.137;
-    const dLat = rad( coordinateOrigin.lat - this.myCoordinate.lat );
-    const dLong = rad( coordinateOrigin.lng - this.myCoordinate.lng );
-    const a = Math.sin(dLat/2) * Math.sin(dLat/2) + Math.cos(rad(this.myCoordinate.lat)) *
-      Math.cos(rad(coordinateOrigin.lat)) * Math.sin(dLong/2) * Math.sin(dLong/2);
-    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
-    return Number((R * c).toFixed(2));
+  sortAdds(): void {
+    this.adds.sort((add1, add2) => {
+      return add1.distance - add2.distance;
+    });
   }
 
   getCoordinate(address: string): Coordinate {
