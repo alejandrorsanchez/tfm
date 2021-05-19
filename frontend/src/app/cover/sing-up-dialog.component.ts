@@ -42,6 +42,9 @@ export class SingUpDialogComponent implements OnInit{
     }else if (this.newUser.username.length > 8 ){
       this.utilsService.showNotification('El nombre de usuario debe tener una longitud no superior a 8 caracteres');
       return false;
+    }else if(!this.newUser.email.includes('@gmail.com')){
+      this.utilsService.showNotification('El correo no tiene el formato adecuado');
+      return false;
     }
     return true;
   }
@@ -69,7 +72,7 @@ export class SingUpDialogComponent implements OnInit{
 
   invalid(): boolean {
     return this.check(this.newUser.username) || this.check(this.newUser.password) || this.check(this.repeatPassword)
-          || this.check(this.newUser.address) || this.check(this.newUser.description);
+          || this.check(this.newUser.address) || this.check(this.newUser.description) || this.check(this.newUser.email);
   }
 
   check(attr: string): boolean {
