@@ -7,6 +7,8 @@ import {UserService} from "../shared/services/user.service";
 import {User} from "../shared/models/user";
 import {DeleteComunicationDialogComponent} from "./delete-comunication-dialog.component";
 import {MatDialog} from "@angular/material/dialog";
+import {EmailService} from "../shared/services/email.service";
+import {Email} from "../shared/models/email";
 
 @Component({
   selector: 'app-comunications',
@@ -25,7 +27,7 @@ export class ComunicationsComponent implements OnInit {
   loaded: boolean = false;
 
   constructor(private route: ActivatedRoute, private utilsService: UtilsService, private comunicationService: ComunicationService,
-              private userService: UserService, private router: Router, public dialog: MatDialog) {
+              private userService: UserService, private router: Router, public dialog: MatDialog, private emailService: EmailService) {
     this.userId = this.route.snapshot.params.id;
     this.type = this.route.snapshot.params.type;
     this.myId = Number(this.utilsService.getId());
@@ -87,6 +89,7 @@ export class ComunicationsComponent implements OnInit {
       }else{
         this.comunicationService.update(this.comunication).subscribe(response => {});
       }
+      this.sendEmailNotification(this.myUser, this.chatMate);
     }else{
       this.utilsService.showNotification('Escribe algo para poder ser enviado');
     }
@@ -95,6 +98,13 @@ export class ComunicationsComponent implements OnInit {
   updateMessageList(message: string) {
     this.messagesList.push(this.myUser.username + ': ' + message);
     this.comunication.messages += this.myUser.username + ': ' + message + '||';
+  }
+
+  sendEmailNotification(sender: User, receiver: User) {
+    const email = new Email(sender.username, receiver.username, receiver.email);
+    this.emailService.sendMessage(email).subscribe(
+      response => this.utilsService.showNotification(response['message'])
+    );
   }
 
   openDeleteComunicationDialog() {
