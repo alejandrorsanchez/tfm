@@ -14,12 +14,4 @@ export class User {
     this.address = '';
   }
 
-  copyProperties(item){
-    this.id = item.id;
-    this.username = item.username;
-    this.password = item.password;
-    this.email = item.email;
-    this.description = item.description;
-    this.address = item.address;
-  }
 }

@@ -2,7 +2,7 @@
 <div *ngIf="this.loaded" class="addsContainer">
   <h1>Anuncios encontrados cerca de ti</h1>
   <mat-divider></mat-divider>
-  <div *ngIf="this.addsEmpty()" class="headerBody">
+  <div *ngIf="this.addsIsEmpty()" class="headerBody">
     <h1>Parece que nadie ha publicado aún un anuncio.</h1>
     <a (click)="redirectToHome()" uk-icon="icon:  arrow-left; ratio: 8.5"></a>
   </div>

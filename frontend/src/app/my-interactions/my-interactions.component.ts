@@ -39,20 +39,19 @@ export class MyInteractionsComponent implements OnInit {
     setTimeout(() => { this.loaded = true }, 500);
   }
 
-  getMyAdds(){
+  getMyAdds(): void {
     this.addService.findByUserId(this.id).subscribe(
       (response: AddCreation[]) => {
         this.myAdds = response;
         if(this.addIsPet()){
           this.petService.findById(this.petId.toString()).subscribe(
-            (response: Pet) => this.petName = response.name
-          );
+            (response: Pet) => this.petName = response.name);
         }
       }
     );
   }
 
-  getMyComunications() {
+  getMyComunications(): void {
     this.comunicationService.findByUserId(this.id).subscribe(
       (response: Comunication[]) => {
         this.myComunications = response;
@@ -62,14 +61,13 @@ export class MyInteractionsComponent implements OnInit {
           let chatMateId;
           (comunication.userId1 === Number(this.id)) ? chatMateId = comunication.userId2 : chatMateId = comunication.userId1;
           this.userService.findById(chatMateId).subscribe(
-            (user: User) => comunication.chatMate = user
-          );
+            (user: User) => comunication.chatMate = user);
         }
       }
     );
   }
 
-  addsEmpty(): boolean {
+  addsIsEmpty(): boolean {
     return this.myAdds.length == 0;
   }
 
@@ -94,37 +92,37 @@ export class MyInteractionsComponent implements OnInit {
     return false;
   }
 
-  openDeleteVolunteerAddDialog() {
+  openDeleteVolunteerAddDialog(): void {
     this.dialog.open(DeleteAddDialogComponent, {
       data: this.volunteerAddId,
       width: '400px',
     }).afterClosed().subscribe(
-      response => this.getMyAdds()
+      () => this.getMyAdds()
     );
   }
 
-  openDeletePetAddDialog() {
+  openDeletePetAddDialog(): void {
     this.dialog.open(DeleteAddDialogComponent, {
       data: this.petAddId,
       width: '400px',
     }).afterClosed().subscribe(
-      response => this.getMyAdds()
+      () => this.getMyAdds()
     );
   }
 
-  openComunication(comunication: Comunication) {
+  openComunication(comunication: Comunication): void {
     this.router.navigate(['/home/comunications/', comunication.chatMate.id, comunication.type]);
   }
 
-  redirectToHome() {
+  redirectToHome(): void {
     this.router.navigateByUrl('/home');
   }
 
-  noComunications() {
+  comunicationsIsEmpty(): boolean {
     return this.myComunications.length === 0;
   }
 
-  isNewMessage(comunication: Comunication) {
+  isNewMessage(comunication: Comunication): boolean {
     return comunication.notification === Number(this.id);
   }
 }

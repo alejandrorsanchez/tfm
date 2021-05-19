@@ -36,38 +36,38 @@ export class AddsComponent implements OnInit {
     setTimeout(() => { this.loaded = true }, 800);
   }
 
-  getUser(){
+  getUser(): void {
     this.id = this.utilsService.getId();
     this.userService.findById(this.id).subscribe(
-      (response: User) => {
-        this.user = response;
-      }
-    );
+      (response: User) => this.user = response);
   }
 
-  getAdds() {
+  getAdds(): void {
     this.addService.findByType(this.type, this.id).subscribe(
       (response: AddCreation[]) => {
-        for (const key in response) {
-          this.createAddFromAddCreation(response[key].userId, response[key].petId);
+        for (const addCreation of response) {
+          this.createFullAddFromAddCreation(addCreation.userId, addCreation.petId);
         }
+        //for (const key in response) {
+          //this.createAddFromAddCreation(response[key].userId, response[key].petId);
+        //}
       }
     );
   }
 
-  createAddFromAddCreation(userId: string, petId: number) {
+  createFullAddFromAddCreation(userId: string, petId: number): void {
     this.userService.findById(userId).subscribe(
-      (userResponse: User) => {
+      (user: User) => {
         let add = new AddListing();
-        const user = new User();
-        user.copyProperties(userResponse);
         add.user = user;
+        //user.copyProperties(userResponse);
+        //add.user = user;
         if(petId){
           this.petService.findById(petId.toString()).subscribe(
-            petResponse =>{
-              const pet = new Pet();
-              pet.copyProperties(petResponse);
+            (pet: Pet) =>{
               add.pet = pet;
+              //const pet = new Pet();
+              //pet.copyProperties(petResponse);
             }
           );
         }
@@ -75,7 +75,7 @@ export class AddsComponent implements OnInit {
       });
   }
 
-  orderAddsByProximity() {
+  orderAddsByProximity(): void {
     this.myCoordinate = this.getCoordinate(this.user.address);
     this.getDistances();
     setTimeout(() => {
@@ -85,7 +85,7 @@ export class AddsComponent implements OnInit {
     }, 500);
   }
 
-  getDistances() {
+  getDistances(): void {
     for (const add of this.adds) {
       const coordinateOrigin = this.getCoordinate(add.user.address);
       setTimeout(() => {
@@ -94,7 +94,7 @@ export class AddsComponent implements OnInit {
     }
   }
 
-  getDistanceWith(coordinateOrigin: Coordinate) {
+  getDistanceWith(coordinateOrigin: Coordinate): number {
     const rad = function(x) {return x*Math.PI/180;}
     const R = 6378.137;
     const dLat = rad( coordinateOrigin.lat - this.myCoordinate.lat );
@@ -118,19 +118,19 @@ export class AddsComponent implements OnInit {
     return coordinate;
   }
 
-  createComunication(id: number) {
-    this.router.navigate(['/home/comunications/', id, this.type]);
-  }
-
-  isAdoption() {
+  isAdoption(): boolean {
     return this.type == 1;
   }
 
-  addsEmpty() {
+  addsIsEmpty(): boolean {
     return this.adds.length == 0;
   }
 
-  redirectToHome() {
+  createComunication(id: number): void {
+    this.router.navigate(['/home/comunications/', id, this.type]);
+  }
+
+  redirectToHome(): void {
     this.router.navigateByUrl('/home');
   }
 }

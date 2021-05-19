@@ -39,18 +39,17 @@ export class ComunicationsComponent implements OnInit {
     setTimeout(() => { this.loaded = true }, 300);
   }
 
-  getUsersChat(){
+  getUsersChat(): void {
     this.userService.findById(this.userId.toString()).subscribe(
       (user: User) => {
         this.chatMate = user;
         this.userService.findById(this.myId.toString()).subscribe(
-          (user: User) => this.myUser = user
-        );
+          (user: User) => this.myUser = user);
       }
     );
   }
 
-  getComunicationFromUsers(userId1: number, userId2: number, type: number) {
+  getComunicationFromUsers(userId1: number, userId2: number, type: number): void {
     this.comunicationService.findByUserId1AndUserId2AndType(userId1, userId2, type).subscribe(
       (response: Comunication) => {
         if(response){
@@ -65,19 +64,19 @@ export class ComunicationsComponent implements OnInit {
     );
   }
 
-  checkNotificationsForMyUser() {
+  checkNotificationsForMyUser(): void {
     if(this.comunication.notification === this.myId){
       this.comunication.notification = null
-      this.comunicationService.update(this.comunication).subscribe(response => {});
+      this.comunicationService.update(this.comunication).subscribe(() => {});
     }
   }
 
-  createIterableFromMessagesAndBeauty(messages: string) {
+  createIterableFromMessagesAndBeauty(messages: string): void {
     this.messagesList = messages.split("||");
     this.messagesList.pop();
   }
 
-  sendMessage() {
+  sendMessage(): void {
     const inputText = document.getElementById('inputText') as HTMLInputElement;
     if(inputText.value){
       this.updateMessageList(inputText.value);
@@ -87,7 +86,7 @@ export class ComunicationsComponent implements OnInit {
         this.comunicationService.save(this.comunication).subscribe(
           response => this.comunication.id = response['id']);
       }else{
-        this.comunicationService.update(this.comunication).subscribe(response => {});
+        this.comunicationService.update(this.comunication).subscribe(() => {});
       }
       this.sendEmailNotification(this.myUser, this.chatMate);
     }else{
@@ -95,19 +94,18 @@ export class ComunicationsComponent implements OnInit {
     }
   }
 
-  updateMessageList(message: string) {
+  updateMessageList(message: string): void {
     this.messagesList.push(this.myUser.username + ': ' + message);
     this.comunication.messages += this.myUser.username + ': ' + message + '||';
   }
 
-  sendEmailNotification(sender: User, receiver: User) {
+  sendEmailNotification(sender: User, receiver: User): void {
     const email = new Email(sender.username, receiver.username, receiver.email);
     this.emailService.sendMessage(email).subscribe(
-      response => this.utilsService.showNotification(response['message'])
-    );
+      response => this.utilsService.showNotification(response['message']));
   }
 
-  openDeleteComunicationDialog() {
+  openDeleteComunicationDialog(): void {
     this.dialog.open(DeleteComunicationDialogComponent, {
       data: this.comunication.id,
       width: '400px',
@@ -118,15 +116,15 @@ export class ComunicationsComponent implements OnInit {
     return this.messagesList.length === 1;
   }
 
-  redirectToMyInteractions() {
-    this.router.navigateByUrl('/home');
-  }
-
-  isNewComunication() {
+  isNewComunication(): boolean {
     return this.messagesList.length === 0
   }
 
-  isMyMessage(message: string) {
+  isMyMessage(message: string): boolean {
     return message.split(':')[0] === this.myUser.username;
+  }
+
+  redirectToMyInteractions(): void {
+    this.router.navigateByUrl('/home/interactions');
   }
 }
