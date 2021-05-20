@@ -6,7 +6,7 @@ chai.use(chaiHttp);
 const urlUsers = 'http://localhost:3000/users';
 const url = 'http://localhost:3000/email';
 
-describe('Testing Add API', function(){
+describe('Testing Email API', function(){
     let userId;
     let token;
     before('Get session token and user id', function(done){

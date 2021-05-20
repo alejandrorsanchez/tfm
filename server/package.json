@@ -42,7 +42,6 @@
       "database.js",
       "index.js",
       "enviroment.js",
-      "controllers/*.js",
       "middleware/*.js"
     ],
     "branches": 60,

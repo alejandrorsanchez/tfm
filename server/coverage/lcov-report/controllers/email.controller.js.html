@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for routes/pet.routes.js</title>
+    <title>Code coverage report for controllers/email.controller.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../prettify.css" />
     <link rel="stylesheet" href="../base.css" />
@@ -19,20 +19,20 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../index.html">All files</a> / <a href="index.html">routes</a> pet.routes.js</h1>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">controllers</a> email.controller.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/16</span>
+                <span class='fraction'>0/11</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/0</span>
+                <span class='fraction'>0/2</span>
             </div>
         
             
@@ -46,7 +46,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/16</span>
+                <span class='fraction'>0/10</span>
             </div>
         
             
@@ -81,54 +81,66 @@
 <a name='L22'></a><a href='#L22'>22</a>
 <a name='L23'></a><a href='#L23'>23</a>
 <a name='L24'></a><a href='#L24'>24</a>
-<a name='L25'></a><a href='#L25'>25</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">const express = <span class="cstat-no" title="statement not covered" >require('express');</span>
-const router = <span class="cstat-no" title="statement not covered" >express.Router();</span>
-const multer  = <span class="cstat-no" title="statement not covered" >require('multer');</span>
-const petController = <span class="cstat-no" title="statement not covered" >require('../controllers/pet.controller');</span>
-const {ensureAuthenticated} = <span class="cstat-no" title="statement not covered" >require("../middleware/authMiddelware");</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">const emailController = <span class="cstat-no" title="statement not covered" >{};</span>
+const nodemailer = <span class="cstat-no" title="statement not covered" >require('nodemailer');</span>
 &nbsp;
-const storage = <span class="cstat-no" title="statement not covered" >multer.diskStorage({</span>
-    destination: <span class="fstat-no" title="function not covered" >fu</span>nction (req, file, cb) {
-<span class="cstat-no" title="statement not covered" >        cb(null, './uploads/')</span>
-    },
-    filename: <span class="fstat-no" title="function not covered" >fu</span>nction (req, file, cb) {
-<span class="cstat-no" title="statement not covered" >        cb(null, file.originalname)</span>
-    }
-})
-const upload = <span class="cstat-no" title="statement not covered" >multer({storage});</span>
+<span class="cstat-no" title="statement not covered" >emailController.send = <span class="fstat-no" title="function not covered" >(r</span>eq, res) =&gt; {</span>
+    const email = <span class="cstat-no" title="statement not covered" >req.body;</span>
+    const transporter = <span class="cstat-no" title="statement not covered" >nodemailer.createTransport({</span>
+        service: 'Gmail',
+        auth: {
+            user: 'aleeexr7@gmail.com',
+            pass: 'aspire5920g'
+        }
+    });
+    const mailOptions = <span class="cstat-no" title="statement not covered" >{</span>
+        from: email.senderName,
+        to: email.receiverEmail,
+        subject: 'MasMascotas: Nuevos mensajes',
+        html: `
+         &lt;strong&gt;MasMascotas&lt;/strong&gt;&lt;br/&gt;
+         ${email.senderName} te ha enviado un nuevo mensaje. 
+        `
+    };
+<span class="cstat-no" title="statement not covered" >    transporter.sendMail(mailOptions, <span class="fstat-no" title="function not covered" >fu</span>nction (err, info) {</span>
+<span class="cstat-no" title="statement not covered" >        if (err) <span class="cstat-no" title="statement not covered" >throw err;</span></span>
+<span class="cstat-no" title="statement not covered" >        res.status(200).json({message: 'Notificación enviada al destinatario'});</span>
+    });
+}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >router.get('/:id', ensureAuthenticated, petController.findById);</span>
-<span class="cstat-no" title="statement not covered" >router.get('/search/:userId', ensureAuthenticated, petController.findByUserId);</span>
-<span class="cstat-no" title="statement not covered" >router.post('/', ensureAuthenticated, petController.save);</span>
-<span class="cstat-no" title="statement not covered" >router.post('/file', upload.single('image'), petController.uploadPhoto);</span>
-<span class="cstat-no" title="statement not covered" >router.put('/:id', ensureAuthenticated,  petController.update);</span>
-<span class="cstat-no" title="statement not covered" >router.delete('/:id', ensureAuthenticated, petController.delete);</span>
-&nbsp;
-<span class="cstat-no" title="statement not covered" >module.exports = router;</span>
+<span class="cstat-no" title="statement not covered" >module.exports = emailController;</span>
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->

@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for routes/add.routes.js</title>
+    <title>Code coverage report for routes/comunication.routes.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../prettify.css" />
     <link rel="stylesheet" href="../base.css" />
@@ -19,7 +19,7 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../index.html">All files</a> / <a href="index.html">routes</a> add.routes.js</h1>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">routes</a> comunication.routes.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
@@ -83,14 +83,14 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">const express = <span class="cstat-no" title="statement not covered" >require('express');</span>
 const router = <span class="cstat-no" title="statement not covered" >express.Router();</span>
-const addController = <span class="cstat-no" title="statement not covered" >require('../controllers/add.controller');</span>
+const comunicationController = <span class="cstat-no" title="statement not covered" >require('../controllers/comunication.controller');</span>
 const {ensureAuthenticated} = <span class="cstat-no" title="statement not covered" >require("../middleware/authMiddelware");</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >router.post('/adoption', ensureAuthenticated, addController.saveAdoption);</span>
-<span class="cstat-no" title="statement not covered" >router.post('/volunteer', ensureAuthenticated, addController.saveVolunteer);</span>
-<span class="cstat-no" title="statement not covered" >router.get('/', ensureAuthenticated, addController.findByType);</span>
-<span class="cstat-no" title="statement not covered" >router.get('/:userId', ensureAuthenticated, addController.findByUserId);</span>
-<span class="cstat-no" title="statement not covered" >router.delete('/:id', ensureAuthenticated, addController.delete);</span>
+<span class="cstat-no" title="statement not covered" >router.get('/', ensureAuthenticated, comunicationController.findByUserId1AndUserId2AndType);</span>
+<span class="cstat-no" title="statement not covered" >router.get('/:userId', ensureAuthenticated, comunicationController.findByUserId);</span>
+<span class="cstat-no" title="statement not covered" >router.post('/', ensureAuthenticated, comunicationController.save);</span>
+<span class="cstat-no" title="statement not covered" >router.put('/:id', ensureAuthenticated,  comunicationController.update);</span>
+<span class="cstat-no" title="statement not covered" >router.delete('/:id', ensureAuthenticated, comunicationController.delete);</span>
 &nbsp;
 <span class="cstat-no" title="statement not covered" >module.exports = router;</span>
 &nbsp;</pre></td></tr></table></pre>
