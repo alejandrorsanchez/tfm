@@ -20,19 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/cover/log-in-dialog.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/cover/log-in-dialog.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/cover/sing-up-dialog.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/cover/sing-up-dialog.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/home/home.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/operations/operations.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/operations/operations.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/operations/type-add-dialog.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/operations/type-add-dialog.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/operations/type-add-dialog.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/operations/type-add-dialog.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/profile/add-update-pet-dialog.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/profile/add-update-pet-dialog.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/profile/delete-account-dialog.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/profile/delete-account-dialog.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/profile/delete-pet-dialog.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/profile/delete-pet-dialog.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/profile/profile.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/profile/profile.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/profile/profile.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/profile/profile.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/publisher/publisher.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/publisher/publisher.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/uploads/310/pexels-artem-beliaikin-1485637.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/test/addTest.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/test/addTest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/test/petTest.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/test/petTest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/test/userTest.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/test/userTest.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -250,14 +241,7 @@
       <workItem from="1620979363652" duration="6491000" />
       <workItem from="1621236157221" duration="6484000" />
       <workItem from="1621410126143" duration="13029000" />
-      <workItem from="1621494960450" duration="1661000" />
-    </task>
-    <task id="LOCAL-00152" summary="new comunication.service">
-      <created>1620903380925</created>
-      <option name="number" value="00152" />
-      <option name="presentableId" value="LOCAL-00152" />
-      <option name="project" value="LOCAL" />
-      <updated>1620903380925</updated>
+      <workItem from="1621494960450" duration="2296000" />
     </task>
     <task id="LOCAL-00153" summary="UI comunication between users">
       <created>1620915531967</created>
@@ -595,7 +579,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621426433002</updated>
     </task>
-    <option name="localTasksCounter" value="201" />
+    <task id="LOCAL-00201" summary="Refactoring complete">
+      <created>1621496688051</created>
+      <option name="number" value="00201" />
+      <option name="presentableId" value="LOCAL-00201" />
+      <option name="project" value="LOCAL" />
+      <updated>1621496688051</updated>
+    </task>
+    <option name="localTasksCounter" value="202" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -618,7 +609,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="UI GET Comunications with lastMessage and chatMateName" />
     <MESSAGE value="openComunication TODO" />
     <MESSAGE value="new attribute User for comunication model" />
     <MESSAGE value="spinner for loading my interactions" />
@@ -643,7 +633,8 @@
     <MESSAGE value="adds.component responses improved" />
     <MESSAGE value="getDistanceWith(coordinate) moved to coordinate.ts" />
     <MESSAGE value="copyProperties necessary for User" />
-    <option name="LAST_COMMIT_MESSAGE" value="copyProperties necessary for User" />
+    <MESSAGE value="Refactoring complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring complete" />
   </component>
   <component name="WindowStateProjectService">
     <state x="509" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619029708212">

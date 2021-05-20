@@ -1,7 +1,8 @@
-var chai = require('chai');
-var expect = require('chai').expect;
-var chaiHttp = require('chai-http');
+const chai = require('chai');
+const expect = require('chai').expect;
+const chaiHttp = require('chai-http');
 chai.use(chaiHttp);
+
 const url = 'http://localhost:3000/users';
 
 describe('Testing User API', function(){
@@ -10,7 +11,7 @@ describe('Testing User API', function(){
     it('should save a new user', function(done){
         chai.request(url)
             .post('/')
-            .send({username: 'Celia', password: 'celia', address: 'new direction', description: 'new description'})
+            .send({username: 'Celia', password: 'celia', address: 'new direction', description: 'new description', email: 'email@gmail.com'})
             .end(function (err, res){
                 expect(res).to.have.status(200);
                 expect(res.body).to.have.property('id');

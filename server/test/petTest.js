@@ -1,6 +1,6 @@
-var chai = require('chai');
-var expect = require('chai').expect;
-var chaiHttp = require('chai-http');
+const chai = require('chai');
+const expect = require('chai').expect;
+const chaiHttp = require('chai-http');
 chai.use(chaiHttp);
 
 const urlUsers = 'http://localhost:3000/users';
