@@ -6,7 +6,7 @@ chai.use(chaiHttp);
 const urlUsers = 'http://localhost:3000/users';
 const url = 'http://localhost:3000/comunications';
 
-describe('Testing Add API', function(){
+describe('Testing Comunication API', function(){
     let token;
     let myUserId;
     let chatUserId;
