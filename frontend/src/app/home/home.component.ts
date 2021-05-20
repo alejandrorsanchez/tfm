@@ -17,8 +17,8 @@ export class HomeComponent implements OnInit {
   username: string;
   notification: boolean = false;
 
-  constructor(private utilService: UtilsService, public router: Router, private activatedRoute: ActivatedRoute, private userService: UserService
-              , private utilsService: UtilsService, private comunicationService: ComunicationService) {
+  constructor(private utilService: UtilsService, public router: Router, private activatedRoute: ActivatedRoute,
+              private userService: UserService, private utilsService: UtilsService, private comunicationService: ComunicationService) {
     this.id = this.utilsService.getId();
   }
 
@@ -27,13 +27,12 @@ export class HomeComponent implements OnInit {
     this.getNotifications();
   }
 
-  getUser(){
+  getUser(): void {
     this.userService.findById(this.id).subscribe(
-      (response: User) => this.username = response.username
-    );
+      (user: User) => this.username = user.username);
   }
 
-  getNotifications(){
+  getNotifications(): void {
     this.comunicationService.findByUserId(this.id).subscribe(
       (response: Comunication[]) => {
         for (const comunication of response) {
@@ -45,12 +44,12 @@ export class HomeComponent implements OnInit {
       });
   }
 
-  logout() {
-    this.utilService.destroySession();
-    this.router.navigateByUrl('/');
+  resetNotifications(): void {
+    this.notification = false;
   }
 
-  resetNotifications() {
-    this.notification = false;
+  logout(): void {
+    this.utilService.destroySession();
+    this.router.navigateByUrl('/');
   }
 }

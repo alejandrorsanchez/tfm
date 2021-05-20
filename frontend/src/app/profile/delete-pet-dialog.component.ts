@@ -1,6 +1,5 @@
 import {Component, Inject} from '@angular/core';
 import {MAT_DIALOG_DATA, MatDialogRef} from "@angular/material/dialog";
-import {Pet} from "../shared/models/pet";
 import {PetService} from "../shared/services/pet.service";
 
 @Component({
@@ -15,13 +14,12 @@ export class DeletePetDialogComponent{
     this.id = data ? data : undefined;
   }
 
-  onNoClick() {
+  onNoClick(): void {
     this.dialogRef.close();
   }
 
-  delete() {
+  delete(): void {
     this.petService.delete(this.id).subscribe(
-      response => this.dialogRef.close()
-    );
+      () => this.dialogRef.close());
   }
 }

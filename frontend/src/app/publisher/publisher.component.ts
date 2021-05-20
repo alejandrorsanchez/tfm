@@ -22,71 +22,61 @@ export class PublisherComponent implements OnInit {
   isAdoption: boolean;
   isVolunteer: boolean;
 
-  constructor(private utilsService: UtilsService, private petService: PetService
-              , private addService: AddService, public router: Router, private userService: UserService) { }
+  constructor(private utilsService: UtilsService, private petService: PetService, private addService: AddService
+              , public router: Router, private userService: UserService) { }
 
   ngOnInit(): void {
     this.getUser();
-
   }
 
-  getUser(){
+  getUser(): void {
     this.id = this.utilsService.getId();
     this.userService.findById(this.id).subscribe(
-      (response: User) => {
-        this.user = response;
-      }
-    );
+      (user: User) => this.user = user);
   }
 
-  showAdoptionForm() {
+  showAdoptionForm(): void {
     this.isAdoption = true;
     this.isVolunteer = false;
     this.getUserPets(this.id);
   }
 
-  showVolunteerForm() {
+  showVolunteerForm(): void {
     this.isVolunteer = true;
     this.isAdoption = false;
   }
 
-  getUserPets(id: string) {
+  getUserPets(id: string): void {
     this.petService.findByUserId(id).subscribe(
-      (response: Pet[]) => {
-        this.myPets = response;
-      }
+      (response: Pet[]) => this.myPets = response
     );
   }
 
-  selectCard(pet: Pet) {
+  selectCard(pet: Pet): void {
     this.postingPet = pet;
   }
 
-  postAdoptionAdd() {
+  postAdoptionAdd(): void {
     const add = new AddCreation(this.id, this.postingPet.id);
     this.addService.saveAdoptionAdd(add).subscribe(
       response => {
         this.utilsService.showNotification(response.body['message']);
         this.router.navigateByUrl('/home');
       },
-      error => {
-        this.utilsService.showNotification(error.error['message']);
-      }
+      error => this.utilsService.showNotification(error.error['message'])
     );
   }
 
-  postVolunteerAdd() {
+  postVolunteerAdd(): void {
     const add = new AddCreation(this.id);
     this.addService.saveVolunteerAdd(add).subscribe(
       response => {
         this.utilsService.showNotification(response.body['message']);
         this.userService.update(this.user).subscribe(
-          value => this.router.navigateByUrl('/home')
+          () => this.router.navigateByUrl('/home')
         );
       },
-      error => {
-        this.utilsService.showNotification(error.error['message']);
-      }
+      error => this.utilsService.showNotification(error.error['message'])
     );
   }
 
@@ -94,7 +84,7 @@ export class PublisherComponent implements OnInit {
     return this.postingPet === undefined;
   }
 
-  redirectToProfile() {
+  redirectToProfile(): void {
     this.router.navigateByUrl('/home/profile');
   }
 }

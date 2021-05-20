@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import {Router} from "@angular/router";
 import {MatDialog} from "@angular/material/dialog";
 import {TypeAddDialogComponent} from "./type-add-dialog.component";
@@ -8,18 +8,15 @@ import {TypeAddDialogComponent} from "./type-add-dialog.component";
   templateUrl: './operations.component.html',
   styleUrls: ['./operations.component.css']
 })
-export class OperationsComponent implements OnInit {
+export class OperationsComponent {
 
   constructor(public router: Router, private dialog: MatDialog) { }
 
-  ngOnInit(): void {
-  }
-
-  publishAdd() {
+  publishAdd(): void {
     this.router.navigateByUrl('home/publish');
   }
 
-  openTypeAddDialog() {
+  openTypeAddDialog(): void {
     this.dialog.open(TypeAddDialogComponent, {
       width: '60%',
     });

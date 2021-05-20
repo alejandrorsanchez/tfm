@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component} from '@angular/core';
 import {Router} from "@angular/router";
 import {MatDialogRef} from "@angular/material/dialog";
 
@@ -7,21 +7,12 @@ import {MatDialogRef} from "@angular/material/dialog";
   templateUrl: './type-add-dialog.component.html',
   styleUrls: ['./type-add-dialog.component.css']
 })
-export class TypeAddDialogComponent implements OnInit {
+export class TypeAddDialogComponent {
 
   constructor(public router: Router, public dialogRef: MatDialogRef<TypeAddDialogComponent>) { }
 
-  ngOnInit(): void {
-  }
-
-  getAdoptionAdds() {
+  findAdds(type: number) {
     this.dialogRef.close();
-    this.router.navigateByUrl('home/adds/1');
-
-  }
-
-  getVolunteerAdds() {
-    this.dialogRef.close();
-    this.router.navigateByUrl('home/adds/2');
+    this.router.navigateByUrl('home/adds/' + type);
   }
 }

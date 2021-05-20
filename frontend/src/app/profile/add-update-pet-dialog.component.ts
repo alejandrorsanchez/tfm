@@ -30,11 +30,11 @@ export class AddUpdatePetDialogComponent implements OnInit{
     this.pet.picture = this.image.name;
   }
 
-  update() {
+  update(): void {
     this.petService.update(this.pet).subscribe(
       response => {
         if(this.image){
-          this.createFormDataAndPostFile();
+          this.createFormDataAndPostImage();
         }
         this.dialogRef.close();
         this.utilsService.showNotification(response['message']);
@@ -42,23 +42,23 @@ export class AddUpdatePetDialogComponent implements OnInit{
     );
   }
 
-  save() {
+  save(): void {
     this.petService.save(this.pet).subscribe(
       response => {
         this.pet.id = response['id'];
-        this.createFormDataAndPostFile();
+        this.createFormDataAndPostImage();
         this.utilsService.showNotification(response['message']);
       }
     );
   }
 
-  createFormDataAndPostFile() {
+  createFormDataAndPostImage() {
     const formData = new FormData();
     formData.append('image', this.image);
     formData.append('id', this.pet.id.toString());
     formData.append('name', this.image.name);
     this.petService.uploadPhoto(formData).subscribe(
-      response => this.dialogRef.close()
+      () => this.dialogRef.close()
     );
   }
 

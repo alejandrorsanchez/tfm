@@ -34,7 +34,7 @@
     <div>
       <h1>Mis mascotas</h1>
       <mat-divider></mat-divider>
-      <div *ngIf="hasNoPets()" class="NoPetsInfo">
+      <div *ngIf="petsIsEmpty()" class="NoPetsInfo">
         <h1>Parece que aún no has añadido mascotas a tu perfil!</h1>
         <a (click)="openAddPetDialog()" uk-icon="icon: plus; ratio: 3.5"></a>
       </div>
@@ -48,7 +48,7 @@
           </div>
           <mat-divider></mat-divider>
       </div>
-      <br><a *ngIf="!hasNoPets()" (click)="openAddPetDialog()" uk-icon="icon: plus; ratio: 3.5"></a>
+      <br><a *ngIf="!petsIsEmpty()" (click)="openAddPetDialog()" uk-icon="icon: plus; ratio: 3.5"></a>
     </div>
   </div>
 </div>

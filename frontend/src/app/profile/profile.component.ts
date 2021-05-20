@@ -30,16 +30,14 @@ export class ProfileComponent implements OnInit {
     this.getUserPets(this.id);
   }
 
-  getUser(){
+  getUser(): void {
     this.id = this.utilsService.getId();
     this.userService.findById(this.id).subscribe(
-      (response: User) => {
-        this.user = response;
-      }
+      (user: User) => this.user = user
     );
   }
 
-  getUserPets(id: string) {
+  getUserPets(id: string): void {
     this.petService.findByUserId(id).subscribe(
       (response: Pet[]) => {
           this.myPets = response;
@@ -53,7 +51,7 @@ export class ProfileComponent implements OnInit {
     );
   }
 
-  autocompleteFocus() {
+  autocompleteFocus(): void {
     const addressField = document.getElementById("address") as HTMLInputElement;
     const autocomplete = new google.maps.places.Autocomplete(addressField, {
       fields: ["address_components", "geometry"],
@@ -61,14 +59,7 @@ export class ProfileComponent implements OnInit {
     });
   }
 
-  openDeleteUserDialog() {
-    this.dialog.open(DeleteAccountDialogComponent, {
-      data: this.id,
-      width: '400px',
-    });
-  }
-
-  updateUser() {
+  updateUser(): void {
     const addressInput = document.getElementById("address") as HTMLInputElement;
     this.user.address = addressInput.value;
     this.userService.update(this.user).subscribe(
@@ -79,43 +70,44 @@ export class ProfileComponent implements OnInit {
     );
   }
 
-  cancelUpdate() {
+  cancelUpdate(): void {
     location.reload();
   }
 
-  openAddPetDialog() {
+  openDeleteUserDialog(): void {
+    this.dialog.open(DeleteAccountDialogComponent, {
+      data: this.id,
+      width: '400px',
+    });
+  }
+
+  openAddPetDialog(): void {
     this.dialog.open(AddUpdatePetDialogComponent, {
       width: '400px',
     }).afterClosed().subscribe(
-      response => {
-        this.getUserPets(this.id);
-      }
+      () => this.getUserPets(this.id)
     );
   }
 
-  openUpdatePetDialog(pet: Pet) {
+  openUpdatePetDialog(pet: Pet): void {
     this.dialog.open(AddUpdatePetDialogComponent, {
       data: pet,
       width: '400px',
     }).afterClosed().subscribe(
-      response => {
-        this.getUserPets(this.id);
-      }
+      () => this.getUserPets(this.id)
     );
   }
 
-  openDeletePetDialog(pet: Pet) {
+  openDeletePetDialog(pet: Pet): void {
     this.dialog.open(DeletePetDialogComponent, {
       data: pet.id,
       width: '400px',
     }).afterClosed().subscribe(
-      response => {
-        this.getUserPets(this.id);
-      }
+      () => this.getUserPets(this.id)
     );
   }
 
-  hasNoPets() {
+  petsIsEmpty(): boolean {
     return this.myPets.length == 0;
   }
 

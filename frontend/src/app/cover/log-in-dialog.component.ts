@@ -31,9 +31,7 @@ export class LogInDialogComponent implements OnInit{
           this.dialogRef.close();
           this.router.navigateByUrl('/home');
       },
-      error => {
-        this.utilsService.showNotification(error.error['message']);
-      }
+      error => this.utilsService.showNotification(error.error['message'])
     );
   }
 

@@ -3,7 +3,6 @@ import {MAT_DIALOG_DATA, MatDialogRef} from "@angular/material/dialog";
 import {UserService} from "../shared/services/user.service";
 import {UtilsService} from "../shared/services/utils.service";
 import {Router} from "@angular/router";
-import {User} from "../shared/models/user";
 
 @Component({
   selector: 'app-delete-account-dialog',
@@ -18,13 +17,13 @@ export class DeleteAccountDialogComponent{
     this.id = data ? data : undefined;
   }
 
-  onNoClick() {
+  onNoClick(): void {
     this.dialogRef.close();
   }
 
-  deleteUser() {
+  deleteUser(): void {
     this.userService.delete(this.id).subscribe(
-      response => {
+      () => {
         this.utilsService.destroySession();
         this.dialogRef.close();
         this.router.navigateByUrl('/');

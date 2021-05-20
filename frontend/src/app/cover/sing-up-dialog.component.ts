@@ -4,7 +4,6 @@ import {UserService} from "../shared/services/user.service";
 import {MatDialogRef} from "@angular/material/dialog";
 import {UtilsService} from "../shared/services/utils.service";
 import {EmailService} from "../shared/services/email.service";
-import {Email} from "../shared/models/email";
 
 @Component({
   selector: 'app-sing-up-dialog',
@@ -26,13 +25,11 @@ export class SingUpDialogComponent implements OnInit{
     this.newUser = new User();
   }
 
-  verifyUserName() {
+  verifyUserName(): void {
     if(this.newUser.username != ''){
       this.userService.findByUsername(this.newUser.username).subscribe(
         () => {},
-        error => {
-          this.utilsService.showNotification(error.error['message']);
-        }
+        error => this.utilsService.showNotification(error.error['message'])
       );
     }
   }
@@ -51,7 +48,7 @@ export class SingUpDialogComponent implements OnInit{
     return true;
   }
 
-  saveUser(){
+  saveUser(): void {
     const addressInput = document.getElementById("address") as HTMLInputElement;
     this.newUser.address = addressInput.value;
     if (this.fieldsAreCorrect()){
@@ -64,7 +61,7 @@ export class SingUpDialogComponent implements OnInit{
     }
   }
 
-  autocompleteFocus() {
+  autocompleteFocus(): void {
     const addressField = document.getElementById("address") as HTMLInputElement;
     const autocomplete = new google.maps.places.Autocomplete(addressField, {
       fields: ["address_components", "geometry"],
