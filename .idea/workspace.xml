@@ -229,14 +229,7 @@
       <workItem from="1621236157221" duration="6484000" />
       <workItem from="1621410126143" duration="13029000" />
       <workItem from="1621494960450" duration="8912000" />
-      <workItem from="1621586522515" duration="5006000" />
-    </task>
-    <task id="LOCAL-00163" summary="PUT Comunication implemented">
-      <created>1620981839662</created>
-      <option name="number" value="00163" />
-      <option name="presentableId" value="LOCAL-00163" />
-      <option name="project" value="LOCAL" />
-      <updated>1620981839662</updated>
+      <workItem from="1621586522515" duration="5321000" />
     </task>
     <task id="LOCAL-00164" summary="type Comunication added for differing between user-to-user comunication">
       <created>1620983115667</created>
@@ -574,7 +567,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621591346745</updated>
     </task>
-    <option name="localTasksCounter" value="212" />
+    <task id="LOCAL-00212" summary="fixing vulnerability path 2">
+      <created>1621591709129</created>
+      <option name="number" value="00212" />
+      <option name="presentableId" value="LOCAL-00212" />
+      <option name="project" value="LOCAL" />
+      <updated>1621591709129</updated>
+    </task>
+    <option name="localTasksCounter" value="213" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -597,7 +597,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="UI Chat finished" />
     <MESSAGE value="notification attr added to Comunication" />
     <MESSAGE value="notifications sent to DB with updates" />
     <MESSAGE value="show new message css in my interactions" />
@@ -622,7 +621,8 @@
     <MESSAGE value="limit uploads SONAR" />
     <MESSAGE value="limit uploads SONAR 2" />
     <MESSAGE value="fixing vulnerability path" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixing vulnerability path" />
+    <MESSAGE value="fixing vulnerability path 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing vulnerability path 2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="509" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619029708212">
