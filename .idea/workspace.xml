@@ -232,14 +232,7 @@
       <workItem from="1621236157221" duration="6484000" />
       <workItem from="1621410126143" duration="13029000" />
       <workItem from="1621494960450" duration="8912000" />
-      <workItem from="1621586522515" duration="359000" />
-    </task>
-    <task id="LOCAL-00157" summary="endpoint implemented in controller">
-      <created>1620917317185</created>
-      <option name="number" value="00157" />
-      <option name="presentableId" value="LOCAL-00157" />
-      <option name="project" value="LOCAL" />
-      <updated>1620917317185</updated>
+      <workItem from="1621586522515" duration="666000" />
     </task>
     <task id="LOCAL-00158" summary="sendMessage() without implementation">
       <created>1620918013562</created>
@@ -577,7 +570,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621586851767</updated>
     </task>
-    <option name="localTasksCounter" value="206" />
+    <task id="LOCAL-00206" summary="sonar-properties to root">
+      <created>1621587183526</created>
+      <option name="number" value="00206" />
+      <option name="presentableId" value="LOCAL-00206" />
+      <option name="project" value="LOCAL" />
+      <updated>1621587183526</updated>
+    </task>
+    <option name="localTasksCounter" value="207" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -600,7 +600,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="initial commit fixing chat UI with new buttons" />
     <MESSAGE value="fixing chat grid with buttons" />
     <MESSAGE value="openDeleteDialog method empty" />
     <MESSAGE value="UI dialog delete comunication implemented" />
@@ -625,7 +624,8 @@
     <MESSAGE value="comunication test implemented" />
     <MESSAGE value="email test implemented" />
     <MESSAGE value="master included in sonar.yml" />
-    <option name="LAST_COMMIT_MESSAGE" value="master included in sonar.yml" />
+    <MESSAGE value="sonar-properties to root" />
+    <option name="LAST_COMMIT_MESSAGE" value="sonar-properties to root" />
   </component>
   <component name="WindowStateProjectService">
     <state x="509" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619029708212">
