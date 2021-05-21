@@ -2,7 +2,6 @@ const petController = {};
 const db = require('../database');
 const fs = require('fs');
 const path = require('path');
-const env = require('../enviroment');
 const rimraf = require("rimraf");
 
 petController.findById = (req, res) => {
@@ -59,15 +58,19 @@ petController.delete = (req, res) => {
 petController.uploadPhoto = (req, res) => {
     const id = req.body.id;
     const name = req.body.name;
-    if(!fs.existsSync('./uploads/' + id)){
-        fs.mkdir('./uploads/' + id,function(err){
-            if (err) return console.error(err);
-            console.log("Directory created successfully!");
-        });
+    const reqPath = __basedir + '/uploads';
+    const resolvedPath = path.resolve(reqPath);
+    if (resolvedPath.startsWith(__basedir)) {
+        if(!fs.existsSync('./uploads/' + id)){
+            fs.mkdir('./uploads/' + id,function(err){
+                if (err) return console.error(err);
+                console.log("Directory created successfully!");
+            });
+        }
+        deleteFilesFromDirectory('./uploads/' + id);
+        copyFileAndDeleteFromOrigin("./uploads",'./uploads/' + id, name);
+        res.json({ message: 'Imagen guardada' });
     }
-    deleteFilesFromDirectory('./uploads/' + id);
-    copyFileAndDeleteFromOrigin("./uploads",'./uploads/' + id, name);
-    res.json({ message: 'Imagen guardada' });
 }
 
 function copyFileAndDeleteFromOrigin(origin, destination, name){

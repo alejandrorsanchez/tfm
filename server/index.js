@@ -5,6 +5,8 @@ const app = express();
 const port = 3000;
 const env = require('./enviroment');
 
+global.__basedir = __dirname;
+
 app.use(morgan('dev'));
 app.use(express.json());
 app.use(cors({origin: env.URL_CORS}));

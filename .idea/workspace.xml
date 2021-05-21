@@ -11,38 +11,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/server/.nyc_output/9b6fe6f5-6949-4b2f-902a-18d45d8d1b6a.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.nyc_output/c1b2c1c8-220b-46b7-ad17-2d7b7bf49775.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.nyc_output/processinfo/9b6fe6f5-6949-4b2f-902a-18d45d8d1b6a.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.nyc_output/processinfo/c1b2c1c8-220b-46b7-ad17-2d7b7bf49775.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/uploads/favicon.ico" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.nyc_output/processinfo/index.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/.nyc_output/processinfo/index.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/block-navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/block-navigation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/add.controller.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/add.controller.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/comunication.controller.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/comunication.controller.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/email.controller.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/email.controller.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/pet.controller.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/pet.controller.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/user.controller.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/user.controller.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/prettify.css" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/prettify.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/prettify.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/prettify.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/routes/add.routes.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/routes/add.routes.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/routes/comunication.routes.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/routes/comunication.routes.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/routes/email.routes.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/routes/email.routes.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/routes/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/routes/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/routes/pet.routes.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/routes/pet.routes.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/routes/user.routes.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/routes/user.routes.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/sorter.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/sorter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/test/addTest.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/test/addTest.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/test/comunicationTest.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/test/comunicationTest.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/test/emailTest.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/test/emailTest.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/test/petTest.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/test/petTest.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/test/userTest.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/test/userTest.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov.info" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/pet.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/pet.routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/pet.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/pet.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/uploads/326/pexels-artem-beliaikin-1485637.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -260,14 +233,7 @@
       <workItem from="1621236157221" duration="6484000" />
       <workItem from="1621410126143" duration="13029000" />
       <workItem from="1621494960450" duration="8912000" />
-      <workItem from="1621586522515" duration="2649000" />
-    </task>
-    <task id="LOCAL-00161" summary="POST Comunication">
-      <created>1620980454880</created>
-      <option name="number" value="00161" />
-      <option name="presentableId" value="LOCAL-00161" />
-      <option name="project" value="LOCAL" />
-      <updated>1620980454880</updated>
+      <workItem from="1621586522515" duration="4528000" />
     </task>
     <task id="LOCAL-00162" summary="endpoint PUT Comunication called from client">
       <created>1620980891477</created>
@@ -605,7 +571,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621588879511</updated>
     </task>
-    <option name="localTasksCounter" value="210" />
+    <task id="LOCAL-00210" summary="limit uploads SONAR 2">
+      <created>1621589231919</created>
+      <option name="number" value="00210" />
+      <option name="presentableId" value="LOCAL-00210" />
+      <option name="project" value="LOCAL" />
+      <updated>1621589231919</updated>
+    </task>
+    <option name="localTasksCounter" value="211" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -628,7 +601,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="delete comunication implemented" />
     <MESSAGE value="fixing" />
     <MESSAGE value="UI Chat finished" />
     <MESSAGE value="notification attr added to Comunication" />
@@ -653,7 +625,8 @@
     <MESSAGE value="sonar-properties fixed and in root" />
     <MESSAGE value="code smells &amp; some security problems" />
     <MESSAGE value="limit uploads SONAR" />
-    <option name="LAST_COMMIT_MESSAGE" value="limit uploads SONAR" />
+    <MESSAGE value="limit uploads SONAR 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="limit uploads SONAR 2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="509" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619029708212">
@@ -676,22 +649,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1621505102496" />
-    <state width="1515" height="210" key="GridCell.Tab.0.bottom" timestamp="1621503664971">
+    <state width="1515" height="316" key="GridCell.Tab.0.bottom" timestamp="1621589053149">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1621503664971" />
-    <state width="1515" height="210" key="GridCell.Tab.0.center" timestamp="1621503664971">
+    <state width="1515" height="316" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1621589053149" />
+    <state width="1515" height="316" key="GridCell.Tab.0.center" timestamp="1621589053149">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1621503664971" />
-    <state width="1515" height="210" key="GridCell.Tab.0.left" timestamp="1621503664971">
+    <state width="1515" height="316" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1621589053149" />
+    <state width="1515" height="316" key="GridCell.Tab.0.left" timestamp="1621589053149">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1621503664971" />
-    <state width="1515" height="210" key="GridCell.Tab.0.right" timestamp="1621503664971">
+    <state width="1515" height="316" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1621589053149" />
+    <state width="1515" height="316" key="GridCell.Tab.0.right" timestamp="1621589053149">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1621503664971" />
+    <state width="1515" height="316" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1621589053149" />
     <state width="1515" height="261" key="GridCell.Tab.1.bottom" timestamp="1619438632838">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
