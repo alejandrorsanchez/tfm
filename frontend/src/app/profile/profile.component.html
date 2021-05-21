@@ -1,4 +1,4 @@
-<button class="uk-align-right" (click)="openDeleteUserDialog()" color="warn" mat-raised-button>Borrar Cuenta</button>
+<button class="uk-button uk-button-danger uk-align-right" (click)="openDeleteUserDialog()">Borrar Cuenta</button>
 <div id="profileContainer">
   <div class="uk-child-width-expand@s uk-text-center" uk-grid>
     <div>
@@ -27,9 +27,9 @@
       <mat-form-field class="full-width">
         <mat-label>Descripción</mat-label>
         <textarea [(ngModel)]="this.user.description" id="description" matInput type="text"></textarea>
-      </mat-form-field><br><br><br>
-      <button (click)="cancelUpdate()" mat-dialog-close mat-raised-button>Cancelar</button>
-      <button (click)="updateUser()" [disabled]=invalid() color="primary" mat-raised-button>Guardar</button>
+      </mat-form-field><br><br>
+      <button class="uk-button uk-button-default" (click)="cancelUpdate()">Cancelar</button>
+      <button class="uk-button uk-button-primary" (click)="updateUser()" [disabled]=invalid()>Guardar</button>
     </div>
     <div>
       <h1>Mis mascotas</h1>
