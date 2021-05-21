@@ -24,14 +24,14 @@ comunicationController.findByUserId = (req, res) => {
 comunicationController.save = (req, res) => {
     const comunication = req.body;
     const querySelect = 'SELECT * FROM comunications WHERE type = ? and userId1 IN (?, ?) and userId2 IN (?, ?)';
-    db.query(querySelect, [comunication.type, comunication.userId1, comunication.userId2, comunication.userId1, comunication.userId2], function (err, rows, fields) {
+    db.query(querySelect, [comunication.type, comunication.userId1, comunication.userId2, comunication.userId1, comunication.userId2], function (err, row) {
         if (err) throw err;
-        if(rows.length > 0){
+        if(row.length > 0){
             res.status(409).json({message: 'Ya existe un chat entre vosotros'});
         }else{
             const queryInsert = 'INSERT INTO comunications SET ?';
-            db.query(queryInsert, comunication, function (err, rows, fields) {
-                if (err) throw err;
+            db.query(queryInsert, comunication, function (error, rows) {
+                if (error) throw error;
                 res.status(200).json({id: rows['insertId']});
             });
         }

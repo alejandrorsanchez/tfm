@@ -12,7 +12,12 @@ const storage = multer.diskStorage({
         cb(null, file.originalname)
     }
 })
-const upload = multer({storage});
+const upload = multer({
+    storage,
+    limits: {
+        fileSize: 10000000
+    }
+});
 
 router.get('/:id', ensureAuthenticated, petController.findById);
 router.get('/search/:userId', ensureAuthenticated, petController.findByUserId);

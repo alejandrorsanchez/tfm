@@ -85,8 +85,8 @@ userController.delete = (req, res) => {
         if (err) throw err;
         deletePetsImages(rows);
         const queryDeletePets = 'DELETE FROM pets WHERE user_id = ?';
-        db.query(queryDeletePets, [id], function (err, rows) {
-            if (err) throw err;
+        db.query(queryDeletePets, [id], function (error) {
+            if (error) throw error;
         });
     });
     const queryDeleteUserAdds = 'DELETE FROM adds WHERE userId = ?';

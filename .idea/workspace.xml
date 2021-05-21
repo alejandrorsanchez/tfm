@@ -10,7 +10,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="" />
+    <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/add.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/add.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/comunication.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/comunication.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/email.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/email.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/user.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/user.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/pet.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/pet.routes.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,19 +54,19 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm" />
+      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\shared\models" />
+      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\assets" />
+      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\comunications" />
+      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\shared\services" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\server\test" />
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\server\controllers" />
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\server\routes" />
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\shared\models" />
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\shared" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\shared\models" />
-      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\assets" />
-      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\comunications" />
-      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\shared\services" />
-      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\shared\security" />
     </key>
   </component>
   <component name="RunManager" selected="Mocha.Testing Add API (2)">
@@ -232,14 +239,7 @@
       <workItem from="1621236157221" duration="6484000" />
       <workItem from="1621410126143" duration="13029000" />
       <workItem from="1621494960450" duration="8912000" />
-      <workItem from="1621586522515" duration="666000" />
-    </task>
-    <task id="LOCAL-00158" summary="sendMessage() without implementation">
-      <created>1620918013562</created>
-      <option name="number" value="00158" />
-      <option name="presentableId" value="LOCAL-00158" />
-      <option name="project" value="LOCAL" />
-      <updated>1620918013562</updated>
+      <workItem from="1621586522515" duration="2029000" />
     </task>
     <task id="LOCAL-00159" summary="sendMessage() with call to service">
       <created>1620920426813</created>
@@ -577,7 +577,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621587183526</updated>
     </task>
-    <option name="localTasksCounter" value="207" />
+    <task id="LOCAL-00207" summary="sonar-properties fixed and in root">
+      <created>1621587313247</created>
+      <option name="number" value="00207" />
+      <option name="presentableId" value="LOCAL-00207" />
+      <option name="project" value="LOCAL" />
+      <updated>1621587313247</updated>
+    </task>
+    <option name="localTasksCounter" value="208" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -600,7 +607,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fixing chat grid with buttons" />
     <MESSAGE value="openDeleteDialog method empty" />
     <MESSAGE value="UI dialog delete comunication implemented" />
     <MESSAGE value="delete comunication implemented" />
@@ -625,7 +631,8 @@
     <MESSAGE value="email test implemented" />
     <MESSAGE value="master included in sonar.yml" />
     <MESSAGE value="sonar-properties to root" />
-    <option name="LAST_COMMIT_MESSAGE" value="sonar-properties to root" />
+    <MESSAGE value="sonar-properties fixed and in root" />
+    <option name="LAST_COMMIT_MESSAGE" value="sonar-properties fixed and in root" />
   </component>
   <component name="WindowStateProjectService">
     <state x="509" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619029708212">

@@ -4,6 +4,9 @@ const nodemailer = require('nodemailer');
 emailController.send = (req, res) => {
     const email = req.body;
     const transporter = nodemailer.createTransport({
+        secure: true,
+        requireTLS: true,
+        secured: true,
         service: 'Gmail',
         auth: {
             user: 'aleeexr7@gmail.com',
