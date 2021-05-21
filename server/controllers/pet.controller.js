@@ -61,14 +61,14 @@ petController.uploadPhoto = (req, res) => {
     const reqPath = __basedir + '/uploads';
     const resolvedPath = path.resolve(reqPath);
     if (resolvedPath.startsWith(__basedir)) {
-        if(!fs.existsSync('./uploads/' + id)){
-            fs.mkdir('./uploads/' + id,function(err){
+        if(!fs.existsSync(reqPath + '/' + id)){
+            fs.mkdir(reqPath + '/' + id,function(err){
                 if (err) return console.error(err);
                 console.log("Directory created successfully!");
             });
         }
-        deleteFilesFromDirectory('./uploads/' + id);
-        copyFileAndDeleteFromOrigin("./uploads",'./uploads/' + id, name);
+        deleteFilesFromDirectory(reqPath + '/' + id);
+        copyFileAndDeleteFromOrigin(reqPath,reqPath + '/' + id, name);
         res.json({ message: 'Imagen guardada' });
     }
 }

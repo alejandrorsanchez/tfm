@@ -11,11 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/server/uploads/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/controllers/pet.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/pet.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/uploads/326/pexels-artem-beliaikin-1485637.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -233,14 +229,7 @@
       <workItem from="1621236157221" duration="6484000" />
       <workItem from="1621410126143" duration="13029000" />
       <workItem from="1621494960450" duration="8912000" />
-      <workItem from="1621586522515" duration="4528000" />
-    </task>
-    <task id="LOCAL-00162" summary="endpoint PUT Comunication called from client">
-      <created>1620980891477</created>
-      <option name="number" value="00162" />
-      <option name="presentableId" value="LOCAL-00162" />
-      <option name="project" value="LOCAL" />
-      <updated>1620980891478</updated>
+      <workItem from="1621586522515" duration="5006000" />
     </task>
     <task id="LOCAL-00163" summary="PUT Comunication implemented">
       <created>1620981839662</created>
@@ -578,7 +567,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621589231919</updated>
     </task>
-    <option name="localTasksCounter" value="211" />
+    <task id="LOCAL-00211" summary="fixing vulnerability path">
+      <created>1621591346745</created>
+      <option name="number" value="00211" />
+      <option name="presentableId" value="LOCAL-00211" />
+      <option name="project" value="LOCAL" />
+      <updated>1621591346745</updated>
+    </task>
+    <option name="localTasksCounter" value="212" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -601,7 +597,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fixing" />
     <MESSAGE value="UI Chat finished" />
     <MESSAGE value="notification attr added to Comunication" />
     <MESSAGE value="notifications sent to DB with updates" />
@@ -626,7 +621,8 @@
     <MESSAGE value="code smells &amp; some security problems" />
     <MESSAGE value="limit uploads SONAR" />
     <MESSAGE value="limit uploads SONAR 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="limit uploads SONAR 2" />
+    <MESSAGE value="fixing vulnerability path" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing vulnerability path" />
   </component>
   <component name="WindowStateProjectService">
     <state x="509" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619029708212">
