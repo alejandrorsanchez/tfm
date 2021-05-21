@@ -6,22 +6,11 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
     </expand>
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,7 +19,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="develop" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -243,13 +232,7 @@
       <workItem from="1621236157221" duration="6484000" />
       <workItem from="1621410126143" duration="13029000" />
       <workItem from="1621494960450" duration="8912000" />
-    </task>
-    <task id="LOCAL-00156" summary="endpoint implemented in controller">
-      <created>1620917189777</created>
-      <option name="number" value="00156" />
-      <option name="presentableId" value="LOCAL-00156" />
-      <option name="project" value="LOCAL" />
-      <updated>1620917189777</updated>
+      <workItem from="1621586522515" duration="359000" />
     </task>
     <task id="LOCAL-00157" summary="endpoint implemented in controller">
       <created>1620917317185</created>
@@ -587,7 +570,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621503703656</updated>
     </task>
-    <option name="localTasksCounter" value="205" />
+    <task id="LOCAL-00205" summary="master included in sonar.yml">
+      <created>1621586851767</created>
+      <option name="number" value="00205" />
+      <option name="presentableId" value="LOCAL-00205" />
+      <option name="project" value="LOCAL" />
+      <updated>1621586851767</updated>
+    </task>
+    <option name="localTasksCounter" value="206" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -610,7 +600,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="query for my interactions fixed" />
     <MESSAGE value="initial commit fixing chat UI with new buttons" />
     <MESSAGE value="fixing chat grid with buttons" />
     <MESSAGE value="openDeleteDialog method empty" />
@@ -635,7 +624,8 @@
     <MESSAGE value="initial commit comunication test" />
     <MESSAGE value="comunication test implemented" />
     <MESSAGE value="email test implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="email test implemented" />
+    <MESSAGE value="master included in sonar.yml" />
+    <option name="LAST_COMMIT_MESSAGE" value="master included in sonar.yml" />
   </component>
   <component name="WindowStateProjectService">
     <state x="509" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619029708212">
