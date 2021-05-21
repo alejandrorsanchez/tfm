@@ -20,37 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/server/.nyc_output/8df81de8-ae6c-41d0-8e15-364383346abc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.nyc_output/ee5c99f6-ad5c-41ae-9c95-5f8ebbca1ed6.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.nyc_output/processinfo/8df81de8-ae6c-41d0-8e15-364383346abc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.nyc_output/processinfo/ee5c99f6-ad5c-41ae-9c95-5f8ebbca1ed6.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/add.controller.js.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/comunication.controller.js.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/email.controller.js.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/pet.controller.js.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/user.controller.js.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/coverage/lcov-report/routes/comunication.routes.js.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/coverage/lcov-report/routes/email.routes.js.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/coverage/lcov-report/test/comunicationTest.js.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/coverage/lcov-report/test/emailTest.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.nyc_output/939b6d15-7acf-4b23-9e18-7aa648b4705e.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.nyc_output/95aa5eef-209c-414c-824d-4b0398f66cb7.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.nyc_output/processinfo/939b6d15-7acf-4b23-9e18-7aa648b4705e.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.nyc_output/processinfo/95aa5eef-209c-414c-824d-4b0398f66cb7.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.nyc_output/processinfo/index.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/.nyc_output/processinfo/index.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/routes/add.routes.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/routes/add.routes.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/routes/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/routes/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/routes/pet.routes.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/routes/pet.routes.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/routes/user.routes.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/routes/user.routes.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/test/addTest.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/test/addTest.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/test/petTest.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/test/petTest.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/test/userTest.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/test/userTest.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov.info" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/test/emailTest.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/test/emailTest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +30,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="dfa9669c0b7a23b5b3e96f3597cdbde6167eb036" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -181,11 +151,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Mocha.Testing User API" />
+        <item itemvalue="Mocha.Testing Pet API" />
         <item itemvalue="Mocha.Testing Add API (2)" />
         <item itemvalue="Mocha.Testing Add API (1)" />
         <item itemvalue="Mocha.Testing Add API" />
-        <item itemvalue="Mocha.Testing Pet API" />
-        <item itemvalue="Mocha.Testing User API" />
       </list>
     </recent_temporary>
   </component>
