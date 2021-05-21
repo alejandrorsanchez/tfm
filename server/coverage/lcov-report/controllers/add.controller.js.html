@@ -25,7 +25,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/53</span>
+                <span class='fraction'>0/55</span>
             </div>
         
             
@@ -46,7 +46,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/46</span>
+                <span class='fraction'>0/47</span>
             </div>
         
             
@@ -169,7 +169,7 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -205,14 +205,14 @@ const db = <span class="cstat-no" title="statement not covered" >require('../dat
 <span class="cstat-no" title="statement not covered" >addController.saveAdoption = <span class="fstat-no" title="function not covered" >(r</span>eq, res) =&gt; {</span>
     const add = <span class="cstat-no" title="statement not covered" >req.body;</span>
     const querySelect = <span class="cstat-no" title="statement not covered" >'SELECT id FROM adds WHERE userId = ? and petId = ?';</span>
-<span class="cstat-no" title="statement not covered" >    db.query(querySelect, [add.userId, add.petId], <span class="fstat-no" title="function not covered" >fu</span>nction (err, rows, fields) {</span>
+<span class="cstat-no" title="statement not covered" >    db.query(querySelect, [add.userId, add.petId], <span class="fstat-no" title="function not covered" >fu</span>nction (err, row) {</span>
 <span class="cstat-no" title="statement not covered" >        if (err) <span class="cstat-no" title="statement not covered" >throw err;</span></span>
-<span class="cstat-no" title="statement not covered" >        if(rows.length &gt; 0){</span>
+<span class="cstat-no" title="statement not covered" >        if(row.length &gt; 0){</span>
 <span class="cstat-no" title="statement not covered" >            res.status(409).json({message: 'Ya has publicado este anuncio'});</span>
         }else{
             const query = <span class="cstat-no" title="statement not covered" >'INSERT INTO adds SET ?';</span>
-<span class="cstat-no" title="statement not covered" >            db.query(query, add, <span class="fstat-no" title="function not covered" >fu</span>nction (err, rows, fields) {</span>
-<span class="cstat-no" title="statement not covered" >                if (err) <span class="cstat-no" title="statement not covered" >throw err;</span></span>
+<span class="cstat-no" title="statement not covered" >            db.query(query, add, <span class="fstat-no" title="function not covered" >fu</span>nction (error, rows) {</span>
+<span class="cstat-no" title="statement not covered" >                if (error) <span class="cstat-no" title="statement not covered" >throw error;</span></span>
 <span class="cstat-no" title="statement not covered" >                res.status(200).json({message: 'Anuncio publicado correctamente!', id: rows['insertId']});</span>
             })
         }
@@ -221,14 +221,14 @@ const db = <span class="cstat-no" title="statement not covered" >require('../dat
 <span class="cstat-no" title="statement not covered" >addController.saveVolunteer = <span class="fstat-no" title="function not covered" >(r</span>eq, res) =&gt; {</span>
     const add = <span class="cstat-no" title="statement not covered" >req.body;</span>
     const querySelect = <span class="cstat-no" title="statement not covered" >'SELECT id FROM adds WHERE userId = ? and petId is NULL';</span>
-<span class="cstat-no" title="statement not covered" >    db.query(querySelect, [add.userId], <span class="fstat-no" title="function not covered" >fu</span>nction (err, rows, fields) {</span>
+<span class="cstat-no" title="statement not covered" >    db.query(querySelect, [add.userId], <span class="fstat-no" title="function not covered" >fu</span>nction (err, row) {</span>
 <span class="cstat-no" title="statement not covered" >        if (err) <span class="cstat-no" title="statement not covered" >throw err;</span></span>
-<span class="cstat-no" title="statement not covered" >        if(rows.length &gt; 0){</span>
+<span class="cstat-no" title="statement not covered" >        if(row.length &gt; 0){</span>
 <span class="cstat-no" title="statement not covered" >            res.status(409).json({message: 'Ya has publicado este anuncio'});</span>
         }else{
             const queryInsert = <span class="cstat-no" title="statement not covered" >'INSERT INTO adds SET ?';</span>
-<span class="cstat-no" title="statement not covered" >            db.query(queryInsert, add, <span class="fstat-no" title="function not covered" >fu</span>nction (err, rows, fields) {</span>
-<span class="cstat-no" title="statement not covered" >                if (err) <span class="cstat-no" title="statement not covered" >throw err;</span></span>
+<span class="cstat-no" title="statement not covered" >            db.query(queryInsert, add, <span class="fstat-no" title="function not covered" >fu</span>nction (error, rows) {</span>
+<span class="cstat-no" title="statement not covered" >                if (error) <span class="cstat-no" title="statement not covered" >throw error;</span></span>
 <span class="cstat-no" title="statement not covered" >                res.status(200).json({message: 'Anuncio publicado correctamente!', id: rows['insertId']});</span>
             })
         }
@@ -239,9 +239,9 @@ const db = <span class="cstat-no" title="statement not covered" >require('../dat
     const type = <span class="cstat-no" title="statement not covered" >req.query.type;</span>
     const userId = <span class="cstat-no" title="statement not covered" >req.query.userId;</span>
     let query;
-<span class="cstat-no" title="statement not covered" >    (type === '1') ? query = 'SELECT * FROM adds WHERE userId != ? and petId is not null'</span>
-                 : query = 'SELECT * FROM adds WHERE userId != ? and petId is NULL';
-<span class="cstat-no" title="statement not covered" >    db.query(query, [userId], <span class="fstat-no" title="function not covered" >fu</span>nction (err, rows, fields) {</span>
+<span class="cstat-no" title="statement not covered" >    if(type === '1') <span class="cstat-no" title="statement not covered" >query = 'SELECT * FROM adds WHERE userId != ? and petId is not null';</span></span>
+    else <span class="cstat-no" title="statement not covered" >query = 'SELECT * FROM adds WHERE userId != ? and petId is NULL';</span>
+<span class="cstat-no" title="statement not covered" >    db.query(query, [userId], <span class="fstat-no" title="function not covered" >fu</span>nction (err, rows) {</span>
 <span class="cstat-no" title="statement not covered" >        if (err) <span class="cstat-no" title="statement not covered" >throw err;</span></span>
 <span class="cstat-no" title="statement not covered" >        if(rows.length === 0){</span>
 <span class="cstat-no" title="statement not covered" >            res.status(404).json({message: 'No hay anuncios disponibles'});</span>
@@ -254,7 +254,7 @@ const db = <span class="cstat-no" title="statement not covered" >require('../dat
 <span class="cstat-no" title="statement not covered" >addController.findByUserId = <span class="fstat-no" title="function not covered" >(r</span>eq, res) =&gt; {</span>
     const userId = <span class="cstat-no" title="statement not covered" >req.params.userId;</span>
     const query = <span class="cstat-no" title="statement not covered" >'SELECT * FROM adds WHERE userId = ?';</span>
-<span class="cstat-no" title="statement not covered" >    db.query(query, [userId], <span class="fstat-no" title="function not covered" >fu</span>nction (err, rows, fields) {</span>
+<span class="cstat-no" title="statement not covered" >    db.query(query, [userId], <span class="fstat-no" title="function not covered" >fu</span>nction (err, rows) {</span>
 <span class="cstat-no" title="statement not covered" >        if (err) <span class="cstat-no" title="statement not covered" >throw err;</span></span>
 <span class="cstat-no" title="statement not covered" >        res.status(200).json(rows);</span>
     });
@@ -263,7 +263,7 @@ const db = <span class="cstat-no" title="statement not covered" >require('../dat
 <span class="cstat-no" title="statement not covered" >addController.delete = <span class="fstat-no" title="function not covered" >(r</span>eq, res) =&gt; {</span>
     const id = <span class="cstat-no" title="statement not covered" >req.params.id;</span>
     const query = <span class="cstat-no" title="statement not covered" >'DELETE FROM adds WHERE id = ?';</span>
-<span class="cstat-no" title="statement not covered" >    db.query(query, [id], <span class="fstat-no" title="function not covered" >fu</span>nction (err, row, fields) {</span>
+<span class="cstat-no" title="statement not covered" >    db.query(query, [id], <span class="fstat-no" title="function not covered" >fu</span>nction (err, row) {</span>
 <span class="cstat-no" title="statement not covered" >        if (err) <span class="cstat-no" title="statement not covered" >throw err;</span></span>
 <span class="cstat-no" title="statement not covered" >        res.status(200).send();</span>
     });
@@ -277,7 +277,7 @@ const db = <span class="cstat-no" title="statement not covered" >require('../dat
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Thu May 20 2021 12:10:18 GMT+0200 (hora de verano de Europa central)
+                at Fri May 21 2021 11:24:05 GMT+0200 (hora de verano de Europa central)
             </div>
         </div>
         <script src="../prettify.js"></script>

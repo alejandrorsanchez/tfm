@@ -11,11 +11,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/server/.nyc_output/9b6fe6f5-6949-4b2f-902a-18d45d8d1b6a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/.nyc_output/c1b2c1c8-220b-46b7-ad17-2d7b7bf49775.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/.nyc_output/processinfo/9b6fe6f5-6949-4b2f-902a-18d45d8d1b6a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/.nyc_output/processinfo/c1b2c1c8-220b-46b7-ad17-2d7b7bf49775.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/add.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/add.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/comunication.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/comunication.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/email.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/email.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/user.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/user.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.nyc_output/processinfo/index.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/.nyc_output/processinfo/index.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/block-navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/block-navigation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/add.controller.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/add.controller.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/comunication.controller.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/comunication.controller.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/email.controller.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/email.controller.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/pet.controller.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/pet.controller.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/user.controller.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/user.controller.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/prettify.css" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/prettify.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/prettify.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/prettify.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/routes/add.routes.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/routes/add.routes.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/routes/comunication.routes.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/routes/comunication.routes.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/routes/email.routes.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/routes/email.routes.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/routes/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/routes/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/routes/pet.routes.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/routes/pet.routes.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/routes/user.routes.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/routes/user.routes.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/sorter.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/sorter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/test/addTest.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/test/addTest.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/test/comunicationTest.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/test/comunicationTest.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/test/emailTest.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/test/emailTest.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/test/petTest.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/test/petTest.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/test/userTest.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/test/userTest.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov.info" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/routes/pet.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/pet.routes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +95,17 @@
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\shared" />
     </key>
   </component>
-  <component name="RunManager" selected="Mocha.Testing Add API (2)">
+  <component name="RunManager" selected="npm.test">
+    <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/server/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="Testing Add API (1)" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -95,21 +131,6 @@
       <extra-mocha-options />
       <test-kind>SUITE</test-kind>
       <test-file>$PROJECT_DIR$/server/test/emailTest.js</test-file>
-      <test-names>
-        <name value="Testing Add API" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="Testing Add API" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <mocha-package>$PROJECT_DIR$/server/node_modules/mocha</mocha-package>
-      <working-directory>$PROJECT_DIR$/server</working-directory>
-      <pass-parent-env>true</pass-parent-env>
-      <ui>bdd</ui>
-      <extra-mocha-options />
-      <test-kind>SUITE</test-kind>
-      <test-file>$PROJECT_DIR$/server/test/addTest.js</test-file>
       <test-names>
         <name value="Testing Add API" />
       </test-names>
@@ -147,11 +168,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.test" />
         <item itemvalue="Mocha.Testing User API" />
         <item itemvalue="Mocha.Testing Pet API" />
         <item itemvalue="Mocha.Testing Add API (2)" />
         <item itemvalue="Mocha.Testing Add API (1)" />
-        <item itemvalue="Mocha.Testing Add API" />
       </list>
     </recent_temporary>
   </component>
@@ -239,21 +260,7 @@
       <workItem from="1621236157221" duration="6484000" />
       <workItem from="1621410126143" duration="13029000" />
       <workItem from="1621494960450" duration="8912000" />
-      <workItem from="1621586522515" duration="2029000" />
-    </task>
-    <task id="LOCAL-00159" summary="sendMessage() with call to service">
-      <created>1620920426813</created>
-      <option name="number" value="00159" />
-      <option name="presentableId" value="LOCAL-00159" />
-      <option name="project" value="LOCAL" />
-      <updated>1620920426813</updated>
-    </task>
-    <task id="LOCAL-00160" summary="sendMessage() with call to service not working">
-      <created>1620921224275</created>
-      <option name="number" value="00160" />
-      <option name="presentableId" value="LOCAL-00160" />
-      <option name="project" value="LOCAL" />
-      <updated>1620921224275</updated>
+      <workItem from="1621586522515" duration="2649000" />
     </task>
     <task id="LOCAL-00161" summary="POST Comunication">
       <created>1620980454880</created>
@@ -584,7 +591,21 @@
       <option name="project" value="LOCAL" />
       <updated>1621587313247</updated>
     </task>
-    <option name="localTasksCounter" value="208" />
+    <task id="LOCAL-00208" summary="code smells &amp; some security problems">
+      <created>1621588672184</created>
+      <option name="number" value="00208" />
+      <option name="presentableId" value="LOCAL-00208" />
+      <option name="project" value="LOCAL" />
+      <updated>1621588672184</updated>
+    </task>
+    <task id="LOCAL-00209" summary="limit uploads SONAR">
+      <created>1621588879511</created>
+      <option name="number" value="00209" />
+      <option name="presentableId" value="LOCAL-00209" />
+      <option name="project" value="LOCAL" />
+      <updated>1621588879511</updated>
+    </task>
+    <option name="localTasksCounter" value="210" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -607,8 +628,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="openDeleteDialog method empty" />
-    <MESSAGE value="UI dialog delete comunication implemented" />
     <MESSAGE value="delete comunication implemented" />
     <MESSAGE value="fixing" />
     <MESSAGE value="UI Chat finished" />
@@ -632,7 +651,9 @@
     <MESSAGE value="master included in sonar.yml" />
     <MESSAGE value="sonar-properties to root" />
     <MESSAGE value="sonar-properties fixed and in root" />
-    <option name="LAST_COMMIT_MESSAGE" value="sonar-properties fixed and in root" />
+    <MESSAGE value="code smells &amp; some security problems" />
+    <MESSAGE value="limit uploads SONAR" />
+    <option name="LAST_COMMIT_MESSAGE" value="limit uploads SONAR" />
   </component>
   <component name="WindowStateProjectService">
     <state x="509" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619029708212">

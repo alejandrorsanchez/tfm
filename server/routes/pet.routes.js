@@ -5,6 +5,9 @@ const petController = require('../controllers/pet.controller');
 const {ensureAuthenticated} = require("../middleware/authMiddelware");
 
 const storage = multer.diskStorage({
+    limits:{
+        fileSize: 8000000
+    },
     destination: function (req, file, cb) {
         cb(null, './uploads/')
     },
