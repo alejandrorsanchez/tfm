@@ -124,6 +124,10 @@ export class ComunicationsComponent implements OnInit {
     return message.split(':')[0] === this.myUser.username;
   }
 
+  isComunicationForAdoption(): boolean{
+    return this.type == 1;
+  }
+
   redirectToMyInteractions(): void {
     this.router.navigateByUrl('/home/interactions');
   }

@@ -23,7 +23,13 @@
   padding-left: 0px;
 }
 .uk-button-danger{
-  margin-top: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.uk-button-success{
+  background-color: green;
+  color: white;
+  height: 80px;
 }
 .myMessage{
   float: right;
