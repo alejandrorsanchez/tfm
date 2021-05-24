@@ -8,7 +8,7 @@ comunicationController.findByUserId1AndUserId2AndType = (req, res) => {
     const query = 'SELECT * FROM comunications WHERE type = ? and userId1 IN (?, ?) and userId2 IN (?, ?)';
     db.query(query, [type, userId1, userId2, userId1, userId2], function (err, row, fields) {
         if (err) throw err;
-        (row[0]) ? res.status(200).json(row[0]) : res.status(404).json({message: 'Chat no encontrado'});
+        res.status(200).json(row[0]);
     });
 }
 

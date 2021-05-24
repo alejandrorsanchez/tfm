@@ -112,6 +112,10 @@ export class ComunicationsComponent implements OnInit {
     });
   }
 
+  openDeleteComunicationAndAddDialog(): void {
+    //TODO
+  }
+
   isFirstMessage(): boolean {
     return this.messagesList.length === 1;
   }

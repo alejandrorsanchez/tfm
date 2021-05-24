@@ -12,8 +12,8 @@
   <component name="ChangeListManager">
     <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/comunication.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/comunication.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/test/comunicationTest.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/test/comunicationTest.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -234,21 +234,7 @@
       <workItem from="1621586522515" duration="6027000" />
       <workItem from="1621594756501" duration="450000" />
       <workItem from="1621853119476" duration="17000" />
-      <workItem from="1621879937547" duration="1232000" />
-    </task>
-    <task id="LOCAL-00167" summary="service called from client">
-      <created>1620986256864</created>
-      <option name="number" value="00167" />
-      <option name="presentableId" value="LOCAL-00167" />
-      <option name="project" value="LOCAL" />
-      <updated>1620986256864</updated>
-    </task>
-    <task id="LOCAL-00168" summary="endpoint implemented">
-      <created>1620986679068</created>
-      <option name="number" value="00168" />
-      <option name="presentableId" value="LOCAL-00168" />
-      <option name="project" value="LOCAL" />
-      <updated>1620986679068</updated>
+      <workItem from="1621879937547" duration="2609000" />
     </task>
     <task id="LOCAL-00169" summary="my interactions received">
       <created>1620986985091</created>
@@ -579,7 +565,21 @@
       <option name="project" value="LOCAL" />
       <updated>1621880579443</updated>
     </task>
-    <option name="localTasksCounter" value="216" />
+    <task id="LOCAL-00216" summary="new button for Agreement">
+      <created>1621881403693</created>
+      <option name="number" value="00216" />
+      <option name="presentableId" value="LOCAL-00216" />
+      <option name="project" value="LOCAL" />
+      <updated>1621881403693</updated>
+    </task>
+    <task id="LOCAL-00217" summary="calling new delete comunication and add dialog">
+      <created>1621882072993</created>
+      <option name="number" value="00217" />
+      <option name="presentableId" value="LOCAL-00217" />
+      <option name="project" value="LOCAL" />
+      <updated>1621882072993</updated>
+    </task>
+    <option name="localTasksCounter" value="218" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -602,8 +602,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="show new message css in my interactions" />
-    <MESSAGE value="badge for notifications implemented in home" />
     <MESSAGE value="email attr added to User" />
     <MESSAGE value="email included in user verification before saving" />
     <MESSAGE value="angular service called with Email model from component" />
@@ -627,7 +625,9 @@
     <MESSAGE value="fixing vulnerability path 2" />
     <MESSAGE value="fixing vulnerability path 3" />
     <MESSAGE value="uikit location icon in chat" />
-    <option name="LAST_COMMIT_MESSAGE" value="uikit location icon in chat" />
+    <MESSAGE value="new button for Agreement" />
+    <MESSAGE value="calling new delete comunication and add dialog" />
+    <option name="LAST_COMMIT_MESSAGE" value="calling new delete comunication and add dialog" />
   </component>
   <component name="WindowStateProjectService">
     <state x="509" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619029708212">

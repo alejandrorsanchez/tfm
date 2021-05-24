@@ -139,7 +139,8 @@ describe('Testing Comunication API', function(){
             .set('Authorization', 'Bearer '  + token)
             .end(function (err, res){
                 expect(res.header['authorization']).not.be.null;
-                expect(res).to.have.status(404);
+                expect(res).to.have.status(200);
+                expect(res.body).to.have.lengthOf(0);
                 done();
             });
     });
