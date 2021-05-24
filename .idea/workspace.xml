@@ -11,7 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/server/controllers/pet.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/pet.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -229,21 +229,10 @@
       <workItem from="1621236157221" duration="6484000" />
       <workItem from="1621410126143" duration="13029000" />
       <workItem from="1621494960450" duration="8912000" />
-      <workItem from="1621586522515" duration="5321000" />
-    </task>
-    <task id="LOCAL-00164" summary="type Comunication added for differing between user-to-user comunication">
-      <created>1620983115667</created>
-      <option name="number" value="00164" />
-      <option name="presentableId" value="LOCAL-00164" />
-      <option name="project" value="LOCAL" />
-      <updated>1620983115667</updated>
-    </task>
-    <task id="LOCAL-00165" summary="type Comunication added for differing between user-to-user comunication">
-      <created>1620984020115</created>
-      <option name="number" value="00165" />
-      <option name="presentableId" value="LOCAL-00165" />
-      <option name="project" value="LOCAL" />
-      <updated>1620984020116</updated>
+      <workItem from="1621586522515" duration="6027000" />
+      <workItem from="1621594756501" duration="450000" />
+      <workItem from="1621853119476" duration="17000" />
+      <workItem from="1621879937547" duration="622000" />
     </task>
     <task id="LOCAL-00166" summary="initial commit for UI GET my comunication">
       <created>1620984294631</created>
@@ -574,7 +563,21 @@
       <option name="project" value="LOCAL" />
       <updated>1621591709129</updated>
     </task>
-    <option name="localTasksCounter" value="213" />
+    <task id="LOCAL-00213" summary="fixing vulnerability path 3">
+      <created>1621591906547</created>
+      <option name="number" value="00213" />
+      <option name="presentableId" value="LOCAL-00213" />
+      <option name="project" value="LOCAL" />
+      <updated>1621591906547</updated>
+    </task>
+    <task id="LOCAL-00214" summary="uikit location icon in chat">
+      <created>1621880524906</created>
+      <option name="number" value="00214" />
+      <option name="presentableId" value="LOCAL-00214" />
+      <option name="project" value="LOCAL" />
+      <updated>1621880524907</updated>
+    </task>
+    <option name="localTasksCounter" value="215" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -597,8 +600,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="notification attr added to Comunication" />
-    <MESSAGE value="notifications sent to DB with updates" />
     <MESSAGE value="show new message css in my interactions" />
     <MESSAGE value="badge for notifications implemented in home" />
     <MESSAGE value="email attr added to User" />
@@ -622,7 +623,9 @@
     <MESSAGE value="limit uploads SONAR 2" />
     <MESSAGE value="fixing vulnerability path" />
     <MESSAGE value="fixing vulnerability path 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixing vulnerability path 2" />
+    <MESSAGE value="fixing vulnerability path 3" />
+    <MESSAGE value="uikit location icon in chat" />
+    <option name="LAST_COMMIT_MESSAGE" value="uikit location icon in chat" />
   </component>
   <component name="WindowStateProjectService">
     <state x="509" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619029708212">
@@ -645,22 +648,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1621505102496" />
-    <state width="1515" height="316" key="GridCell.Tab.0.bottom" timestamp="1621589053149">
+    <state width="1515" height="316" key="GridCell.Tab.0.bottom" timestamp="1621592694062">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="316" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1621589053149" />
-    <state width="1515" height="316" key="GridCell.Tab.0.center" timestamp="1621589053149">
+    <state width="1515" height="316" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1621592694062" />
+    <state width="1515" height="316" key="GridCell.Tab.0.center" timestamp="1621592694062">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="316" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1621589053149" />
-    <state width="1515" height="316" key="GridCell.Tab.0.left" timestamp="1621589053149">
+    <state width="1515" height="316" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1621592694062" />
+    <state width="1515" height="316" key="GridCell.Tab.0.left" timestamp="1621592694062">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="316" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1621589053149" />
-    <state width="1515" height="316" key="GridCell.Tab.0.right" timestamp="1621589053149">
+    <state width="1515" height="316" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1621592694062" />
+    <state width="1515" height="316" key="GridCell.Tab.0.right" timestamp="1621592694062">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="316" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1621589053149" />
+    <state width="1515" height="316" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1621592694062" />
     <state width="1515" height="261" key="GridCell.Tab.1.bottom" timestamp="1619438632838">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

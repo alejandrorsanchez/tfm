@@ -15,6 +15,8 @@
 }
 .title{
   text-align: left;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 .sectionBody{
   margin-top: 100px;

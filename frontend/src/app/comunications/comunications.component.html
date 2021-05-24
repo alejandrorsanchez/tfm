@@ -8,7 +8,7 @@
       </div>
       <div class="uk-width-4-5 title">
         <h1 class="title">{{this.chatMate.username}}</h1>
-        <p>{{this.chatMate.address}}</p>
+        <span uk-icon="location"></span>{{this.chatMate.address}}
         <mat-divider></mat-divider>
         <div class="messagesContainer">
           <div *ngFor="let message of this.messagesList" [ngClass]="{'myMessage': isMyMessage(message), 'otherUserMessage' : !isMyMessage(message)}">
