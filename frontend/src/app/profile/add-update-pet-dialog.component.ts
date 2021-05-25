@@ -22,7 +22,7 @@ export class AddUpdatePetDialogComponent implements OnInit{
   }
 
   ngOnInit(): void {
-    this.pet.user_id = this.utilsService.getId();
+    this.pet.userId = this.utilsService.getId();
   }
 
   onFileChanged(event) {

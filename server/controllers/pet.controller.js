@@ -15,7 +15,7 @@ petController.findById = (req, res) => {
 
 petController.findByUserId = (req, res) => {
     const userId = req.params.userId;
-    const query = 'SELECT * FROM pets WHERE user_id = ?';
+    const query = 'SELECT * FROM pets WHERE userId = ?';
     db.query(query, [userId], function (err, rows, fields) {
         if (err) throw err;
         res.status(200).json(rows);

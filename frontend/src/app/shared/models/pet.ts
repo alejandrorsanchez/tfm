@@ -5,7 +5,7 @@ export class Pet {
   weight?: number;
   age: number;
   description: string;
-  user_id: string;
+  userId: string;
   picture?: string;
 
   constructor() {
@@ -21,7 +21,7 @@ export class Pet {
     this.weight = item.weight;
     this.age = item.age;
     this.description = item.description;
-    this.user_id = item.user_id;
+    this.userId = item.userId;
     this.picture = item.picture;
   }
 }

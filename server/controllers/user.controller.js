@@ -84,18 +84,18 @@ userController.delete = (req, res) => {
     db.query(queryDeleteUserAdds, [id], function (err, row, fields) {
         if (err) throw err;
     });
-    const queryDeleteUser = 'DELETE FROM users WHERE id = ?';
-    db.query(queryDeleteUser, [id], function (err, row, fields) {
-        if (err) throw err;
-    });
-    const queryFindUserPets = 'SELECT id FROM pets WHERE user_id = ?';
+    const queryFindUserPets = 'SELECT id FROM pets WHERE userId = ?';
     db.query(queryFindUserPets, [id], function (err, rows) {
         if (err) throw err;
         deletePetsImages(rows);
-        const queryDeletePets = 'DELETE FROM pets WHERE user_id = ?';
+        const queryDeletePets = 'DELETE FROM pets WHERE userId = ?';
         db.query(queryDeletePets, [id], function (error) {
             if (error) throw error;
         });
+    });
+    const queryDeleteUser = 'DELETE FROM users WHERE id = ?';
+    db.query(queryDeleteUser, [id], function (err, row, fields) {
+        if (err) throw err;
     });
     res.status(200).send();
 }
