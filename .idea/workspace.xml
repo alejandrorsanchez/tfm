@@ -12,8 +12,11 @@
   <component name="ChangeListManager">
     <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/comunication.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/comunication.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/test/comunicationTest.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/test/comunicationTest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/my-interactions/my-interactions.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/my-interactions/my-interactions.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/my-interactions/my-interactions.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/my-interactions/my-interactions.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +69,7 @@
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\shared" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.test">
+  <component name="RunManager" selected="Mocha.Testing Comunication API">
     <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/server/package.json" />
       <command value="run" />
@@ -75,21 +78,6 @@
       </scripts>
       <node-interpreter value="project" />
       <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="Testing Add API (1)" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <mocha-package>$PROJECT_DIR$/server/node_modules/mocha</mocha-package>
-      <working-directory>$PROJECT_DIR$/server</working-directory>
-      <pass-parent-env>true</pass-parent-env>
-      <ui>bdd</ui>
-      <extra-mocha-options />
-      <test-kind>SUITE</test-kind>
-      <test-file>$PROJECT_DIR$/server/test/comunicationTest.js</test-file>
-      <test-names>
-        <name value="Testing Add API" />
-      </test-names>
       <method v="2" />
     </configuration>
     <configuration name="Testing Add API (2)" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
@@ -104,6 +92,21 @@
       <test-file>$PROJECT_DIR$/server/test/emailTest.js</test-file>
       <test-names>
         <name value="Testing Add API" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Testing Comunication API" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/server/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$/server</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>SUITE</test-kind>
+      <test-file>$PROJECT_DIR$/server/test/comunicationTest.js</test-file>
+      <test-names>
+        <name value="Testing Comunication API" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -139,11 +142,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Mocha.Testing Comunication API" />
         <item itemvalue="npm.test" />
         <item itemvalue="Mocha.Testing User API" />
         <item itemvalue="Mocha.Testing Pet API" />
         <item itemvalue="Mocha.Testing Add API (2)" />
-        <item itemvalue="Mocha.Testing Add API (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -234,14 +237,8 @@
       <workItem from="1621586522515" duration="6027000" />
       <workItem from="1621594756501" duration="450000" />
       <workItem from="1621853119476" duration="17000" />
-      <workItem from="1621879937547" duration="2609000" />
-    </task>
-    <task id="LOCAL-00169" summary="my interactions received">
-      <created>1620986985091</created>
-      <option name="number" value="00169" />
-      <option name="presentableId" value="LOCAL-00169" />
-      <option name="project" value="LOCAL" />
-      <updated>1620986985091</updated>
+      <workItem from="1621879937547" duration="2753000" />
+      <workItem from="1621929443308" duration="3195000" />
     </task>
     <task id="LOCAL-00170" summary="UI GET Comunications with lastMessage and chatMateName">
       <created>1621019333340</created>
@@ -579,7 +576,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621882072993</updated>
     </task>
-    <option name="localTasksCounter" value="218" />
+    <task id="LOCAL-00218" summary="calling new delete comunication and add dialog">
+      <created>1621882654545</created>
+      <option name="number" value="00218" />
+      <option name="presentableId" value="LOCAL-00218" />
+      <option name="project" value="LOCAL" />
+      <updated>1621882654545</updated>
+    </task>
+    <option name="localTasksCounter" value="219" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -650,22 +654,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1621505102496" />
-    <state width="1515" height="316" key="GridCell.Tab.0.bottom" timestamp="1621592694062">
+    <state width="1515" height="316" key="GridCell.Tab.0.bottom" timestamp="1621882714666">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="316" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1621592694062" />
-    <state width="1515" height="316" key="GridCell.Tab.0.center" timestamp="1621592694062">
+    <state width="1515" height="316" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1621882714666" />
+    <state width="1515" height="316" key="GridCell.Tab.0.center" timestamp="1621882714666">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="316" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1621592694062" />
-    <state width="1515" height="316" key="GridCell.Tab.0.left" timestamp="1621592694062">
+    <state width="1515" height="316" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1621882714666" />
+    <state width="1515" height="316" key="GridCell.Tab.0.left" timestamp="1621882714666">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="316" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1621592694062" />
-    <state width="1515" height="316" key="GridCell.Tab.0.right" timestamp="1621592694062">
+    <state width="1515" height="316" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1621882714666" />
+    <state width="1515" height="316" key="GridCell.Tab.0.right" timestamp="1621882714666">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="316" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1621592694062" />
+    <state width="1515" height="316" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1621882714666" />
     <state width="1515" height="261" key="GridCell.Tab.1.bottom" timestamp="1619438632838">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

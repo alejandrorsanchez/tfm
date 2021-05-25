@@ -5,13 +5,13 @@
     <a uk-icon="icon:  arrow-left; ratio: 8.5" (click)="this.redirectToHome()"></a>
   </div>
   <div *ngIf="!addsIsEmpty()" class="myAddsContainer">
-    <div *ngIf="addIsVolunteer()" class="uk-child-width-expand@s uk-text-center" uk-grid>
+    <div *ngIf="addIsForVolunteer()" class="uk-child-width-expand@s uk-text-center" uk-grid>
       <h2 class="uk-width-1-2">Te has anunciado como voluntario!</h2>
       <div>
         <button class="uk-button uk-button-primary uk-button uk-width-1-2" (click)="openDeleteVolunteerAddDialog()">Eliminar Anuncio</button>
       </div>
     </div>
-    <div *ngIf="addIsPet()" class="uk-child-width-expand@s uk-text-center" uk-grid>
+    <div *ngIf="addIsForPet()" class="uk-child-width-expand@s uk-text-center" uk-grid>
       <h2 class="uk-width-1-2">Has publicado un anuncio para buscarle hogar a "{{this.petName}}"</h2>
       <div>
         <button class="uk-button uk-button-primary uk-button uk-width-1-2" (click)="openDeletePetAddDialog()">Eliminar Anuncio</button>

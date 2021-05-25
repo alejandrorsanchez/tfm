@@ -4,8 +4,7 @@
     <div class="uk-text-center" uk-grid>
       <div class="uk-width-1-5 sectionBody">
         <a uk-icon="icon:  arrow-left; ratio: 8.5" (click)="this.redirectToMyInteractions()"></a>
-        <button class="uk-button uk-button-danger uk-width-1-2" [disabled]="this.isNewComunication()" (click)="this.openDeleteComunicationDialog()">Eliminar chat</button>
-        <button *ngIf="this.isComunicationForAdoption()" class="uk-button uk-button-success" [disabled]="this.isNewComunication()" (click)="this.openDeleteComunicationAndAddDialog()">Llegamos a un acuerdo!</button>
+        <button class="uk-button uk-button-danger uk-width-1-2" [disabled]="this.isNewComunication()" (click)="this.openDeleteComunicationDialog()">No me interesa</button>
       </div>
       <div class="uk-width-4-5 title">
         <h1 class="title">{{this.chatMate.username}}</h1>

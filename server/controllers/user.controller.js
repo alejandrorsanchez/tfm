@@ -76,6 +76,14 @@ userController.update = (req, res) => {
 
 userController.delete = (req, res) => {
     const id = req.params.id;
+    const queryDeleteUserChats = 'DELETE FROM comunications WHERE userId1 = ? or userId2 = ?';
+    db.query(queryDeleteUserChats, [id, id], function (err, row, fields) {
+        if (err) throw err;
+    });
+    const queryDeleteUserAdds = 'DELETE FROM adds WHERE userId = ?';
+    db.query(queryDeleteUserAdds, [id], function (err, row, fields) {
+        if (err) throw err;
+    });
     const queryDeleteUser = 'DELETE FROM users WHERE id = ?';
     db.query(queryDeleteUser, [id], function (err, row, fields) {
         if (err) throw err;
@@ -88,10 +96,6 @@ userController.delete = (req, res) => {
         db.query(queryDeletePets, [id], function (error) {
             if (error) throw error;
         });
-    });
-    const queryDeleteUserAdds = 'DELETE FROM adds WHERE userId = ?';
-    db.query(queryDeleteUserAdds, [id], function (err, row, fields) {
-        if (err) throw err;
     });
     res.status(200).send();
 }

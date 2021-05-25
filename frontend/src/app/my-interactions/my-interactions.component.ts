@@ -43,7 +43,7 @@ export class MyInteractionsComponent implements OnInit {
     this.addService.findByUserId(this.id).subscribe(
       (response: AddCreation[]) => {
         this.myAdds = response;
-        if(this.addIsPet()){
+        if(this.addIsForPet()){
           this.petService.findById(this.petId.toString()).subscribe(
             (response: Pet) => this.petName = response.name);
         }
@@ -71,7 +71,7 @@ export class MyInteractionsComponent implements OnInit {
     return this.myAdds.length == 0;
   }
 
-  addIsVolunteer(): boolean {
+  addIsForVolunteer(): boolean {
     for (const add of this.myAdds) {
       if(!add.petId){
         this.volunteerAddId = add.id;
@@ -81,7 +81,7 @@ export class MyInteractionsComponent implements OnInit {
     return false;
   }
 
-  addIsPet(): boolean {
+  addIsForPet(): boolean {
     for (const add of this.myAdds) {
       if(add.petId){
         this.petAddId = add.id;
@@ -114,15 +114,15 @@ export class MyInteractionsComponent implements OnInit {
     this.router.navigate(['/home/comunications/', comunication.chatMate.id, comunication.type]);
   }
 
-  redirectToHome(): void {
-    this.router.navigateByUrl('/home');
-  }
-
   comunicationsIsEmpty(): boolean {
     return this.myComunications.length === 0;
   }
 
   isNewMessage(comunication: Comunication): boolean {
     return comunication.notification === Number(this.id);
+  }
+
+  redirectToHome(): void {
+    this.router.navigateByUrl('/home');
   }
 }

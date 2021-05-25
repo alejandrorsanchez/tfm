@@ -112,10 +112,6 @@ export class ComunicationsComponent implements OnInit {
     });
   }
 
-  openDeleteComunicationAndAddDialog(): void {
-    //TODO
-  }
-
   isFirstMessage(): boolean {
     return this.messagesList.length === 1;
   }
@@ -126,10 +122,6 @@ export class ComunicationsComponent implements OnInit {
 
   isMyMessage(message: string): boolean {
     return message.split(':')[0] === this.myUser.username;
-  }
-
-  isComunicationForAdoption(): boolean{
-    return this.type == 1;
   }
 
   redirectToMyInteractions(): void {
