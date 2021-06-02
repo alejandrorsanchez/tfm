@@ -97,8 +97,9 @@ userController.delete = (req, res) => {
     const queryDeleteUser = 'DELETE FROM users WHERE id = ?';
     db.query(queryDeleteUser, [id], function (err, row, fields) {
         if (err) throw err;
+        if(row['affectedRows'] === 0) res.status(404).json({message: 'Ese usuario no existe'});
+        else res.status(200).send();
     });
-    res.status(200).send();
 }
 
 function deletePetsImages(rows) {

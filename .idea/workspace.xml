@@ -11,15 +11,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/server/.nyc_output/8333f12e-510d-4a82-8c87-ae1a3751cc15.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.nyc_output/f98133f1-b6f9-4d78-90b1-55a52cee3ce8.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.nyc_output/processinfo/8333f12e-510d-4a82-8c87-ae1a3751cc15.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.nyc_output/processinfo/f98133f1-b6f9-4d78-90b1-55a52cee3ce8.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/.nyc_output/4f62e65d-7a54-4320-b6f1-bfcc74af3507.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/.nyc_output/a1d9eb3d-20a5-49c4-b3cc-08a68d2b788a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/.nyc_output/processinfo/4f62e65d-7a54-4320-b6f1-bfcc74af3507.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/.nyc_output/processinfo/a1d9eb3d-20a5-49c4-b3cc-08a68d2b788a.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.nyc_output/28071cc7-8407-4309-bc9e-c8523a33da9a.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.nyc_output/e97c4f24-48a7-4c5b-9f80-3652068d90fa.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.nyc_output/processinfo/28071cc7-8407-4309-bc9e-c8523a33da9a.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.nyc_output/processinfo/e97c4f24-48a7-4c5b-9f80-3652068d90fa.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.nyc_output/8333f12e-510d-4a82-8c87-ae1a3751cc15.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.nyc_output/f98133f1-b6f9-4d78-90b1-55a52cee3ce8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.nyc_output/processinfo/8333f12e-510d-4a82-8c87-ae1a3751cc15.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.nyc_output/processinfo/f98133f1-b6f9-4d78-90b1-55a52cee3ce8.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/server/.nyc_output/processinfo/index.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/.nyc_output/processinfo/index.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/controllers/user.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/user.controller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/add.controller.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/add.controller.js.html" afterDir="false" />
@@ -42,6 +42,8 @@
       <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/test/petTest.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/test/petTest.js.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/test/userTest.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/test/userTest.js.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/coverage/lcov.info" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/test/userTest.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/test/userTest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/uploads/177/pexels-lumn-406014.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +96,7 @@
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\shared\services" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.test">
+  <component name="RunManager" selected="Mocha.Testing User API">
     <configuration name="report" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/server/package.json" />
       <command value="run" />
@@ -162,10 +164,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Mocha.Testing User API" />
         <item itemvalue="npm.test" />
         <item itemvalue="Mocha.Testing Comunication API" />
         <item itemvalue="Mocha.Testing Pet API" />
-        <item itemvalue="Mocha.Testing User API" />
         <item itemvalue="npm.report" />
       </list>
     </recent_temporary>
@@ -272,14 +274,7 @@
       <workItem from="1622456100637" duration="272000" />
       <workItem from="1622473274264" duration="594000" />
       <workItem from="1622534164816" duration="7000" />
-      <workItem from="1622623761375" duration="3289000" />
-    </task>
-    <task id="LOCAL-00174" summary="query for my interactions fixed">
-      <created>1621240540084</created>
-      <option name="number" value="00174" />
-      <option name="presentableId" value="LOCAL-00174" />
-      <option name="project" value="LOCAL" />
-      <updated>1621240540084</updated>
+      <workItem from="1622623761375" duration="4092000" />
     </task>
     <task id="LOCAL-00175" summary="initial commit fixing chat UI with new buttons">
       <created>1621242577642</created>
@@ -617,7 +612,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622626179850</updated>
     </task>
-    <option name="localTasksCounter" value="223" />
+    <task id="LOCAL-00223" summary="Foreing key constraint between User and Pet fixed">
+      <created>1622627300772</created>
+      <option name="number" value="00223" />
+      <option name="presentableId" value="LOCAL-00223" />
+      <option name="project" value="LOCAL" />
+      <updated>1622627300772</updated>
+    </task>
+    <option name="localTasksCounter" value="224" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -640,7 +642,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="email attr added to PUT User" />
     <MESSAGE value="init refactor" />
     <MESSAGE value="adds.component responses improved" />
     <MESSAGE value="getDistanceWith(coordinate) moved to coordinate.ts" />
@@ -665,7 +666,8 @@
     <MESSAGE value="DELETE Add when DELETE User" />
     <MESSAGE value="refactoring PUT controllers" />
     <MESSAGE value="refactoring showNotification into a new service" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring showNotification into a new service" />
+    <MESSAGE value="Foreing key constraint between User and Pet fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Foreing key constraint between User and Pet fixed" />
   </component>
   <component name="WindowStateProjectService">
     <state x="509" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619029708212">
@@ -688,22 +690,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1621505102496" />
-    <state width="1515" height="316" key="GridCell.Tab.0.bottom" timestamp="1622626216152">
+    <state width="1515" height="316" key="GridCell.Tab.0.bottom" timestamp="1622627885153">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="316" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1622626216152" />
-    <state width="1515" height="316" key="GridCell.Tab.0.center" timestamp="1622626216152">
+    <state width="1515" height="316" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1622627885153" />
+    <state width="1515" height="316" key="GridCell.Tab.0.center" timestamp="1622627885153">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="316" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1622626216152" />
-    <state width="1515" height="316" key="GridCell.Tab.0.left" timestamp="1622626216152">
+    <state width="1515" height="316" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1622627885153" />
+    <state width="1515" height="316" key="GridCell.Tab.0.left" timestamp="1622627885153">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="316" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1622626216152" />
-    <state width="1515" height="316" key="GridCell.Tab.0.right" timestamp="1622626216152">
+    <state width="1515" height="316" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1622627885153" />
+    <state width="1515" height="316" key="GridCell.Tab.0.right" timestamp="1622627885153">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="316" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1622626216152" />
+    <state width="1515" height="316" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1622627885153" />
     <state width="1515" height="261" key="GridCell.Tab.1.bottom" timestamp="1619438632838">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

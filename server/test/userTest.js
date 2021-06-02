@@ -107,6 +107,16 @@ describe('Testing User API', function(){
                 done();
             });
     });
+    it('should not delete user by non-existing ID', function(done){
+        chai.request(url)
+            .delete('/00000')
+            .set('Authorization', 'Bearer '  + token)
+            .end(function (err, res){
+                expect(res.header['authorization']).not.be.null;
+                expect(res).to.have.status(404);
+                done();
+            });
+    });
     it('should delete user by its ID', function(done){
         chai.request(url)
             .delete('/' + id)
