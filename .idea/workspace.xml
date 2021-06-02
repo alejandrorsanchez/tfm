@@ -11,21 +11,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/shared/services/notification.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/.nyc_output/8333f12e-510d-4a82-8c87-ae1a3751cc15.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/.nyc_output/f98133f1-b6f9-4d78-90b1-55a52cee3ce8.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/.nyc_output/processinfo/8333f12e-510d-4a82-8c87-ae1a3751cc15.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/.nyc_output/processinfo/f98133f1-b6f9-4d78-90b1-55a52cee3ce8.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/adds/adds.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/adds/adds.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/cover/log-in-dialog.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/cover/log-in-dialog.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/cover/sing-up-dialog.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/cover/sing-up-dialog.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/home/home.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/my-interactions/my-interactions.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/my-interactions/my-interactions.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/profile/add-update-pet-dialog.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/profile/add-update-pet-dialog.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/profile/delete-account-dialog.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/profile/delete-account-dialog.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/profile/profile.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/profile/profile.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/publisher/publisher.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/publisher/publisher.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/shared/security/auth-guard.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/shared/security/auth-guard.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/shared/security/interceptor.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/shared/security/interceptor.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/shared/services/utils.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/shared/services/session.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.nyc_output/28071cc7-8407-4309-bc9e-c8523a33da9a.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.nyc_output/e97c4f24-48a7-4c5b-9f80-3652068d90fa.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.nyc_output/processinfo/28071cc7-8407-4309-bc9e-c8523a33da9a.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.nyc_output/processinfo/e97c4f24-48a7-4c5b-9f80-3652068d90fa.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.nyc_output/processinfo/index.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/.nyc_output/processinfo/index.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/user.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/user.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/add.controller.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/add.controller.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/comunication.controller.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/comunication.controller.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/email.controller.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/email.controller.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/pet.controller.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/pet.controller.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/user.controller.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/user.controller.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/routes/add.routes.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/routes/add.routes.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/routes/comunication.routes.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/routes/comunication.routes.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/routes/email.routes.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/routes/email.routes.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/routes/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/routes/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/routes/pet.routes.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/routes/pet.routes.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/routes/user.routes.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/routes/user.routes.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/test/addTest.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/test/addTest.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/test/comunicationTest.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/test/comunicationTest.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/test/emailTest.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/test/emailTest.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/test/petTest.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/test/petTest.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/test/userTest.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/test/userTest.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov.info" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +94,7 @@
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\shared\services" />
     </key>
   </component>
-  <component name="RunManager" selected="Mocha.Testing Comunication API">
+  <component name="RunManager" selected="npm.test">
     <configuration name="report" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/server/package.json" />
       <command value="run" />
@@ -146,11 +162,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.test" />
         <item itemvalue="Mocha.Testing Comunication API" />
         <item itemvalue="Mocha.Testing Pet API" />
         <item itemvalue="Mocha.Testing User API" />
         <item itemvalue="npm.report" />
-        <item itemvalue="npm.test" />
       </list>
     </recent_temporary>
   </component>
@@ -256,14 +272,7 @@
       <workItem from="1622456100637" duration="272000" />
       <workItem from="1622473274264" duration="594000" />
       <workItem from="1622534164816" duration="7000" />
-      <workItem from="1622623761375" duration="2343000" />
-    </task>
-    <task id="LOCAL-00173" summary="spinner for loading my interactions">
-      <created>1621238216173</created>
-      <option name="number" value="00173" />
-      <option name="presentableId" value="LOCAL-00173" />
-      <option name="project" value="LOCAL" />
-      <updated>1621238216173</updated>
+      <workItem from="1622623761375" duration="3289000" />
     </task>
     <task id="LOCAL-00174" summary="query for my interactions fixed">
       <created>1621240540084</created>
@@ -601,7 +610,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622624865890</updated>
     </task>
-    <option name="localTasksCounter" value="222" />
+    <task id="LOCAL-00222" summary="refactoring showNotification into a new service">
+      <created>1622626179850</created>
+      <option name="number" value="00222" />
+      <option name="presentableId" value="LOCAL-00222" />
+      <option name="project" value="LOCAL" />
+      <updated>1622626179850</updated>
+    </task>
+    <option name="localTasksCounter" value="223" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -624,7 +640,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="email controller implemented and working" />
     <MESSAGE value="email attr added to PUT User" />
     <MESSAGE value="init refactor" />
     <MESSAGE value="adds.component responses improved" />
@@ -649,7 +664,8 @@
     <MESSAGE value="DELETE Comunication when DELETE User" />
     <MESSAGE value="DELETE Add when DELETE User" />
     <MESSAGE value="refactoring PUT controllers" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring PUT controllers" />
+    <MESSAGE value="refactoring showNotification into a new service" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring showNotification into a new service" />
   </component>
   <component name="WindowStateProjectService">
     <state x="509" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619029708212">
@@ -672,22 +688,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1621505102496" />
-    <state width="1515" height="316" key="GridCell.Tab.0.bottom" timestamp="1622625609816">
+    <state width="1515" height="316" key="GridCell.Tab.0.bottom" timestamp="1622626216152">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="316" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1622625609816" />
-    <state width="1515" height="316" key="GridCell.Tab.0.center" timestamp="1622625609816">
+    <state width="1515" height="316" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1622626216152" />
+    <state width="1515" height="316" key="GridCell.Tab.0.center" timestamp="1622626216152">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="316" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1622625609816" />
-    <state width="1515" height="316" key="GridCell.Tab.0.left" timestamp="1622625609816">
+    <state width="1515" height="316" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1622626216152" />
+    <state width="1515" height="316" key="GridCell.Tab.0.left" timestamp="1622626216152">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="316" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1622625609816" />
-    <state width="1515" height="316" key="GridCell.Tab.0.right" timestamp="1622625609816">
+    <state width="1515" height="316" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1622626216152" />
+    <state width="1515" height="316" key="GridCell.Tab.0.right" timestamp="1622626216152">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="316" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1622625609816" />
+    <state width="1515" height="316" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1622626216152" />
     <state width="1515" height="261" key="GridCell.Tab.1.bottom" timestamp="1619438632838">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
