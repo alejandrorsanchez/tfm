@@ -29,7 +29,7 @@ describe('Testing Add API', function(){
         chai.request(urlPets)
             .post('/')
             .set('Authorization', 'Bearer '  + token)
-            .send({name: 'pet test', breed: 'breed test', weight: 1, age: 1, description: 'descriptionTest', picture: '', user_Id: userId})
+            .send({name: 'pet test', breed: 'breed test', weight: 1, age: 1, description: 'descriptionTest', picture: '', userId: userId})
             .end(function (err, res){
                 expect(res.header['authorization']).not.be.null;
                 expect(res).to.have.status(200);

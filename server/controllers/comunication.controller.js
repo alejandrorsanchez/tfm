@@ -43,7 +43,8 @@ comunicationController.update = (req, res) => {
     const query = 'UPDATE comunications SET messages = ?, notification = ? WHERE id = ?';
     db.query(query, data, function (err, row, fields) {
         if (err) throw err;
-        res.status(200).json({affectedRows: row['affectedRows']});
+        if(row['affectedRows'] > 0) res.status(200).send();
+        else res.status(404).send();
     });
 }
 

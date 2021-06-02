@@ -70,7 +70,8 @@ userController.update = (req, res) => {
     const query = 'UPDATE users SET address = ?, description = ?, email = ? WHERE id = ?';
     db.query(query, data, function (err, row, fields) {
         if (err) throw err;
-        res.status(200).json({ message: 'Usuario actualizado', affectedRows: row['affectedRows']});
+        if(row['affectedRows'] > 0) res.status(200).json({ message: 'Usuario actualizado'});
+        else res.status(404).json({message: 'Ese usuario no existe'});
     })
 }
 

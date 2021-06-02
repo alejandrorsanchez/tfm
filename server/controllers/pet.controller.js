@@ -37,7 +37,8 @@ petController.update = (req, res) => {
     const query = 'UPDATE pets SET name = ?, breed = ?, weight = ?, age = ?, description = ?, picture = ? WHERE id = ?';
     db.query(query, data, function (err, row, fields) {
         if (err) throw err;
-        res.status(200).json({ message: 'Mascota actualizada', affectedRows: row['affectedRows']});
+        if(row['affectedRows'] > 0) res.status(200).json({ message: 'Mascota actualizada'});
+        else res.status(404).json({message: 'Esa mascota no existe'});
     })
 }
 

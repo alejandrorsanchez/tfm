@@ -36,7 +36,7 @@ describe('Testing Pet API', function(){
         chai.request(url)
             .post('/')
             .set('Authorization', 'Bearer '  + token)
-            .send({name: 'Coco', breed: 'Boxer', weight: 15, age: 5, description: 'description', picture: '', user_Id: userId})
+            .send({name: 'Coco', breed: 'Boxer', weight: 15, age: 5, description: 'description', picture: '', userId: userId})
             .end(function (err, res){
                 expect(res.header['authorization']).not.be.null;
                 expect(res).to.have.status(200);
@@ -114,8 +114,7 @@ describe('Testing Pet API', function(){
             .send({name: 'another name', breed: 'another breed'})
             .end(function (err, res){
                 expect(res.header['authorization']).not.be.null;
-                expect(res).to.have.status(200);
-                expect(res.body).to.have.property('affectedRows').to.be.equal(0);
+                expect(res).to.have.status(404);
                 done();
             });
     });
@@ -127,7 +126,6 @@ describe('Testing Pet API', function(){
             .end(function (err, res){
                 expect(res.header['authorization']).not.be.null;
                 expect(res).to.have.status(200);
-                expect(res.body).to.have.property('affectedRows').to.be.equal(1);
                 done();
             });
     });

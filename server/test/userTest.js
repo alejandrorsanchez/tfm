@@ -83,8 +83,7 @@ describe('Testing User API', function(){
             .send({address: 'another address', description: 'another description'})
             .end(function (err, res){
                 expect(res.header['authorization']).not.be.null;
-                expect(res).to.have.status(200);
-                expect(res.body).to.have.property('affectedRows').to.be.equal(0);
+                expect(res).to.have.status(404);
                 done();
             });
     });
@@ -96,7 +95,6 @@ describe('Testing User API', function(){
             .end(function (err, res){
                 expect(res.header['authorization']).not.be.null;
                 expect(res).to.have.status(200);
-                expect(res.body).to.have.property('affectedRows').to.be.equal(1);
                 done();
             });
     });

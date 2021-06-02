@@ -173,8 +173,7 @@ describe('Testing Comunication API', function(){
             .send({messages: 'hola', notification: 'notif'})
             .end(function (err, res){
                 expect(res.header['authorization']).not.be.null;
-                expect(res).to.have.status(200);
-                expect(res.body).to.have.property('affectedRows').to.be.equal(0);
+                expect(res).to.have.status(404);
                 done();
             });
     });
@@ -186,7 +185,6 @@ describe('Testing Comunication API', function(){
             .end(function (err, res){
                 expect(res.header['authorization']).not.be.null;
                 expect(res).to.have.status(200);
-                expect(res.body).to.have.property('affectedRows').to.be.equal(1);
                 done();
             });
     });

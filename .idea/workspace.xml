@@ -11,11 +11,54 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/server/.nyc_output/28071cc7-8407-4309-bc9e-c8523a33da9a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/.nyc_output/e97c4f24-48a7-4c5b-9f80-3652068d90fa.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/.nyc_output/processinfo/28071cc7-8407-4309-bc9e-c8523a33da9a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/.nyc_output/processinfo/e97c4f24-48a7-4c5b-9f80-3652068d90fa.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/mochawesome-report/assets/MaterialIcons-Regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/mochawesome-report/assets/MaterialIcons-Regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/mochawesome-report/assets/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/mochawesome-report/assets/app.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/mochawesome-report/assets/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/mochawesome-report/assets/app.js.LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/mochawesome-report/assets/app.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/mochawesome-report/assets/roboto-light-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/mochawesome-report/assets/roboto-light-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/mochawesome-report/assets/roboto-medium-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/mochawesome-report/assets/roboto-medium-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/mochawesome-report/assets/roboto-regular-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/mochawesome-report/assets/roboto-regular-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/mochawesome-report/mochawesome.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/mochawesome-report/mochawesome.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/profile/add-update-pet-dialog.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/profile/add-update-pet-dialog.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/shared/models/pet.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/shared/models/pet.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/pet.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/pet.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.nyc_output/9b6fe6f5-6949-4b2f-902a-18d45d8d1b6a.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.nyc_output/c1b2c1c8-220b-46b7-ad17-2d7b7bf49775.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.nyc_output/processinfo/9b6fe6f5-6949-4b2f-902a-18d45d8d1b6a.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.nyc_output/processinfo/c1b2c1c8-220b-46b7-ad17-2d7b7bf49775.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.nyc_output/processinfo/index.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/.nyc_output/processinfo/index.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/controllers/user.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/user.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/add.controller.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/add.controller.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/comunication.controller.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/comunication.controller.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/email.controller.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/email.controller.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/pet.controller.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/pet.controller.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/user.controller.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/user.controller.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/routes/add.routes.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/routes/add.routes.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/routes/comunication.routes.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/routes/comunication.routes.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/routes/email.routes.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/routes/email.routes.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/routes/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/routes/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/routes/pet.routes.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/routes/pet.routes.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/routes/user.routes.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/routes/user.routes.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/test/addTest.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/test/addTest.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/test/comunicationTest.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/test/comunicationTest.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/test/emailTest.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/test/emailTest.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/test/petTest.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/test/petTest.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/test/userTest.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/test/userTest.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/coverage/lcov.info" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/test/addTest.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/test/addTest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/test/petTest.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/test/petTest.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +111,17 @@
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\shared" />
     </key>
   </component>
-  <component name="RunManager" selected="Mocha.Testing Comunication API">
+  <component name="RunManager" selected="npm.report">
+    <configuration name="report" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/server/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="report" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/server/package.json" />
       <command value="run" />
@@ -79,7 +132,7 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="Testing Add API (2)" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+    <configuration name="Testing Add API" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
       <node-interpreter>project</node-interpreter>
       <node-options />
       <mocha-package>$PROJECT_DIR$/server/node_modules/mocha</mocha-package>
@@ -88,24 +141,9 @@
       <ui>bdd</ui>
       <extra-mocha-options />
       <test-kind>SUITE</test-kind>
-      <test-file>$PROJECT_DIR$/server/test/emailTest.js</test-file>
+      <test-file>$PROJECT_DIR$/server/test/addTest.js</test-file>
       <test-names>
         <name value="Testing Add API" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="Testing Comunication API" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <mocha-package>$PROJECT_DIR$/server/node_modules/mocha</mocha-package>
-      <working-directory>$PROJECT_DIR$/server</working-directory>
-      <pass-parent-env>true</pass-parent-env>
-      <ui>bdd</ui>
-      <extra-mocha-options />
-      <test-kind>SUITE</test-kind>
-      <test-file>$PROJECT_DIR$/server/test/comunicationTest.js</test-file>
-      <test-names>
-        <name value="Testing Comunication API" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -141,11 +179,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Mocha.Testing Comunication API" />
+        <item itemvalue="npm.report" />
         <item itemvalue="npm.test" />
         <item itemvalue="Mocha.Testing User API" />
         <item itemvalue="Mocha.Testing Pet API" />
-        <item itemvalue="Mocha.Testing Add API (2)" />
+        <item itemvalue="Mocha.Testing Add API" />
       </list>
     </recent_temporary>
   </component>
@@ -237,14 +275,21 @@
       <workItem from="1621594756501" duration="450000" />
       <workItem from="1621853119476" duration="17000" />
       <workItem from="1621879937547" duration="2753000" />
-      <workItem from="1621929443308" duration="5079000" />
-    </task>
-    <task id="LOCAL-00171" summary="openComunication TODO">
-      <created>1621019630044</created>
-      <option name="number" value="00171" />
-      <option name="presentableId" value="LOCAL-00171" />
-      <option name="project" value="LOCAL" />
-      <updated>1621019630044</updated>
+      <workItem from="1621929443308" duration="5281000" />
+      <workItem from="1621966165013" duration="80000" />
+      <workItem from="1622048966748" duration="4681000" />
+      <workItem from="1622101310185" duration="1012000" />
+      <workItem from="1622128174482" duration="5400000" />
+      <workItem from="1622280334514" duration="23000" />
+      <workItem from="1622280369069" duration="774000" />
+      <workItem from="1622365938382" duration="1974000" />
+      <workItem from="1622368512391" duration="2663000" />
+      <workItem from="1622449597539" duration="19000" />
+      <workItem from="1622450400489" duration="610000" />
+      <workItem from="1622456100637" duration="272000" />
+      <workItem from="1622473274264" duration="594000" />
+      <workItem from="1622534164816" duration="7000" />
+      <workItem from="1622623761375" duration="674000" />
     </task>
     <task id="LOCAL-00172" summary="new attribute User for comunication model">
       <created>1621237593276</created>
@@ -582,7 +627,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621933093694</updated>
     </task>
-    <option name="localTasksCounter" value="220" />
+    <task id="LOCAL-00220" summary="DELETE Add when DELETE User">
+      <created>1621935072727</created>
+      <option name="number" value="00220" />
+      <option name="presentableId" value="LOCAL-00220" />
+      <option name="project" value="LOCAL" />
+      <updated>1621935072727</updated>
+    </task>
+    <option name="localTasksCounter" value="221" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -605,7 +657,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="email included in user verification before saving" />
     <MESSAGE value="angular service called with Email model from component" />
     <MESSAGE value="email controller implemented and working" />
     <MESSAGE value="email attr added to PUT User" />
@@ -630,7 +681,8 @@
     <MESSAGE value="new button for Agreement" />
     <MESSAGE value="calling new delete comunication and add dialog" />
     <MESSAGE value="DELETE Comunication when DELETE User" />
-    <option name="LAST_COMMIT_MESSAGE" value="DELETE Comunication when DELETE User" />
+    <MESSAGE value="DELETE Add when DELETE User" />
+    <option name="LAST_COMMIT_MESSAGE" value="DELETE Add when DELETE User" />
   </component>
   <component name="WindowStateProjectService">
     <state x="509" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619029708212">
@@ -653,22 +705,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1621505102496" />
-    <state width="1515" height="316" key="GridCell.Tab.0.bottom" timestamp="1621882714666">
+    <state width="1515" height="316" key="GridCell.Tab.0.bottom" timestamp="1622138252921">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="316" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1621882714666" />
-    <state width="1515" height="316" key="GridCell.Tab.0.center" timestamp="1621882714666">
+    <state width="1515" height="316" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1622138252921" />
+    <state width="1515" height="316" key="GridCell.Tab.0.center" timestamp="1622138252921">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="316" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1621882714666" />
-    <state width="1515" height="316" key="GridCell.Tab.0.left" timestamp="1621882714666">
+    <state width="1515" height="316" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1622138252921" />
+    <state width="1515" height="316" key="GridCell.Tab.0.left" timestamp="1622138252921">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="316" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1621882714666" />
-    <state width="1515" height="316" key="GridCell.Tab.0.right" timestamp="1621882714666">
+    <state width="1515" height="316" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1622138252921" />
+    <state width="1515" height="316" key="GridCell.Tab.0.right" timestamp="1622138252921">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="316" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1621882714666" />
+    <state width="1515" height="316" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1622138252921" />
     <state width="1515" height="261" key="GridCell.Tab.1.bottom" timestamp="1619438632838">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
