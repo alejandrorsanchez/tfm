@@ -2,8 +2,9 @@ import {Component, OnInit} from '@angular/core';
 import {MatDialogRef} from "@angular/material/dialog";
 import {UserService} from "../shared/services/user.service";
 import {User} from "../shared/models/user";
-import {UtilsService} from "../shared/services/utils.service";
+import {SessionService} from "../shared/services/session.service";
 import {Router} from "@angular/router";
+import {NotificationService} from "../shared/services/notification.service";
 
 @Component({
   selector: 'app-log-in-dialog',
@@ -16,7 +17,7 @@ export class LogInDialogComponent implements OnInit{
   user: User;
 
   constructor(public dialogRef: MatDialogRef<LogInDialogComponent>, private userService: UserService
-             , private utilsService: UtilsService, public router: Router) {
+             , private sessionService: SessionService, public router: Router, private notificationService: NotificationService) {
     this.title = 'Inicio de Sesión';
   }
 
@@ -27,11 +28,11 @@ export class LogInDialogComponent implements OnInit{
   logIn(): void {
     this.userService.getUser(this.user).subscribe(
       response => {
-          this.utilsService.saveCredentials(response.body);
+          this.sessionService.saveCredentials(response.body);
           this.dialogRef.close();
           this.router.navigateByUrl('/home');
       },
-      error => this.utilsService.showNotification(error.error['message'])
+      error => this.notificationService.showNotification(error.error['message'])
     );
   }
 

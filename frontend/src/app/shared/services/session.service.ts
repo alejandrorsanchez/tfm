@@ -1,12 +1,11 @@
 import { Injectable } from '@angular/core';
-import {MatSnackBar} from "@angular/material/snack-bar";
 
 @Injectable({
   providedIn: 'root'
 })
-export class UtilsService {
+export class SessionService {
 
-  constructor(private snackBar: MatSnackBar) { }
+  constructor() { }
 
   saveCredentials(body: Object): void{
     this.saveToken(body['token']);
@@ -36,11 +35,5 @@ export class UtilsService {
   destroySession(): void{
     localStorage.removeItem('token');
     localStorage.removeItem('id');
-  }
-
-  showNotification(message: string) {
-    this.snackBar.open(message, 'Cerrar', {
-      duration: 2000,
-    });
   }
 }

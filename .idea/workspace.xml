@@ -11,54 +11,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/server/.nyc_output/28071cc7-8407-4309-bc9e-c8523a33da9a.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.nyc_output/e97c4f24-48a7-4c5b-9f80-3652068d90fa.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.nyc_output/processinfo/28071cc7-8407-4309-bc9e-c8523a33da9a.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.nyc_output/processinfo/e97c4f24-48a7-4c5b-9f80-3652068d90fa.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/mochawesome-report/assets/MaterialIcons-Regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/mochawesome-report/assets/MaterialIcons-Regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/mochawesome-report/assets/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/mochawesome-report/assets/app.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/mochawesome-report/assets/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/mochawesome-report/assets/app.js.LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/mochawesome-report/assets/app.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/mochawesome-report/assets/roboto-light-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/mochawesome-report/assets/roboto-light-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/mochawesome-report/assets/roboto-medium-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/mochawesome-report/assets/roboto-medium-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/mochawesome-report/assets/roboto-regular-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/mochawesome-report/assets/roboto-regular-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/mochawesome-report/mochawesome.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/mochawesome-report/mochawesome.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/shared/services/notification.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.nyc_output/9b6fe6f5-6949-4b2f-902a-18d45d8d1b6a.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.nyc_output/c1b2c1c8-220b-46b7-ad17-2d7b7bf49775.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.nyc_output/processinfo/9b6fe6f5-6949-4b2f-902a-18d45d8d1b6a.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.nyc_output/processinfo/c1b2c1c8-220b-46b7-ad17-2d7b7bf49775.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.nyc_output/processinfo/index.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/.nyc_output/processinfo/index.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/user.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/user.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/add.controller.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/add.controller.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/comunication.controller.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/comunication.controller.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/email.controller.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/email.controller.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/pet.controller.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/pet.controller.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/user.controller.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/controllers/user.controller.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/routes/add.routes.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/routes/add.routes.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/routes/comunication.routes.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/routes/comunication.routes.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/routes/email.routes.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/routes/email.routes.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/routes/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/routes/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/routes/pet.routes.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/routes/pet.routes.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/routes/user.routes.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/routes/user.routes.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/test/addTest.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/test/addTest.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/test/comunicationTest.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/test/comunicationTest.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/test/emailTest.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/test/emailTest.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/test/petTest.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/test/petTest.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov-report/test/userTest.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov-report/test/userTest.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/coverage/lcov.info" beforeDir="false" afterPath="$PROJECT_DIR$/server/coverage/lcov.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/test/addTest.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/test/addTest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/test/petTest.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/test/petTest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/adds/adds.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/adds/adds.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/comunications/comunications.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/cover/log-in-dialog.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/cover/log-in-dialog.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/cover/sing-up-dialog.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/cover/sing-up-dialog.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/home/home.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/my-interactions/my-interactions.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/my-interactions/my-interactions.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/profile/add-update-pet-dialog.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/profile/add-update-pet-dialog.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/profile/delete-account-dialog.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/profile/delete-account-dialog.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/profile/profile.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/profile/profile.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/publisher/publisher.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/publisher/publisher.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/shared/security/auth-guard.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/shared/security/auth-guard.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/shared/security/interceptor.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/shared/security/interceptor.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/shared/services/utils.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/shared/services/session.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,13 +63,6 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm" />
-      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\shared\models" />
-      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\assets" />
-      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\comunications" />
-      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\shared\services" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\server\test" />
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\server\controllers" />
@@ -110,8 +70,15 @@
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\shared\models" />
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\shared" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm" />
+      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\shared\models" />
+      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\assets" />
+      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\comunications" />
+      <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\shared\services" />
+    </key>
   </component>
-  <component name="RunManager" selected="npm.report">
+  <component name="RunManager" selected="Mocha.Testing Comunication API">
     <configuration name="report" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/server/package.json" />
       <command value="run" />
@@ -132,7 +99,7 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="Testing Add API" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+    <configuration name="Testing Comunication API" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
       <node-interpreter>project</node-interpreter>
       <node-options />
       <mocha-package>$PROJECT_DIR$/server/node_modules/mocha</mocha-package>
@@ -141,9 +108,9 @@
       <ui>bdd</ui>
       <extra-mocha-options />
       <test-kind>SUITE</test-kind>
-      <test-file>$PROJECT_DIR$/server/test/addTest.js</test-file>
+      <test-file>$PROJECT_DIR$/server/test/comunicationTest.js</test-file>
       <test-names>
-        <name value="Testing Add API" />
+        <name value="Testing Comunication API" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -179,11 +146,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Mocha.Testing Comunication API" />
+        <item itemvalue="Mocha.Testing Pet API" />
+        <item itemvalue="Mocha.Testing User API" />
         <item itemvalue="npm.report" />
         <item itemvalue="npm.test" />
-        <item itemvalue="Mocha.Testing User API" />
-        <item itemvalue="Mocha.Testing Pet API" />
-        <item itemvalue="Mocha.Testing Add API" />
       </list>
     </recent_temporary>
   </component>
@@ -289,14 +256,7 @@
       <workItem from="1622456100637" duration="272000" />
       <workItem from="1622473274264" duration="594000" />
       <workItem from="1622534164816" duration="7000" />
-      <workItem from="1622623761375" duration="674000" />
-    </task>
-    <task id="LOCAL-00172" summary="new attribute User for comunication model">
-      <created>1621237593276</created>
-      <option name="number" value="00172" />
-      <option name="presentableId" value="LOCAL-00172" />
-      <option name="project" value="LOCAL" />
-      <updated>1621237593276</updated>
+      <workItem from="1622623761375" duration="2343000" />
     </task>
     <task id="LOCAL-00173" summary="spinner for loading my interactions">
       <created>1621238216173</created>
@@ -634,7 +594,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621935072727</updated>
     </task>
-    <option name="localTasksCounter" value="221" />
+    <task id="LOCAL-00221" summary="refactoring PUT controllers">
+      <created>1622624865890</created>
+      <option name="number" value="00221" />
+      <option name="presentableId" value="LOCAL-00221" />
+      <option name="project" value="LOCAL" />
+      <updated>1622624865890</updated>
+    </task>
+    <option name="localTasksCounter" value="222" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -657,7 +624,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="angular service called with Email model from component" />
     <MESSAGE value="email controller implemented and working" />
     <MESSAGE value="email attr added to PUT User" />
     <MESSAGE value="init refactor" />
@@ -682,7 +648,8 @@
     <MESSAGE value="calling new delete comunication and add dialog" />
     <MESSAGE value="DELETE Comunication when DELETE User" />
     <MESSAGE value="DELETE Add when DELETE User" />
-    <option name="LAST_COMMIT_MESSAGE" value="DELETE Add when DELETE User" />
+    <MESSAGE value="refactoring PUT controllers" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring PUT controllers" />
   </component>
   <component name="WindowStateProjectService">
     <state x="509" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619029708212">
@@ -705,22 +672,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1621505102496" />
-    <state width="1515" height="316" key="GridCell.Tab.0.bottom" timestamp="1622138252921">
+    <state width="1515" height="316" key="GridCell.Tab.0.bottom" timestamp="1622625609816">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="316" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1622138252921" />
-    <state width="1515" height="316" key="GridCell.Tab.0.center" timestamp="1622138252921">
+    <state width="1515" height="316" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1622625609816" />
+    <state width="1515" height="316" key="GridCell.Tab.0.center" timestamp="1622625609816">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="316" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1622138252921" />
-    <state width="1515" height="316" key="GridCell.Tab.0.left" timestamp="1622138252921">
+    <state width="1515" height="316" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1622625609816" />
+    <state width="1515" height="316" key="GridCell.Tab.0.left" timestamp="1622625609816">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="316" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1622138252921" />
-    <state width="1515" height="316" key="GridCell.Tab.0.right" timestamp="1622138252921">
+    <state width="1515" height="316" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1622625609816" />
+    <state width="1515" height="316" key="GridCell.Tab.0.right" timestamp="1622625609816">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="316" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1622138252921" />
+    <state width="1515" height="316" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1622625609816" />
     <state width="1515" height="261" key="GridCell.Tab.1.bottom" timestamp="1619438632838">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -789,10 +756,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1621336864915" />
-    <state x="632" y="298" width="348" height="298" key="org.angular.cli.generate" timestamp="1621411846467">
+    <state x="632" y="298" width="348" height="298" key="org.angular.cli.generate" timestamp="1622625597242">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="632" y="298" width="348" height="298" key="org.angular.cli.generate/0.0.1536.824@0.0.1536.824" timestamp="1621411846467" />
+    <state x="632" y="298" width="348" height="298" key="org.angular.cli.generate/0.0.1536.824@0.0.1536.824" timestamp="1622625597242" />
     <state x="486" y="184" key="refactoring.ChangeSignatureDialog" timestamp="1620902236950">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

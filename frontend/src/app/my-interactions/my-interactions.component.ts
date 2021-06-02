@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {AddService} from "../shared/services/add.service";
 import {AddCreation} from "../shared/models/addCreation";
-import {UtilsService} from "../shared/services/utils.service";
+import {SessionService} from "../shared/services/session.service";
 import {PetService} from "../shared/services/pet.service";
 import {Pet} from "../shared/models/pet";
 import {MatDialog} from "@angular/material/dialog";
@@ -28,12 +28,12 @@ export class MyInteractionsComponent implements OnInit {
   petAddId: number;
   loaded: boolean = false;
 
-  constructor(private addService: AddService, private utilsService: UtilsService, private petService: PetService,
+  constructor(private addService: AddService, private sessionService: SessionService, private petService: PetService,
               public dialog: MatDialog, public router: Router, private comunicationService: ComunicationService,
               private userService: UserService) { }
 
   ngOnInit(): void {
-    this.id = this.utilsService.getId();
+    this.id = this.sessionService.getId();
     this.getMyAdds();
     this.getMyComunications();
     setTimeout(() => { this.loaded = true }, 500);

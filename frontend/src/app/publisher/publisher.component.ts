@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import {PetService} from "../shared/services/pet.service";
-import {UtilsService} from "../shared/services/utils.service";
+import {SessionService} from "../shared/services/session.service";
 import {Pet} from "../shared/models/pet";
 import {AddService} from "../shared/services/add.service";
 import {AddCreation} from "../shared/models/addCreation";
 import {Router} from "@angular/router";
 import {User} from "../shared/models/user";
 import {UserService} from "../shared/services/user.service";
+import {NotificationService} from "../shared/services/notification.service";
 
 @Component({
   selector: 'app-publisher',
@@ -22,15 +23,15 @@ export class PublisherComponent implements OnInit {
   isAdoption: boolean;
   isVolunteer: boolean;
 
-  constructor(private utilsService: UtilsService, private petService: PetService, private addService: AddService
-              , public router: Router, private userService: UserService) { }
+  constructor(private sessionService: SessionService, private petService: PetService, private addService: AddService
+              , public router: Router, private userService: UserService, private notificationService: NotificationService) { }
 
   ngOnInit(): void {
     this.getUser();
   }
 
   getUser(): void {
-    this.id = this.utilsService.getId();
+    this.id = this.sessionService.getId();
     this.userService.findById(this.id).subscribe(
       (user: User) => this.user = user);
   }
@@ -60,10 +61,10 @@ export class PublisherComponent implements OnInit {
     const add = new AddCreation(this.id, this.postingPet.id);
     this.addService.saveAdoptionAdd(add).subscribe(
       response => {
-        this.utilsService.showNotification(response.body['message']);
+        this.notificationService.showNotification(response.body['message']);
         this.router.navigateByUrl('/home');
       },
-      error => this.utilsService.showNotification(error.error['message'])
+      error => this.notificationService.showNotification(error.error['message'])
     );
   }
 
@@ -71,12 +72,12 @@ export class PublisherComponent implements OnInit {
     const add = new AddCreation(this.id);
     this.addService.saveVolunteerAdd(add).subscribe(
       response => {
-        this.utilsService.showNotification(response.body['message']);
+        this.notificationService.showNotification(response.body['message']);
         this.userService.update(this.user).subscribe(
           () => this.router.navigateByUrl('/home')
         );
       },
-      error => this.utilsService.showNotification(error.error['message'])
+      error => this.notificationService.showNotification(error.error['message'])
     );
   }
 

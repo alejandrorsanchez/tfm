@@ -4,11 +4,12 @@ import {DeleteAccountDialogComponent} from "./delete-account-dialog.component";
 import {User} from "../shared/models/user";
 import {ActivatedRoute} from "@angular/router";
 import {UserService} from "../shared/services/user.service";
-import {UtilsService} from "../shared/services/utils.service";
+import {SessionService} from "../shared/services/session.service";
 import {DeletePetDialogComponent} from "./delete-pet-dialog.component";
 import {Pet} from "../shared/models/pet";
 import {PetService} from "../shared/services/pet.service";
 import {AddUpdatePetDialogComponent} from "./add-update-pet-dialog.component";
+import {NotificationService} from "../shared/services/notification.service";
 
 @Component({
   selector: 'app-profile',
@@ -22,7 +23,7 @@ export class ProfileComponent implements OnInit {
   myPets: Pet[] = [];
 
   constructor(public dialog: MatDialog, private activatedRoute: ActivatedRoute, private userService: UserService
-            , private utilsService: UtilsService, private petService: PetService) {
+            , private sessionService: SessionService, private petService: PetService, private notificationService: NotificationService) {
   }
 
   ngOnInit(): void {
@@ -31,7 +32,7 @@ export class ProfileComponent implements OnInit {
   }
 
   getUser(): void {
-    this.id = this.utilsService.getId();
+    this.id = this.sessionService.getId();
     this.userService.findById(this.id).subscribe(
       (user: User) => this.user = user
     );
@@ -65,7 +66,7 @@ export class ProfileComponent implements OnInit {
     this.userService.update(this.user).subscribe(
       response => {
         this.getUser();
-        this.utilsService.showNotification(response['message']);
+        this.notificationService.showNotification(response['message']);
       }
     );
   }

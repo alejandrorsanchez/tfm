@@ -1,20 +1,21 @@
 import { Injectable } from '@angular/core';
 import {ActivatedRouteSnapshot, CanActivate, Router, RouterStateSnapshot} from "@angular/router";
-import {UtilsService} from "../services/utils.service";
+import {SessionService} from "../services/session.service";
+import {NotificationService} from "../services/notification.service";
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthGuardService implements CanActivate{
 
-  constructor(public utilsService: UtilsService, public router: Router) { }
+  constructor(public sessionService: SessionService, public notificationService: NotificationService, public router: Router) { }
 
   canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean{
     let canActivate = false;
-    if(this.utilsService.isUserLogged()){
+    if(this.sessionService.isUserLogged()){
       canActivate = true;
     }else{
-      this.utilsService.showNotification('Es necesario iniciar sesión');
+      this.notificationService.showNotification('Es necesario iniciar sesión');
       this.router.navigateByUrl('/');
     }
     return canActivate;

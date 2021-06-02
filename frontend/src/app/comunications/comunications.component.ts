@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute, Router} from "@angular/router";
-import {UtilsService} from "../shared/services/utils.service";
+import {SessionService} from "../shared/services/session.service";
 import {ComunicationService} from "../shared/services/comunication.service";
 import {Comunication} from "../shared/models/comunication";
 import {UserService} from "../shared/services/user.service";
@@ -9,6 +9,7 @@ import {DeleteComunicationDialogComponent} from "./delete-comunication-dialog.co
 import {MatDialog} from "@angular/material/dialog";
 import {EmailService} from "../shared/services/email.service";
 import {Email} from "../shared/models/email";
+import {NotificationService} from "../shared/services/notification.service";
 
 @Component({
   selector: 'app-comunications',
@@ -26,11 +27,12 @@ export class ComunicationsComponent implements OnInit {
   myUser: User;
   loaded: boolean = false;
 
-  constructor(private route: ActivatedRoute, private utilsService: UtilsService, private comunicationService: ComunicationService,
-              private userService: UserService, private router: Router, public dialog: MatDialog, private emailService: EmailService) {
+  constructor(private route: ActivatedRoute, private sessionService: SessionService, private comunicationService: ComunicationService,
+              private userService: UserService, private router: Router, public dialog: MatDialog, private emailService: EmailService,
+              private notificationService: NotificationService) {
     this.userId = this.route.snapshot.params.id;
     this.type = this.route.snapshot.params.type;
-    this.myId = Number(this.utilsService.getId());
+    this.myId = Number(this.sessionService.getId());
   }
 
   ngOnInit(): void {
@@ -90,7 +92,7 @@ export class ComunicationsComponent implements OnInit {
       }
       this.sendEmailNotification(this.myUser, this.chatMate);
     }else{
-      this.utilsService.showNotification('Escribe algo para poder ser enviado');
+      this.notificationService.showNotification('Escribe algo para poder ser enviado');
     }
   }
 
@@ -102,7 +104,7 @@ export class ComunicationsComponent implements OnInit {
   sendEmailNotification(sender: User, receiver: User): void {
     const email = new Email(sender.username, receiver.username, receiver.email);
     this.emailService.sendMessage(email).subscribe(
-      response => this.utilsService.showNotification(response['message']));
+      response => this.notificationService.showNotification(response['message']));
   }
 
   openDeleteComunicationDialog(): void {

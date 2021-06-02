@@ -2,7 +2,8 @@ import {Component, Inject, OnInit} from '@angular/core';
 import {MAT_DIALOG_DATA, MatDialogRef} from "@angular/material/dialog";
 import {Pet} from "../shared/models/pet";
 import {PetService} from "../shared/services/pet.service";
-import {UtilsService} from "../shared/services/utils.service";
+import {SessionService} from "../shared/services/session.service";
+import {NotificationService} from "../shared/services/notification.service";
 
 @Component({
   selector: 'app-update-pet-dialog',
@@ -16,13 +17,13 @@ export class AddUpdatePetDialogComponent implements OnInit{
   title: string;
 
   constructor(@Inject(MAT_DIALOG_DATA) data: Pet, public dialogRef: MatDialogRef<AddUpdatePetDialogComponent>
-              , private petService: PetService, private utilsService: UtilsService) {
+              , private petService: PetService, private sessionService: SessionService, private notificationService: NotificationService) {
     this.pet = data ? data : new Pet();
     this.title = data ? this.pet.name : 'Nueva mascota';
   }
 
   ngOnInit(): void {
-    this.pet.userId = this.utilsService.getId();
+    this.pet.userId = this.sessionService.getId();
   }
 
   onFileChanged(event) {
@@ -37,7 +38,7 @@ export class AddUpdatePetDialogComponent implements OnInit{
           this.createFormDataAndPostImage();
         }
         this.dialogRef.close();
-        this.utilsService.showNotification(response['message']);
+        this.notificationService.showNotification(response['message']);
       }
     );
   }
@@ -47,7 +48,7 @@ export class AddUpdatePetDialogComponent implements OnInit{
       response => {
         this.pet.id = response['id'];
         this.createFormDataAndPostImage();
-        this.utilsService.showNotification(response['message']);
+        this.notificationService.showNotification(response['message']);
       }
     );
   }

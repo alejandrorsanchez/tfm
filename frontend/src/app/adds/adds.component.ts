@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute, Router} from "@angular/router";
 import {AddListing} from "../shared/models/addListing";
 import {AddService} from "../shared/services/add.service";
-import {UtilsService} from "../shared/services/utils.service";
+import {SessionService} from "../shared/services/session.service";
 import {UserService} from "../shared/services/user.service";
 import {PetService} from "../shared/services/pet.service";
 import {Pet} from "../shared/models/pet";
@@ -24,7 +24,7 @@ export class AddsComponent implements OnInit {
   myCoordinate: Coordinate;
   loaded: boolean = false;
 
-  constructor(private route: ActivatedRoute, private addService: AddService, private utilsService: UtilsService,
+  constructor(private route: ActivatedRoute, private addService: AddService, private sessionService: SessionService,
               private userService: UserService, private petService: PetService, private router: Router) {
     this.type = this.route.snapshot.params.type;
   }
@@ -37,7 +37,7 @@ export class AddsComponent implements OnInit {
   }
 
   getUser(): void {
-    this.id = this.utilsService.getId();
+    this.id = this.sessionService.getId();
     this.userService.findById(this.id).subscribe(
       (user: User) => this.user.copyProperties(user));
   }

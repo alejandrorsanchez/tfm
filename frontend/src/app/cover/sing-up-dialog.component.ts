@@ -2,8 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {User} from "../shared/models/user";
 import {UserService} from "../shared/services/user.service";
 import {MatDialogRef} from "@angular/material/dialog";
-import {UtilsService} from "../shared/services/utils.service";
-import {EmailService} from "../shared/services/email.service";
+import {NotificationService} from "../shared/services/notification.service";
 
 @Component({
   selector: 'app-sing-up-dialog',
@@ -17,7 +16,7 @@ export class SingUpDialogComponent implements OnInit{
   repeatPassword = '';
 
   constructor(public dialogRef: MatDialogRef<SingUpDialogComponent>, private userService: UserService
-              , private utilsService: UtilsService, private emailService: EmailService) {
+              , private notificationService: NotificationService) {
     this.title = 'Registro';
   }
 
@@ -29,20 +28,20 @@ export class SingUpDialogComponent implements OnInit{
     if(this.newUser.username != ''){
       this.userService.findByUsername(this.newUser.username).subscribe(
         () => {},
-        error => this.utilsService.showNotification(error.error['message'])
+        error => this.notificationService.showNotification(error.error['message'])
       );
     }
   }
 
   fieldsAreCorrect(): boolean {
     if (this.newUser.password !== this.repeatPassword){
-      this.utilsService.showNotification('Las contraseñas no coinciden');
+      this.notificationService.showNotification('Las contraseñas no coinciden');
       return false;
     }else if (this.newUser.username.length > 8 ){
-      this.utilsService.showNotification('El nombre de usuario debe tener una longitud no superior a 8 caracteres');
+      this.notificationService.showNotification('El nombre de usuario debe tener una longitud no superior a 8 caracteres');
       return false;
     }else if(!this.newUser.email.includes('@gmail.com')){
-      this.utilsService.showNotification('El correo no tiene el formato adecuado');
+      this.notificationService.showNotification('El correo no tiene el formato adecuado');
       return false;
     }
     return true;
@@ -54,7 +53,7 @@ export class SingUpDialogComponent implements OnInit{
     if (this.fieldsAreCorrect()){
       this.userService.save(this.newUser).subscribe(
         response => {
-          this.utilsService.showNotification(response['message']);
+          this.notificationService.showNotification(response['message']);
           this.dialogRef.close();
           }
         );

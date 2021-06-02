@@ -1,7 +1,7 @@
 import {Component, Inject} from '@angular/core';
 import {MAT_DIALOG_DATA, MatDialogRef} from "@angular/material/dialog";
 import {UserService} from "../shared/services/user.service";
-import {UtilsService} from "../shared/services/utils.service";
+import {SessionService} from "../shared/services/session.service";
 import {Router} from "@angular/router";
 
 @Component({
@@ -13,7 +13,7 @@ export class DeleteAccountDialogComponent{
   id: number;
 
   constructor(@Inject(MAT_DIALOG_DATA) data: number, public dialogRef: MatDialogRef<DeleteAccountDialogComponent>, private userService: UserService,
-              private utilsService: UtilsService, public router: Router) {
+              private sessionService: SessionService, public router: Router) {
     this.id = data ? data : undefined;
   }
 
@@ -24,7 +24,7 @@ export class DeleteAccountDialogComponent{
   deleteUser(): void {
     this.userService.delete(this.id).subscribe(
       () => {
-        this.utilsService.destroySession();
+        this.sessionService.destroySession();
         this.dialogRef.close();
         this.router.navigateByUrl('/');
       }

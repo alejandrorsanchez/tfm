@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {UtilsService} from "../shared/services/utils.service";
+import {SessionService} from "../shared/services/session.service";
 import {ActivatedRoute, Router} from "@angular/router";
 import {UserService} from "../shared/services/user.service";
 import {User} from "../shared/models/user";
@@ -17,9 +17,9 @@ export class HomeComponent implements OnInit {
   username: string;
   notification: boolean = false;
 
-  constructor(private utilService: UtilsService, public router: Router, private activatedRoute: ActivatedRoute,
-              private userService: UserService, private utilsService: UtilsService, private comunicationService: ComunicationService) {
-    this.id = this.utilsService.getId();
+  constructor(private sessionService: SessionService, public router: Router, private activatedRoute: ActivatedRoute,
+              private userService: UserService, private comunicationService: ComunicationService) {
+    this.id = this.sessionService.getId();
   }
 
   ngOnInit(): void {
@@ -49,7 +49,7 @@ export class HomeComponent implements OnInit {
   }
 
   logout(): void {
-    this.utilService.destroySession();
+    this.sessionService.destroySession();
     this.router.navigateByUrl('/');
   }
 }
