@@ -66,7 +66,7 @@ petController.uploadPhoto = (req, res) => {
     const name = req.body.name;
     const reqPath = __basedir + '/uploads';
     const resolvedPath = path.resolve(reqPath);
-    if (resolvedPath.startsWith(__basedir)) {
+    if (resolvedPath.startsWith(__basedir) && !isNaN(parseInt(id))) {
         if(!fs.existsSync(resolvedPath + '/' + id)){
             fileController.createDirectory(resolvedPath, id);
         }

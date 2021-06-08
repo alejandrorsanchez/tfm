@@ -11,7 +11,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/server/controllers/file.controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/uploads/365/Caja Producto 2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/uploads/366/Captura2.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/uploads/Captura1.PNG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/controllers/pet.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/pet.controller.js" afterDir="false" />
     </list>
@@ -248,14 +250,7 @@
       <workItem from="1623053833461" duration="4570000" />
       <workItem from="1623080577952" duration="1812000" />
       <workItem from="1623140960344" duration="4477000" />
-      <workItem from="1623171236706" duration="2322000" />
-    </task>
-    <task id="LOCAL-00177" summary="openDeleteDialog method empty">
-      <created>1621324721739</created>
-      <option name="number" value="00177" />
-      <option name="presentableId" value="LOCAL-00177" />
-      <option name="project" value="LOCAL" />
-      <updated>1621324721739</updated>
+      <workItem from="1623171236706" duration="3330000" />
     </task>
     <task id="LOCAL-00178" summary="UI dialog delete comunication implemented">
       <created>1621325747540</created>
@@ -593,7 +588,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623172315546</updated>
     </task>
-    <option name="localTasksCounter" value="226" />
+    <task id="LOCAL-00226" summary="refactoring file.controller">
+      <created>1623173740657</created>
+      <option name="number" value="00226" />
+      <option name="presentableId" value="LOCAL-00226" />
+      <option name="project" value="LOCAL" />
+      <updated>1623173740657</updated>
+    </task>
+    <option name="localTasksCounter" value="227" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -616,7 +618,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="getDistanceWith(coordinate) moved to coordinate.ts" />
     <MESSAGE value="copyProperties necessary for User" />
     <MESSAGE value="Refactoring complete" />
     <MESSAGE value="initial commit comunication test" />
@@ -641,7 +642,8 @@
     <MESSAGE value="Foreing key constraint between User and Pet fixed" />
     <MESSAGE value="404 code status for DELETE Users" />
     <MESSAGE value="delete pet foreign key  with adds fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete pet foreign key  with adds fixed" />
+    <MESSAGE value="refactoring file.controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring file.controller" />
   </component>
   <component name="WindowStateProjectService">
     <state x="509" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619029708212">
@@ -748,6 +750,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1621336864915" />
+    <state x="478" y="145" width="579" height="534" key="find.popup" timestamp="1623174213348">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="478" y="145" width="579" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1623174213348" />
     <state x="632" y="298" width="348" height="298" key="org.angular.cli.generate" timestamp="1622625597242">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
