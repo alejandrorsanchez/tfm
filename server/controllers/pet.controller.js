@@ -1,8 +1,9 @@
 const petController = {};
 const db = require('../database');
+const fileController = require('./file.controller');
 const fs = require('fs');
 const path = require('path');
-const rimraf = require("rimraf");
+
 
 petController.findById = (req, res) => {
     const id = req.params.id;
@@ -54,7 +55,7 @@ petController.delete = (req, res) => {
         if(row['affectedRows'] === 0){
             res.status(404).json({message: 'Esa mascota no existe'});
         }else{
-            rimraf.sync('./uploads/' + id);
+            fileController.removeAllFiles(id);
             res.status(200).send();
         }
     });
@@ -67,42 +68,12 @@ petController.uploadPhoto = (req, res) => {
     const resolvedPath = path.resolve(reqPath);
     if (resolvedPath.startsWith(__basedir)) {
         if(!fs.existsSync(resolvedPath + '/' + id)){
-            fs.mkdir(resolvedPath + '/' + id,function(err){
-                if (err) return console.error(err);
-                console.log("Directory created successfully!");
-            });
+            fileController.createDirectory(resolvedPath, id);
         }
-        deleteFilesFromDirectory(resolvedPath + '/' + id);
-        copyFileAndDeleteFromOrigin(resolvedPath,resolvedPath + '/' + id, name);
+        fileController.deleteFilesFromDirectory(resolvedPath + '/' + id);
+        fileController.copyFileAndDeleteFromOrigin(resolvedPath,resolvedPath + '/' + id, name);
         res.json({ message: 'Imagen guardada' });
     }
-}
-
-function copyFileAndDeleteFromOrigin(origin, destination, name){
-    fs.copyFile(origin + "/" + name,destination+"/" + name,(error) => {
-        if(error) console.log(error);
-        else removeFile(origin, name);
-    })
-}
-function removeFile(directory, name){
-    fs.unlink(directory + "/" + name,(error)=> {
-        if(error) console.log("error al eliminar");
-        else console.log("OK");
-    })
-}
-
-function deleteFilesFromDirectory(directory) {
-    fs.readdir(directory, (err, files) => {
-        if (err) throw err;
-        for (const file of files) {
-            fs.unlink(path.join(directory, file), error => {
-                if (error) throw error;
-            });
-        }
-        /*fs.rmdir(directory, function(err) {
-            if (err) throw err
-        })*/
-    });
 }
 
 module.exports = petController;

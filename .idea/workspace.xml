@@ -11,11 +11,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40ed12d4-f29b-4610-a1f8-a397d9beaf49" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/server/uploads/355/splash.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/controllers/file.controller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/controllers/pet.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/pet.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/mochawesome-report/mochawesome.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/mochawesome-report/mochawesome.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/mochawesome-report/mochawesome.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/mochawesome-report/mochawesome.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +66,7 @@
       <recent name="C:\Users\arodr\Documents\AngularProjects\tfm\frontend\src\app\shared\services" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.report">
+  <component name="RunManager" selected="Mocha.Testing Pet API">
     <configuration name="report" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/server/package.json" />
       <command value="run" />
@@ -136,11 +134,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Mocha.Testing Pet API" />
         <item itemvalue="npm.report" />
         <item itemvalue="Mocha.Testing User API" />
         <item itemvalue="npm.test" />
         <item itemvalue="Mocha.Testing Comunication API" />
-        <item itemvalue="Mocha.Testing Pet API" />
       </list>
     </recent_temporary>
   </component>
@@ -250,14 +248,7 @@
       <workItem from="1623053833461" duration="4570000" />
       <workItem from="1623080577952" duration="1812000" />
       <workItem from="1623140960344" duration="4477000" />
-      <workItem from="1623171236706" duration="909000" />
-    </task>
-    <task id="LOCAL-00176" summary="fixing chat grid with buttons">
-      <created>1621324550369</created>
-      <option name="number" value="00176" />
-      <option name="presentableId" value="LOCAL-00176" />
-      <option name="project" value="LOCAL" />
-      <updated>1621324550369</updated>
+      <workItem from="1623171236706" duration="2322000" />
     </task>
     <task id="LOCAL-00177" summary="openDeleteDialog method empty">
       <created>1621324721739</created>
@@ -595,7 +586,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622627965637</updated>
     </task>
-    <option name="localTasksCounter" value="225" />
+    <task id="LOCAL-00225" summary="delete pet foreign key  with adds fixed">
+      <created>1623172315546</created>
+      <option name="number" value="00225" />
+      <option name="presentableId" value="LOCAL-00225" />
+      <option name="project" value="LOCAL" />
+      <updated>1623172315546</updated>
+    </task>
+    <option name="localTasksCounter" value="226" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -618,7 +616,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="adds.component responses improved" />
     <MESSAGE value="getDistanceWith(coordinate) moved to coordinate.ts" />
     <MESSAGE value="copyProperties necessary for User" />
     <MESSAGE value="Refactoring complete" />
@@ -643,7 +640,8 @@
     <MESSAGE value="refactoring showNotification into a new service" />
     <MESSAGE value="Foreing key constraint between User and Pet fixed" />
     <MESSAGE value="404 code status for DELETE Users" />
-    <option name="LAST_COMMIT_MESSAGE" value="404 code status for DELETE Users" />
+    <MESSAGE value="delete pet foreign key  with adds fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete pet foreign key  with adds fixed" />
   </component>
   <component name="WindowStateProjectService">
     <state x="509" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1619029708212">
@@ -666,22 +664,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1621505102496" />
-    <state width="1515" height="243" key="GridCell.Tab.0.bottom" timestamp="1623146184746">
+    <state width="1515" height="243" key="GridCell.Tab.0.bottom" timestamp="1623172286102">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="243" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1623146184746" />
-    <state width="1515" height="243" key="GridCell.Tab.0.center" timestamp="1623146184746">
+    <state width="1515" height="243" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1623172286102" />
+    <state width="1515" height="243" key="GridCell.Tab.0.center" timestamp="1623172286102">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="243" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1623146184746" />
-    <state width="1515" height="243" key="GridCell.Tab.0.left" timestamp="1623146184746">
+    <state width="1515" height="243" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1623172286102" />
+    <state width="1515" height="243" key="GridCell.Tab.0.left" timestamp="1623172286102">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="243" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1623146184746" />
-    <state width="1515" height="243" key="GridCell.Tab.0.right" timestamp="1623146184746">
+    <state width="1515" height="243" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1623172286102" />
+    <state width="1515" height="243" key="GridCell.Tab.0.right" timestamp="1623172286102">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="243" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1623146184746" />
+    <state width="1515" height="243" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1623172286102" />
     <state width="1515" height="261" key="GridCell.Tab.1.bottom" timestamp="1619438632838">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
