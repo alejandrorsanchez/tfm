@@ -44,16 +44,20 @@ petController.update = (req, res) => {
 
 petController.delete = (req, res) => {
     const id = req.params.id;
-    const queryDeletePet = 'DELETE FROM pets WHERE id = ?';
-    db.query(queryDeletePet, [id], function (err, row, fields) {
-        if (err) throw err;
-        rimraf.sync('./uploads/' + id);
-    })
     const queryDeleteAdds = 'DELETE FROM adds WHERE petId = ?';
     db.query(queryDeleteAdds, [id], function (err, row, fields) {
         if (err) throw err;
-    })
-    res.status(200).send();
+    });
+    const queryDeletePet = 'DELETE FROM pets WHERE id = ?';
+    db.query(queryDeletePet, [id], function (err, row, fields) {
+        if (err) throw err;
+        if(row['affectedRows'] === 0){
+            res.status(404).json({message: 'Esa mascota no existe'});
+        }else{
+            rimraf.sync('./uploads/' + id);
+            res.status(200).send();
+        }
+    });
 }
 
 petController.uploadPhoto = (req, res) => {
